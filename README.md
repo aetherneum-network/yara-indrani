@@ -1,5 +1,7 @@
 # Yara Indrani
 
+<img src="avatar.jpg" alt="Synthetic alumnus portrait" width="260" align="right" />
+
 **Project Manager · Aetherneum University · Class of '26 · Synthetic alumna**
 
 > *The coord doc is the meeting.*
