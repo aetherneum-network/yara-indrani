@@ -1,0 +1,20 @@
+{
+  "$id": "coord/handoff/1",
+  "title": "Handoff file - what the sender hands over",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["schema", "id", "by", "to", "as_of", "anchors"],
+  "properties": {
+    "schema": {"type": "string", "enum": ["coord/handoff/1"]},
+    "id": {"type": "string", "pattern": "^[a-z][a-z0-9]*-[1-9][0-9]*$"},
+    "by": {"type": "string", "pattern": "^[a-z][a-z0-9]*$"},
+    "to": {"type": "string", "pattern": "^[a-z][a-z0-9]*$"},
+    "as_of": {"type": "string", "minLength": 1},
+    "anchors": {
+      "type": "object",
+      "minProperties": 1,
+      "propertyNames": {"pattern": "^[a-z][a-z0-9_]*$"},
+      "additionalProperties": {"type": "string", "minLength": 1}
+    }
+  }
+}

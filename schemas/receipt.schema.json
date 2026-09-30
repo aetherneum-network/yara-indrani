@@ -1,0 +1,20 @@
+{
+  "$id": "coord/receipt/1",
+  "title": "Receipt file - what the recipient actually received",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["schema", "id", "handoff", "by", "as_of", "anchors"],
+  "properties": {
+    "schema": {"type": "string", "enum": ["coord/receipt/1"]},
+    "id": {"type": "string", "pattern": "^[a-z][a-z0-9]*-[1-9][0-9]*$"},
+    "handoff": {"type": "string", "pattern": "^[a-z][a-z0-9]*-[1-9][0-9]*$"},
+    "by": {"type": "string", "pattern": "^[a-z][a-z0-9]*$"},
+    "as_of": {"type": "string", "minLength": 1},
+    "anchors": {
+      "type": "object",
+      "minProperties": 1,
+      "propertyNames": {"pattern": "^[a-z][a-z0-9_]*$"},
+      "additionalProperties": {"type": "string", "minLength": 1}
+    }
+  }
+}
