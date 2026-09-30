@@ -1,0 +1,25 @@
+{
+  "version": 1,
+  "about": "Effects of a response (ACK, DISSENT) on its target. Ordered: first match wins, exceptions on top. 'role' matches when the author holds that role towards the target; 'nature' comes from dissent_nature.json and is decided first.",
+  "rules": [
+    {"id": "T-ACK-PROPOSAL-REQUIRED", "when": {"type": "ACK", "target": "proposal", "role": "required"}, "then": ["consent_yes", "close_own_disputes"]},
+    {"id": "T-ACK-PROPOSAL-DISSENTER", "when": {"type": "ACK", "target": "proposal", "role": "dissenter"}, "then": ["close_own_disputes"]},
+    {"id": "T-ACK-PROPOSAL", "when": {"type": "ACK", "target": "proposal"}, "then": ["no_effect"]},
+    {"id": "T-DISSENT-PROPOSAL-OWNER", "when": {"type": "DISSENT", "target": "proposal", "role": "owner"}, "then": ["invalid"]},
+    {"id": "T-DISSENT-PROPOSAL-EMPTY-REQUIRED", "when": {"type": "DISSENT", "target": "proposal", "nature": "none", "role": "required"}, "then": ["consent_no", "empty_dissent"]},
+    {"id": "T-DISSENT-PROPOSAL-EMPTY", "when": {"type": "DISSENT", "target": "proposal", "nature": "none"}, "then": ["empty_dissent"]},
+    {"id": "T-DISSENT-PROPOSAL-REQUIRED", "when": {"type": "DISSENT", "target": "proposal", "role": "required"}, "then": ["consent_no", "open_dispute"]},
+    {"id": "T-DISSENT-PROPOSAL", "when": {"type": "DISSENT", "target": "proposal"}, "then": ["open_dispute"]},
+    {"id": "T-ACK-DISSENT-SELF", "when": {"type": "ACK", "target": "dissent", "role": "author"}, "then": ["close_dispute"]},
+    {"id": "T-ACK-DISSENT-OWNER", "when": {"type": "ACK", "target": "dissent", "role": "proposal_owner"}, "then": ["answer"]},
+    {"id": "T-ACK-UNBLOCK", "when": {"type": "ACK", "target": "unblock", "role": "required"}, "then": ["consent_yes"]},
+    {"id": "T-DISSENT-UNBLOCK", "when": {"type": "DISSENT", "target": "unblock", "role": "required"}, "then": ["consent_no"]},
+    {"id": "T-ACK-LIFT", "when": {"type": "ACK", "target": "lift", "role": "required"}, "then": ["consent_yes"]},
+    {"id": "T-DISSENT-LIFT", "when": {"type": "DISSENT", "target": "lift", "role": "required"}, "then": ["consent_no"]},
+    {"id": "T-DISSENT-ARBITRATE", "when": {"type": "DISSENT", "target": "arbitrate"}, "then": ["record_dissent"]},
+    {"id": "T-ACK-UNKNOWN", "when": {"type": "ACK", "target": "unknown"}, "then": ["invalid"]},
+    {"id": "T-ACK-ANY", "when": {"type": "ACK"}, "then": ["no_effect"]},
+    {"id": "T-DISSENT-GATED", "when": {"type": "DISSENT", "target": ["unblock", "lift"]}, "then": ["no_effect"]},
+    {"id": "T-DISSENT-ANY", "when": {"type": "DISSENT"}, "then": ["invalid"]}
+  ]
+}
