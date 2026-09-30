@@ -1,0 +1,34 @@
+commit refs/heads/submit-carla
+mark :4
+author Carla Muñoz Peña <carla@portoluna.example> 1777884660 +0000
+committer Carla Muñoz Peña <carla@portoluna.example> 1777884660 +0000
+data 18
+coord: ACK carla-1
+from refs/heads/main^0
+M 100644 inline COORD.md
+data 493
+# COORD - Portoluna quay works
+
+protocol: coord/1
+
+## Agents
+
+- ines | Inès Carrà | ines@portoluna.example | site lead
+- bruno | Bruno Šťastný | bruno@portoluna.example | structures
+- carla | Carla Muñoz Peña | carla@portoluna.example | procurement
+
+## Log
+
+### PROPOSE ines-1
+- by: ines
+- to: bruno, carla
+- as_of: 2026-05-04T09:15:00+01:00
+- text: Issue drawings for pier cap 4.
+
+### ACK carla-1
+- by: carla
+- refs: ines-1
+- as_of: 2026-05-04T08:49:00+00:00
+- note: counts match mine
+
+

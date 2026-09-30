@@ -1,0 +1,158 @@
+[
+ {
+  "agents": [
+   {
+    "email": "livia@meridiana.example",
+    "id": "livia",
+    "name": "Lívia Sàez-Brontë",
+    "role": "managing editor",
+    "tz": "+02:00"
+   },
+   {
+    "email": "oscar@meridiana.example",
+    "id": "oscar",
+    "name": "Óscar Çelik",
+    "role": "production",
+    "tz": "+03:00"
+   },
+   {
+    "email": "nadia@meridiana.example",
+    "id": "nadia",
+    "name": "Nadia Øvrebø",
+    "role": "design",
+    "tz": "+01:00"
+   }
+  ],
+  "commit_by": "livia",
+  "n": 1,
+  "op": "init",
+  "parents": [],
+  "team": {
+   "company": "Editrice Meridiana S.r.l.",
+   "domain": "meridiana.example",
+   "key": "meridiana",
+   "title": "Meridiana autumn list"
+  },
+  "utc": "2026-03-09T08:30:00Z"
+ },
+ {
+  "commit_by": "livia",
+  "entry": {
+   "as_of": "2026-03-09T10:45:00+02:00",
+   "by": "livia",
+   "id": "livia-1",
+   "text": "Send to proof the ebook build.",
+   "to": [
+    "oscar",
+    "nadia"
+   ],
+   "type": "PROPOSE"
+  },
+  "n": 2,
+  "op": "entry",
+  "parents": [
+   1
+  ],
+  "utc": "2026-03-09T08:47:00Z"
+ },
+ {
+  "commit_by": "oscar",
+  "entry": {
+   "as_of": "2026-03-09T12:02:00+03:00",
+   "by": "oscar",
+   "id": "oscar-1",
+   "refs": [
+    "livia-1"
+   ],
+   "type": "ACK"
+  },
+  "n": 3,
+  "op": "entry",
+  "parents": [
+   2
+  ],
+  "utc": "2026-03-09T09:04:00Z"
+ },
+ {
+  "commit_by": "nadia",
+  "entry": {
+   "as_of": "2026-03-09T10:19:00+01:00",
+   "by": "nadia",
+   "id": "nadia-1",
+   "note": "cover file is the final one",
+   "refs": [
+    "livia-1"
+   ],
+   "type": "ACK"
+  },
+  "n": 4,
+  "op": "entry",
+  "parents": [
+   3
+  ],
+  "utc": "2026-03-09T09:21:00Z"
+ },
+ {
+  "commit_by": "livia",
+  "entry": {
+   "as_of": "2026-03-09T11:36:00+02:00",
+   "by": "livia",
+   "id": "livia-2",
+   "refs": [
+    "livia-1"
+   ],
+   "type": "DECIDE"
+  },
+  "n": 5,
+  "op": "entry",
+  "parents": [
+   4
+  ],
+  "utc": "2026-03-09T09:38:00Z"
+ },
+ {
+  "commit_by": "livia",
+  "entry": {
+   "anchors": {
+    "build": "2417",
+    "tag": "v3.2.0"
+   },
+   "as_of": "2026-03-09T11:53:00+02:00",
+   "by": "livia",
+   "id": "livia-3",
+   "text": "ebook build for the store",
+   "to": [
+    "oscar"
+   ],
+   "type": "HANDOFF"
+  },
+  "n": 6,
+  "op": "entry",
+  "parents": [
+   5
+  ],
+  "utc": "2026-03-09T09:55:00Z"
+ },
+ {
+  "commit_by": "oscar",
+  "entry": {
+   "anchors": {
+    "build": "2471",
+    "tag": "v3.2.0"
+   },
+   "as_of": "2026-03-09T13:10:00+03:00",
+   "by": "oscar",
+   "id": "oscar-2",
+   "refs": [
+    "livia-3"
+   ],
+   "type": "RECEIPT"
+  },
+  "n": 7,
+  "op": "entry",
+  "parents": [
+   6
+  ],
+  "utc": "2026-03-09T10:12:00Z"
+ }
+]

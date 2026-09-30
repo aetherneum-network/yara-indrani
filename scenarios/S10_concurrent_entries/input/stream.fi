@@ -1,0 +1,49 @@
+commit refs/heads/main
+mark :1
+author Inès Carrà <ines@portoluna.example> 1777881600 +0100
+committer Inès Carrà <ines@portoluna.example> 1777881600 +0100
+data 37
+coord: open the coordination document
+M 100644 inline COORD.md
+data 264
+# COORD - Portoluna quay works
+
+protocol: coord/1
+
+## Agents
+
+- ines | Inès Carrà | ines@portoluna.example | site lead
+- bruno | Bruno Šťastný | bruno@portoluna.example | structures
+- carla | Carla Muñoz Peña | carla@portoluna.example | procurement
+
+## Log
+
+
+commit refs/heads/main
+mark :2
+author Inès Carrà <ines@portoluna.example> 1777882620 +0100
+committer Inès Carrà <ines@portoluna.example> 1777882620 +0100
+data 21
+coord: PROPOSE ines-1
+from :1
+M 100644 inline COORD.md
+data 388
+# COORD - Portoluna quay works
+
+protocol: coord/1
+
+## Agents
+
+- ines | Inès Carrà | ines@portoluna.example | site lead
+- bruno | Bruno Šťastný | bruno@portoluna.example | structures
+- carla | Carla Muñoz Peña | carla@portoluna.example | procurement
+
+## Log
+
+### PROPOSE ines-1
+- by: ines
+- to: bruno, carla
+- as_of: 2026-05-04T09:15:00+01:00
+- text: Issue drawings for pier cap 4.
+
+

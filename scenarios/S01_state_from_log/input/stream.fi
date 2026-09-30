@@ -1,0 +1,767 @@
+commit refs/heads/main
+mark :1
+author Inès Carrà <ines@portoluna.example> 1772438400 +0100
+committer Inès Carrà <ines@portoluna.example> 1772438400 +0100
+data 37
+coord: open the coordination document
+M 100644 inline COORD.md
+data 325
+# COORD - Portoluna quay works
+
+protocol: coord/1
+
+## Agents
+
+- ines | Inès Carrà | ines@portoluna.example | site lead
+- bruno | Bruno Šťastný | bruno@portoluna.example | structures
+- carla | Carla Muñoz Peña | carla@portoluna.example | procurement
+- dario | Dário Åkesson | dario@portoluna.example | safety
+
+## Log
+
+
+commit refs/heads/main
+mark :2
+author Inès Carrà <ines@portoluna.example> 1772439420 +0100
+committer Inès Carrà <ines@portoluna.example> 1772439420 +0100
+data 21
+coord: PROPOSE ines-1
+from :1
+M 100644 inline COORD.md
+data 444
+# COORD - Portoluna quay works
+
+protocol: coord/1
+
+## Agents
+
+- ines | Inès Carrà | ines@portoluna.example | site lead
+- bruno | Bruno Šťastný | bruno@portoluna.example | structures
+- carla | Carla Muñoz Peña | carla@portoluna.example | procurement
+- dario | Dário Åkesson | dario@portoluna.example | safety
+
+## Log
+
+### PROPOSE ines-1
+- by: ines
+- to: bruno, carla
+- as_of: 2026-03-02T09:15:00+01:00
+- text: Pour slab B2 on Thursday.
+
+
+commit refs/heads/main
+mark :3
+author Bruno Šťastný <bruno@portoluna.example> 1772440440 +0100
+committer Bruno Šťastný <bruno@portoluna.example> 1772440440 +0100
+data 18
+coord: ACK bruno-1
+from :2
+M 100644 inline COORD.md
+data 550
+# COORD - Portoluna quay works
+
+protocol: coord/1
+
+## Agents
+
+- ines | Inès Carrà | ines@portoluna.example | site lead
+- bruno | Bruno Šťastný | bruno@portoluna.example | structures
+- carla | Carla Muñoz Peña | carla@portoluna.example | procurement
+- dario | Dário Åkesson | dario@portoluna.example | safety
+
+## Log
+
+### PROPOSE ines-1
+- by: ines
+- to: bruno, carla
+- as_of: 2026-03-02T09:15:00+01:00
+- text: Pour slab B2 on Thursday.
+
+### ACK bruno-1
+- by: bruno
+- refs: ines-1
+- as_of: 2026-03-02T09:32:00+01:00
+- note: formwork inspected
+
+
+commit refs/heads/main
+mark :4
+author Carla Muñoz Peña <carla@portoluna.example> 1772441460 +0000
+committer Carla Muñoz Peña <carla@portoluna.example> 1772441460 +0000
+data 18
+coord: ACK carla-1
+from :3
+M 100644 inline COORD.md
+data 629
+# COORD - Portoluna quay works
+
+protocol: coord/1
+
+## Agents
+
+- ines | Inès Carrà | ines@portoluna.example | site lead
+- bruno | Bruno Šťastný | bruno@portoluna.example | structures
+- carla | Carla Muñoz Peña | carla@portoluna.example | procurement
+- dario | Dário Åkesson | dario@portoluna.example | safety
+
+## Log
+
+### PROPOSE ines-1
+- by: ines
+- to: bruno, carla
+- as_of: 2026-03-02T09:15:00+01:00
+- text: Pour slab B2 on Thursday.
+
+### ACK bruno-1
+- by: bruno
+- refs: ines-1
+- as_of: 2026-03-02T09:32:00+01:00
+- note: formwork inspected
+
+### ACK carla-1
+- by: carla
+- refs: ines-1
+- as_of: 2026-03-02T08:49:00+00:00
+
+
+commit refs/heads/main
+mark :5
+author Inès Carrà <ines@portoluna.example> 1772442480 +0100
+committer Inès Carrà <ines@portoluna.example> 1772442480 +0100
+data 20
+coord: DECIDE ines-2
+from :4
+M 100644 inline COORD.md
+data 709
+# COORD - Portoluna quay works
+
+protocol: coord/1
+
+## Agents
+
+- ines | Inès Carrà | ines@portoluna.example | site lead
+- bruno | Bruno Šťastný | bruno@portoluna.example | structures
+- carla | Carla Muñoz Peña | carla@portoluna.example | procurement
+- dario | Dário Åkesson | dario@portoluna.example | safety
+
+## Log
+
+### PROPOSE ines-1
+- by: ines
+- to: bruno, carla
+- as_of: 2026-03-02T09:15:00+01:00
+- text: Pour slab B2 on Thursday.
+
+### ACK bruno-1
+- by: bruno
+- refs: ines-1
+- as_of: 2026-03-02T09:32:00+01:00
+- note: formwork inspected
+
+### ACK carla-1
+- by: carla
+- refs: ines-1
+- as_of: 2026-03-02T08:49:00+00:00
+
+### DECIDE ines-2
+- by: ines
+- refs: ines-1
+- as_of: 2026-03-02T10:06:00+01:00
+
+
+commit refs/heads/main
+mark :6
+author Bruno Šťastný <bruno@portoluna.example> 1772443500 +0100
+committer Bruno Šťastný <bruno@portoluna.example> 1772443500 +0100
+data 22
+coord: PROPOSE bruno-2
+from :5
+M 100644 inline COORD.md
+data 842
+# COORD - Portoluna quay works
+
+protocol: coord/1
+
+## Agents
+
+- ines | Inès Carrà | ines@portoluna.example | site lead
+- bruno | Bruno Šťastný | bruno@portoluna.example | structures
+- carla | Carla Muñoz Peña | carla@portoluna.example | procurement
+- dario | Dário Åkesson | dario@portoluna.example | safety
+
+## Log
+
+### PROPOSE ines-1
+- by: ines
+- to: bruno, carla
+- as_of: 2026-03-02T09:15:00+01:00
+- text: Pour slab B2 on Thursday.
+
+### ACK bruno-1
+- by: bruno
+- refs: ines-1
+- as_of: 2026-03-02T09:32:00+01:00
+- note: formwork inspected
+
+### ACK carla-1
+- by: carla
+- refs: ines-1
+- as_of: 2026-03-02T08:49:00+00:00
+
+### DECIDE ines-2
+- by: ines
+- refs: ines-1
+- as_of: 2026-03-02T10:06:00+01:00
+
+### PROPOSE bruno-2
+- by: bruno
+- to: ines, dario
+- as_of: 2026-03-02T10:23:00+01:00
+- text: Load-test crane pad C before the pour.
+
+
+commit refs/heads/main
+mark :7
+author Inès Carrà <ines@portoluna.example> 1772444520 +0100
+committer Inès Carrà <ines@portoluna.example> 1772444520 +0100
+data 17
+coord: ACK ines-3
+from :6
+M 100644 inline COORD.md
+data 920
+# COORD - Portoluna quay works
+
+protocol: coord/1
+
+## Agents
+
+- ines | Inès Carrà | ines@portoluna.example | site lead
+- bruno | Bruno Šťastný | bruno@portoluna.example | structures
+- carla | Carla Muñoz Peña | carla@portoluna.example | procurement
+- dario | Dário Åkesson | dario@portoluna.example | safety
+
+## Log
+
+### PROPOSE ines-1
+- by: ines
+- to: bruno, carla
+- as_of: 2026-03-02T09:15:00+01:00
+- text: Pour slab B2 on Thursday.
+
+### ACK bruno-1
+- by: bruno
+- refs: ines-1
+- as_of: 2026-03-02T09:32:00+01:00
+- note: formwork inspected
+
+### ACK carla-1
+- by: carla
+- refs: ines-1
+- as_of: 2026-03-02T08:49:00+00:00
+
+### DECIDE ines-2
+- by: ines
+- refs: ines-1
+- as_of: 2026-03-02T10:06:00+01:00
+
+### PROPOSE bruno-2
+- by: bruno
+- to: ines, dario
+- as_of: 2026-03-02T10:23:00+01:00
+- text: Load-test crane pad C before the pour.
+
+### ACK ines-3
+- by: ines
+- refs: bruno-2
+- as_of: 2026-03-02T10:40:00+01:00
+
+
+commit refs/heads/main
+mark :8
+author Dário Åkesson <dario@portoluna.example> 1772445540 +0200
+committer Dário Åkesson <dario@portoluna.example> 1772445540 +0200
+data 22
+coord: DISSENT dario-1
+from :7
+M 100644 inline COORD.md
+data 1051
+# COORD - Portoluna quay works
+
+protocol: coord/1
+
+## Agents
+
+- ines | Inès Carrà | ines@portoluna.example | site lead
+- bruno | Bruno Šťastný | bruno@portoluna.example | structures
+- carla | Carla Muñoz Peña | carla@portoluna.example | procurement
+- dario | Dário Åkesson | dario@portoluna.example | safety
+
+## Log
+
+### PROPOSE ines-1
+- by: ines
+- to: bruno, carla
+- as_of: 2026-03-02T09:15:00+01:00
+- text: Pour slab B2 on Thursday.
+
+### ACK bruno-1
+- by: bruno
+- refs: ines-1
+- as_of: 2026-03-02T09:32:00+01:00
+- note: formwork inspected
+
+### ACK carla-1
+- by: carla
+- refs: ines-1
+- as_of: 2026-03-02T08:49:00+00:00
+
+### DECIDE ines-2
+- by: ines
+- refs: ines-1
+- as_of: 2026-03-02T10:06:00+01:00
+
+### PROPOSE bruno-2
+- by: bruno
+- to: ines, dario
+- as_of: 2026-03-02T10:23:00+01:00
+- text: Load-test crane pad C before the pour.
+
+### ACK ines-3
+- by: ines
+- refs: bruno-2
+- as_of: 2026-03-02T10:40:00+01:00
+
+### DISSENT dario-1
+- by: dario
+- refs: bruno-2
+- as_of: 2026-03-02T11:57:00+02:00
+- text: the test needs the safety review first
+
+
+commit refs/heads/main
+mark :9
+author Bruno Šťastný <bruno@portoluna.example> 1772446560 +0100
+committer Bruno Šťastný <bruno@portoluna.example> 1772446560 +0100
+data 18
+coord: ACK bruno-3
+from :8
+M 100644 inline COORD.md
+data 1169
+# COORD - Portoluna quay works
+
+protocol: coord/1
+
+## Agents
+
+- ines | Inès Carrà | ines@portoluna.example | site lead
+- bruno | Bruno Šťastný | bruno@portoluna.example | structures
+- carla | Carla Muñoz Peña | carla@portoluna.example | procurement
+- dario | Dário Åkesson | dario@portoluna.example | safety
+
+## Log
+
+### PROPOSE ines-1
+- by: ines
+- to: bruno, carla
+- as_of: 2026-03-02T09:15:00+01:00
+- text: Pour slab B2 on Thursday.
+
+### ACK bruno-1
+- by: bruno
+- refs: ines-1
+- as_of: 2026-03-02T09:32:00+01:00
+- note: formwork inspected
+
+### ACK carla-1
+- by: carla
+- refs: ines-1
+- as_of: 2026-03-02T08:49:00+00:00
+
+### DECIDE ines-2
+- by: ines
+- refs: ines-1
+- as_of: 2026-03-02T10:06:00+01:00
+
+### PROPOSE bruno-2
+- by: bruno
+- to: ines, dario
+- as_of: 2026-03-02T10:23:00+01:00
+- text: Load-test crane pad C before the pour.
+
+### ACK ines-3
+- by: ines
+- refs: bruno-2
+- as_of: 2026-03-02T10:40:00+01:00
+
+### DISSENT dario-1
+- by: dario
+- refs: bruno-2
+- as_of: 2026-03-02T11:57:00+02:00
+- text: the test needs the safety review first
+
+### ACK bruno-3
+- by: bruno
+- refs: dario-1
+- as_of: 2026-03-02T11:14:00+01:00
+- note: review booked before the test
+
+
+commit refs/heads/main
+mark :10
+author Dário Åkesson <dario@portoluna.example> 1772447580 +0200
+committer Dário Åkesson <dario@portoluna.example> 1772447580 +0200
+data 18
+coord: ACK dario-2
+from :9
+M 100644 inline COORD.md
+data 1287
+# COORD - Portoluna quay works
+
+protocol: coord/1
+
+## Agents
+
+- ines | Inès Carrà | ines@portoluna.example | site lead
+- bruno | Bruno Šťastný | bruno@portoluna.example | structures
+- carla | Carla Muñoz Peña | carla@portoluna.example | procurement
+- dario | Dário Åkesson | dario@portoluna.example | safety
+
+## Log
+
+### PROPOSE ines-1
+- by: ines
+- to: bruno, carla
+- as_of: 2026-03-02T09:15:00+01:00
+- text: Pour slab B2 on Thursday.
+
+### ACK bruno-1
+- by: bruno
+- refs: ines-1
+- as_of: 2026-03-02T09:32:00+01:00
+- note: formwork inspected
+
+### ACK carla-1
+- by: carla
+- refs: ines-1
+- as_of: 2026-03-02T08:49:00+00:00
+
+### DECIDE ines-2
+- by: ines
+- refs: ines-1
+- as_of: 2026-03-02T10:06:00+01:00
+
+### PROPOSE bruno-2
+- by: bruno
+- to: ines, dario
+- as_of: 2026-03-02T10:23:00+01:00
+- text: Load-test crane pad C before the pour.
+
+### ACK ines-3
+- by: ines
+- refs: bruno-2
+- as_of: 2026-03-02T10:40:00+01:00
+
+### DISSENT dario-1
+- by: dario
+- refs: bruno-2
+- as_of: 2026-03-02T11:57:00+02:00
+- text: the test needs the safety review first
+
+### ACK bruno-3
+- by: bruno
+- refs: dario-1
+- as_of: 2026-03-02T11:14:00+01:00
+- note: review booked before the test
+
+### ACK dario-2
+- by: dario
+- refs: bruno-2
+- as_of: 2026-03-02T12:31:00+02:00
+- note: fine with the review in place
+
+
+commit refs/heads/main
+mark :11
+author Bruno Šťastný <bruno@portoluna.example> 1772448600 +0100
+committer Bruno Šťastný <bruno@portoluna.example> 1772448600 +0100
+data 21
+coord: DECIDE bruno-4
+from :10
+M 100644 inline COORD.md
+data 1370
+# COORD - Portoluna quay works
+
+protocol: coord/1
+
+## Agents
+
+- ines | Inès Carrà | ines@portoluna.example | site lead
+- bruno | Bruno Šťastný | bruno@portoluna.example | structures
+- carla | Carla Muñoz Peña | carla@portoluna.example | procurement
+- dario | Dário Åkesson | dario@portoluna.example | safety
+
+## Log
+
+### PROPOSE ines-1
+- by: ines
+- to: bruno, carla
+- as_of: 2026-03-02T09:15:00+01:00
+- text: Pour slab B2 on Thursday.
+
+### ACK bruno-1
+- by: bruno
+- refs: ines-1
+- as_of: 2026-03-02T09:32:00+01:00
+- note: formwork inspected
+
+### ACK carla-1
+- by: carla
+- refs: ines-1
+- as_of: 2026-03-02T08:49:00+00:00
+
+### DECIDE ines-2
+- by: ines
+- refs: ines-1
+- as_of: 2026-03-02T10:06:00+01:00
+
+### PROPOSE bruno-2
+- by: bruno
+- to: ines, dario
+- as_of: 2026-03-02T10:23:00+01:00
+- text: Load-test crane pad C before the pour.
+
+### ACK ines-3
+- by: ines
+- refs: bruno-2
+- as_of: 2026-03-02T10:40:00+01:00
+
+### DISSENT dario-1
+- by: dario
+- refs: bruno-2
+- as_of: 2026-03-02T11:57:00+02:00
+- text: the test needs the safety review first
+
+### ACK bruno-3
+- by: bruno
+- refs: dario-1
+- as_of: 2026-03-02T11:14:00+01:00
+- note: review booked before the test
+
+### ACK dario-2
+- by: dario
+- refs: bruno-2
+- as_of: 2026-03-02T12:31:00+02:00
+- note: fine with the review in place
+
+### DECIDE bruno-4
+- by: bruno
+- refs: bruno-2
+- as_of: 2026-03-02T11:48:00+01:00
+
+
+commit refs/heads/main
+mark :12
+author Inès Carrà <ines@portoluna.example> 1772449620 +0100
+committer Inès Carrà <ines@portoluna.example> 1772449620 +0100
+data 21
+coord: HANDOFF ines-4
+from :11
+M 100644 inline COORD.md
+data 1515
+# COORD - Portoluna quay works
+
+protocol: coord/1
+
+## Agents
+
+- ines | Inès Carrà | ines@portoluna.example | site lead
+- bruno | Bruno Šťastný | bruno@portoluna.example | structures
+- carla | Carla Muñoz Peña | carla@portoluna.example | procurement
+- dario | Dário Åkesson | dario@portoluna.example | safety
+
+## Log
+
+### PROPOSE ines-1
+- by: ines
+- to: bruno, carla
+- as_of: 2026-03-02T09:15:00+01:00
+- text: Pour slab B2 on Thursday.
+
+### ACK bruno-1
+- by: bruno
+- refs: ines-1
+- as_of: 2026-03-02T09:32:00+01:00
+- note: formwork inspected
+
+### ACK carla-1
+- by: carla
+- refs: ines-1
+- as_of: 2026-03-02T08:49:00+00:00
+
+### DECIDE ines-2
+- by: ines
+- refs: ines-1
+- as_of: 2026-03-02T10:06:00+01:00
+
+### PROPOSE bruno-2
+- by: bruno
+- to: ines, dario
+- as_of: 2026-03-02T10:23:00+01:00
+- text: Load-test crane pad C before the pour.
+
+### ACK ines-3
+- by: ines
+- refs: bruno-2
+- as_of: 2026-03-02T10:40:00+01:00
+
+### DISSENT dario-1
+- by: dario
+- refs: bruno-2
+- as_of: 2026-03-02T11:57:00+02:00
+- text: the test needs the safety review first
+
+### ACK bruno-3
+- by: bruno
+- refs: dario-1
+- as_of: 2026-03-02T11:14:00+01:00
+- note: review booked before the test
+
+### ACK dario-2
+- by: dario
+- refs: bruno-2
+- as_of: 2026-03-02T12:31:00+02:00
+- note: fine with the review in place
+
+### DECIDE bruno-4
+- by: bruno
+- refs: bruno-2
+- as_of: 2026-03-02T11:48:00+01:00
+
+### HANDOFF ines-4
+- by: ines
+- to: bruno
+- anchors: build=412; tag=v1.4.0
+- as_of: 2026-03-02T12:05:00+01:00
+- text: pour sequence, revision 4
+
+M 100644 inline handoffs/ines-4.json
+data 185
+{
+  "anchors": {
+    "build": "412",
+    "tag": "v1.4.0"
+  },
+  "as_of": "2026-03-02T12:05:00+01:00",
+  "by": "ines",
+  "id": "ines-4",
+  "schema": "coord/handoff/1",
+  "to": "bruno"
+}
+
+
+commit refs/heads/main
+mark :13
+author Bruno Šťastný <bruno@portoluna.example> 1772450640 +0100
+committer Bruno Šťastný <bruno@portoluna.example> 1772450640 +0100
+data 22
+coord: RECEIPT bruno-5
+from :12
+M 100644 inline COORD.md
+data 1631
+# COORD - Portoluna quay works
+
+protocol: coord/1
+
+## Agents
+
+- ines | Inès Carrà | ines@portoluna.example | site lead
+- bruno | Bruno Šťastný | bruno@portoluna.example | structures
+- carla | Carla Muñoz Peña | carla@portoluna.example | procurement
+- dario | Dário Åkesson | dario@portoluna.example | safety
+
+## Log
+
+### PROPOSE ines-1
+- by: ines
+- to: bruno, carla
+- as_of: 2026-03-02T09:15:00+01:00
+- text: Pour slab B2 on Thursday.
+
+### ACK bruno-1
+- by: bruno
+- refs: ines-1
+- as_of: 2026-03-02T09:32:00+01:00
+- note: formwork inspected
+
+### ACK carla-1
+- by: carla
+- refs: ines-1
+- as_of: 2026-03-02T08:49:00+00:00
+
+### DECIDE ines-2
+- by: ines
+- refs: ines-1
+- as_of: 2026-03-02T10:06:00+01:00
+
+### PROPOSE bruno-2
+- by: bruno
+- to: ines, dario
+- as_of: 2026-03-02T10:23:00+01:00
+- text: Load-test crane pad C before the pour.
+
+### ACK ines-3
+- by: ines
+- refs: bruno-2
+- as_of: 2026-03-02T10:40:00+01:00
+
+### DISSENT dario-1
+- by: dario
+- refs: bruno-2
+- as_of: 2026-03-02T11:57:00+02:00
+- text: the test needs the safety review first
+
+### ACK bruno-3
+- by: bruno
+- refs: dario-1
+- as_of: 2026-03-02T11:14:00+01:00
+- note: review booked before the test
+
+### ACK dario-2
+- by: dario
+- refs: bruno-2
+- as_of: 2026-03-02T12:31:00+02:00
+- note: fine with the review in place
+
+### DECIDE bruno-4
+- by: bruno
+- refs: bruno-2
+- as_of: 2026-03-02T11:48:00+01:00
+
+### HANDOFF ines-4
+- by: ines
+- to: bruno
+- anchors: build=412; tag=v1.4.0
+- as_of: 2026-03-02T12:05:00+01:00
+- text: pour sequence, revision 4
+
+### RECEIPT bruno-5
+- by: bruno
+- refs: ines-4
+- anchors: build=412; tag=v1.4.0
+- as_of: 2026-03-02T12:22:00+01:00
+
+M 100644 inline receipts/bruno-5.json
+data 193
+{
+  "anchors": {
+    "build": "412",
+    "tag": "v1.4.0"
+  },
+  "as_of": "2026-03-02T12:22:00+01:00",
+  "by": "bruno",
+  "handoff": "ines-4",
+  "id": "bruno-5",
+  "schema": "coord/receipt/1"
+}
+
+

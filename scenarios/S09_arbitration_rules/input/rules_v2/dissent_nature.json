@@ -1,0 +1,11 @@
+{
+  "version": 1,
+  "about": "Nature of a response, decided before anything is counted. Ordered: first match wins, exceptions on top.",
+  "no_substance": ["", "-", "none", "n/a", "na", "no objection", "nothing"],
+  "rules": [
+    {"id": "N-EMPTY-DISSENT", "when": {"type": "DISSENT", "substance": false}, "then": "none"},
+    {"id": "N-DISSENT", "when": {"type": "DISSENT"}, "then": "dissent"},
+    {"id": "N-ACK-NOTE", "when": {"type": "ACK", "substance": true}, "then": "note"},
+    {"id": "N-ACK", "when": {"type": "ACK"}, "then": "none"}
+  ]
+}

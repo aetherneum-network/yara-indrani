@@ -1,0 +1,52 @@
+{
+ "blocks": {
+  "livia-2": "ACTIVE",
+  "marco-2": "ACTIVE",
+  "nadia-2": "ACTIVE"
+ },
+ "cycle": [
+  "livia-2",
+  "marco-2",
+  "nadia-2"
+ ],
+ "edges": [
+  [
+   "livia-1",
+   "marco-1"
+  ],
+  [
+   "marco-1",
+   "nadia-1"
+  ],
+  [
+   "nadia-1",
+   "livia-1"
+  ]
+ ],
+ "proposals": {
+  "livia-1": "BLOCKED",
+  "marco-1": "BLOCKED",
+  "nadia-1": "BLOCKED"
+ },
+ "violations": [
+  {
+   "class": "V06",
+   "commit_index": 7,
+   "target": "livia-2+marco-2+nadia-2"
+  }
+ ],
+ "who_blocks_whom": [
+  [
+   "livia",
+   "marco"
+  ],
+  [
+   "marco",
+   "nadia"
+  ],
+  [
+   "nadia",
+   "livia"
+  ]
+ ]
+}

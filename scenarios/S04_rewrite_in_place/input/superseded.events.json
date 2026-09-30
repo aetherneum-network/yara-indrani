@@ -1,0 +1,189 @@
+[
+ {
+  "agents": [
+   {
+    "email": "ines@portoluna.example",
+    "id": "ines",
+    "name": "Inès Carrà",
+    "role": "site lead",
+    "tz": "+01:00"
+   },
+   {
+    "email": "bruno@portoluna.example",
+    "id": "bruno",
+    "name": "Bruno Šťastný",
+    "role": "structures",
+    "tz": "+01:00"
+   },
+   {
+    "email": "carla@portoluna.example",
+    "id": "carla",
+    "name": "Carla Muñoz Peña",
+    "role": "procurement",
+    "tz": "+00:00"
+   }
+  ],
+  "commit_by": "ines",
+  "n": 1,
+  "op": "init",
+  "parents": [],
+  "team": {
+   "company": "Cantiere Portoluna S.r.l.",
+   "domain": "portoluna.example",
+   "key": "portoluna",
+   "title": "Portoluna quay works"
+  },
+  "utc": "2026-03-23T07:45:00Z"
+ },
+ {
+  "commit_by": "ines",
+  "entry": {
+   "as_of": "2026-03-23T09:00:00+01:00",
+   "by": "ines",
+   "id": "ines-1",
+   "text": "Close access to the east ramp on Thursday.",
+   "to": [
+    "bruno",
+    "carla"
+   ],
+   "type": "PROPOSE"
+  },
+  "n": 2,
+  "op": "entry",
+  "parents": [
+   1
+  ],
+  "utc": "2026-03-23T08:02:00Z"
+ },
+ {
+  "commit_by": "bruno",
+  "entry": {
+   "as_of": "2026-03-23T09:17:00+01:00",
+   "by": "bruno",
+   "id": "bruno-1",
+   "refs": [
+    "ines-1"
+   ],
+   "type": "ACK"
+  },
+  "n": 3,
+  "op": "entry",
+  "parents": [
+   2
+  ],
+  "utc": "2026-03-23T08:19:00Z"
+ },
+ {
+  "commit_by": "carla",
+  "entry": {
+   "as_of": "2026-03-23T08:34:00+00:00",
+   "by": "carla",
+   "id": "carla-1",
+   "note": "deliveries moved to the site gate",
+   "refs": [
+    "ines-1"
+   ],
+   "type": "ACK"
+  },
+  "n": 4,
+  "op": "entry",
+  "parents": [
+   3
+  ],
+  "utc": "2026-03-23T08:36:00Z"
+ },
+ {
+  "commit_by": "ines",
+  "entry": {
+   "as_of": "2026-03-23T09:51:00+01:00",
+   "by": "ines",
+   "id": "ines-2",
+   "refs": [
+    "ines-1"
+   ],
+   "type": "DECIDE"
+  },
+  "n": 5,
+  "op": "entry",
+  "parents": [
+   4
+  ],
+  "utc": "2026-03-23T08:53:00Z"
+ },
+ {
+  "commit_by": "ines",
+  "entry": {
+   "as_of": "2026-03-23T10:08:00+01:00",
+   "by": "ines",
+   "id": "ines-3",
+   "supersedes": "ines-1",
+   "text": "Close access to the east ramp on Friday.",
+   "to": [
+    "bruno",
+    "carla"
+   ],
+   "type": "PROPOSE"
+  },
+  "n": 6,
+  "op": "entry",
+  "parents": [
+   5
+  ],
+  "utc": "2026-03-23T09:10:00Z"
+ },
+ {
+  "commit_by": "bruno",
+  "entry": {
+   "as_of": "2026-03-23T10:25:00+01:00",
+   "by": "bruno",
+   "id": "bruno-2",
+   "refs": [
+    "ines-3"
+   ],
+   "type": "ACK"
+  },
+  "n": 7,
+  "op": "entry",
+  "parents": [
+   6
+  ],
+  "utc": "2026-03-23T09:27:00Z"
+ },
+ {
+  "commit_by": "carla",
+  "entry": {
+   "as_of": "2026-03-23T09:42:00+00:00",
+   "by": "carla",
+   "id": "carla-2",
+   "note": "deliveries moved again",
+   "refs": [
+    "ines-3"
+   ],
+   "type": "ACK"
+  },
+  "n": 8,
+  "op": "entry",
+  "parents": [
+   7
+  ],
+  "utc": "2026-03-23T09:44:00Z"
+ },
+ {
+  "commit_by": "ines",
+  "entry": {
+   "as_of": "2026-03-23T10:59:00+01:00",
+   "by": "ines",
+   "id": "ines-4",
+   "refs": [
+    "ines-3"
+   ],
+   "type": "DECIDE"
+  },
+  "n": 9,
+  "op": "entry",
+  "parents": [
+   8
+  ],
+  "utc": "2026-03-23T10:01:00Z"
+ }
+]

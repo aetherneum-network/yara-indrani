@@ -1,0 +1,536 @@
+commit refs/heads/main
+mark :1
+author Teó Bălănescu <teo@fiordaliso.example> 1777276800 +0200
+committer Teó Bălănescu <teo@fiordaliso.example> 1777276800 +0200
+data 37
+coord: open the coordination document
+M 100644 inline COORD.md
+data 437
+# COORD - Fiordaliso lens line
+
+protocol: coord/1
+
+## Agents
+
+- teo | Teó Bălănescu | teo@fiordaliso.example | lab lead
+- uma | Uma Kjærsgård | uma@fiordaliso.example | optics
+- vera | Vera Ångström-Ruiz | vera@fiordaliso.example | calibration
+- walt | Walt Grzybowski | walt@fiordaliso.example | data
+- xenia | Xénia Pașca | xenia@fiordaliso.example | quality
+- yuri | Yuri Håland | yuri@fiordaliso.example | security
+
+## Log
+
+
+commit refs/heads/main
+mark :2
+author Teó Bălănescu <teo@fiordaliso.example> 1777277820 +0200
+committer Teó Bălănescu <teo@fiordaliso.example> 1777277820 +0200
+data 20
+coord: PROPOSE teo-1
+from :1
+M 100644 inline COORD.md
+data 623
+# COORD - Fiordaliso lens line
+
+protocol: coord/1
+
+## Agents
+
+- teo | Teó Bălănescu | teo@fiordaliso.example | lab lead
+- uma | Uma Kjærsgård | uma@fiordaliso.example | optics
+- vera | Vera Ångström-Ruiz | vera@fiordaliso.example | calibration
+- walt | Walt Grzybowski | walt@fiordaliso.example | data
+- xenia | Xénia Pașca | xenia@fiordaliso.example | quality
+- yuri | Yuri Håland | yuri@fiordaliso.example | security
+
+## Log
+
+### PROPOSE teo-1
+- by: teo
+- to: vera
+- resource: calibration-rig/2026-W18
+- class: deadline
+- due: 2026-05-05
+- as_of: 2026-04-27T10:15:00+02:00
+- text: Calibrate the interferometer.
+
+
+commit refs/heads/main
+mark :3
+author Uma Kjærsgård <uma@fiordaliso.example> 1777278840 +0100
+committer Uma Kjærsgård <uma@fiordaliso.example> 1777278840 +0100
+data 20
+coord: PROPOSE uma-1
+from :2
+M 100644 inline COORD.md
+data 805
+# COORD - Fiordaliso lens line
+
+protocol: coord/1
+
+## Agents
+
+- teo | Teó Bălănescu | teo@fiordaliso.example | lab lead
+- uma | Uma Kjærsgård | uma@fiordaliso.example | optics
+- vera | Vera Ångström-Ruiz | vera@fiordaliso.example | calibration
+- walt | Walt Grzybowski | walt@fiordaliso.example | data
+- xenia | Xénia Pașca | xenia@fiordaliso.example | quality
+- yuri | Yuri Håland | yuri@fiordaliso.example | security
+
+## Log
+
+### PROPOSE teo-1
+- by: teo
+- to: vera
+- resource: calibration-rig/2026-W18
+- class: deadline
+- due: 2026-05-05
+- as_of: 2026-04-27T10:15:00+02:00
+- text: Calibrate the interferometer.
+
+### PROPOSE uma-1
+- by: uma
+- to: vera
+- resource: calibration-rig/2026-W18
+- class: deadline
+- due: 2026-05-12
+- as_of: 2026-04-27T09:32:00+01:00
+- text: Re-measure filter lot F2.
+
+
+commit refs/heads/main
+mark :4
+author Vera Ångström-Ruiz <vera@fiordaliso.example> 1777279860 +0100
+committer Vera Ångström-Ruiz <vera@fiordaliso.example> 1777279860 +0100
+data 21
+coord: PROPOSE vera-1
+from :3
+M 100644 inline COORD.md
+data 986
+# COORD - Fiordaliso lens line
+
+protocol: coord/1
+
+## Agents
+
+- teo | Teó Bălănescu | teo@fiordaliso.example | lab lead
+- uma | Uma Kjærsgård | uma@fiordaliso.example | optics
+- vera | Vera Ångström-Ruiz | vera@fiordaliso.example | calibration
+- walt | Walt Grzybowski | walt@fiordaliso.example | data
+- xenia | Xénia Pașca | xenia@fiordaliso.example | quality
+- yuri | Yuri Håland | yuri@fiordaliso.example | security
+
+## Log
+
+### PROPOSE teo-1
+- by: teo
+- to: vera
+- resource: calibration-rig/2026-W18
+- class: deadline
+- due: 2026-05-05
+- as_of: 2026-04-27T10:15:00+02:00
+- text: Calibrate the interferometer.
+
+### PROPOSE uma-1
+- by: uma
+- to: vera
+- resource: calibration-rig/2026-W18
+- class: deadline
+- due: 2026-05-12
+- as_of: 2026-04-27T09:32:00+01:00
+- text: Re-measure filter lot F2.
+
+### PROPOSE vera-1
+- by: vera
+- to: teo
+- resource: data-analyst/2026-W18
+- class: deadline
+- due: 2026-05-08
+- as_of: 2026-04-27T09:49:00+01:00
+- text: Re-measure prism order 88.
+
+
+commit refs/heads/main
+mark :5
+author Walt Grzybowski <walt@fiordaliso.example> 1777280880 -0500
+committer Walt Grzybowski <walt@fiordaliso.example> 1777280880 -0500
+data 21
+coord: PROPOSE walt-1
+from :4
+M 100644 inline COORD.md
+data 1161
+# COORD - Fiordaliso lens line
+
+protocol: coord/1
+
+## Agents
+
+- teo | Teó Bălănescu | teo@fiordaliso.example | lab lead
+- uma | Uma Kjærsgård | uma@fiordaliso.example | optics
+- vera | Vera Ångström-Ruiz | vera@fiordaliso.example | calibration
+- walt | Walt Grzybowski | walt@fiordaliso.example | data
+- xenia | Xénia Pașca | xenia@fiordaliso.example | quality
+- yuri | Yuri Håland | yuri@fiordaliso.example | security
+
+## Log
+
+### PROPOSE teo-1
+- by: teo
+- to: vera
+- resource: calibration-rig/2026-W18
+- class: deadline
+- due: 2026-05-05
+- as_of: 2026-04-27T10:15:00+02:00
+- text: Calibrate the interferometer.
+
+### PROPOSE uma-1
+- by: uma
+- to: vera
+- resource: calibration-rig/2026-W18
+- class: deadline
+- due: 2026-05-12
+- as_of: 2026-04-27T09:32:00+01:00
+- text: Re-measure filter lot F2.
+
+### PROPOSE vera-1
+- by: vera
+- to: teo
+- resource: data-analyst/2026-W18
+- class: deadline
+- due: 2026-05-08
+- as_of: 2026-04-27T09:49:00+01:00
+- text: Re-measure prism order 88.
+
+### PROPOSE walt-1
+- by: walt
+- to: teo
+- resource: data-analyst/2026-W18
+- class: deadline
+- due: 2026-05-08
+- as_of: 2026-04-27T04:06:00-05:00
+- text: Accept mould set M5.
+
+
+commit refs/heads/main
+mark :6
+author Xénia Pașca <xenia@fiordaliso.example> 1777281900 +0200
+committer Xénia Pașca <xenia@fiordaliso.example> 1777281900 +0200
+data 22
+coord: PROPOSE xenia-1
+from :5
+M 100644 inline COORD.md
+data 1329
+# COORD - Fiordaliso lens line
+
+protocol: coord/1
+
+## Agents
+
+- teo | Teó Bălănescu | teo@fiordaliso.example | lab lead
+- uma | Uma Kjærsgård | uma@fiordaliso.example | optics
+- vera | Vera Ångström-Ruiz | vera@fiordaliso.example | calibration
+- walt | Walt Grzybowski | walt@fiordaliso.example | data
+- xenia | Xénia Pașca | xenia@fiordaliso.example | quality
+- yuri | Yuri Håland | yuri@fiordaliso.example | security
+
+## Log
+
+### PROPOSE teo-1
+- by: teo
+- to: vera
+- resource: calibration-rig/2026-W18
+- class: deadline
+- due: 2026-05-05
+- as_of: 2026-04-27T10:15:00+02:00
+- text: Calibrate the interferometer.
+
+### PROPOSE uma-1
+- by: uma
+- to: vera
+- resource: calibration-rig/2026-W18
+- class: deadline
+- due: 2026-05-12
+- as_of: 2026-04-27T09:32:00+01:00
+- text: Re-measure filter lot F2.
+
+### PROPOSE vera-1
+- by: vera
+- to: teo
+- resource: data-analyst/2026-W18
+- class: deadline
+- due: 2026-05-08
+- as_of: 2026-04-27T09:49:00+01:00
+- text: Re-measure prism order 88.
+
+### PROPOSE walt-1
+- by: walt
+- to: teo
+- resource: data-analyst/2026-W18
+- class: deadline
+- due: 2026-05-08
+- as_of: 2026-04-27T04:06:00-05:00
+- text: Accept mould set M5.
+
+### PROPOSE xenia-1
+- by: xenia
+- to: teo
+- resource: security-review/2026-W18
+- class: safety
+- as_of: 2026-04-27T11:23:00+02:00
+- text: Quarantine coating batch 27.
+
+
+commit refs/heads/main
+mark :7
+author Yuri Håland <yuri@fiordaliso.example> 1777282920 +0100
+committer Yuri Håland <yuri@fiordaliso.example> 1777282920 +0100
+data 21
+coord: PROPOSE yuri-1
+from :6
+M 100644 inline COORD.md
+data 1489
+# COORD - Fiordaliso lens line
+
+protocol: coord/1
+
+## Agents
+
+- teo | Teó Bălănescu | teo@fiordaliso.example | lab lead
+- uma | Uma Kjærsgård | uma@fiordaliso.example | optics
+- vera | Vera Ångström-Ruiz | vera@fiordaliso.example | calibration
+- walt | Walt Grzybowski | walt@fiordaliso.example | data
+- xenia | Xénia Pașca | xenia@fiordaliso.example | quality
+- yuri | Yuri Håland | yuri@fiordaliso.example | security
+
+## Log
+
+### PROPOSE teo-1
+- by: teo
+- to: vera
+- resource: calibration-rig/2026-W18
+- class: deadline
+- due: 2026-05-05
+- as_of: 2026-04-27T10:15:00+02:00
+- text: Calibrate the interferometer.
+
+### PROPOSE uma-1
+- by: uma
+- to: vera
+- resource: calibration-rig/2026-W18
+- class: deadline
+- due: 2026-05-12
+- as_of: 2026-04-27T09:32:00+01:00
+- text: Re-measure filter lot F2.
+
+### PROPOSE vera-1
+- by: vera
+- to: teo
+- resource: data-analyst/2026-W18
+- class: deadline
+- due: 2026-05-08
+- as_of: 2026-04-27T09:49:00+01:00
+- text: Re-measure prism order 88.
+
+### PROPOSE walt-1
+- by: walt
+- to: teo
+- resource: data-analyst/2026-W18
+- class: deadline
+- due: 2026-05-08
+- as_of: 2026-04-27T04:06:00-05:00
+- text: Accept mould set M5.
+
+### PROPOSE xenia-1
+- by: xenia
+- to: teo
+- resource: security-review/2026-W18
+- class: safety
+- as_of: 2026-04-27T11:23:00+02:00
+- text: Quarantine coating batch 27.
+
+### PROPOSE yuri-1
+- by: yuri
+- to: teo
+- resource: security-review/2026-W18
+- class: safety
+- as_of: 2026-04-27T10:40:00+01:00
+- text: Quarantine polisher 4.
+
+
+commit refs/heads/main
+mark :8
+author Vera Ångström-Ruiz <vera@fiordaliso.example> 1777283940 +0100
+committer Vera Ångström-Ruiz <vera@fiordaliso.example> 1777283940 +0100
+data 23
+coord: ARBITRATE vera-2
+from :7
+M 100644 inline COORD.md
+data 1634
+# COORD - Fiordaliso lens line
+
+protocol: coord/1
+
+## Agents
+
+- teo | Teó Bălănescu | teo@fiordaliso.example | lab lead
+- uma | Uma Kjærsgård | uma@fiordaliso.example | optics
+- vera | Vera Ångström-Ruiz | vera@fiordaliso.example | calibration
+- walt | Walt Grzybowski | walt@fiordaliso.example | data
+- xenia | Xénia Pașca | xenia@fiordaliso.example | quality
+- yuri | Yuri Håland | yuri@fiordaliso.example | security
+
+## Log
+
+### PROPOSE teo-1
+- by: teo
+- to: vera
+- resource: calibration-rig/2026-W18
+- class: deadline
+- due: 2026-05-05
+- as_of: 2026-04-27T10:15:00+02:00
+- text: Calibrate the interferometer.
+
+### PROPOSE uma-1
+- by: uma
+- to: vera
+- resource: calibration-rig/2026-W18
+- class: deadline
+- due: 2026-05-12
+- as_of: 2026-04-27T09:32:00+01:00
+- text: Re-measure filter lot F2.
+
+### PROPOSE vera-1
+- by: vera
+- to: teo
+- resource: data-analyst/2026-W18
+- class: deadline
+- due: 2026-05-08
+- as_of: 2026-04-27T09:49:00+01:00
+- text: Re-measure prism order 88.
+
+### PROPOSE walt-1
+- by: walt
+- to: teo
+- resource: data-analyst/2026-W18
+- class: deadline
+- due: 2026-05-08
+- as_of: 2026-04-27T04:06:00-05:00
+- text: Accept mould set M5.
+
+### PROPOSE xenia-1
+- by: xenia
+- to: teo
+- resource: security-review/2026-W18
+- class: safety
+- as_of: 2026-04-27T11:23:00+02:00
+- text: Quarantine coating batch 27.
+
+### PROPOSE yuri-1
+- by: yuri
+- to: teo
+- resource: security-review/2026-W18
+- class: safety
+- as_of: 2026-04-27T10:40:00+01:00
+- text: Quarantine polisher 4.
+
+### ARBITRATE vera-2
+- by: vera
+- refs: teo-1, uma-1
+- rule: R-DUE
+- outcome: teo-1
+- as_of: 2026-04-27T10:57:00+01:00
+- text: earlier due date
+
+
+commit refs/heads/main
+mark :9
+author Uma Kjærsgård <uma@fiordaliso.example> 1777284960 +0100
+committer Uma Kjærsgård <uma@fiordaliso.example> 1777284960 +0100
+data 20
+coord: DISSENT uma-2
+from :8
+M 100644 inline COORD.md
+data 1753
+# COORD - Fiordaliso lens line
+
+protocol: coord/1
+
+## Agents
+
+- teo | Teó Bălănescu | teo@fiordaliso.example | lab lead
+- uma | Uma Kjærsgård | uma@fiordaliso.example | optics
+- vera | Vera Ångström-Ruiz | vera@fiordaliso.example | calibration
+- walt | Walt Grzybowski | walt@fiordaliso.example | data
+- xenia | Xénia Pașca | xenia@fiordaliso.example | quality
+- yuri | Yuri Håland | yuri@fiordaliso.example | security
+
+## Log
+
+### PROPOSE teo-1
+- by: teo
+- to: vera
+- resource: calibration-rig/2026-W18
+- class: deadline
+- due: 2026-05-05
+- as_of: 2026-04-27T10:15:00+02:00
+- text: Calibrate the interferometer.
+
+### PROPOSE uma-1
+- by: uma
+- to: vera
+- resource: calibration-rig/2026-W18
+- class: deadline
+- due: 2026-05-12
+- as_of: 2026-04-27T09:32:00+01:00
+- text: Re-measure filter lot F2.
+
+### PROPOSE vera-1
+- by: vera
+- to: teo
+- resource: data-analyst/2026-W18
+- class: deadline
+- due: 2026-05-08
+- as_of: 2026-04-27T09:49:00+01:00
+- text: Re-measure prism order 88.
+
+### PROPOSE walt-1
+- by: walt
+- to: teo
+- resource: data-analyst/2026-W18
+- class: deadline
+- due: 2026-05-08
+- as_of: 2026-04-27T04:06:00-05:00
+- text: Accept mould set M5.
+
+### PROPOSE xenia-1
+- by: xenia
+- to: teo
+- resource: security-review/2026-W18
+- class: safety
+- as_of: 2026-04-27T11:23:00+02:00
+- text: Quarantine coating batch 27.
+
+### PROPOSE yuri-1
+- by: yuri
+- to: teo
+- resource: security-review/2026-W18
+- class: safety
+- as_of: 2026-04-27T10:40:00+01:00
+- text: Quarantine polisher 4.
+
+### ARBITRATE vera-2
+- by: vera
+- refs: teo-1, uma-1
+- rule: R-DUE
+- outcome: teo-1
+- as_of: 2026-04-27T10:57:00+01:00
+- text: earlier due date
+
+### DISSENT uma-2
+- by: uma
+- refs: vera-2
+- as_of: 2026-04-27T11:14:00+01:00
+- text: the lot expires before the 12th
+
+

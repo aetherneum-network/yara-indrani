@@ -1,0 +1,28 @@
+{
+ "cites": [
+  "handoffs/livia-3.json",
+  "receipts/oscar-2.json"
+ ],
+ "diff": [
+  {
+   "anchor": "build",
+   "handoff": "2417",
+   "receipt": "2471"
+  }
+ ],
+ "handoffs": {
+  "livia-3": "MISMATCH"
+ },
+ "lint_ok": false,
+ "proposals": {
+  "livia-1": "DECIDED"
+ },
+ "release_gate": "BLOCKED",
+ "violations": [
+  {
+   "class": "V04",
+   "commit_index": 7,
+   "target": "livia-3"
+  }
+ ]
+}

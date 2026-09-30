@@ -1,0 +1,163 @@
+commit refs/heads/main
+mark :1
+author Lívia Sàez-Brontë <livia@meridiana.example> 1774858200 +0200
+committer Lívia Sàez-Brontë <livia@meridiana.example> 1774858200 +0200
+data 37
+coord: open the coordination document
+M 100644 inline COORD.md
+data 268
+# COORD - Meridiana autumn list
+
+protocol: coord/1
+
+## Agents
+
+- livia | Lívia Sàez-Brontë | livia@meridiana.example | managing editor
+- marco | Marco D'Anjò | marco@meridiana.example | copy desk
+- nadia | Nadia Øvrebø | nadia@meridiana.example | design
+
+## Log
+
+
+commit refs/heads/main
+mark :2
+author Lívia Sàez-Brontë <livia@meridiana.example> 1774859220 +0200
+committer Lívia Sàez-Brontë <livia@meridiana.example> 1774859220 +0200
+data 22
+coord: PROPOSE livia-1
+from :1
+M 100644 inline COORD.md
+data 391
+# COORD - Meridiana autumn list
+
+protocol: coord/1
+
+## Agents
+
+- livia | Lívia Sàez-Brontë | livia@meridiana.example | managing editor
+- marco | Marco D'Anjò | marco@meridiana.example | copy desk
+- nadia | Nadia Øvrebø | nadia@meridiana.example | design
+
+## Log
+
+### PROPOSE livia-1
+- by: livia
+- to: marco, nadia
+- as_of: 2026-03-30T10:25:00+02:00
+- text: Lock the cover of title 12.
+
+
+commit refs/heads/main
+mark :3
+author Marco D'Anjò <marco@meridiana.example> 1774860240 +0100
+committer Marco D'Anjò <marco@meridiana.example> 1774860240 +0100
+data 18
+coord: ACK marco-1
+from :2
+M 100644 inline COORD.md
+data 471
+# COORD - Meridiana autumn list
+
+protocol: coord/1
+
+## Agents
+
+- livia | Lívia Sàez-Brontë | livia@meridiana.example | managing editor
+- marco | Marco D'Anjò | marco@meridiana.example | copy desk
+- nadia | Nadia Øvrebø | nadia@meridiana.example | design
+
+## Log
+
+### PROPOSE livia-1
+- by: livia
+- to: marco, nadia
+- as_of: 2026-03-30T10:25:00+02:00
+- text: Lock the cover of title 12.
+
+### ACK marco-1
+- by: marco
+- refs: livia-1
+- as_of: 2026-03-30T09:42:00+01:00
+
+
+commit refs/heads/main
+mark :4
+author Lívia Sàez-Brontë <livia@meridiana.example> 1774861260 +0200
+committer Lívia Sàez-Brontë <livia@meridiana.example> 1774861260 +0200
+data 18
+coord: ACK nadia-1
+from :3
+M 100644 inline COORD.md
+data 551
+# COORD - Meridiana autumn list
+
+protocol: coord/1
+
+## Agents
+
+- livia | Lívia Sàez-Brontë | livia@meridiana.example | managing editor
+- marco | Marco D'Anjò | marco@meridiana.example | copy desk
+- nadia | Nadia Øvrebø | nadia@meridiana.example | design
+
+## Log
+
+### PROPOSE livia-1
+- by: livia
+- to: marco, nadia
+- as_of: 2026-03-30T10:25:00+02:00
+- text: Lock the cover of title 12.
+
+### ACK marco-1
+- by: marco
+- refs: livia-1
+- as_of: 2026-03-30T09:42:00+01:00
+
+### ACK nadia-1
+- by: nadia
+- refs: livia-1
+- as_of: 2026-03-30T09:59:00+01:00
+
+
+commit refs/heads/main
+mark :5
+author Lívia Sàez-Brontë <livia@meridiana.example> 1774862280 +0200
+committer Lívia Sàez-Brontë <livia@meridiana.example> 1774862280 +0200
+data 21
+coord: DECIDE livia-2
+from :4
+M 100644 inline COORD.md
+data 634
+# COORD - Meridiana autumn list
+
+protocol: coord/1
+
+## Agents
+
+- livia | Lívia Sàez-Brontë | livia@meridiana.example | managing editor
+- marco | Marco D'Anjò | marco@meridiana.example | copy desk
+- nadia | Nadia Øvrebø | nadia@meridiana.example | design
+
+## Log
+
+### PROPOSE livia-1
+- by: livia
+- to: marco, nadia
+- as_of: 2026-03-30T10:25:00+02:00
+- text: Lock the cover of title 12.
+
+### ACK marco-1
+- by: marco
+- refs: livia-1
+- as_of: 2026-03-30T09:42:00+01:00
+
+### ACK nadia-1
+- by: nadia
+- refs: livia-1
+- as_of: 2026-03-30T09:59:00+01:00
+
+### DECIDE livia-2
+- by: livia
+- refs: livia-1
+- as_of: 2026-03-30T11:16:00+02:00
+
+

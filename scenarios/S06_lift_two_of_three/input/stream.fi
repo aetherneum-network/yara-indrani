@@ -1,0 +1,125 @@
+commit refs/heads/main
+mark :1
+author Teó Bălănescu <teo@fiordaliso.example> 1775462400 +0200
+committer Teó Bălănescu <teo@fiordaliso.example> 1775462400 +0200
+data 37
+coord: open the coordination document
+M 100644 inline COORD.md
+data 259
+# COORD - Fiordaliso lens line
+
+protocol: coord/1
+
+## Agents
+
+- teo | Teó Bălănescu | teo@fiordaliso.example | lab lead
+- uma | Uma Kjærsgård | uma@fiordaliso.example | optics
+- vera | Vera Ångström-Ruiz | vera@fiordaliso.example | calibration
+
+## Log
+
+
+commit refs/heads/main
+mark :2
+author Teó Bălănescu <teo@fiordaliso.example> 1775463420 +0200
+committer Teó Bălănescu <teo@fiordaliso.example> 1775463420 +0200
+data 19
+coord: FREEZE teo-1
+from :1
+M 100644 inline COORD.md
+data 405
+# COORD - Fiordaliso lens line
+
+protocol: coord/1
+
+## Agents
+
+- teo | Teó Bălănescu | teo@fiordaliso.example | lab lead
+- uma | Uma Kjærsgård | uma@fiordaliso.example | optics
+- vera | Vera Ångström-Ruiz | vera@fiordaliso.example | calibration
+
+## Log
+
+### FREEZE teo-1
+- by: teo
+- to: uma, vera
+- scope: lens-release
+- as_of: 2026-04-06T10:15:00+02:00
+- text: coating batch 27 is out of tolerance
+
+
+commit refs/heads/main
+mark :3
+author Teó Bălănescu <teo@fiordaliso.example> 1775464440 +0200
+committer Teó Bălănescu <teo@fiordaliso.example> 1775464440 +0200
+data 17
+coord: LIFT teo-2
+from :2
+M 100644 inline COORD.md
+data 506
+# COORD - Fiordaliso lens line
+
+protocol: coord/1
+
+## Agents
+
+- teo | Teó Bălănescu | teo@fiordaliso.example | lab lead
+- uma | Uma Kjærsgård | uma@fiordaliso.example | optics
+- vera | Vera Ångström-Ruiz | vera@fiordaliso.example | calibration
+
+## Log
+
+### FREEZE teo-1
+- by: teo
+- to: uma, vera
+- scope: lens-release
+- as_of: 2026-04-06T10:15:00+02:00
+- text: coating batch 27 is out of tolerance
+
+### LIFT teo-2
+- by: teo
+- refs: teo-1
+- as_of: 2026-04-06T10:32:00+02:00
+- text: batch re-measured
+
+
+commit refs/heads/main
+mark :4
+author Uma Kjærsgård <uma@fiordaliso.example> 1775465460 +0100
+committer Uma Kjærsgård <uma@fiordaliso.example> 1775465460 +0100
+data 16
+coord: ACK uma-1
+from :3
+M 100644 inline COORD.md
+data 580
+# COORD - Fiordaliso lens line
+
+protocol: coord/1
+
+## Agents
+
+- teo | Teó Bălănescu | teo@fiordaliso.example | lab lead
+- uma | Uma Kjærsgård | uma@fiordaliso.example | optics
+- vera | Vera Ångström-Ruiz | vera@fiordaliso.example | calibration
+
+## Log
+
+### FREEZE teo-1
+- by: teo
+- to: uma, vera
+- scope: lens-release
+- as_of: 2026-04-06T10:15:00+02:00
+- text: coating batch 27 is out of tolerance
+
+### LIFT teo-2
+- by: teo
+- refs: teo-1
+- as_of: 2026-04-06T10:32:00+02:00
+- text: batch re-measured
+
+### ACK uma-1
+- by: uma
+- refs: teo-2
+- as_of: 2026-04-06T09:49:00+01:00
+
+

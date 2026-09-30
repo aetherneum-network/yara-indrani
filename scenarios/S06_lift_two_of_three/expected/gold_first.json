@@ -1,0 +1,17 @@
+{
+ "arbitrations": [],
+ "commits": 4,
+ "edges": [],
+ "release_gate": "BLOCKED",
+ "state": {
+  "blocks": {},
+  "conflicts": {},
+  "disputes": {},
+  "freezes": {
+   "teo-1": "FROZEN"
+  },
+  "handoffs": {},
+  "proposals": {}
+ },
+ "violations": []
+}

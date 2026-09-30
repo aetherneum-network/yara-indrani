@@ -1,0 +1,15 @@
+{
+ "disputes": {
+  "dario-1": "CLOSED"
+ },
+ "handoffs": {
+  "ines-4": "RECEIVED"
+ },
+ "lint_ok": true,
+ "proposals": {
+  "bruno-2": "DECIDED",
+  "ines-1": "DECIDED"
+ },
+ "release_gate": "OPEN",
+ "violations": []
+}

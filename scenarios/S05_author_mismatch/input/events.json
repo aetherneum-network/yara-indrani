@@ -1,0 +1,112 @@
+[
+ {
+  "agents": [
+   {
+    "email": "livia@meridiana.example",
+    "id": "livia",
+    "name": "Lívia Sàez-Brontë",
+    "role": "managing editor",
+    "tz": "+02:00"
+   },
+   {
+    "email": "marco@meridiana.example",
+    "id": "marco",
+    "name": "Marco D'Anjò",
+    "role": "copy desk",
+    "tz": "+01:00"
+   },
+   {
+    "email": "nadia@meridiana.example",
+    "id": "nadia",
+    "name": "Nadia Øvrebø",
+    "role": "design",
+    "tz": "+01:00"
+   }
+  ],
+  "commit_by": "livia",
+  "n": 1,
+  "op": "init",
+  "parents": [],
+  "team": {
+   "company": "Editrice Meridiana S.r.l.",
+   "domain": "meridiana.example",
+   "key": "meridiana",
+   "title": "Meridiana autumn list"
+  },
+  "utc": "2026-03-30T08:10:00Z"
+ },
+ {
+  "commit_by": "livia",
+  "entry": {
+   "as_of": "2026-03-30T10:25:00+02:00",
+   "by": "livia",
+   "id": "livia-1",
+   "text": "Lock the cover of title 12.",
+   "to": [
+    "marco",
+    "nadia"
+   ],
+   "type": "PROPOSE"
+  },
+  "n": 2,
+  "op": "entry",
+  "parents": [
+   1
+  ],
+  "utc": "2026-03-30T08:27:00Z"
+ },
+ {
+  "commit_by": "marco",
+  "entry": {
+   "as_of": "2026-03-30T09:42:00+01:00",
+   "by": "marco",
+   "id": "marco-1",
+   "refs": [
+    "livia-1"
+   ],
+   "type": "ACK"
+  },
+  "n": 3,
+  "op": "entry",
+  "parents": [
+   2
+  ],
+  "utc": "2026-03-30T08:44:00Z"
+ },
+ {
+  "commit_by": "livia",
+  "entry": {
+   "as_of": "2026-03-30T09:59:00+01:00",
+   "by": "nadia",
+   "id": "nadia-1",
+   "refs": [
+    "livia-1"
+   ],
+   "type": "ACK"
+  },
+  "n": 4,
+  "op": "entry",
+  "parents": [
+   3
+  ],
+  "utc": "2026-03-30T09:01:00Z"
+ },
+ {
+  "commit_by": "livia",
+  "entry": {
+   "as_of": "2026-03-30T11:16:00+02:00",
+   "by": "livia",
+   "id": "livia-2",
+   "refs": [
+    "livia-1"
+   ],
+   "type": "DECIDE"
+  },
+  "n": 5,
+  "op": "entry",
+  "parents": [
+   4
+  ],
+  "utc": "2026-03-30T09:18:00Z"
+ }
+]

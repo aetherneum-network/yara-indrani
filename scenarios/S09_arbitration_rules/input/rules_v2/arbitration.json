@@ -1,0 +1,61 @@
+{
+ "about": "Arbitration of two claims on the same resource. Ordered: first match wins, exceptions on top. No match = ESCALATE_TO_HUMAN.",
+ "default_class": "routine",
+ "rules": [
+  {
+   "id": "R-SAFETY",
+   "then": {
+    "winner": {
+     "with": {
+      "class": "safety"
+     }
+    }
+   },
+   "when": {
+    "exactly_one": {
+     "class": "safety"
+    }
+   }
+  },
+  {
+   "id": "R-DUE",
+   "then": {
+    "winner": {
+     "lowest": "due"
+    }
+   },
+   "when": {
+    "both_have": "due",
+    "differ": "due",
+    "neither": {
+     "class": "safety"
+    }
+   }
+  },
+  {
+   "id": "R-TIE-FIRST",
+   "then": {
+    "winner": "first"
+   },
+   "when": {
+    "both_have": "due",
+    "neither": {
+     "class": "safety"
+    },
+    "same": "due"
+   }
+  },
+  {
+   "id": "R-FIRST",
+   "then": {
+    "winner": "first"
+   },
+   "when": {
+    "both": {
+     "class": "routine"
+    }
+   }
+  }
+ ],
+ "version": 2
+}

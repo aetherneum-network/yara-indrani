@@ -1,0 +1,23 @@
+{
+ "arbitrations": [],
+ "commits": 6,
+ "edges": [],
+ "release_gate": "OPEN",
+ "state": {
+  "blocks": {},
+  "conflicts": {},
+  "disputes": {},
+  "freezes": {},
+  "handoffs": {},
+  "proposals": {
+   "ines-1": "TO_CONFIRM"
+  }
+ },
+ "violations": [
+  {
+   "class": "V01",
+   "commit_index": 6,
+   "target": "ines-1"
+  }
+ ]
+}

@@ -1,0 +1,819 @@
+[
+ {
+  "agents": [
+   {
+    "email": "ines@portoluna.example",
+    "id": "ines",
+    "name": "Inès Carrà",
+    "role": "site lead",
+    "tz": "+01:00"
+   },
+   {
+    "email": "bruno@portoluna.example",
+    "id": "bruno",
+    "name": "Bruno Šťastný",
+    "role": "structures",
+    "tz": "+01:00"
+   },
+   {
+    "email": "carla@portoluna.example",
+    "id": "carla",
+    "name": "Carla Muñoz Peña",
+    "role": "procurement",
+    "tz": "+00:00"
+   },
+   {
+    "email": "dario@portoluna.example",
+    "id": "dario",
+    "name": "Dário Åkesson",
+    "role": "safety",
+    "tz": "+02:00"
+   },
+   {
+    "email": "elio@portoluna.example",
+    "id": "elio",
+    "name": "Elio Đorđević",
+    "role": "surveying",
+    "tz": "+01:00"
+   },
+   {
+    "email": "fiona@portoluna.example",
+    "id": "fiona",
+    "name": "Fíona Ó Briain",
+    "role": "design",
+    "tz": "+00:00"
+   }
+  ],
+  "commit_by": "ines",
+  "n": 1,
+  "op": "init",
+  "parents": [],
+  "team": {
+   "company": "Cantiere Portoluna S.r.l.",
+   "domain": "portoluna.example",
+   "key": "portoluna",
+   "title": "Portoluna quay works"
+  },
+  "utc": "2026-04-13T07:00:00Z"
+ },
+ {
+  "commit_by": "ines",
+  "entry": {
+   "as_of": "2026-04-13T08:07:00+01:00",
+   "by": "ines",
+   "id": "ines-1",
+   "text": "Inspect slab B2.",
+   "to": [
+    "bruno",
+    "carla",
+    "dario",
+    "elio"
+   ],
+   "type": "PROPOSE"
+  },
+  "n": 2,
+  "op": "entry",
+  "parents": [
+   1
+  ],
+  "utc": "2026-04-13T07:09:00Z"
+ },
+ {
+  "commit_by": "bruno",
+  "entry": {
+   "as_of": "2026-04-13T08:16:00+01:00",
+   "by": "bruno",
+   "id": "bruno-1",
+   "refs": [
+    "ines-1"
+   ],
+   "text": "the sequence breaks the cure time",
+   "type": "DISSENT"
+  },
+  "n": 3,
+  "op": "entry",
+  "parents": [
+   2
+  ],
+  "utc": "2026-04-13T07:18:00Z"
+ },
+ {
+  "commit_by": "carla",
+  "entry": {
+   "as_of": "2026-04-13T07:25:00+00:00",
+   "by": "carla",
+   "id": "carla-1",
+   "note": "fine from my side",
+   "refs": [
+    "ines-1"
+   ],
+   "type": "ACK"
+  },
+  "n": 4,
+  "op": "entry",
+  "parents": [
+   3
+  ],
+  "utc": "2026-04-13T07:27:00Z"
+ },
+ {
+  "commit_by": "dario",
+  "entry": {
+   "as_of": "2026-04-13T09:34:00+02:00",
+   "by": "dario",
+   "id": "dario-1",
+   "note": "seen, no change needed",
+   "refs": [
+    "ines-1"
+   ],
+   "type": "ACK"
+  },
+  "n": 5,
+  "op": "entry",
+  "parents": [
+   4
+  ],
+  "utc": "2026-04-13T07:36:00Z"
+ },
+ {
+  "commit_by": "elio",
+  "entry": {
+   "as_of": "2026-04-13T08:43:00+01:00",
+   "by": "elio",
+   "id": "elio-1",
+   "note": "agreed with the sequence",
+   "refs": [
+    "ines-1"
+   ],
+   "type": "ACK"
+  },
+  "n": 6,
+  "op": "entry",
+  "parents": [
+   5
+  ],
+  "utc": "2026-04-13T07:45:00Z"
+ },
+ {
+  "commit_by": "ines",
+  "entry": {
+   "as_of": "2026-04-13T08:52:00+01:00",
+   "by": "ines",
+   "id": "ines-2",
+   "text": "Inspect pier cap 4.",
+   "to": [
+    "bruno",
+    "carla",
+    "dario",
+    "elio"
+   ],
+   "type": "PROPOSE"
+  },
+  "n": 7,
+  "op": "entry",
+  "parents": [
+   6
+  ],
+  "utc": "2026-04-13T07:54:00Z"
+ },
+ {
+  "commit_by": "bruno",
+  "entry": {
+   "as_of": "2026-04-13T09:01:00+01:00",
+   "by": "bruno",
+   "id": "bruno-2",
+   "note": "fine from my side",
+   "refs": [
+    "ines-2"
+   ],
+   "type": "ACK"
+  },
+  "n": 8,
+  "op": "entry",
+  "parents": [
+   7
+  ],
+  "utc": "2026-04-13T08:03:00Z"
+ },
+ {
+  "commit_by": "carla",
+  "entry": {
+   "as_of": "2026-04-13T08:10:00+00:00",
+   "by": "carla",
+   "id": "carla-2",
+   "refs": [
+    "ines-2"
+   ],
+   "text": "the figure does not match my count",
+   "type": "DISSENT"
+  },
+  "n": 9,
+  "op": "entry",
+  "parents": [
+   8
+  ],
+  "utc": "2026-04-13T08:12:00Z"
+ },
+ {
+  "commit_by": "dario",
+  "entry": {
+   "as_of": "2026-04-13T10:19:00+02:00",
+   "by": "dario",
+   "id": "dario-2",
+   "note": "agreed with the sequence",
+   "refs": [
+    "ines-2"
+   ],
+   "type": "ACK"
+  },
+  "n": 10,
+  "op": "entry",
+  "parents": [
+   9
+  ],
+  "utc": "2026-04-13T08:21:00Z"
+ },
+ {
+  "commit_by": "elio",
+  "entry": {
+   "as_of": "2026-04-13T09:28:00+01:00",
+   "by": "elio",
+   "id": "elio-2",
+   "note": "counts match mine",
+   "refs": [
+    "ines-2"
+   ],
+   "type": "ACK"
+  },
+  "n": 11,
+  "op": "entry",
+  "parents": [
+   10
+  ],
+  "utc": "2026-04-13T08:30:00Z"
+ },
+ {
+  "commit_by": "ines",
+  "entry": {
+   "as_of": "2026-04-13T09:37:00+01:00",
+   "by": "ines",
+   "id": "ines-3",
+   "text": "Inspect the east ramp.",
+   "to": [
+    "bruno",
+    "carla",
+    "dario",
+    "elio"
+   ],
+   "type": "PROPOSE"
+  },
+  "n": 12,
+  "op": "entry",
+  "parents": [
+   11
+  ],
+  "utc": "2026-04-13T08:39:00Z"
+ },
+ {
+  "commit_by": "bruno",
+  "entry": {
+   "as_of": "2026-04-13T09:46:00+01:00",
+   "by": "bruno",
+   "id": "bruno-3",
+   "note": "seen, no change needed",
+   "refs": [
+    "ines-3"
+   ],
+   "type": "ACK"
+  },
+  "n": 13,
+  "op": "entry",
+  "parents": [
+   12
+  ],
+  "utc": "2026-04-13T08:48:00Z"
+ },
+ {
+  "commit_by": "carla",
+  "entry": {
+   "as_of": "2026-04-13T08:55:00+00:00",
+   "by": "carla",
+   "id": "carla-3",
+   "note": "agreed with the sequence",
+   "refs": [
+    "ines-3"
+   ],
+   "type": "ACK"
+  },
+  "n": 14,
+  "op": "entry",
+  "parents": [
+   13
+  ],
+  "utc": "2026-04-13T08:57:00Z"
+ },
+ {
+  "commit_by": "dario",
+  "entry": {
+   "as_of": "2026-04-13T11:04:00+02:00",
+   "by": "dario",
+   "id": "dario-3",
+   "refs": [
+    "ines-3"
+   ],
+   "text": "this needs the safety review first",
+   "type": "DISSENT"
+  },
+  "n": 15,
+  "op": "entry",
+  "parents": [
+   14
+  ],
+  "utc": "2026-04-13T09:06:00Z"
+ },
+ {
+  "commit_by": "elio",
+  "entry": {
+   "as_of": "2026-04-13T10:13:00+01:00",
+   "by": "elio",
+   "id": "elio-3",
+   "note": "ok after the second reading",
+   "refs": [
+    "ines-3"
+   ],
+   "type": "ACK"
+  },
+  "n": 16,
+  "op": "entry",
+  "parents": [
+   15
+  ],
+  "utc": "2026-04-13T09:15:00Z"
+ },
+ {
+  "commit_by": "ines",
+  "entry": {
+   "as_of": "2026-04-13T10:22:00+01:00",
+   "by": "ines",
+   "id": "ines-4",
+   "text": "Inspect crane pad C.",
+   "to": [
+    "bruno",
+    "carla",
+    "dario",
+    "elio"
+   ],
+   "type": "PROPOSE"
+  },
+  "n": 17,
+  "op": "entry",
+  "parents": [
+   16
+  ],
+  "utc": "2026-04-13T09:24:00Z"
+ },
+ {
+  "commit_by": "bruno",
+  "entry": {
+   "as_of": "2026-04-13T10:31:00+01:00",
+   "by": "bruno",
+   "id": "bruno-4",
+   "note": "agreed with the sequence",
+   "refs": [
+    "ines-4"
+   ],
+   "type": "ACK"
+  },
+  "n": 18,
+  "op": "entry",
+  "parents": [
+   17
+  ],
+  "utc": "2026-04-13T09:33:00Z"
+ },
+ {
+  "commit_by": "carla",
+  "entry": {
+   "as_of": "2026-04-13T09:40:00+00:00",
+   "by": "carla",
+   "id": "carla-4",
+   "note": "counts match mine",
+   "refs": [
+    "ines-4"
+   ],
+   "type": "ACK"
+  },
+  "n": 19,
+  "op": "entry",
+  "parents": [
+   18
+  ],
+  "utc": "2026-04-13T09:42:00Z"
+ },
+ {
+  "commit_by": "dario",
+  "entry": {
+   "as_of": "2026-04-13T11:49:00+02:00",
+   "by": "dario",
+   "id": "dario-4",
+   "note": "ok after the second reading",
+   "refs": [
+    "ines-4"
+   ],
+   "type": "ACK"
+  },
+  "n": 20,
+  "op": "entry",
+  "parents": [
+   19
+  ],
+  "utc": "2026-04-13T09:51:00Z"
+ },
+ {
+  "commit_by": "elio",
+  "entry": {
+   "as_of": "2026-04-13T10:58:00+01:00",
+   "by": "elio",
+   "id": "elio-4",
+   "refs": [
+    "ines-4"
+   ],
+   "text": "the slot is already taken that day",
+   "type": "DISSENT"
+  },
+  "n": 21,
+  "op": "entry",
+  "parents": [
+   20
+  ],
+  "utc": "2026-04-13T10:00:00Z"
+ },
+ {
+  "commit_by": "ines",
+  "entry": {
+   "as_of": "2026-04-13T11:07:00+01:00",
+   "by": "ines",
+   "id": "ines-5",
+   "text": "Inspect formwork set 7.",
+   "to": [
+    "bruno",
+    "carla",
+    "dario",
+    "elio"
+   ],
+   "type": "PROPOSE"
+  },
+  "n": 22,
+  "op": "entry",
+  "parents": [
+   21
+  ],
+  "utc": "2026-04-13T10:09:00Z"
+ },
+ {
+  "commit_by": "bruno",
+  "entry": {
+   "as_of": "2026-04-13T11:16:00+01:00",
+   "by": "bruno",
+   "id": "bruno-5",
+   "refs": [
+    "ines-5"
+   ],
+   "text": "the tolerance is wrong for this batch",
+   "type": "DISSENT"
+  },
+  "n": 23,
+  "op": "entry",
+  "parents": [
+   22
+  ],
+  "utc": "2026-04-13T10:18:00Z"
+ },
+ {
+  "commit_by": "carla",
+  "entry": {
+   "as_of": "2026-04-13T10:25:00+00:00",
+   "by": "carla",
+   "id": "carla-5",
+   "note": "ok after the second reading",
+   "refs": [
+    "ines-5"
+   ],
+   "type": "ACK"
+  },
+  "n": 24,
+  "op": "entry",
+  "parents": [
+   23
+  ],
+  "utc": "2026-04-13T10:27:00Z"
+ },
+ {
+  "commit_by": "dario",
+  "entry": {
+   "as_of": "2026-04-13T12:34:00+02:00",
+   "by": "dario",
+   "id": "dario-5",
+   "note": "done on my list too",
+   "refs": [
+    "ines-5"
+   ],
+   "type": "ACK"
+  },
+  "n": 25,
+  "op": "entry",
+  "parents": [
+   24
+  ],
+  "utc": "2026-04-13T10:36:00Z"
+ },
+ {
+  "commit_by": "elio",
+  "entry": {
+   "as_of": "2026-04-13T11:43:00+01:00",
+   "by": "elio",
+   "id": "elio-5",
+   "note": "as discussed in the entry above",
+   "refs": [
+    "ines-5"
+   ],
+   "type": "ACK"
+  },
+  "n": 26,
+  "op": "entry",
+  "parents": [
+   25
+  ],
+  "utc": "2026-04-13T10:45:00Z"
+ },
+ {
+  "commit_by": "ines",
+  "entry": {
+   "as_of": "2026-04-13T11:52:00+01:00",
+   "by": "ines",
+   "id": "ines-6",
+   "text": "Inspect the drainage trench.",
+   "to": [
+    "bruno",
+    "carla",
+    "dario",
+    "elio"
+   ],
+   "type": "PROPOSE"
+  },
+  "n": 27,
+  "op": "entry",
+  "parents": [
+   26
+  ],
+  "utc": "2026-04-13T10:54:00Z"
+ },
+ {
+  "commit_by": "bruno",
+  "entry": {
+   "as_of": "2026-04-13T12:01:00+01:00",
+   "by": "bruno",
+   "id": "bruno-6",
+   "note": "ok after the second reading",
+   "refs": [
+    "ines-6"
+   ],
+   "type": "ACK"
+  },
+  "n": 28,
+  "op": "entry",
+  "parents": [
+   27
+  ],
+  "utc": "2026-04-13T11:03:00Z"
+ },
+ {
+  "commit_by": "carla",
+  "entry": {
+   "as_of": "2026-04-13T11:10:00+00:00",
+   "by": "carla",
+   "id": "carla-6",
+   "refs": [
+    "ines-6"
+   ],
+   "text": "two steps are swapped",
+   "type": "DISSENT"
+  },
+  "n": 29,
+  "op": "entry",
+  "parents": [
+   28
+  ],
+  "utc": "2026-04-13T11:12:00Z"
+ },
+ {
+  "commit_by": "dario",
+  "entry": {
+   "as_of": "2026-04-13T13:19:00+02:00",
+   "by": "dario",
+   "id": "dario-6",
+   "note": "as discussed in the entry above",
+   "refs": [
+    "ines-6"
+   ],
+   "type": "ACK"
+  },
+  "n": 30,
+  "op": "entry",
+  "parents": [
+   29
+  ],
+  "utc": "2026-04-13T11:21:00Z"
+ },
+ {
+  "commit_by": "elio",
+  "entry": {
+   "as_of": "2026-04-13T12:28:00+01:00",
+   "by": "elio",
+   "id": "elio-6",
+   "note": "checked against the drawing",
+   "refs": [
+    "ines-6"
+   ],
+   "type": "ACK"
+  },
+  "n": 31,
+  "op": "entry",
+  "parents": [
+   30
+  ],
+  "utc": "2026-04-13T11:30:00Z"
+ },
+ {
+  "commit_by": "ines",
+  "entry": {
+   "as_of": "2026-04-13T12:37:00+01:00",
+   "by": "ines",
+   "id": "ines-7",
+   "text": "Survey retaining wall R3.",
+   "to": [
+    "bruno",
+    "carla"
+   ],
+   "type": "PROPOSE"
+  },
+  "n": 32,
+  "op": "entry",
+  "parents": [
+   31
+  ],
+  "utc": "2026-04-13T11:39:00Z"
+ },
+ {
+  "commit_by": "bruno",
+  "entry": {
+   "as_of": "2026-04-13T12:46:00+01:00",
+   "by": "bruno",
+   "id": "bruno-7",
+   "note": "checked against the drawing",
+   "refs": [
+    "ines-7"
+   ],
+   "type": "ACK"
+  },
+  "n": 33,
+  "op": "entry",
+  "parents": [
+   32
+  ],
+  "utc": "2026-04-13T11:48:00Z"
+ },
+ {
+  "commit_by": "carla",
+  "entry": {
+   "as_of": "2026-04-13T11:55:00+00:00",
+   "by": "carla",
+   "id": "carla-7",
+   "note": "fine from my side",
+   "refs": [
+    "ines-7"
+   ],
+   "type": "ACK"
+  },
+  "n": 34,
+  "op": "entry",
+  "parents": [
+   33
+  ],
+  "utc": "2026-04-13T11:57:00Z"
+ },
+ {
+  "commit_by": "ines",
+  "entry": {
+   "as_of": "2026-04-13T13:04:00+01:00",
+   "by": "ines",
+   "id": "ines-8",
+   "text": "Sign off scaffold tower 2.",
+   "to": [
+    "dario",
+    "elio",
+    "fiona"
+   ],
+   "type": "PROPOSE"
+  },
+  "n": 35,
+  "op": "entry",
+  "parents": [
+   34
+  ],
+  "utc": "2026-04-13T12:06:00Z"
+ },
+ {
+  "commit_by": "dario",
+  "entry": {
+   "as_of": "2026-04-13T14:13:00+02:00",
+   "by": "dario",
+   "id": "dario-7",
+   "refs": [
+    "ines-8"
+   ],
+   "text": "none",
+   "type": "DISSENT"
+  },
+  "n": 36,
+  "op": "entry",
+  "parents": [
+   35
+  ],
+  "utc": "2026-04-13T12:15:00Z"
+ },
+ {
+  "commit_by": "elio",
+  "entry": {
+   "as_of": "2026-04-13T13:22:00+01:00",
+   "by": "elio",
+   "id": "elio-7",
+   "refs": [
+    "ines-8"
+   ],
+   "text": "n/a",
+   "type": "DISSENT"
+  },
+  "n": 37,
+  "op": "entry",
+  "parents": [
+   36
+  ],
+  "utc": "2026-04-13T12:24:00Z"
+ },
+ {
+  "commit_by": "fiona",
+  "entry": {
+   "as_of": "2026-04-13T12:31:00+00:00",
+   "by": "fiona",
+   "id": "fiona-1",
+   "refs": [
+    "ines-8"
+   ],
+   "text": "no objection",
+   "type": "DISSENT"
+  },
+  "n": 38,
+  "op": "entry",
+  "parents": [
+   37
+  ],
+  "utc": "2026-04-13T12:33:00Z"
+ },
+ {
+  "commit_by": "ines",
+  "entry": {
+   "as_of": "2026-04-13T13:40:00+01:00",
+   "by": "ines",
+   "id": "ines-9",
+   "refs": [
+    "bruno-1"
+   ],
+   "type": "ACK"
+  },
+  "n": 39,
+  "op": "entry",
+  "parents": [
+   38
+  ],
+  "utc": "2026-04-13T12:42:00Z"
+ },
+ {
+  "commit_by": "ines",
+  "entry": {
+   "as_of": "2026-04-13T13:49:00+01:00",
+   "by": "ines",
+   "id": "ines-10",
+   "refs": [
+    "carla-2"
+   ],
+   "type": "ACK"
+  },
+  "n": 40,
+  "op": "entry",
+  "parents": [
+   39
+  ],
+  "utc": "2026-04-13T12:51:00Z"
+ }
+]

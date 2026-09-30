@@ -1,0 +1,301 @@
+commit refs/heads/main
+mark :1
+author Lívia Sàez-Brontë <livia@meridiana.example> 1773045000 +0200
+committer Lívia Sàez-Brontë <livia@meridiana.example> 1773045000 +0200
+data 37
+coord: open the coordination document
+M 100644 inline COORD.md
+data 269
+# COORD - Meridiana autumn list
+
+protocol: coord/1
+
+## Agents
+
+- livia | Lívia Sàez-Brontë | livia@meridiana.example | managing editor
+- oscar | Óscar Çelik | oscar@meridiana.example | production
+- nadia | Nadia Øvrebø | nadia@meridiana.example | design
+
+## Log
+
+
+commit refs/heads/main
+mark :2
+author Lívia Sàez-Brontë <livia@meridiana.example> 1773046020 +0200
+committer Lívia Sàez-Brontë <livia@meridiana.example> 1773046020 +0200
+data 22
+coord: PROPOSE livia-1
+from :1
+M 100644 inline COORD.md
+data 395
+# COORD - Meridiana autumn list
+
+protocol: coord/1
+
+## Agents
+
+- livia | Lívia Sàez-Brontë | livia@meridiana.example | managing editor
+- oscar | Óscar Çelik | oscar@meridiana.example | production
+- nadia | Nadia Øvrebø | nadia@meridiana.example | design
+
+## Log
+
+### PROPOSE livia-1
+- by: livia
+- to: oscar, nadia
+- as_of: 2026-03-09T10:45:00+02:00
+- text: Send to proof the ebook build.
+
+
+commit refs/heads/main
+mark :3
+author Óscar Çelik <oscar@meridiana.example> 1773047040 +0300
+committer Óscar Çelik <oscar@meridiana.example> 1773047040 +0300
+data 18
+coord: ACK oscar-1
+from :2
+M 100644 inline COORD.md
+data 475
+# COORD - Meridiana autumn list
+
+protocol: coord/1
+
+## Agents
+
+- livia | Lívia Sàez-Brontë | livia@meridiana.example | managing editor
+- oscar | Óscar Çelik | oscar@meridiana.example | production
+- nadia | Nadia Øvrebø | nadia@meridiana.example | design
+
+## Log
+
+### PROPOSE livia-1
+- by: livia
+- to: oscar, nadia
+- as_of: 2026-03-09T10:45:00+02:00
+- text: Send to proof the ebook build.
+
+### ACK oscar-1
+- by: oscar
+- refs: livia-1
+- as_of: 2026-03-09T12:02:00+03:00
+
+
+commit refs/heads/main
+mark :4
+author Nadia Øvrebø <nadia@meridiana.example> 1773048060 +0100
+committer Nadia Øvrebø <nadia@meridiana.example> 1773048060 +0100
+data 18
+coord: ACK nadia-1
+from :3
+M 100644 inline COORD.md
+data 591
+# COORD - Meridiana autumn list
+
+protocol: coord/1
+
+## Agents
+
+- livia | Lívia Sàez-Brontë | livia@meridiana.example | managing editor
+- oscar | Óscar Çelik | oscar@meridiana.example | production
+- nadia | Nadia Øvrebø | nadia@meridiana.example | design
+
+## Log
+
+### PROPOSE livia-1
+- by: livia
+- to: oscar, nadia
+- as_of: 2026-03-09T10:45:00+02:00
+- text: Send to proof the ebook build.
+
+### ACK oscar-1
+- by: oscar
+- refs: livia-1
+- as_of: 2026-03-09T12:02:00+03:00
+
+### ACK nadia-1
+- by: nadia
+- refs: livia-1
+- as_of: 2026-03-09T10:19:00+01:00
+- note: cover file is the final one
+
+
+commit refs/heads/main
+mark :5
+author Lívia Sàez-Brontë <livia@meridiana.example> 1773049080 +0200
+committer Lívia Sàez-Brontë <livia@meridiana.example> 1773049080 +0200
+data 21
+coord: DECIDE livia-2
+from :4
+M 100644 inline COORD.md
+data 674
+# COORD - Meridiana autumn list
+
+protocol: coord/1
+
+## Agents
+
+- livia | Lívia Sàez-Brontë | livia@meridiana.example | managing editor
+- oscar | Óscar Çelik | oscar@meridiana.example | production
+- nadia | Nadia Øvrebø | nadia@meridiana.example | design
+
+## Log
+
+### PROPOSE livia-1
+- by: livia
+- to: oscar, nadia
+- as_of: 2026-03-09T10:45:00+02:00
+- text: Send to proof the ebook build.
+
+### ACK oscar-1
+- by: oscar
+- refs: livia-1
+- as_of: 2026-03-09T12:02:00+03:00
+
+### ACK nadia-1
+- by: nadia
+- refs: livia-1
+- as_of: 2026-03-09T10:19:00+01:00
+- note: cover file is the final one
+
+### DECIDE livia-2
+- by: livia
+- refs: livia-1
+- as_of: 2026-03-09T11:36:00+02:00
+
+
+commit refs/heads/main
+mark :6
+author Lívia Sàez-Brontë <livia@meridiana.example> 1773050100 +0200
+committer Lívia Sàez-Brontë <livia@meridiana.example> 1773050100 +0200
+data 22
+coord: HANDOFF livia-3
+from :5
+M 100644 inline COORD.md
+data 822
+# COORD - Meridiana autumn list
+
+protocol: coord/1
+
+## Agents
+
+- livia | Lívia Sàez-Brontë | livia@meridiana.example | managing editor
+- oscar | Óscar Çelik | oscar@meridiana.example | production
+- nadia | Nadia Øvrebø | nadia@meridiana.example | design
+
+## Log
+
+### PROPOSE livia-1
+- by: livia
+- to: oscar, nadia
+- as_of: 2026-03-09T10:45:00+02:00
+- text: Send to proof the ebook build.
+
+### ACK oscar-1
+- by: oscar
+- refs: livia-1
+- as_of: 2026-03-09T12:02:00+03:00
+
+### ACK nadia-1
+- by: nadia
+- refs: livia-1
+- as_of: 2026-03-09T10:19:00+01:00
+- note: cover file is the final one
+
+### DECIDE livia-2
+- by: livia
+- refs: livia-1
+- as_of: 2026-03-09T11:36:00+02:00
+
+### HANDOFF livia-3
+- by: livia
+- to: oscar
+- anchors: build=2417; tag=v3.2.0
+- as_of: 2026-03-09T11:53:00+02:00
+- text: ebook build for the store
+
+M 100644 inline handoffs/livia-3.json
+data 188
+{
+  "anchors": {
+    "build": "2417",
+    "tag": "v3.2.0"
+  },
+  "as_of": "2026-03-09T11:53:00+02:00",
+  "by": "livia",
+  "id": "livia-3",
+  "schema": "coord/handoff/1",
+  "to": "oscar"
+}
+
+
+commit refs/heads/main
+mark :7
+author Óscar Çelik <oscar@meridiana.example> 1773051120 +0300
+committer Óscar Çelik <oscar@meridiana.example> 1773051120 +0300
+data 22
+coord: RECEIPT oscar-2
+from :6
+M 100644 inline COORD.md
+data 940
+# COORD - Meridiana autumn list
+
+protocol: coord/1
+
+## Agents
+
+- livia | Lívia Sàez-Brontë | livia@meridiana.example | managing editor
+- oscar | Óscar Çelik | oscar@meridiana.example | production
+- nadia | Nadia Øvrebø | nadia@meridiana.example | design
+
+## Log
+
+### PROPOSE livia-1
+- by: livia
+- to: oscar, nadia
+- as_of: 2026-03-09T10:45:00+02:00
+- text: Send to proof the ebook build.
+
+### ACK oscar-1
+- by: oscar
+- refs: livia-1
+- as_of: 2026-03-09T12:02:00+03:00
+
+### ACK nadia-1
+- by: nadia
+- refs: livia-1
+- as_of: 2026-03-09T10:19:00+01:00
+- note: cover file is the final one
+
+### DECIDE livia-2
+- by: livia
+- refs: livia-1
+- as_of: 2026-03-09T11:36:00+02:00
+
+### HANDOFF livia-3
+- by: livia
+- to: oscar
+- anchors: build=2417; tag=v3.2.0
+- as_of: 2026-03-09T11:53:00+02:00
+- text: ebook build for the store
+
+### RECEIPT oscar-2
+- by: oscar
+- refs: livia-3
+- anchors: build=2471; tag=v3.2.0
+- as_of: 2026-03-09T13:10:00+03:00
+
+M 100644 inline receipts/oscar-2.json
+data 195
+{
+  "anchors": {
+    "build": "2471",
+    "tag": "v3.2.0"
+  },
+  "as_of": "2026-03-09T13:10:00+03:00",
+  "by": "oscar",
+  "handoff": "livia-3",
+  "id": "oscar-2",
+  "schema": "coord/receipt/1"
+}
+
+

@@ -1,0 +1,24 @@
+{
+ "split_after": 4,
+ "three_of_three": {
+  "freezes": {
+   "teo-1": "LIFTED"
+  },
+  "missing": [],
+  "release_gate": "OPEN"
+ },
+ "two_of_three": {
+  "freezes": {
+   "teo-1": "FROZEN"
+  },
+  "missing": [
+   "vera"
+  ],
+  "release_gate": "BLOCKED",
+  "waiting_for": {
+   "vera": [
+    "ACK teo-2 (to lift teo-1)"
+   ]
+  }
+ }
+}

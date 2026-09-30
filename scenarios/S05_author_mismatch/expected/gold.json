@@ -1,0 +1,23 @@
+{
+ "arbitrations": [],
+ "commits": 5,
+ "edges": [],
+ "release_gate": "OPEN",
+ "state": {
+  "blocks": {},
+  "conflicts": {},
+  "disputes": {},
+  "freezes": {},
+  "handoffs": {},
+  "proposals": {
+   "livia-1": "TO_CONFIRM"
+  }
+ },
+ "violations": [
+  {
+   "class": "V02",
+   "commit_index": 4,
+   "target": "nadia-1"
+  }
+ ]
+}

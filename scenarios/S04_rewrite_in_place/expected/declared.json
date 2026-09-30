@@ -1,0 +1,23 @@
+{
+ "rewritten": {
+  "lint_ok": false,
+  "proposals": {
+   "ines-1": "TO_CONFIRM"
+  },
+  "violations": [
+   {
+    "class": "V01",
+    "commit_index": 6,
+    "target": "ines-1"
+   }
+  ]
+ },
+ "superseded": {
+  "lint_ok": true,
+  "proposals": {
+   "ines-1": "SUPERSEDED",
+   "ines-3": "DECIDED"
+  },
+  "violations": []
+ }
+}

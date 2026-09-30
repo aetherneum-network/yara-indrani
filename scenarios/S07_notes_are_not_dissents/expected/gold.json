@@ -1,0 +1,31 @@
+{
+ "arbitrations": [],
+ "commits": 40,
+ "edges": [],
+ "release_gate": "OPEN",
+ "state": {
+  "blocks": {},
+  "conflicts": {},
+  "disputes": {
+   "bruno-1": "ANSWERED",
+   "bruno-5": "OPEN",
+   "carla-2": "ANSWERED",
+   "carla-6": "OPEN",
+   "dario-3": "OPEN",
+   "elio-4": "OPEN"
+  },
+  "freezes": {},
+  "handoffs": {},
+  "proposals": {
+   "ines-1": "DISPUTED",
+   "ines-2": "DISPUTED",
+   "ines-3": "DISPUTED",
+   "ines-4": "DISPUTED",
+   "ines-5": "DISPUTED",
+   "ines-6": "DISPUTED",
+   "ines-7": "ALIGNED",
+   "ines-8": "PROPOSED"
+  }
+ },
+ "violations": []
+}

@@ -1,0 +1,5676 @@
+commit refs/heads/main
+mark :1
+author Inès Carrà <ines@portoluna.example> 1776063600 +0100
+committer Inès Carrà <ines@portoluna.example> 1776063600 +0100
+data 37
+coord: open the coordination document
+M 100644 inline COORD.md
+data 450
+# COORD - Portoluna quay works
+
+protocol: coord/1
+
+## Agents
+
+- ines | Inès Carrà | ines@portoluna.example | site lead
+- bruno | Bruno Šťastný | bruno@portoluna.example | structures
+- carla | Carla Muñoz Peña | carla@portoluna.example | procurement
+- dario | Dário Åkesson | dario@portoluna.example | safety
+- elio | Elio Đorđević | elio@portoluna.example | surveying
+- fiona | Fíona Ó Briain | fiona@portoluna.example | design
+
+## Log
+
+
+commit refs/heads/main
+mark :2
+author Inès Carrà <ines@portoluna.example> 1776064140 +0100
+committer Inès Carrà <ines@portoluna.example> 1776064140 +0100
+data 21
+coord: PROPOSE ines-1
+from :1
+M 100644 inline COORD.md
+data 573
+# COORD - Portoluna quay works
+
+protocol: coord/1
+
+## Agents
+
+- ines | Inès Carrà | ines@portoluna.example | site lead
+- bruno | Bruno Šťastný | bruno@portoluna.example | structures
+- carla | Carla Muñoz Peña | carla@portoluna.example | procurement
+- dario | Dário Åkesson | dario@portoluna.example | safety
+- elio | Elio Đorđević | elio@portoluna.example | surveying
+- fiona | Fíona Ó Briain | fiona@portoluna.example | design
+
+## Log
+
+### PROPOSE ines-1
+- by: ines
+- to: bruno, carla, dario, elio
+- as_of: 2026-04-13T08:07:00+01:00
+- text: Inspect slab B2.
+
+
+commit refs/heads/main
+mark :3
+author Bruno Šťastný <bruno@portoluna.example> 1776064680 +0100
+committer Bruno Šťastný <bruno@portoluna.example> 1776064680 +0100
+data 22
+coord: DISSENT bruno-1
+from :2
+M 100644 inline COORD.md
+data 698
+# COORD - Portoluna quay works
+
+protocol: coord/1
+
+## Agents
+
+- ines | Inès Carrà | ines@portoluna.example | site lead
+- bruno | Bruno Šťastný | bruno@portoluna.example | structures
+- carla | Carla Muñoz Peña | carla@portoluna.example | procurement
+- dario | Dário Åkesson | dario@portoluna.example | safety
+- elio | Elio Đorđević | elio@portoluna.example | surveying
+- fiona | Fíona Ó Briain | fiona@portoluna.example | design
+
+## Log
+
+### PROPOSE ines-1
+- by: ines
+- to: bruno, carla, dario, elio
+- as_of: 2026-04-13T08:07:00+01:00
+- text: Inspect slab B2.
+
+### DISSENT bruno-1
+- by: bruno
+- refs: ines-1
+- as_of: 2026-04-13T08:16:00+01:00
+- text: the sequence breaks the cure time
+
+
+commit refs/heads/main
+mark :4
+author Carla Muñoz Peña <carla@portoluna.example> 1776065220 +0000
+committer Carla Muñoz Peña <carla@portoluna.example> 1776065220 +0000
+data 18
+coord: ACK carla-1
+from :3
+M 100644 inline COORD.md
+data 803
+# COORD - Portoluna quay works
+
+protocol: coord/1
+
+## Agents
+
+- ines | Inès Carrà | ines@portoluna.example | site lead
+- bruno | Bruno Šťastný | bruno@portoluna.example | structures
+- carla | Carla Muñoz Peña | carla@portoluna.example | procurement
+- dario | Dário Åkesson | dario@portoluna.example | safety
+- elio | Elio Đorđević | elio@portoluna.example | surveying
+- fiona | Fíona Ó Briain | fiona@portoluna.example | design
+
+## Log
+
+### PROPOSE ines-1
+- by: ines
+- to: bruno, carla, dario, elio
+- as_of: 2026-04-13T08:07:00+01:00
+- text: Inspect slab B2.
+
+### DISSENT bruno-1
+- by: bruno
+- refs: ines-1
+- as_of: 2026-04-13T08:16:00+01:00
+- text: the sequence breaks the cure time
+
+### ACK carla-1
+- by: carla
+- refs: ines-1
+- as_of: 2026-04-13T07:25:00+00:00
+- note: fine from my side
+
+
+commit refs/heads/main
+mark :5
+author Dário Åkesson <dario@portoluna.example> 1776065760 +0200
+committer Dário Åkesson <dario@portoluna.example> 1776065760 +0200
+data 18
+coord: ACK dario-1
+from :4
+M 100644 inline COORD.md
+data 913
+# COORD - Portoluna quay works
+
+protocol: coord/1
+
+## Agents
+
+- ines | Inès Carrà | ines@portoluna.example | site lead
+- bruno | Bruno Šťastný | bruno@portoluna.example | structures
+- carla | Carla Muñoz Peña | carla@portoluna.example | procurement
+- dario | Dário Åkesson | dario@portoluna.example | safety
+- elio | Elio Đorđević | elio@portoluna.example | surveying
+- fiona | Fíona Ó Briain | fiona@portoluna.example | design
+
+## Log
+
+### PROPOSE ines-1
+- by: ines
+- to: bruno, carla, dario, elio
+- as_of: 2026-04-13T08:07:00+01:00
+- text: Inspect slab B2.
+
+### DISSENT bruno-1
+- by: bruno
+- refs: ines-1
+- as_of: 2026-04-13T08:16:00+01:00
+- text: the sequence breaks the cure time
+
+### ACK carla-1
+- by: carla
+- refs: ines-1
+- as_of: 2026-04-13T07:25:00+00:00
+- note: fine from my side
+
+### ACK dario-1
+- by: dario
+- refs: ines-1
+- as_of: 2026-04-13T09:34:00+02:00
+- note: seen, no change needed
+
+
+commit refs/heads/main
+mark :6
+author Elio Đorđević <elio@portoluna.example> 1776066300 +0100
+committer Elio Đorđević <elio@portoluna.example> 1776066300 +0100
+data 17
+coord: ACK elio-1
+from :5
+M 100644 inline COORD.md
+data 1023
+# COORD - Portoluna quay works
+
+protocol: coord/1
+
+## Agents
+
+- ines | Inès Carrà | ines@portoluna.example | site lead
+- bruno | Bruno Šťastný | bruno@portoluna.example | structures
+- carla | Carla Muñoz Peña | carla@portoluna.example | procurement
+- dario | Dário Åkesson | dario@portoluna.example | safety
+- elio | Elio Đorđević | elio@portoluna.example | surveying
+- fiona | Fíona Ó Briain | fiona@portoluna.example | design
+
+## Log
+
+### PROPOSE ines-1
+- by: ines
+- to: bruno, carla, dario, elio
+- as_of: 2026-04-13T08:07:00+01:00
+- text: Inspect slab B2.
+
+### DISSENT bruno-1
+- by: bruno
+- refs: ines-1
+- as_of: 2026-04-13T08:16:00+01:00
+- text: the sequence breaks the cure time
+
+### ACK carla-1
+- by: carla
+- refs: ines-1
+- as_of: 2026-04-13T07:25:00+00:00
+- note: fine from my side
+
+### ACK dario-1
+- by: dario
+- refs: ines-1
+- as_of: 2026-04-13T09:34:00+02:00
+- note: seen, no change needed
+
+### ACK elio-1
+- by: elio
+- refs: ines-1
+- as_of: 2026-04-13T08:43:00+01:00
+- note: agreed with the sequence
+
+
+commit refs/heads/main
+mark :7
+author Inès Carrà <ines@portoluna.example> 1776066840 +0100
+committer Inès Carrà <ines@portoluna.example> 1776066840 +0100
+data 21
+coord: PROPOSE ines-2
+from :6
+M 100644 inline COORD.md
+data 1149
+# COORD - Portoluna quay works
+
+protocol: coord/1
+
+## Agents
+
+- ines | Inès Carrà | ines@portoluna.example | site lead
+- bruno | Bruno Šťastný | bruno@portoluna.example | structures
+- carla | Carla Muñoz Peña | carla@portoluna.example | procurement
+- dario | Dário Åkesson | dario@portoluna.example | safety
+- elio | Elio Đorđević | elio@portoluna.example | surveying
+- fiona | Fíona Ó Briain | fiona@portoluna.example | design
+
+## Log
+
+### PROPOSE ines-1
+- by: ines
+- to: bruno, carla, dario, elio
+- as_of: 2026-04-13T08:07:00+01:00
+- text: Inspect slab B2.
+
+### DISSENT bruno-1
+- by: bruno
+- refs: ines-1
+- as_of: 2026-04-13T08:16:00+01:00
+- text: the sequence breaks the cure time
+
+### ACK carla-1
+- by: carla
+- refs: ines-1
+- as_of: 2026-04-13T07:25:00+00:00
+- note: fine from my side
+
+### ACK dario-1
+- by: dario
+- refs: ines-1
+- as_of: 2026-04-13T09:34:00+02:00
+- note: seen, no change needed
+
+### ACK elio-1
+- by: elio
+- refs: ines-1
+- as_of: 2026-04-13T08:43:00+01:00
+- note: agreed with the sequence
+
+### PROPOSE ines-2
+- by: ines
+- to: bruno, carla, dario, elio
+- as_of: 2026-04-13T08:52:00+01:00
+- text: Inspect pier cap 4.
+
+
+commit refs/heads/main
+mark :8
+author Bruno Šťastný <bruno@portoluna.example> 1776067380 +0100
+committer Bruno Šťastný <bruno@portoluna.example> 1776067380 +0100
+data 18
+coord: ACK bruno-2
+from :7
+M 100644 inline COORD.md
+data 1254
+# COORD - Portoluna quay works
+
+protocol: coord/1
+
+## Agents
+
+- ines | Inès Carrà | ines@portoluna.example | site lead
+- bruno | Bruno Šťastný | bruno@portoluna.example | structures
+- carla | Carla Muñoz Peña | carla@portoluna.example | procurement
+- dario | Dário Åkesson | dario@portoluna.example | safety
+- elio | Elio Đorđević | elio@portoluna.example | surveying
+- fiona | Fíona Ó Briain | fiona@portoluna.example | design
+
+## Log
+
+### PROPOSE ines-1
+- by: ines
+- to: bruno, carla, dario, elio
+- as_of: 2026-04-13T08:07:00+01:00
+- text: Inspect slab B2.
+
+### DISSENT bruno-1
+- by: bruno
+- refs: ines-1
+- as_of: 2026-04-13T08:16:00+01:00
+- text: the sequence breaks the cure time
+
+### ACK carla-1
+- by: carla
+- refs: ines-1
+- as_of: 2026-04-13T07:25:00+00:00
+- note: fine from my side
+
+### ACK dario-1
+- by: dario
+- refs: ines-1
+- as_of: 2026-04-13T09:34:00+02:00
+- note: seen, no change needed
+
+### ACK elio-1
+- by: elio
+- refs: ines-1
+- as_of: 2026-04-13T08:43:00+01:00
+- note: agreed with the sequence
+
+### PROPOSE ines-2
+- by: ines
+- to: bruno, carla, dario, elio
+- as_of: 2026-04-13T08:52:00+01:00
+- text: Inspect pier cap 4.
+
+### ACK bruno-2
+- by: bruno
+- refs: ines-2
+- as_of: 2026-04-13T09:01:00+01:00
+- note: fine from my side
+
+
+commit refs/heads/main
+mark :9
+author Carla Muñoz Peña <carla@portoluna.example> 1776067920 +0000
+committer Carla Muñoz Peña <carla@portoluna.example> 1776067920 +0000
+data 22
+coord: DISSENT carla-2
+from :8
+M 100644 inline COORD.md
+data 1380
+# COORD - Portoluna quay works
+
+protocol: coord/1
+
+## Agents
+
+- ines | Inès Carrà | ines@portoluna.example | site lead
+- bruno | Bruno Šťastný | bruno@portoluna.example | structures
+- carla | Carla Muñoz Peña | carla@portoluna.example | procurement
+- dario | Dário Åkesson | dario@portoluna.example | safety
+- elio | Elio Đorđević | elio@portoluna.example | surveying
+- fiona | Fíona Ó Briain | fiona@portoluna.example | design
+
+## Log
+
+### PROPOSE ines-1
+- by: ines
+- to: bruno, carla, dario, elio
+- as_of: 2026-04-13T08:07:00+01:00
+- text: Inspect slab B2.
+
+### DISSENT bruno-1
+- by: bruno
+- refs: ines-1
+- as_of: 2026-04-13T08:16:00+01:00
+- text: the sequence breaks the cure time
+
+### ACK carla-1
+- by: carla
+- refs: ines-1
+- as_of: 2026-04-13T07:25:00+00:00
+- note: fine from my side
+
+### ACK dario-1
+- by: dario
+- refs: ines-1
+- as_of: 2026-04-13T09:34:00+02:00
+- note: seen, no change needed
+
+### ACK elio-1
+- by: elio
+- refs: ines-1
+- as_of: 2026-04-13T08:43:00+01:00
+- note: agreed with the sequence
+
+### PROPOSE ines-2
+- by: ines
+- to: bruno, carla, dario, elio
+- as_of: 2026-04-13T08:52:00+01:00
+- text: Inspect pier cap 4.
+
+### ACK bruno-2
+- by: bruno
+- refs: ines-2
+- as_of: 2026-04-13T09:01:00+01:00
+- note: fine from my side
+
+### DISSENT carla-2
+- by: carla
+- refs: ines-2
+- as_of: 2026-04-13T08:10:00+00:00
+- text: the figure does not match my count
+
+
+commit refs/heads/main
+mark :10
+author Dário Åkesson <dario@portoluna.example> 1776068460 +0200
+committer Dário Åkesson <dario@portoluna.example> 1776068460 +0200
+data 18
+coord: ACK dario-2
+from :9
+M 100644 inline COORD.md
+data 1492
+# COORD - Portoluna quay works
+
+protocol: coord/1
+
+## Agents
+
+- ines | Inès Carrà | ines@portoluna.example | site lead
+- bruno | Bruno Šťastný | bruno@portoluna.example | structures
+- carla | Carla Muñoz Peña | carla@portoluna.example | procurement
+- dario | Dário Åkesson | dario@portoluna.example | safety
+- elio | Elio Đorđević | elio@portoluna.example | surveying
+- fiona | Fíona Ó Briain | fiona@portoluna.example | design
+
+## Log
+
+### PROPOSE ines-1
+- by: ines
+- to: bruno, carla, dario, elio
+- as_of: 2026-04-13T08:07:00+01:00
+- text: Inspect slab B2.
+
+### DISSENT bruno-1
+- by: bruno
+- refs: ines-1
+- as_of: 2026-04-13T08:16:00+01:00
+- text: the sequence breaks the cure time
+
+### ACK carla-1
+- by: carla
+- refs: ines-1
+- as_of: 2026-04-13T07:25:00+00:00
+- note: fine from my side
+
+### ACK dario-1
+- by: dario
+- refs: ines-1
+- as_of: 2026-04-13T09:34:00+02:00
+- note: seen, no change needed
+
+### ACK elio-1
+- by: elio
+- refs: ines-1
+- as_of: 2026-04-13T08:43:00+01:00
+- note: agreed with the sequence
+
+### PROPOSE ines-2
+- by: ines
+- to: bruno, carla, dario, elio
+- as_of: 2026-04-13T08:52:00+01:00
+- text: Inspect pier cap 4.
+
+### ACK bruno-2
+- by: bruno
+- refs: ines-2
+- as_of: 2026-04-13T09:01:00+01:00
+- note: fine from my side
+
+### DISSENT carla-2
+- by: carla
+- refs: ines-2
+- as_of: 2026-04-13T08:10:00+00:00
+- text: the figure does not match my count
+
+### ACK dario-2
+- by: dario
+- refs: ines-2
+- as_of: 2026-04-13T10:19:00+02:00
+- note: agreed with the sequence
+
+
+commit refs/heads/main
+mark :11
+author Elio Đorđević <elio@portoluna.example> 1776069000 +0100
+committer Elio Đorđević <elio@portoluna.example> 1776069000 +0100
+data 17
+coord: ACK elio-2
+from :10
+M 100644 inline COORD.md
+data 1595
+# COORD - Portoluna quay works
+
+protocol: coord/1
+
+## Agents
+
+- ines | Inès Carrà | ines@portoluna.example | site lead
+- bruno | Bruno Šťastný | bruno@portoluna.example | structures
+- carla | Carla Muñoz Peña | carla@portoluna.example | procurement
+- dario | Dário Åkesson | dario@portoluna.example | safety
+- elio | Elio Đorđević | elio@portoluna.example | surveying
+- fiona | Fíona Ó Briain | fiona@portoluna.example | design
+
+## Log
+
+### PROPOSE ines-1
+- by: ines
+- to: bruno, carla, dario, elio
+- as_of: 2026-04-13T08:07:00+01:00
+- text: Inspect slab B2.
+
+### DISSENT bruno-1
+- by: bruno
+- refs: ines-1
+- as_of: 2026-04-13T08:16:00+01:00
+- text: the sequence breaks the cure time
+
+### ACK carla-1
+- by: carla
+- refs: ines-1
+- as_of: 2026-04-13T07:25:00+00:00
+- note: fine from my side
+
+### ACK dario-1
+- by: dario
+- refs: ines-1
+- as_of: 2026-04-13T09:34:00+02:00
+- note: seen, no change needed
+
+### ACK elio-1
+- by: elio
+- refs: ines-1
+- as_of: 2026-04-13T08:43:00+01:00
+- note: agreed with the sequence
+
+### PROPOSE ines-2
+- by: ines
+- to: bruno, carla, dario, elio
+- as_of: 2026-04-13T08:52:00+01:00
+- text: Inspect pier cap 4.
+
+### ACK bruno-2
+- by: bruno
+- refs: ines-2
+- as_of: 2026-04-13T09:01:00+01:00
+- note: fine from my side
+
+### DISSENT carla-2
+- by: carla
+- refs: ines-2
+- as_of: 2026-04-13T08:10:00+00:00
+- text: the figure does not match my count
+
+### ACK dario-2
+- by: dario
+- refs: ines-2
+- as_of: 2026-04-13T10:19:00+02:00
+- note: agreed with the sequence
+
+### ACK elio-2
+- by: elio
+- refs: ines-2
+- as_of: 2026-04-13T09:28:00+01:00
+- note: counts match mine
+
+
+commit refs/heads/main
+mark :12
+author Inès Carrà <ines@portoluna.example> 1776069540 +0100
+committer Inès Carrà <ines@portoluna.example> 1776069540 +0100
+data 21
+coord: PROPOSE ines-3
+from :11
+M 100644 inline COORD.md
+data 1724
+# COORD - Portoluna quay works
+
+protocol: coord/1
+
+## Agents
+
+- ines | Inès Carrà | ines@portoluna.example | site lead
+- bruno | Bruno Šťastný | bruno@portoluna.example | structures
+- carla | Carla Muñoz Peña | carla@portoluna.example | procurement
+- dario | Dário Åkesson | dario@portoluna.example | safety
+- elio | Elio Đorđević | elio@portoluna.example | surveying
+- fiona | Fíona Ó Briain | fiona@portoluna.example | design
+
+## Log
+
+### PROPOSE ines-1
+- by: ines
+- to: bruno, carla, dario, elio
+- as_of: 2026-04-13T08:07:00+01:00
+- text: Inspect slab B2.
+
+### DISSENT bruno-1
+- by: bruno
+- refs: ines-1
+- as_of: 2026-04-13T08:16:00+01:00
+- text: the sequence breaks the cure time
+
+### ACK carla-1
+- by: carla
+- refs: ines-1
+- as_of: 2026-04-13T07:25:00+00:00
+- note: fine from my side
+
+### ACK dario-1
+- by: dario
+- refs: ines-1
+- as_of: 2026-04-13T09:34:00+02:00
+- note: seen, no change needed
+
+### ACK elio-1
+- by: elio
+- refs: ines-1
+- as_of: 2026-04-13T08:43:00+01:00
+- note: agreed with the sequence
+
+### PROPOSE ines-2
+- by: ines
+- to: bruno, carla, dario, elio
+- as_of: 2026-04-13T08:52:00+01:00
+- text: Inspect pier cap 4.
+
+### ACK bruno-2
+- by: bruno
+- refs: ines-2
+- as_of: 2026-04-13T09:01:00+01:00
+- note: fine from my side
+
+### DISSENT carla-2
+- by: carla
+- refs: ines-2
+- as_of: 2026-04-13T08:10:00+00:00
+- text: the figure does not match my count
+
+### ACK dario-2
+- by: dario
+- refs: ines-2
+- as_of: 2026-04-13T10:19:00+02:00
+- note: agreed with the sequence
+
+### ACK elio-2
+- by: elio
+- refs: ines-2
+- as_of: 2026-04-13T09:28:00+01:00
+- note: counts match mine
+
+### PROPOSE ines-3
+- by: ines
+- to: bruno, carla, dario, elio
+- as_of: 2026-04-13T09:37:00+01:00
+- text: Inspect the east ramp.
+
+
+commit refs/heads/main
+mark :13
+author Bruno Šťastný <bruno@portoluna.example> 1776070080 +0100
+committer Bruno Šťastný <bruno@portoluna.example> 1776070080 +0100
+data 18
+coord: ACK bruno-3
+from :12
+M 100644 inline COORD.md
+data 1834
+# COORD - Portoluna quay works
+
+protocol: coord/1
+
+## Agents
+
+- ines | Inès Carrà | ines@portoluna.example | site lead
+- bruno | Bruno Šťastný | bruno@portoluna.example | structures
+- carla | Carla Muñoz Peña | carla@portoluna.example | procurement
+- dario | Dário Åkesson | dario@portoluna.example | safety
+- elio | Elio Đorđević | elio@portoluna.example | surveying
+- fiona | Fíona Ó Briain | fiona@portoluna.example | design
+
+## Log
+
+### PROPOSE ines-1
+- by: ines
+- to: bruno, carla, dario, elio
+- as_of: 2026-04-13T08:07:00+01:00
+- text: Inspect slab B2.
+
+### DISSENT bruno-1
+- by: bruno
+- refs: ines-1
+- as_of: 2026-04-13T08:16:00+01:00
+- text: the sequence breaks the cure time
+
+### ACK carla-1
+- by: carla
+- refs: ines-1
+- as_of: 2026-04-13T07:25:00+00:00
+- note: fine from my side
+
+### ACK dario-1
+- by: dario
+- refs: ines-1
+- as_of: 2026-04-13T09:34:00+02:00
+- note: seen, no change needed
+
+### ACK elio-1
+- by: elio
+- refs: ines-1
+- as_of: 2026-04-13T08:43:00+01:00
+- note: agreed with the sequence
+
+### PROPOSE ines-2
+- by: ines
+- to: bruno, carla, dario, elio
+- as_of: 2026-04-13T08:52:00+01:00
+- text: Inspect pier cap 4.
+
+### ACK bruno-2
+- by: bruno
+- refs: ines-2
+- as_of: 2026-04-13T09:01:00+01:00
+- note: fine from my side
+
+### DISSENT carla-2
+- by: carla
+- refs: ines-2
+- as_of: 2026-04-13T08:10:00+00:00
+- text: the figure does not match my count
+
+### ACK dario-2
+- by: dario
+- refs: ines-2
+- as_of: 2026-04-13T10:19:00+02:00
+- note: agreed with the sequence
+
+### ACK elio-2
+- by: elio
+- refs: ines-2
+- as_of: 2026-04-13T09:28:00+01:00
+- note: counts match mine
+
+### PROPOSE ines-3
+- by: ines
+- to: bruno, carla, dario, elio
+- as_of: 2026-04-13T09:37:00+01:00
+- text: Inspect the east ramp.
+
+### ACK bruno-3
+- by: bruno
+- refs: ines-3
+- as_of: 2026-04-13T09:46:00+01:00
+- note: seen, no change needed
+
+
+commit refs/heads/main
+mark :14
+author Carla Muñoz Peña <carla@portoluna.example> 1776070620 +0000
+committer Carla Muñoz Peña <carla@portoluna.example> 1776070620 +0000
+data 18
+coord: ACK carla-3
+from :13
+M 100644 inline COORD.md
+data 1946
+# COORD - Portoluna quay works
+
+protocol: coord/1
+
+## Agents
+
+- ines | Inès Carrà | ines@portoluna.example | site lead
+- bruno | Bruno Šťastný | bruno@portoluna.example | structures
+- carla | Carla Muñoz Peña | carla@portoluna.example | procurement
+- dario | Dário Åkesson | dario@portoluna.example | safety
+- elio | Elio Đorđević | elio@portoluna.example | surveying
+- fiona | Fíona Ó Briain | fiona@portoluna.example | design
+
+## Log
+
+### PROPOSE ines-1
+- by: ines
+- to: bruno, carla, dario, elio
+- as_of: 2026-04-13T08:07:00+01:00
+- text: Inspect slab B2.
+
+### DISSENT bruno-1
+- by: bruno
+- refs: ines-1
+- as_of: 2026-04-13T08:16:00+01:00
+- text: the sequence breaks the cure time
+
+### ACK carla-1
+- by: carla
+- refs: ines-1
+- as_of: 2026-04-13T07:25:00+00:00
+- note: fine from my side
+
+### ACK dario-1
+- by: dario
+- refs: ines-1
+- as_of: 2026-04-13T09:34:00+02:00
+- note: seen, no change needed
+
+### ACK elio-1
+- by: elio
+- refs: ines-1
+- as_of: 2026-04-13T08:43:00+01:00
+- note: agreed with the sequence
+
+### PROPOSE ines-2
+- by: ines
+- to: bruno, carla, dario, elio
+- as_of: 2026-04-13T08:52:00+01:00
+- text: Inspect pier cap 4.
+
+### ACK bruno-2
+- by: bruno
+- refs: ines-2
+- as_of: 2026-04-13T09:01:00+01:00
+- note: fine from my side
+
+### DISSENT carla-2
+- by: carla
+- refs: ines-2
+- as_of: 2026-04-13T08:10:00+00:00
+- text: the figure does not match my count
+
+### ACK dario-2
+- by: dario
+- refs: ines-2
+- as_of: 2026-04-13T10:19:00+02:00
+- note: agreed with the sequence
+
+### ACK elio-2
+- by: elio
+- refs: ines-2
+- as_of: 2026-04-13T09:28:00+01:00
+- note: counts match mine
+
+### PROPOSE ines-3
+- by: ines
+- to: bruno, carla, dario, elio
+- as_of: 2026-04-13T09:37:00+01:00
+- text: Inspect the east ramp.
+
+### ACK bruno-3
+- by: bruno
+- refs: ines-3
+- as_of: 2026-04-13T09:46:00+01:00
+- note: seen, no change needed
+
+### ACK carla-3
+- by: carla
+- refs: ines-3
+- as_of: 2026-04-13T08:55:00+00:00
+- note: agreed with the sequence
+
+
+commit refs/heads/main
+mark :15
+author Dário Åkesson <dario@portoluna.example> 1776071160 +0200
+committer Dário Åkesson <dario@portoluna.example> 1776071160 +0200
+data 22
+coord: DISSENT dario-3
+from :14
+M 100644 inline COORD.md
+data 2072
+# COORD - Portoluna quay works
+
+protocol: coord/1
+
+## Agents
+
+- ines | Inès Carrà | ines@portoluna.example | site lead
+- bruno | Bruno Šťastný | bruno@portoluna.example | structures
+- carla | Carla Muñoz Peña | carla@portoluna.example | procurement
+- dario | Dário Åkesson | dario@portoluna.example | safety
+- elio | Elio Đorđević | elio@portoluna.example | surveying
+- fiona | Fíona Ó Briain | fiona@portoluna.example | design
+
+## Log
+
+### PROPOSE ines-1
+- by: ines
+- to: bruno, carla, dario, elio
+- as_of: 2026-04-13T08:07:00+01:00
+- text: Inspect slab B2.
+
+### DISSENT bruno-1
+- by: bruno
+- refs: ines-1
+- as_of: 2026-04-13T08:16:00+01:00
+- text: the sequence breaks the cure time
+
+### ACK carla-1
+- by: carla
+- refs: ines-1
+- as_of: 2026-04-13T07:25:00+00:00
+- note: fine from my side
+
+### ACK dario-1
+- by: dario
+- refs: ines-1
+- as_of: 2026-04-13T09:34:00+02:00
+- note: seen, no change needed
+
+### ACK elio-1
+- by: elio
+- refs: ines-1
+- as_of: 2026-04-13T08:43:00+01:00
+- note: agreed with the sequence
+
+### PROPOSE ines-2
+- by: ines
+- to: bruno, carla, dario, elio
+- as_of: 2026-04-13T08:52:00+01:00
+- text: Inspect pier cap 4.
+
+### ACK bruno-2
+- by: bruno
+- refs: ines-2
+- as_of: 2026-04-13T09:01:00+01:00
+- note: fine from my side
+
+### DISSENT carla-2
+- by: carla
+- refs: ines-2
+- as_of: 2026-04-13T08:10:00+00:00
+- text: the figure does not match my count
+
+### ACK dario-2
+- by: dario
+- refs: ines-2
+- as_of: 2026-04-13T10:19:00+02:00
+- note: agreed with the sequence
+
+### ACK elio-2
+- by: elio
+- refs: ines-2
+- as_of: 2026-04-13T09:28:00+01:00
+- note: counts match mine
+
+### PROPOSE ines-3
+- by: ines
+- to: bruno, carla, dario, elio
+- as_of: 2026-04-13T09:37:00+01:00
+- text: Inspect the east ramp.
+
+### ACK bruno-3
+- by: bruno
+- refs: ines-3
+- as_of: 2026-04-13T09:46:00+01:00
+- note: seen, no change needed
+
+### ACK carla-3
+- by: carla
+- refs: ines-3
+- as_of: 2026-04-13T08:55:00+00:00
+- note: agreed with the sequence
+
+### DISSENT dario-3
+- by: dario
+- refs: ines-3
+- as_of: 2026-04-13T11:04:00+02:00
+- text: this needs the safety review first
+
+
+commit refs/heads/main
+mark :16
+author Elio Đorđević <elio@portoluna.example> 1776071700 +0100
+committer Elio Đorđević <elio@portoluna.example> 1776071700 +0100
+data 17
+coord: ACK elio-3
+from :15
+M 100644 inline COORD.md
+data 2185
+# COORD - Portoluna quay works
+
+protocol: coord/1
+
+## Agents
+
+- ines | Inès Carrà | ines@portoluna.example | site lead
+- bruno | Bruno Šťastný | bruno@portoluna.example | structures
+- carla | Carla Muñoz Peña | carla@portoluna.example | procurement
+- dario | Dário Åkesson | dario@portoluna.example | safety
+- elio | Elio Đorđević | elio@portoluna.example | surveying
+- fiona | Fíona Ó Briain | fiona@portoluna.example | design
+
+## Log
+
+### PROPOSE ines-1
+- by: ines
+- to: bruno, carla, dario, elio
+- as_of: 2026-04-13T08:07:00+01:00
+- text: Inspect slab B2.
+
+### DISSENT bruno-1
+- by: bruno
+- refs: ines-1
+- as_of: 2026-04-13T08:16:00+01:00
+- text: the sequence breaks the cure time
+
+### ACK carla-1
+- by: carla
+- refs: ines-1
+- as_of: 2026-04-13T07:25:00+00:00
+- note: fine from my side
+
+### ACK dario-1
+- by: dario
+- refs: ines-1
+- as_of: 2026-04-13T09:34:00+02:00
+- note: seen, no change needed
+
+### ACK elio-1
+- by: elio
+- refs: ines-1
+- as_of: 2026-04-13T08:43:00+01:00
+- note: agreed with the sequence
+
+### PROPOSE ines-2
+- by: ines
+- to: bruno, carla, dario, elio
+- as_of: 2026-04-13T08:52:00+01:00
+- text: Inspect pier cap 4.
+
+### ACK bruno-2
+- by: bruno
+- refs: ines-2
+- as_of: 2026-04-13T09:01:00+01:00
+- note: fine from my side
+
+### DISSENT carla-2
+- by: carla
+- refs: ines-2
+- as_of: 2026-04-13T08:10:00+00:00
+- text: the figure does not match my count
+
+### ACK dario-2
+- by: dario
+- refs: ines-2
+- as_of: 2026-04-13T10:19:00+02:00
+- note: agreed with the sequence
+
+### ACK elio-2
+- by: elio
+- refs: ines-2
+- as_of: 2026-04-13T09:28:00+01:00
+- note: counts match mine
+
+### PROPOSE ines-3
+- by: ines
+- to: bruno, carla, dario, elio
+- as_of: 2026-04-13T09:37:00+01:00
+- text: Inspect the east ramp.
+
+### ACK bruno-3
+- by: bruno
+- refs: ines-3
+- as_of: 2026-04-13T09:46:00+01:00
+- note: seen, no change needed
+
+### ACK carla-3
+- by: carla
+- refs: ines-3
+- as_of: 2026-04-13T08:55:00+00:00
+- note: agreed with the sequence
+
+### DISSENT dario-3
+- by: dario
+- refs: ines-3
+- as_of: 2026-04-13T11:04:00+02:00
+- text: this needs the safety review first
+
+### ACK elio-3
+- by: elio
+- refs: ines-3
+- as_of: 2026-04-13T10:13:00+01:00
+- note: ok after the second reading
+
+
+commit refs/heads/main
+mark :17
+author Inès Carrà <ines@portoluna.example> 1776072240 +0100
+committer Inès Carrà <ines@portoluna.example> 1776072240 +0100
+data 21
+coord: PROPOSE ines-4
+from :16
+M 100644 inline COORD.md
+data 2312
+# COORD - Portoluna quay works
+
+protocol: coord/1
+
+## Agents
+
+- ines | Inès Carrà | ines@portoluna.example | site lead
+- bruno | Bruno Šťastný | bruno@portoluna.example | structures
+- carla | Carla Muñoz Peña | carla@portoluna.example | procurement
+- dario | Dário Åkesson | dario@portoluna.example | safety
+- elio | Elio Đorđević | elio@portoluna.example | surveying
+- fiona | Fíona Ó Briain | fiona@portoluna.example | design
+
+## Log
+
+### PROPOSE ines-1
+- by: ines
+- to: bruno, carla, dario, elio
+- as_of: 2026-04-13T08:07:00+01:00
+- text: Inspect slab B2.
+
+### DISSENT bruno-1
+- by: bruno
+- refs: ines-1
+- as_of: 2026-04-13T08:16:00+01:00
+- text: the sequence breaks the cure time
+
+### ACK carla-1
+- by: carla
+- refs: ines-1
+- as_of: 2026-04-13T07:25:00+00:00
+- note: fine from my side
+
+### ACK dario-1
+- by: dario
+- refs: ines-1
+- as_of: 2026-04-13T09:34:00+02:00
+- note: seen, no change needed
+
+### ACK elio-1
+- by: elio
+- refs: ines-1
+- as_of: 2026-04-13T08:43:00+01:00
+- note: agreed with the sequence
+
+### PROPOSE ines-2
+- by: ines
+- to: bruno, carla, dario, elio
+- as_of: 2026-04-13T08:52:00+01:00
+- text: Inspect pier cap 4.
+
+### ACK bruno-2
+- by: bruno
+- refs: ines-2
+- as_of: 2026-04-13T09:01:00+01:00
+- note: fine from my side
+
+### DISSENT carla-2
+- by: carla
+- refs: ines-2
+- as_of: 2026-04-13T08:10:00+00:00
+- text: the figure does not match my count
+
+### ACK dario-2
+- by: dario
+- refs: ines-2
+- as_of: 2026-04-13T10:19:00+02:00
+- note: agreed with the sequence
+
+### ACK elio-2
+- by: elio
+- refs: ines-2
+- as_of: 2026-04-13T09:28:00+01:00
+- note: counts match mine
+
+### PROPOSE ines-3
+- by: ines
+- to: bruno, carla, dario, elio
+- as_of: 2026-04-13T09:37:00+01:00
+- text: Inspect the east ramp.
+
+### ACK bruno-3
+- by: bruno
+- refs: ines-3
+- as_of: 2026-04-13T09:46:00+01:00
+- note: seen, no change needed
+
+### ACK carla-3
+- by: carla
+- refs: ines-3
+- as_of: 2026-04-13T08:55:00+00:00
+- note: agreed with the sequence
+
+### DISSENT dario-3
+- by: dario
+- refs: ines-3
+- as_of: 2026-04-13T11:04:00+02:00
+- text: this needs the safety review first
+
+### ACK elio-3
+- by: elio
+- refs: ines-3
+- as_of: 2026-04-13T10:13:00+01:00
+- note: ok after the second reading
+
+### PROPOSE ines-4
+- by: ines
+- to: bruno, carla, dario, elio
+- as_of: 2026-04-13T10:22:00+01:00
+- text: Inspect crane pad C.
+
+
+commit refs/heads/main
+mark :18
+author Bruno Šťastný <bruno@portoluna.example> 1776072780 +0100
+committer Bruno Šťastný <bruno@portoluna.example> 1776072780 +0100
+data 18
+coord: ACK bruno-4
+from :17
+M 100644 inline COORD.md
+data 2424
+# COORD - Portoluna quay works
+
+protocol: coord/1
+
+## Agents
+
+- ines | Inès Carrà | ines@portoluna.example | site lead
+- bruno | Bruno Šťastný | bruno@portoluna.example | structures
+- carla | Carla Muñoz Peña | carla@portoluna.example | procurement
+- dario | Dário Åkesson | dario@portoluna.example | safety
+- elio | Elio Đorđević | elio@portoluna.example | surveying
+- fiona | Fíona Ó Briain | fiona@portoluna.example | design
+
+## Log
+
+### PROPOSE ines-1
+- by: ines
+- to: bruno, carla, dario, elio
+- as_of: 2026-04-13T08:07:00+01:00
+- text: Inspect slab B2.
+
+### DISSENT bruno-1
+- by: bruno
+- refs: ines-1
+- as_of: 2026-04-13T08:16:00+01:00
+- text: the sequence breaks the cure time
+
+### ACK carla-1
+- by: carla
+- refs: ines-1
+- as_of: 2026-04-13T07:25:00+00:00
+- note: fine from my side
+
+### ACK dario-1
+- by: dario
+- refs: ines-1
+- as_of: 2026-04-13T09:34:00+02:00
+- note: seen, no change needed
+
+### ACK elio-1
+- by: elio
+- refs: ines-1
+- as_of: 2026-04-13T08:43:00+01:00
+- note: agreed with the sequence
+
+### PROPOSE ines-2
+- by: ines
+- to: bruno, carla, dario, elio
+- as_of: 2026-04-13T08:52:00+01:00
+- text: Inspect pier cap 4.
+
+### ACK bruno-2
+- by: bruno
+- refs: ines-2
+- as_of: 2026-04-13T09:01:00+01:00
+- note: fine from my side
+
+### DISSENT carla-2
+- by: carla
+- refs: ines-2
+- as_of: 2026-04-13T08:10:00+00:00
+- text: the figure does not match my count
+
+### ACK dario-2
+- by: dario
+- refs: ines-2
+- as_of: 2026-04-13T10:19:00+02:00
+- note: agreed with the sequence
+
+### ACK elio-2
+- by: elio
+- refs: ines-2
+- as_of: 2026-04-13T09:28:00+01:00
+- note: counts match mine
+
+### PROPOSE ines-3
+- by: ines
+- to: bruno, carla, dario, elio
+- as_of: 2026-04-13T09:37:00+01:00
+- text: Inspect the east ramp.
+
+### ACK bruno-3
+- by: bruno
+- refs: ines-3
+- as_of: 2026-04-13T09:46:00+01:00
+- note: seen, no change needed
+
+### ACK carla-3
+- by: carla
+- refs: ines-3
+- as_of: 2026-04-13T08:55:00+00:00
+- note: agreed with the sequence
+
+### DISSENT dario-3
+- by: dario
+- refs: ines-3
+- as_of: 2026-04-13T11:04:00+02:00
+- text: this needs the safety review first
+
+### ACK elio-3
+- by: elio
+- refs: ines-3
+- as_of: 2026-04-13T10:13:00+01:00
+- note: ok after the second reading
+
+### PROPOSE ines-4
+- by: ines
+- to: bruno, carla, dario, elio
+- as_of: 2026-04-13T10:22:00+01:00
+- text: Inspect crane pad C.
+
+### ACK bruno-4
+- by: bruno
+- refs: ines-4
+- as_of: 2026-04-13T10:31:00+01:00
+- note: agreed with the sequence
+
+
+commit refs/heads/main
+mark :19
+author Carla Muñoz Peña <carla@portoluna.example> 1776073320 +0000
+committer Carla Muñoz Peña <carla@portoluna.example> 1776073320 +0000
+data 18
+coord: ACK carla-4
+from :18
+M 100644 inline COORD.md
+data 2529
+# COORD - Portoluna quay works
+
+protocol: coord/1
+
+## Agents
+
+- ines | Inès Carrà | ines@portoluna.example | site lead
+- bruno | Bruno Šťastný | bruno@portoluna.example | structures
+- carla | Carla Muñoz Peña | carla@portoluna.example | procurement
+- dario | Dário Åkesson | dario@portoluna.example | safety
+- elio | Elio Đorđević | elio@portoluna.example | surveying
+- fiona | Fíona Ó Briain | fiona@portoluna.example | design
+
+## Log
+
+### PROPOSE ines-1
+- by: ines
+- to: bruno, carla, dario, elio
+- as_of: 2026-04-13T08:07:00+01:00
+- text: Inspect slab B2.
+
+### DISSENT bruno-1
+- by: bruno
+- refs: ines-1
+- as_of: 2026-04-13T08:16:00+01:00
+- text: the sequence breaks the cure time
+
+### ACK carla-1
+- by: carla
+- refs: ines-1
+- as_of: 2026-04-13T07:25:00+00:00
+- note: fine from my side
+
+### ACK dario-1
+- by: dario
+- refs: ines-1
+- as_of: 2026-04-13T09:34:00+02:00
+- note: seen, no change needed
+
+### ACK elio-1
+- by: elio
+- refs: ines-1
+- as_of: 2026-04-13T08:43:00+01:00
+- note: agreed with the sequence
+
+### PROPOSE ines-2
+- by: ines
+- to: bruno, carla, dario, elio
+- as_of: 2026-04-13T08:52:00+01:00
+- text: Inspect pier cap 4.
+
+### ACK bruno-2
+- by: bruno
+- refs: ines-2
+- as_of: 2026-04-13T09:01:00+01:00
+- note: fine from my side
+
+### DISSENT carla-2
+- by: carla
+- refs: ines-2
+- as_of: 2026-04-13T08:10:00+00:00
+- text: the figure does not match my count
+
+### ACK dario-2
+- by: dario
+- refs: ines-2
+- as_of: 2026-04-13T10:19:00+02:00
+- note: agreed with the sequence
+
+### ACK elio-2
+- by: elio
+- refs: ines-2
+- as_of: 2026-04-13T09:28:00+01:00
+- note: counts match mine
+
+### PROPOSE ines-3
+- by: ines
+- to: bruno, carla, dario, elio
+- as_of: 2026-04-13T09:37:00+01:00
+- text: Inspect the east ramp.
+
+### ACK bruno-3
+- by: bruno
+- refs: ines-3
+- as_of: 2026-04-13T09:46:00+01:00
+- note: seen, no change needed
+
+### ACK carla-3
+- by: carla
+- refs: ines-3
+- as_of: 2026-04-13T08:55:00+00:00
+- note: agreed with the sequence
+
+### DISSENT dario-3
+- by: dario
+- refs: ines-3
+- as_of: 2026-04-13T11:04:00+02:00
+- text: this needs the safety review first
+
+### ACK elio-3
+- by: elio
+- refs: ines-3
+- as_of: 2026-04-13T10:13:00+01:00
+- note: ok after the second reading
+
+### PROPOSE ines-4
+- by: ines
+- to: bruno, carla, dario, elio
+- as_of: 2026-04-13T10:22:00+01:00
+- text: Inspect crane pad C.
+
+### ACK bruno-4
+- by: bruno
+- refs: ines-4
+- as_of: 2026-04-13T10:31:00+01:00
+- note: agreed with the sequence
+
+### ACK carla-4
+- by: carla
+- refs: ines-4
+- as_of: 2026-04-13T09:40:00+00:00
+- note: counts match mine
+
+
+commit refs/heads/main
+mark :20
+author Dário Åkesson <dario@portoluna.example> 1776073860 +0200
+committer Dário Åkesson <dario@portoluna.example> 1776073860 +0200
+data 18
+coord: ACK dario-4
+from :19
+M 100644 inline COORD.md
+data 2644
+# COORD - Portoluna quay works
+
+protocol: coord/1
+
+## Agents
+
+- ines | Inès Carrà | ines@portoluna.example | site lead
+- bruno | Bruno Šťastný | bruno@portoluna.example | structures
+- carla | Carla Muñoz Peña | carla@portoluna.example | procurement
+- dario | Dário Åkesson | dario@portoluna.example | safety
+- elio | Elio Đorđević | elio@portoluna.example | surveying
+- fiona | Fíona Ó Briain | fiona@portoluna.example | design
+
+## Log
+
+### PROPOSE ines-1
+- by: ines
+- to: bruno, carla, dario, elio
+- as_of: 2026-04-13T08:07:00+01:00
+- text: Inspect slab B2.
+
+### DISSENT bruno-1
+- by: bruno
+- refs: ines-1
+- as_of: 2026-04-13T08:16:00+01:00
+- text: the sequence breaks the cure time
+
+### ACK carla-1
+- by: carla
+- refs: ines-1
+- as_of: 2026-04-13T07:25:00+00:00
+- note: fine from my side
+
+### ACK dario-1
+- by: dario
+- refs: ines-1
+- as_of: 2026-04-13T09:34:00+02:00
+- note: seen, no change needed
+
+### ACK elio-1
+- by: elio
+- refs: ines-1
+- as_of: 2026-04-13T08:43:00+01:00
+- note: agreed with the sequence
+
+### PROPOSE ines-2
+- by: ines
+- to: bruno, carla, dario, elio
+- as_of: 2026-04-13T08:52:00+01:00
+- text: Inspect pier cap 4.
+
+### ACK bruno-2
+- by: bruno
+- refs: ines-2
+- as_of: 2026-04-13T09:01:00+01:00
+- note: fine from my side
+
+### DISSENT carla-2
+- by: carla
+- refs: ines-2
+- as_of: 2026-04-13T08:10:00+00:00
+- text: the figure does not match my count
+
+### ACK dario-2
+- by: dario
+- refs: ines-2
+- as_of: 2026-04-13T10:19:00+02:00
+- note: agreed with the sequence
+
+### ACK elio-2
+- by: elio
+- refs: ines-2
+- as_of: 2026-04-13T09:28:00+01:00
+- note: counts match mine
+
+### PROPOSE ines-3
+- by: ines
+- to: bruno, carla, dario, elio
+- as_of: 2026-04-13T09:37:00+01:00
+- text: Inspect the east ramp.
+
+### ACK bruno-3
+- by: bruno
+- refs: ines-3
+- as_of: 2026-04-13T09:46:00+01:00
+- note: seen, no change needed
+
+### ACK carla-3
+- by: carla
+- refs: ines-3
+- as_of: 2026-04-13T08:55:00+00:00
+- note: agreed with the sequence
+
+### DISSENT dario-3
+- by: dario
+- refs: ines-3
+- as_of: 2026-04-13T11:04:00+02:00
+- text: this needs the safety review first
+
+### ACK elio-3
+- by: elio
+- refs: ines-3
+- as_of: 2026-04-13T10:13:00+01:00
+- note: ok after the second reading
+
+### PROPOSE ines-4
+- by: ines
+- to: bruno, carla, dario, elio
+- as_of: 2026-04-13T10:22:00+01:00
+- text: Inspect crane pad C.
+
+### ACK bruno-4
+- by: bruno
+- refs: ines-4
+- as_of: 2026-04-13T10:31:00+01:00
+- note: agreed with the sequence
+
+### ACK carla-4
+- by: carla
+- refs: ines-4
+- as_of: 2026-04-13T09:40:00+00:00
+- note: counts match mine
+
+### ACK dario-4
+- by: dario
+- refs: ines-4
+- as_of: 2026-04-13T11:49:00+02:00
+- note: ok after the second reading
+
+
+commit refs/heads/main
+mark :21
+author Elio Đorđević <elio@portoluna.example> 1776074400 +0100
+committer Elio Đorđević <elio@portoluna.example> 1776074400 +0100
+data 21
+coord: DISSENT elio-4
+from :20
+M 100644 inline COORD.md
+data 2768
+# COORD - Portoluna quay works
+
+protocol: coord/1
+
+## Agents
+
+- ines | Inès Carrà | ines@portoluna.example | site lead
+- bruno | Bruno Šťastný | bruno@portoluna.example | structures
+- carla | Carla Muñoz Peña | carla@portoluna.example | procurement
+- dario | Dário Åkesson | dario@portoluna.example | safety
+- elio | Elio Đorđević | elio@portoluna.example | surveying
+- fiona | Fíona Ó Briain | fiona@portoluna.example | design
+
+## Log
+
+### PROPOSE ines-1
+- by: ines
+- to: bruno, carla, dario, elio
+- as_of: 2026-04-13T08:07:00+01:00
+- text: Inspect slab B2.
+
+### DISSENT bruno-1
+- by: bruno
+- refs: ines-1
+- as_of: 2026-04-13T08:16:00+01:00
+- text: the sequence breaks the cure time
+
+### ACK carla-1
+- by: carla
+- refs: ines-1
+- as_of: 2026-04-13T07:25:00+00:00
+- note: fine from my side
+
+### ACK dario-1
+- by: dario
+- refs: ines-1
+- as_of: 2026-04-13T09:34:00+02:00
+- note: seen, no change needed
+
+### ACK elio-1
+- by: elio
+- refs: ines-1
+- as_of: 2026-04-13T08:43:00+01:00
+- note: agreed with the sequence
+
+### PROPOSE ines-2
+- by: ines
+- to: bruno, carla, dario, elio
+- as_of: 2026-04-13T08:52:00+01:00
+- text: Inspect pier cap 4.
+
+### ACK bruno-2
+- by: bruno
+- refs: ines-2
+- as_of: 2026-04-13T09:01:00+01:00
+- note: fine from my side
+
+### DISSENT carla-2
+- by: carla
+- refs: ines-2
+- as_of: 2026-04-13T08:10:00+00:00
+- text: the figure does not match my count
+
+### ACK dario-2
+- by: dario
+- refs: ines-2
+- as_of: 2026-04-13T10:19:00+02:00
+- note: agreed with the sequence
+
+### ACK elio-2
+- by: elio
+- refs: ines-2
+- as_of: 2026-04-13T09:28:00+01:00
+- note: counts match mine
+
+### PROPOSE ines-3
+- by: ines
+- to: bruno, carla, dario, elio
+- as_of: 2026-04-13T09:37:00+01:00
+- text: Inspect the east ramp.
+
+### ACK bruno-3
+- by: bruno
+- refs: ines-3
+- as_of: 2026-04-13T09:46:00+01:00
+- note: seen, no change needed
+
+### ACK carla-3
+- by: carla
+- refs: ines-3
+- as_of: 2026-04-13T08:55:00+00:00
+- note: agreed with the sequence
+
+### DISSENT dario-3
+- by: dario
+- refs: ines-3
+- as_of: 2026-04-13T11:04:00+02:00
+- text: this needs the safety review first
+
+### ACK elio-3
+- by: elio
+- refs: ines-3
+- as_of: 2026-04-13T10:13:00+01:00
+- note: ok after the second reading
+
+### PROPOSE ines-4
+- by: ines
+- to: bruno, carla, dario, elio
+- as_of: 2026-04-13T10:22:00+01:00
+- text: Inspect crane pad C.
+
+### ACK bruno-4
+- by: bruno
+- refs: ines-4
+- as_of: 2026-04-13T10:31:00+01:00
+- note: agreed with the sequence
+
+### ACK carla-4
+- by: carla
+- refs: ines-4
+- as_of: 2026-04-13T09:40:00+00:00
+- note: counts match mine
+
+### ACK dario-4
+- by: dario
+- refs: ines-4
+- as_of: 2026-04-13T11:49:00+02:00
+- note: ok after the second reading
+
+### DISSENT elio-4
+- by: elio
+- refs: ines-4
+- as_of: 2026-04-13T10:58:00+01:00
+- text: the slot is already taken that day
+
+
+commit refs/heads/main
+mark :22
+author Inès Carrà <ines@portoluna.example> 1776074940 +0100
+committer Inès Carrà <ines@portoluna.example> 1776074940 +0100
+data 21
+coord: PROPOSE ines-5
+from :21
+M 100644 inline COORD.md
+data 2898
+# COORD - Portoluna quay works
+
+protocol: coord/1
+
+## Agents
+
+- ines | Inès Carrà | ines@portoluna.example | site lead
+- bruno | Bruno Šťastný | bruno@portoluna.example | structures
+- carla | Carla Muñoz Peña | carla@portoluna.example | procurement
+- dario | Dário Åkesson | dario@portoluna.example | safety
+- elio | Elio Đorđević | elio@portoluna.example | surveying
+- fiona | Fíona Ó Briain | fiona@portoluna.example | design
+
+## Log
+
+### PROPOSE ines-1
+- by: ines
+- to: bruno, carla, dario, elio
+- as_of: 2026-04-13T08:07:00+01:00
+- text: Inspect slab B2.
+
+### DISSENT bruno-1
+- by: bruno
+- refs: ines-1
+- as_of: 2026-04-13T08:16:00+01:00
+- text: the sequence breaks the cure time
+
+### ACK carla-1
+- by: carla
+- refs: ines-1
+- as_of: 2026-04-13T07:25:00+00:00
+- note: fine from my side
+
+### ACK dario-1
+- by: dario
+- refs: ines-1
+- as_of: 2026-04-13T09:34:00+02:00
+- note: seen, no change needed
+
+### ACK elio-1
+- by: elio
+- refs: ines-1
+- as_of: 2026-04-13T08:43:00+01:00
+- note: agreed with the sequence
+
+### PROPOSE ines-2
+- by: ines
+- to: bruno, carla, dario, elio
+- as_of: 2026-04-13T08:52:00+01:00
+- text: Inspect pier cap 4.
+
+### ACK bruno-2
+- by: bruno
+- refs: ines-2
+- as_of: 2026-04-13T09:01:00+01:00
+- note: fine from my side
+
+### DISSENT carla-2
+- by: carla
+- refs: ines-2
+- as_of: 2026-04-13T08:10:00+00:00
+- text: the figure does not match my count
+
+### ACK dario-2
+- by: dario
+- refs: ines-2
+- as_of: 2026-04-13T10:19:00+02:00
+- note: agreed with the sequence
+
+### ACK elio-2
+- by: elio
+- refs: ines-2
+- as_of: 2026-04-13T09:28:00+01:00
+- note: counts match mine
+
+### PROPOSE ines-3
+- by: ines
+- to: bruno, carla, dario, elio
+- as_of: 2026-04-13T09:37:00+01:00
+- text: Inspect the east ramp.
+
+### ACK bruno-3
+- by: bruno
+- refs: ines-3
+- as_of: 2026-04-13T09:46:00+01:00
+- note: seen, no change needed
+
+### ACK carla-3
+- by: carla
+- refs: ines-3
+- as_of: 2026-04-13T08:55:00+00:00
+- note: agreed with the sequence
+
+### DISSENT dario-3
+- by: dario
+- refs: ines-3
+- as_of: 2026-04-13T11:04:00+02:00
+- text: this needs the safety review first
+
+### ACK elio-3
+- by: elio
+- refs: ines-3
+- as_of: 2026-04-13T10:13:00+01:00
+- note: ok after the second reading
+
+### PROPOSE ines-4
+- by: ines
+- to: bruno, carla, dario, elio
+- as_of: 2026-04-13T10:22:00+01:00
+- text: Inspect crane pad C.
+
+### ACK bruno-4
+- by: bruno
+- refs: ines-4
+- as_of: 2026-04-13T10:31:00+01:00
+- note: agreed with the sequence
+
+### ACK carla-4
+- by: carla
+- refs: ines-4
+- as_of: 2026-04-13T09:40:00+00:00
+- note: counts match mine
+
+### ACK dario-4
+- by: dario
+- refs: ines-4
+- as_of: 2026-04-13T11:49:00+02:00
+- note: ok after the second reading
+
+### DISSENT elio-4
+- by: elio
+- refs: ines-4
+- as_of: 2026-04-13T10:58:00+01:00
+- text: the slot is already taken that day
+
+### PROPOSE ines-5
+- by: ines
+- to: bruno, carla, dario, elio
+- as_of: 2026-04-13T11:07:00+01:00
+- text: Inspect formwork set 7.
+
+
+commit refs/heads/main
+mark :23
+author Bruno Šťastný <bruno@portoluna.example> 1776075480 +0100
+committer Bruno Šťastný <bruno@portoluna.example> 1776075480 +0100
+data 22
+coord: DISSENT bruno-5
+from :22
+M 100644 inline COORD.md
+data 3027
+# COORD - Portoluna quay works
+
+protocol: coord/1
+
+## Agents
+
+- ines | Inès Carrà | ines@portoluna.example | site lead
+- bruno | Bruno Šťastný | bruno@portoluna.example | structures
+- carla | Carla Muñoz Peña | carla@portoluna.example | procurement
+- dario | Dário Åkesson | dario@portoluna.example | safety
+- elio | Elio Đorđević | elio@portoluna.example | surveying
+- fiona | Fíona Ó Briain | fiona@portoluna.example | design
+
+## Log
+
+### PROPOSE ines-1
+- by: ines
+- to: bruno, carla, dario, elio
+- as_of: 2026-04-13T08:07:00+01:00
+- text: Inspect slab B2.
+
+### DISSENT bruno-1
+- by: bruno
+- refs: ines-1
+- as_of: 2026-04-13T08:16:00+01:00
+- text: the sequence breaks the cure time
+
+### ACK carla-1
+- by: carla
+- refs: ines-1
+- as_of: 2026-04-13T07:25:00+00:00
+- note: fine from my side
+
+### ACK dario-1
+- by: dario
+- refs: ines-1
+- as_of: 2026-04-13T09:34:00+02:00
+- note: seen, no change needed
+
+### ACK elio-1
+- by: elio
+- refs: ines-1
+- as_of: 2026-04-13T08:43:00+01:00
+- note: agreed with the sequence
+
+### PROPOSE ines-2
+- by: ines
+- to: bruno, carla, dario, elio
+- as_of: 2026-04-13T08:52:00+01:00
+- text: Inspect pier cap 4.
+
+### ACK bruno-2
+- by: bruno
+- refs: ines-2
+- as_of: 2026-04-13T09:01:00+01:00
+- note: fine from my side
+
+### DISSENT carla-2
+- by: carla
+- refs: ines-2
+- as_of: 2026-04-13T08:10:00+00:00
+- text: the figure does not match my count
+
+### ACK dario-2
+- by: dario
+- refs: ines-2
+- as_of: 2026-04-13T10:19:00+02:00
+- note: agreed with the sequence
+
+### ACK elio-2
+- by: elio
+- refs: ines-2
+- as_of: 2026-04-13T09:28:00+01:00
+- note: counts match mine
+
+### PROPOSE ines-3
+- by: ines
+- to: bruno, carla, dario, elio
+- as_of: 2026-04-13T09:37:00+01:00
+- text: Inspect the east ramp.
+
+### ACK bruno-3
+- by: bruno
+- refs: ines-3
+- as_of: 2026-04-13T09:46:00+01:00
+- note: seen, no change needed
+
+### ACK carla-3
+- by: carla
+- refs: ines-3
+- as_of: 2026-04-13T08:55:00+00:00
+- note: agreed with the sequence
+
+### DISSENT dario-3
+- by: dario
+- refs: ines-3
+- as_of: 2026-04-13T11:04:00+02:00
+- text: this needs the safety review first
+
+### ACK elio-3
+- by: elio
+- refs: ines-3
+- as_of: 2026-04-13T10:13:00+01:00
+- note: ok after the second reading
+
+### PROPOSE ines-4
+- by: ines
+- to: bruno, carla, dario, elio
+- as_of: 2026-04-13T10:22:00+01:00
+- text: Inspect crane pad C.
+
+### ACK bruno-4
+- by: bruno
+- refs: ines-4
+- as_of: 2026-04-13T10:31:00+01:00
+- note: agreed with the sequence
+
+### ACK carla-4
+- by: carla
+- refs: ines-4
+- as_of: 2026-04-13T09:40:00+00:00
+- note: counts match mine
+
+### ACK dario-4
+- by: dario
+- refs: ines-4
+- as_of: 2026-04-13T11:49:00+02:00
+- note: ok after the second reading
+
+### DISSENT elio-4
+- by: elio
+- refs: ines-4
+- as_of: 2026-04-13T10:58:00+01:00
+- text: the slot is already taken that day
+
+### PROPOSE ines-5
+- by: ines
+- to: bruno, carla, dario, elio
+- as_of: 2026-04-13T11:07:00+01:00
+- text: Inspect formwork set 7.
+
+### DISSENT bruno-5
+- by: bruno
+- refs: ines-5
+- as_of: 2026-04-13T11:16:00+01:00
+- text: the tolerance is wrong for this batch
+
+
+commit refs/heads/main
+mark :24
+author Carla Muñoz Peña <carla@portoluna.example> 1776076020 +0000
+committer Carla Muñoz Peña <carla@portoluna.example> 1776076020 +0000
+data 18
+coord: ACK carla-5
+from :23
+M 100644 inline COORD.md
+data 3142
+# COORD - Portoluna quay works
+
+protocol: coord/1
+
+## Agents
+
+- ines | Inès Carrà | ines@portoluna.example | site lead
+- bruno | Bruno Šťastný | bruno@portoluna.example | structures
+- carla | Carla Muñoz Peña | carla@portoluna.example | procurement
+- dario | Dário Åkesson | dario@portoluna.example | safety
+- elio | Elio Đorđević | elio@portoluna.example | surveying
+- fiona | Fíona Ó Briain | fiona@portoluna.example | design
+
+## Log
+
+### PROPOSE ines-1
+- by: ines
+- to: bruno, carla, dario, elio
+- as_of: 2026-04-13T08:07:00+01:00
+- text: Inspect slab B2.
+
+### DISSENT bruno-1
+- by: bruno
+- refs: ines-1
+- as_of: 2026-04-13T08:16:00+01:00
+- text: the sequence breaks the cure time
+
+### ACK carla-1
+- by: carla
+- refs: ines-1
+- as_of: 2026-04-13T07:25:00+00:00
+- note: fine from my side
+
+### ACK dario-1
+- by: dario
+- refs: ines-1
+- as_of: 2026-04-13T09:34:00+02:00
+- note: seen, no change needed
+
+### ACK elio-1
+- by: elio
+- refs: ines-1
+- as_of: 2026-04-13T08:43:00+01:00
+- note: agreed with the sequence
+
+### PROPOSE ines-2
+- by: ines
+- to: bruno, carla, dario, elio
+- as_of: 2026-04-13T08:52:00+01:00
+- text: Inspect pier cap 4.
+
+### ACK bruno-2
+- by: bruno
+- refs: ines-2
+- as_of: 2026-04-13T09:01:00+01:00
+- note: fine from my side
+
+### DISSENT carla-2
+- by: carla
+- refs: ines-2
+- as_of: 2026-04-13T08:10:00+00:00
+- text: the figure does not match my count
+
+### ACK dario-2
+- by: dario
+- refs: ines-2
+- as_of: 2026-04-13T10:19:00+02:00
+- note: agreed with the sequence
+
+### ACK elio-2
+- by: elio
+- refs: ines-2
+- as_of: 2026-04-13T09:28:00+01:00
+- note: counts match mine
+
+### PROPOSE ines-3
+- by: ines
+- to: bruno, carla, dario, elio
+- as_of: 2026-04-13T09:37:00+01:00
+- text: Inspect the east ramp.
+
+### ACK bruno-3
+- by: bruno
+- refs: ines-3
+- as_of: 2026-04-13T09:46:00+01:00
+- note: seen, no change needed
+
+### ACK carla-3
+- by: carla
+- refs: ines-3
+- as_of: 2026-04-13T08:55:00+00:00
+- note: agreed with the sequence
+
+### DISSENT dario-3
+- by: dario
+- refs: ines-3
+- as_of: 2026-04-13T11:04:00+02:00
+- text: this needs the safety review first
+
+### ACK elio-3
+- by: elio
+- refs: ines-3
+- as_of: 2026-04-13T10:13:00+01:00
+- note: ok after the second reading
+
+### PROPOSE ines-4
+- by: ines
+- to: bruno, carla, dario, elio
+- as_of: 2026-04-13T10:22:00+01:00
+- text: Inspect crane pad C.
+
+### ACK bruno-4
+- by: bruno
+- refs: ines-4
+- as_of: 2026-04-13T10:31:00+01:00
+- note: agreed with the sequence
+
+### ACK carla-4
+- by: carla
+- refs: ines-4
+- as_of: 2026-04-13T09:40:00+00:00
+- note: counts match mine
+
+### ACK dario-4
+- by: dario
+- refs: ines-4
+- as_of: 2026-04-13T11:49:00+02:00
+- note: ok after the second reading
+
+### DISSENT elio-4
+- by: elio
+- refs: ines-4
+- as_of: 2026-04-13T10:58:00+01:00
+- text: the slot is already taken that day
+
+### PROPOSE ines-5
+- by: ines
+- to: bruno, carla, dario, elio
+- as_of: 2026-04-13T11:07:00+01:00
+- text: Inspect formwork set 7.
+
+### DISSENT bruno-5
+- by: bruno
+- refs: ines-5
+- as_of: 2026-04-13T11:16:00+01:00
+- text: the tolerance is wrong for this batch
+
+### ACK carla-5
+- by: carla
+- refs: ines-5
+- as_of: 2026-04-13T10:25:00+00:00
+- note: ok after the second reading
+
+
+commit refs/heads/main
+mark :25
+author Dário Åkesson <dario@portoluna.example> 1776076560 +0200
+committer Dário Åkesson <dario@portoluna.example> 1776076560 +0200
+data 18
+coord: ACK dario-5
+from :24
+M 100644 inline COORD.md
+data 3249
+# COORD - Portoluna quay works
+
+protocol: coord/1
+
+## Agents
+
+- ines | Inès Carrà | ines@portoluna.example | site lead
+- bruno | Bruno Šťastný | bruno@portoluna.example | structures
+- carla | Carla Muñoz Peña | carla@portoluna.example | procurement
+- dario | Dário Åkesson | dario@portoluna.example | safety
+- elio | Elio Đorđević | elio@portoluna.example | surveying
+- fiona | Fíona Ó Briain | fiona@portoluna.example | design
+
+## Log
+
+### PROPOSE ines-1
+- by: ines
+- to: bruno, carla, dario, elio
+- as_of: 2026-04-13T08:07:00+01:00
+- text: Inspect slab B2.
+
+### DISSENT bruno-1
+- by: bruno
+- refs: ines-1
+- as_of: 2026-04-13T08:16:00+01:00
+- text: the sequence breaks the cure time
+
+### ACK carla-1
+- by: carla
+- refs: ines-1
+- as_of: 2026-04-13T07:25:00+00:00
+- note: fine from my side
+
+### ACK dario-1
+- by: dario
+- refs: ines-1
+- as_of: 2026-04-13T09:34:00+02:00
+- note: seen, no change needed
+
+### ACK elio-1
+- by: elio
+- refs: ines-1
+- as_of: 2026-04-13T08:43:00+01:00
+- note: agreed with the sequence
+
+### PROPOSE ines-2
+- by: ines
+- to: bruno, carla, dario, elio
+- as_of: 2026-04-13T08:52:00+01:00
+- text: Inspect pier cap 4.
+
+### ACK bruno-2
+- by: bruno
+- refs: ines-2
+- as_of: 2026-04-13T09:01:00+01:00
+- note: fine from my side
+
+### DISSENT carla-2
+- by: carla
+- refs: ines-2
+- as_of: 2026-04-13T08:10:00+00:00
+- text: the figure does not match my count
+
+### ACK dario-2
+- by: dario
+- refs: ines-2
+- as_of: 2026-04-13T10:19:00+02:00
+- note: agreed with the sequence
+
+### ACK elio-2
+- by: elio
+- refs: ines-2
+- as_of: 2026-04-13T09:28:00+01:00
+- note: counts match mine
+
+### PROPOSE ines-3
+- by: ines
+- to: bruno, carla, dario, elio
+- as_of: 2026-04-13T09:37:00+01:00
+- text: Inspect the east ramp.
+
+### ACK bruno-3
+- by: bruno
+- refs: ines-3
+- as_of: 2026-04-13T09:46:00+01:00
+- note: seen, no change needed
+
+### ACK carla-3
+- by: carla
+- refs: ines-3
+- as_of: 2026-04-13T08:55:00+00:00
+- note: agreed with the sequence
+
+### DISSENT dario-3
+- by: dario
+- refs: ines-3
+- as_of: 2026-04-13T11:04:00+02:00
+- text: this needs the safety review first
+
+### ACK elio-3
+- by: elio
+- refs: ines-3
+- as_of: 2026-04-13T10:13:00+01:00
+- note: ok after the second reading
+
+### PROPOSE ines-4
+- by: ines
+- to: bruno, carla, dario, elio
+- as_of: 2026-04-13T10:22:00+01:00
+- text: Inspect crane pad C.
+
+### ACK bruno-4
+- by: bruno
+- refs: ines-4
+- as_of: 2026-04-13T10:31:00+01:00
+- note: agreed with the sequence
+
+### ACK carla-4
+- by: carla
+- refs: ines-4
+- as_of: 2026-04-13T09:40:00+00:00
+- note: counts match mine
+
+### ACK dario-4
+- by: dario
+- refs: ines-4
+- as_of: 2026-04-13T11:49:00+02:00
+- note: ok after the second reading
+
+### DISSENT elio-4
+- by: elio
+- refs: ines-4
+- as_of: 2026-04-13T10:58:00+01:00
+- text: the slot is already taken that day
+
+### PROPOSE ines-5
+- by: ines
+- to: bruno, carla, dario, elio
+- as_of: 2026-04-13T11:07:00+01:00
+- text: Inspect formwork set 7.
+
+### DISSENT bruno-5
+- by: bruno
+- refs: ines-5
+- as_of: 2026-04-13T11:16:00+01:00
+- text: the tolerance is wrong for this batch
+
+### ACK carla-5
+- by: carla
+- refs: ines-5
+- as_of: 2026-04-13T10:25:00+00:00
+- note: ok after the second reading
+
+### ACK dario-5
+- by: dario
+- refs: ines-5
+- as_of: 2026-04-13T12:34:00+02:00
+- note: done on my list too
+
+
+commit refs/heads/main
+mark :26
+author Elio Đorđević <elio@portoluna.example> 1776077100 +0100
+committer Elio Đorđević <elio@portoluna.example> 1776077100 +0100
+data 17
+coord: ACK elio-5
+from :25
+M 100644 inline COORD.md
+data 3366
+# COORD - Portoluna quay works
+
+protocol: coord/1
+
+## Agents
+
+- ines | Inès Carrà | ines@portoluna.example | site lead
+- bruno | Bruno Šťastný | bruno@portoluna.example | structures
+- carla | Carla Muñoz Peña | carla@portoluna.example | procurement
+- dario | Dário Åkesson | dario@portoluna.example | safety
+- elio | Elio Đorđević | elio@portoluna.example | surveying
+- fiona | Fíona Ó Briain | fiona@portoluna.example | design
+
+## Log
+
+### PROPOSE ines-1
+- by: ines
+- to: bruno, carla, dario, elio
+- as_of: 2026-04-13T08:07:00+01:00
+- text: Inspect slab B2.
+
+### DISSENT bruno-1
+- by: bruno
+- refs: ines-1
+- as_of: 2026-04-13T08:16:00+01:00
+- text: the sequence breaks the cure time
+
+### ACK carla-1
+- by: carla
+- refs: ines-1
+- as_of: 2026-04-13T07:25:00+00:00
+- note: fine from my side
+
+### ACK dario-1
+- by: dario
+- refs: ines-1
+- as_of: 2026-04-13T09:34:00+02:00
+- note: seen, no change needed
+
+### ACK elio-1
+- by: elio
+- refs: ines-1
+- as_of: 2026-04-13T08:43:00+01:00
+- note: agreed with the sequence
+
+### PROPOSE ines-2
+- by: ines
+- to: bruno, carla, dario, elio
+- as_of: 2026-04-13T08:52:00+01:00
+- text: Inspect pier cap 4.
+
+### ACK bruno-2
+- by: bruno
+- refs: ines-2
+- as_of: 2026-04-13T09:01:00+01:00
+- note: fine from my side
+
+### DISSENT carla-2
+- by: carla
+- refs: ines-2
+- as_of: 2026-04-13T08:10:00+00:00
+- text: the figure does not match my count
+
+### ACK dario-2
+- by: dario
+- refs: ines-2
+- as_of: 2026-04-13T10:19:00+02:00
+- note: agreed with the sequence
+
+### ACK elio-2
+- by: elio
+- refs: ines-2
+- as_of: 2026-04-13T09:28:00+01:00
+- note: counts match mine
+
+### PROPOSE ines-3
+- by: ines
+- to: bruno, carla, dario, elio
+- as_of: 2026-04-13T09:37:00+01:00
+- text: Inspect the east ramp.
+
+### ACK bruno-3
+- by: bruno
+- refs: ines-3
+- as_of: 2026-04-13T09:46:00+01:00
+- note: seen, no change needed
+
+### ACK carla-3
+- by: carla
+- refs: ines-3
+- as_of: 2026-04-13T08:55:00+00:00
+- note: agreed with the sequence
+
+### DISSENT dario-3
+- by: dario
+- refs: ines-3
+- as_of: 2026-04-13T11:04:00+02:00
+- text: this needs the safety review first
+
+### ACK elio-3
+- by: elio
+- refs: ines-3
+- as_of: 2026-04-13T10:13:00+01:00
+- note: ok after the second reading
+
+### PROPOSE ines-4
+- by: ines
+- to: bruno, carla, dario, elio
+- as_of: 2026-04-13T10:22:00+01:00
+- text: Inspect crane pad C.
+
+### ACK bruno-4
+- by: bruno
+- refs: ines-4
+- as_of: 2026-04-13T10:31:00+01:00
+- note: agreed with the sequence
+
+### ACK carla-4
+- by: carla
+- refs: ines-4
+- as_of: 2026-04-13T09:40:00+00:00
+- note: counts match mine
+
+### ACK dario-4
+- by: dario
+- refs: ines-4
+- as_of: 2026-04-13T11:49:00+02:00
+- note: ok after the second reading
+
+### DISSENT elio-4
+- by: elio
+- refs: ines-4
+- as_of: 2026-04-13T10:58:00+01:00
+- text: the slot is already taken that day
+
+### PROPOSE ines-5
+- by: ines
+- to: bruno, carla, dario, elio
+- as_of: 2026-04-13T11:07:00+01:00
+- text: Inspect formwork set 7.
+
+### DISSENT bruno-5
+- by: bruno
+- refs: ines-5
+- as_of: 2026-04-13T11:16:00+01:00
+- text: the tolerance is wrong for this batch
+
+### ACK carla-5
+- by: carla
+- refs: ines-5
+- as_of: 2026-04-13T10:25:00+00:00
+- note: ok after the second reading
+
+### ACK dario-5
+- by: dario
+- refs: ines-5
+- as_of: 2026-04-13T12:34:00+02:00
+- note: done on my list too
+
+### ACK elio-5
+- by: elio
+- refs: ines-5
+- as_of: 2026-04-13T11:43:00+01:00
+- note: as discussed in the entry above
+
+
+commit refs/heads/main
+mark :27
+author Inès Carrà <ines@portoluna.example> 1776077640 +0100
+committer Inès Carrà <ines@portoluna.example> 1776077640 +0100
+data 21
+coord: PROPOSE ines-6
+from :26
+M 100644 inline COORD.md
+data 3501
+# COORD - Portoluna quay works
+
+protocol: coord/1
+
+## Agents
+
+- ines | Inès Carrà | ines@portoluna.example | site lead
+- bruno | Bruno Šťastný | bruno@portoluna.example | structures
+- carla | Carla Muñoz Peña | carla@portoluna.example | procurement
+- dario | Dário Åkesson | dario@portoluna.example | safety
+- elio | Elio Đorđević | elio@portoluna.example | surveying
+- fiona | Fíona Ó Briain | fiona@portoluna.example | design
+
+## Log
+
+### PROPOSE ines-1
+- by: ines
+- to: bruno, carla, dario, elio
+- as_of: 2026-04-13T08:07:00+01:00
+- text: Inspect slab B2.
+
+### DISSENT bruno-1
+- by: bruno
+- refs: ines-1
+- as_of: 2026-04-13T08:16:00+01:00
+- text: the sequence breaks the cure time
+
+### ACK carla-1
+- by: carla
+- refs: ines-1
+- as_of: 2026-04-13T07:25:00+00:00
+- note: fine from my side
+
+### ACK dario-1
+- by: dario
+- refs: ines-1
+- as_of: 2026-04-13T09:34:00+02:00
+- note: seen, no change needed
+
+### ACK elio-1
+- by: elio
+- refs: ines-1
+- as_of: 2026-04-13T08:43:00+01:00
+- note: agreed with the sequence
+
+### PROPOSE ines-2
+- by: ines
+- to: bruno, carla, dario, elio
+- as_of: 2026-04-13T08:52:00+01:00
+- text: Inspect pier cap 4.
+
+### ACK bruno-2
+- by: bruno
+- refs: ines-2
+- as_of: 2026-04-13T09:01:00+01:00
+- note: fine from my side
+
+### DISSENT carla-2
+- by: carla
+- refs: ines-2
+- as_of: 2026-04-13T08:10:00+00:00
+- text: the figure does not match my count
+
+### ACK dario-2
+- by: dario
+- refs: ines-2
+- as_of: 2026-04-13T10:19:00+02:00
+- note: agreed with the sequence
+
+### ACK elio-2
+- by: elio
+- refs: ines-2
+- as_of: 2026-04-13T09:28:00+01:00
+- note: counts match mine
+
+### PROPOSE ines-3
+- by: ines
+- to: bruno, carla, dario, elio
+- as_of: 2026-04-13T09:37:00+01:00
+- text: Inspect the east ramp.
+
+### ACK bruno-3
+- by: bruno
+- refs: ines-3
+- as_of: 2026-04-13T09:46:00+01:00
+- note: seen, no change needed
+
+### ACK carla-3
+- by: carla
+- refs: ines-3
+- as_of: 2026-04-13T08:55:00+00:00
+- note: agreed with the sequence
+
+### DISSENT dario-3
+- by: dario
+- refs: ines-3
+- as_of: 2026-04-13T11:04:00+02:00
+- text: this needs the safety review first
+
+### ACK elio-3
+- by: elio
+- refs: ines-3
+- as_of: 2026-04-13T10:13:00+01:00
+- note: ok after the second reading
+
+### PROPOSE ines-4
+- by: ines
+- to: bruno, carla, dario, elio
+- as_of: 2026-04-13T10:22:00+01:00
+- text: Inspect crane pad C.
+
+### ACK bruno-4
+- by: bruno
+- refs: ines-4
+- as_of: 2026-04-13T10:31:00+01:00
+- note: agreed with the sequence
+
+### ACK carla-4
+- by: carla
+- refs: ines-4
+- as_of: 2026-04-13T09:40:00+00:00
+- note: counts match mine
+
+### ACK dario-4
+- by: dario
+- refs: ines-4
+- as_of: 2026-04-13T11:49:00+02:00
+- note: ok after the second reading
+
+### DISSENT elio-4
+- by: elio
+- refs: ines-4
+- as_of: 2026-04-13T10:58:00+01:00
+- text: the slot is already taken that day
+
+### PROPOSE ines-5
+- by: ines
+- to: bruno, carla, dario, elio
+- as_of: 2026-04-13T11:07:00+01:00
+- text: Inspect formwork set 7.
+
+### DISSENT bruno-5
+- by: bruno
+- refs: ines-5
+- as_of: 2026-04-13T11:16:00+01:00
+- text: the tolerance is wrong for this batch
+
+### ACK carla-5
+- by: carla
+- refs: ines-5
+- as_of: 2026-04-13T10:25:00+00:00
+- note: ok after the second reading
+
+### ACK dario-5
+- by: dario
+- refs: ines-5
+- as_of: 2026-04-13T12:34:00+02:00
+- note: done on my list too
+
+### ACK elio-5
+- by: elio
+- refs: ines-5
+- as_of: 2026-04-13T11:43:00+01:00
+- note: as discussed in the entry above
+
+### PROPOSE ines-6
+- by: ines
+- to: bruno, carla, dario, elio
+- as_of: 2026-04-13T11:52:00+01:00
+- text: Inspect the drainage trench.
+
+
+commit refs/heads/main
+mark :28
+author Bruno Šťastný <bruno@portoluna.example> 1776078180 +0100
+committer Bruno Šťastný <bruno@portoluna.example> 1776078180 +0100
+data 18
+coord: ACK bruno-6
+from :27
+M 100644 inline COORD.md
+data 3616
+# COORD - Portoluna quay works
+
+protocol: coord/1
+
+## Agents
+
+- ines | Inès Carrà | ines@portoluna.example | site lead
+- bruno | Bruno Šťastný | bruno@portoluna.example | structures
+- carla | Carla Muñoz Peña | carla@portoluna.example | procurement
+- dario | Dário Åkesson | dario@portoluna.example | safety
+- elio | Elio Đorđević | elio@portoluna.example | surveying
+- fiona | Fíona Ó Briain | fiona@portoluna.example | design
+
+## Log
+
+### PROPOSE ines-1
+- by: ines
+- to: bruno, carla, dario, elio
+- as_of: 2026-04-13T08:07:00+01:00
+- text: Inspect slab B2.
+
+### DISSENT bruno-1
+- by: bruno
+- refs: ines-1
+- as_of: 2026-04-13T08:16:00+01:00
+- text: the sequence breaks the cure time
+
+### ACK carla-1
+- by: carla
+- refs: ines-1
+- as_of: 2026-04-13T07:25:00+00:00
+- note: fine from my side
+
+### ACK dario-1
+- by: dario
+- refs: ines-1
+- as_of: 2026-04-13T09:34:00+02:00
+- note: seen, no change needed
+
+### ACK elio-1
+- by: elio
+- refs: ines-1
+- as_of: 2026-04-13T08:43:00+01:00
+- note: agreed with the sequence
+
+### PROPOSE ines-2
+- by: ines
+- to: bruno, carla, dario, elio
+- as_of: 2026-04-13T08:52:00+01:00
+- text: Inspect pier cap 4.
+
+### ACK bruno-2
+- by: bruno
+- refs: ines-2
+- as_of: 2026-04-13T09:01:00+01:00
+- note: fine from my side
+
+### DISSENT carla-2
+- by: carla
+- refs: ines-2
+- as_of: 2026-04-13T08:10:00+00:00
+- text: the figure does not match my count
+
+### ACK dario-2
+- by: dario
+- refs: ines-2
+- as_of: 2026-04-13T10:19:00+02:00
+- note: agreed with the sequence
+
+### ACK elio-2
+- by: elio
+- refs: ines-2
+- as_of: 2026-04-13T09:28:00+01:00
+- note: counts match mine
+
+### PROPOSE ines-3
+- by: ines
+- to: bruno, carla, dario, elio
+- as_of: 2026-04-13T09:37:00+01:00
+- text: Inspect the east ramp.
+
+### ACK bruno-3
+- by: bruno
+- refs: ines-3
+- as_of: 2026-04-13T09:46:00+01:00
+- note: seen, no change needed
+
+### ACK carla-3
+- by: carla
+- refs: ines-3
+- as_of: 2026-04-13T08:55:00+00:00
+- note: agreed with the sequence
+
+### DISSENT dario-3
+- by: dario
+- refs: ines-3
+- as_of: 2026-04-13T11:04:00+02:00
+- text: this needs the safety review first
+
+### ACK elio-3
+- by: elio
+- refs: ines-3
+- as_of: 2026-04-13T10:13:00+01:00
+- note: ok after the second reading
+
+### PROPOSE ines-4
+- by: ines
+- to: bruno, carla, dario, elio
+- as_of: 2026-04-13T10:22:00+01:00
+- text: Inspect crane pad C.
+
+### ACK bruno-4
+- by: bruno
+- refs: ines-4
+- as_of: 2026-04-13T10:31:00+01:00
+- note: agreed with the sequence
+
+### ACK carla-4
+- by: carla
+- refs: ines-4
+- as_of: 2026-04-13T09:40:00+00:00
+- note: counts match mine
+
+### ACK dario-4
+- by: dario
+- refs: ines-4
+- as_of: 2026-04-13T11:49:00+02:00
+- note: ok after the second reading
+
+### DISSENT elio-4
+- by: elio
+- refs: ines-4
+- as_of: 2026-04-13T10:58:00+01:00
+- text: the slot is already taken that day
+
+### PROPOSE ines-5
+- by: ines
+- to: bruno, carla, dario, elio
+- as_of: 2026-04-13T11:07:00+01:00
+- text: Inspect formwork set 7.
+
+### DISSENT bruno-5
+- by: bruno
+- refs: ines-5
+- as_of: 2026-04-13T11:16:00+01:00
+- text: the tolerance is wrong for this batch
+
+### ACK carla-5
+- by: carla
+- refs: ines-5
+- as_of: 2026-04-13T10:25:00+00:00
+- note: ok after the second reading
+
+### ACK dario-5
+- by: dario
+- refs: ines-5
+- as_of: 2026-04-13T12:34:00+02:00
+- note: done on my list too
+
+### ACK elio-5
+- by: elio
+- refs: ines-5
+- as_of: 2026-04-13T11:43:00+01:00
+- note: as discussed in the entry above
+
+### PROPOSE ines-6
+- by: ines
+- to: bruno, carla, dario, elio
+- as_of: 2026-04-13T11:52:00+01:00
+- text: Inspect the drainage trench.
+
+### ACK bruno-6
+- by: bruno
+- refs: ines-6
+- as_of: 2026-04-13T12:01:00+01:00
+- note: ok after the second reading
+
+
+commit refs/heads/main
+mark :29
+author Carla Muñoz Peña <carla@portoluna.example> 1776078720 +0000
+committer Carla Muñoz Peña <carla@portoluna.example> 1776078720 +0000
+data 22
+coord: DISSENT carla-6
+from :28
+M 100644 inline COORD.md
+data 3729
+# COORD - Portoluna quay works
+
+protocol: coord/1
+
+## Agents
+
+- ines | Inès Carrà | ines@portoluna.example | site lead
+- bruno | Bruno Šťastný | bruno@portoluna.example | structures
+- carla | Carla Muñoz Peña | carla@portoluna.example | procurement
+- dario | Dário Åkesson | dario@portoluna.example | safety
+- elio | Elio Đorđević | elio@portoluna.example | surveying
+- fiona | Fíona Ó Briain | fiona@portoluna.example | design
+
+## Log
+
+### PROPOSE ines-1
+- by: ines
+- to: bruno, carla, dario, elio
+- as_of: 2026-04-13T08:07:00+01:00
+- text: Inspect slab B2.
+
+### DISSENT bruno-1
+- by: bruno
+- refs: ines-1
+- as_of: 2026-04-13T08:16:00+01:00
+- text: the sequence breaks the cure time
+
+### ACK carla-1
+- by: carla
+- refs: ines-1
+- as_of: 2026-04-13T07:25:00+00:00
+- note: fine from my side
+
+### ACK dario-1
+- by: dario
+- refs: ines-1
+- as_of: 2026-04-13T09:34:00+02:00
+- note: seen, no change needed
+
+### ACK elio-1
+- by: elio
+- refs: ines-1
+- as_of: 2026-04-13T08:43:00+01:00
+- note: agreed with the sequence
+
+### PROPOSE ines-2
+- by: ines
+- to: bruno, carla, dario, elio
+- as_of: 2026-04-13T08:52:00+01:00
+- text: Inspect pier cap 4.
+
+### ACK bruno-2
+- by: bruno
+- refs: ines-2
+- as_of: 2026-04-13T09:01:00+01:00
+- note: fine from my side
+
+### DISSENT carla-2
+- by: carla
+- refs: ines-2
+- as_of: 2026-04-13T08:10:00+00:00
+- text: the figure does not match my count
+
+### ACK dario-2
+- by: dario
+- refs: ines-2
+- as_of: 2026-04-13T10:19:00+02:00
+- note: agreed with the sequence
+
+### ACK elio-2
+- by: elio
+- refs: ines-2
+- as_of: 2026-04-13T09:28:00+01:00
+- note: counts match mine
+
+### PROPOSE ines-3
+- by: ines
+- to: bruno, carla, dario, elio
+- as_of: 2026-04-13T09:37:00+01:00
+- text: Inspect the east ramp.
+
+### ACK bruno-3
+- by: bruno
+- refs: ines-3
+- as_of: 2026-04-13T09:46:00+01:00
+- note: seen, no change needed
+
+### ACK carla-3
+- by: carla
+- refs: ines-3
+- as_of: 2026-04-13T08:55:00+00:00
+- note: agreed with the sequence
+
+### DISSENT dario-3
+- by: dario
+- refs: ines-3
+- as_of: 2026-04-13T11:04:00+02:00
+- text: this needs the safety review first
+
+### ACK elio-3
+- by: elio
+- refs: ines-3
+- as_of: 2026-04-13T10:13:00+01:00
+- note: ok after the second reading
+
+### PROPOSE ines-4
+- by: ines
+- to: bruno, carla, dario, elio
+- as_of: 2026-04-13T10:22:00+01:00
+- text: Inspect crane pad C.
+
+### ACK bruno-4
+- by: bruno
+- refs: ines-4
+- as_of: 2026-04-13T10:31:00+01:00
+- note: agreed with the sequence
+
+### ACK carla-4
+- by: carla
+- refs: ines-4
+- as_of: 2026-04-13T09:40:00+00:00
+- note: counts match mine
+
+### ACK dario-4
+- by: dario
+- refs: ines-4
+- as_of: 2026-04-13T11:49:00+02:00
+- note: ok after the second reading
+
+### DISSENT elio-4
+- by: elio
+- refs: ines-4
+- as_of: 2026-04-13T10:58:00+01:00
+- text: the slot is already taken that day
+
+### PROPOSE ines-5
+- by: ines
+- to: bruno, carla, dario, elio
+- as_of: 2026-04-13T11:07:00+01:00
+- text: Inspect formwork set 7.
+
+### DISSENT bruno-5
+- by: bruno
+- refs: ines-5
+- as_of: 2026-04-13T11:16:00+01:00
+- text: the tolerance is wrong for this batch
+
+### ACK carla-5
+- by: carla
+- refs: ines-5
+- as_of: 2026-04-13T10:25:00+00:00
+- note: ok after the second reading
+
+### ACK dario-5
+- by: dario
+- refs: ines-5
+- as_of: 2026-04-13T12:34:00+02:00
+- note: done on my list too
+
+### ACK elio-5
+- by: elio
+- refs: ines-5
+- as_of: 2026-04-13T11:43:00+01:00
+- note: as discussed in the entry above
+
+### PROPOSE ines-6
+- by: ines
+- to: bruno, carla, dario, elio
+- as_of: 2026-04-13T11:52:00+01:00
+- text: Inspect the drainage trench.
+
+### ACK bruno-6
+- by: bruno
+- refs: ines-6
+- as_of: 2026-04-13T12:01:00+01:00
+- note: ok after the second reading
+
+### DISSENT carla-6
+- by: carla
+- refs: ines-6
+- as_of: 2026-04-13T11:10:00+00:00
+- text: two steps are swapped
+
+
+commit refs/heads/main
+mark :30
+author Dário Åkesson <dario@portoluna.example> 1776079260 +0200
+committer Dário Åkesson <dario@portoluna.example> 1776079260 +0200
+data 18
+coord: ACK dario-6
+from :29
+M 100644 inline COORD.md
+data 3848
+# COORD - Portoluna quay works
+
+protocol: coord/1
+
+## Agents
+
+- ines | Inès Carrà | ines@portoluna.example | site lead
+- bruno | Bruno Šťastný | bruno@portoluna.example | structures
+- carla | Carla Muñoz Peña | carla@portoluna.example | procurement
+- dario | Dário Åkesson | dario@portoluna.example | safety
+- elio | Elio Đorđević | elio@portoluna.example | surveying
+- fiona | Fíona Ó Briain | fiona@portoluna.example | design
+
+## Log
+
+### PROPOSE ines-1
+- by: ines
+- to: bruno, carla, dario, elio
+- as_of: 2026-04-13T08:07:00+01:00
+- text: Inspect slab B2.
+
+### DISSENT bruno-1
+- by: bruno
+- refs: ines-1
+- as_of: 2026-04-13T08:16:00+01:00
+- text: the sequence breaks the cure time
+
+### ACK carla-1
+- by: carla
+- refs: ines-1
+- as_of: 2026-04-13T07:25:00+00:00
+- note: fine from my side
+
+### ACK dario-1
+- by: dario
+- refs: ines-1
+- as_of: 2026-04-13T09:34:00+02:00
+- note: seen, no change needed
+
+### ACK elio-1
+- by: elio
+- refs: ines-1
+- as_of: 2026-04-13T08:43:00+01:00
+- note: agreed with the sequence
+
+### PROPOSE ines-2
+- by: ines
+- to: bruno, carla, dario, elio
+- as_of: 2026-04-13T08:52:00+01:00
+- text: Inspect pier cap 4.
+
+### ACK bruno-2
+- by: bruno
+- refs: ines-2
+- as_of: 2026-04-13T09:01:00+01:00
+- note: fine from my side
+
+### DISSENT carla-2
+- by: carla
+- refs: ines-2
+- as_of: 2026-04-13T08:10:00+00:00
+- text: the figure does not match my count
+
+### ACK dario-2
+- by: dario
+- refs: ines-2
+- as_of: 2026-04-13T10:19:00+02:00
+- note: agreed with the sequence
+
+### ACK elio-2
+- by: elio
+- refs: ines-2
+- as_of: 2026-04-13T09:28:00+01:00
+- note: counts match mine
+
+### PROPOSE ines-3
+- by: ines
+- to: bruno, carla, dario, elio
+- as_of: 2026-04-13T09:37:00+01:00
+- text: Inspect the east ramp.
+
+### ACK bruno-3
+- by: bruno
+- refs: ines-3
+- as_of: 2026-04-13T09:46:00+01:00
+- note: seen, no change needed
+
+### ACK carla-3
+- by: carla
+- refs: ines-3
+- as_of: 2026-04-13T08:55:00+00:00
+- note: agreed with the sequence
+
+### DISSENT dario-3
+- by: dario
+- refs: ines-3
+- as_of: 2026-04-13T11:04:00+02:00
+- text: this needs the safety review first
+
+### ACK elio-3
+- by: elio
+- refs: ines-3
+- as_of: 2026-04-13T10:13:00+01:00
+- note: ok after the second reading
+
+### PROPOSE ines-4
+- by: ines
+- to: bruno, carla, dario, elio
+- as_of: 2026-04-13T10:22:00+01:00
+- text: Inspect crane pad C.
+
+### ACK bruno-4
+- by: bruno
+- refs: ines-4
+- as_of: 2026-04-13T10:31:00+01:00
+- note: agreed with the sequence
+
+### ACK carla-4
+- by: carla
+- refs: ines-4
+- as_of: 2026-04-13T09:40:00+00:00
+- note: counts match mine
+
+### ACK dario-4
+- by: dario
+- refs: ines-4
+- as_of: 2026-04-13T11:49:00+02:00
+- note: ok after the second reading
+
+### DISSENT elio-4
+- by: elio
+- refs: ines-4
+- as_of: 2026-04-13T10:58:00+01:00
+- text: the slot is already taken that day
+
+### PROPOSE ines-5
+- by: ines
+- to: bruno, carla, dario, elio
+- as_of: 2026-04-13T11:07:00+01:00
+- text: Inspect formwork set 7.
+
+### DISSENT bruno-5
+- by: bruno
+- refs: ines-5
+- as_of: 2026-04-13T11:16:00+01:00
+- text: the tolerance is wrong for this batch
+
+### ACK carla-5
+- by: carla
+- refs: ines-5
+- as_of: 2026-04-13T10:25:00+00:00
+- note: ok after the second reading
+
+### ACK dario-5
+- by: dario
+- refs: ines-5
+- as_of: 2026-04-13T12:34:00+02:00
+- note: done on my list too
+
+### ACK elio-5
+- by: elio
+- refs: ines-5
+- as_of: 2026-04-13T11:43:00+01:00
+- note: as discussed in the entry above
+
+### PROPOSE ines-6
+- by: ines
+- to: bruno, carla, dario, elio
+- as_of: 2026-04-13T11:52:00+01:00
+- text: Inspect the drainage trench.
+
+### ACK bruno-6
+- by: bruno
+- refs: ines-6
+- as_of: 2026-04-13T12:01:00+01:00
+- note: ok after the second reading
+
+### DISSENT carla-6
+- by: carla
+- refs: ines-6
+- as_of: 2026-04-13T11:10:00+00:00
+- text: two steps are swapped
+
+### ACK dario-6
+- by: dario
+- refs: ines-6
+- as_of: 2026-04-13T13:19:00+02:00
+- note: as discussed in the entry above
+
+
+commit refs/heads/main
+mark :31
+author Elio Đorđević <elio@portoluna.example> 1776079800 +0100
+committer Elio Đorđević <elio@portoluna.example> 1776079800 +0100
+data 17
+coord: ACK elio-6
+from :30
+M 100644 inline COORD.md
+data 3961
+# COORD - Portoluna quay works
+
+protocol: coord/1
+
+## Agents
+
+- ines | Inès Carrà | ines@portoluna.example | site lead
+- bruno | Bruno Šťastný | bruno@portoluna.example | structures
+- carla | Carla Muñoz Peña | carla@portoluna.example | procurement
+- dario | Dário Åkesson | dario@portoluna.example | safety
+- elio | Elio Đorđević | elio@portoluna.example | surveying
+- fiona | Fíona Ó Briain | fiona@portoluna.example | design
+
+## Log
+
+### PROPOSE ines-1
+- by: ines
+- to: bruno, carla, dario, elio
+- as_of: 2026-04-13T08:07:00+01:00
+- text: Inspect slab B2.
+
+### DISSENT bruno-1
+- by: bruno
+- refs: ines-1
+- as_of: 2026-04-13T08:16:00+01:00
+- text: the sequence breaks the cure time
+
+### ACK carla-1
+- by: carla
+- refs: ines-1
+- as_of: 2026-04-13T07:25:00+00:00
+- note: fine from my side
+
+### ACK dario-1
+- by: dario
+- refs: ines-1
+- as_of: 2026-04-13T09:34:00+02:00
+- note: seen, no change needed
+
+### ACK elio-1
+- by: elio
+- refs: ines-1
+- as_of: 2026-04-13T08:43:00+01:00
+- note: agreed with the sequence
+
+### PROPOSE ines-2
+- by: ines
+- to: bruno, carla, dario, elio
+- as_of: 2026-04-13T08:52:00+01:00
+- text: Inspect pier cap 4.
+
+### ACK bruno-2
+- by: bruno
+- refs: ines-2
+- as_of: 2026-04-13T09:01:00+01:00
+- note: fine from my side
+
+### DISSENT carla-2
+- by: carla
+- refs: ines-2
+- as_of: 2026-04-13T08:10:00+00:00
+- text: the figure does not match my count
+
+### ACK dario-2
+- by: dario
+- refs: ines-2
+- as_of: 2026-04-13T10:19:00+02:00
+- note: agreed with the sequence
+
+### ACK elio-2
+- by: elio
+- refs: ines-2
+- as_of: 2026-04-13T09:28:00+01:00
+- note: counts match mine
+
+### PROPOSE ines-3
+- by: ines
+- to: bruno, carla, dario, elio
+- as_of: 2026-04-13T09:37:00+01:00
+- text: Inspect the east ramp.
+
+### ACK bruno-3
+- by: bruno
+- refs: ines-3
+- as_of: 2026-04-13T09:46:00+01:00
+- note: seen, no change needed
+
+### ACK carla-3
+- by: carla
+- refs: ines-3
+- as_of: 2026-04-13T08:55:00+00:00
+- note: agreed with the sequence
+
+### DISSENT dario-3
+- by: dario
+- refs: ines-3
+- as_of: 2026-04-13T11:04:00+02:00
+- text: this needs the safety review first
+
+### ACK elio-3
+- by: elio
+- refs: ines-3
+- as_of: 2026-04-13T10:13:00+01:00
+- note: ok after the second reading
+
+### PROPOSE ines-4
+- by: ines
+- to: bruno, carla, dario, elio
+- as_of: 2026-04-13T10:22:00+01:00
+- text: Inspect crane pad C.
+
+### ACK bruno-4
+- by: bruno
+- refs: ines-4
+- as_of: 2026-04-13T10:31:00+01:00
+- note: agreed with the sequence
+
+### ACK carla-4
+- by: carla
+- refs: ines-4
+- as_of: 2026-04-13T09:40:00+00:00
+- note: counts match mine
+
+### ACK dario-4
+- by: dario
+- refs: ines-4
+- as_of: 2026-04-13T11:49:00+02:00
+- note: ok after the second reading
+
+### DISSENT elio-4
+- by: elio
+- refs: ines-4
+- as_of: 2026-04-13T10:58:00+01:00
+- text: the slot is already taken that day
+
+### PROPOSE ines-5
+- by: ines
+- to: bruno, carla, dario, elio
+- as_of: 2026-04-13T11:07:00+01:00
+- text: Inspect formwork set 7.
+
+### DISSENT bruno-5
+- by: bruno
+- refs: ines-5
+- as_of: 2026-04-13T11:16:00+01:00
+- text: the tolerance is wrong for this batch
+
+### ACK carla-5
+- by: carla
+- refs: ines-5
+- as_of: 2026-04-13T10:25:00+00:00
+- note: ok after the second reading
+
+### ACK dario-5
+- by: dario
+- refs: ines-5
+- as_of: 2026-04-13T12:34:00+02:00
+- note: done on my list too
+
+### ACK elio-5
+- by: elio
+- refs: ines-5
+- as_of: 2026-04-13T11:43:00+01:00
+- note: as discussed in the entry above
+
+### PROPOSE ines-6
+- by: ines
+- to: bruno, carla, dario, elio
+- as_of: 2026-04-13T11:52:00+01:00
+- text: Inspect the drainage trench.
+
+### ACK bruno-6
+- by: bruno
+- refs: ines-6
+- as_of: 2026-04-13T12:01:00+01:00
+- note: ok after the second reading
+
+### DISSENT carla-6
+- by: carla
+- refs: ines-6
+- as_of: 2026-04-13T11:10:00+00:00
+- text: two steps are swapped
+
+### ACK dario-6
+- by: dario
+- refs: ines-6
+- as_of: 2026-04-13T13:19:00+02:00
+- note: as discussed in the entry above
+
+### ACK elio-6
+- by: elio
+- refs: ines-6
+- as_of: 2026-04-13T12:28:00+01:00
+- note: checked against the drawing
+
+
+commit refs/heads/main
+mark :32
+author Inès Carrà <ines@portoluna.example> 1776080340 +0100
+committer Inès Carrà <ines@portoluna.example> 1776080340 +0100
+data 21
+coord: PROPOSE ines-7
+from :31
+M 100644 inline COORD.md
+data 4080
+# COORD - Portoluna quay works
+
+protocol: coord/1
+
+## Agents
+
+- ines | Inès Carrà | ines@portoluna.example | site lead
+- bruno | Bruno Šťastný | bruno@portoluna.example | structures
+- carla | Carla Muñoz Peña | carla@portoluna.example | procurement
+- dario | Dário Åkesson | dario@portoluna.example | safety
+- elio | Elio Đorđević | elio@portoluna.example | surveying
+- fiona | Fíona Ó Briain | fiona@portoluna.example | design
+
+## Log
+
+### PROPOSE ines-1
+- by: ines
+- to: bruno, carla, dario, elio
+- as_of: 2026-04-13T08:07:00+01:00
+- text: Inspect slab B2.
+
+### DISSENT bruno-1
+- by: bruno
+- refs: ines-1
+- as_of: 2026-04-13T08:16:00+01:00
+- text: the sequence breaks the cure time
+
+### ACK carla-1
+- by: carla
+- refs: ines-1
+- as_of: 2026-04-13T07:25:00+00:00
+- note: fine from my side
+
+### ACK dario-1
+- by: dario
+- refs: ines-1
+- as_of: 2026-04-13T09:34:00+02:00
+- note: seen, no change needed
+
+### ACK elio-1
+- by: elio
+- refs: ines-1
+- as_of: 2026-04-13T08:43:00+01:00
+- note: agreed with the sequence
+
+### PROPOSE ines-2
+- by: ines
+- to: bruno, carla, dario, elio
+- as_of: 2026-04-13T08:52:00+01:00
+- text: Inspect pier cap 4.
+
+### ACK bruno-2
+- by: bruno
+- refs: ines-2
+- as_of: 2026-04-13T09:01:00+01:00
+- note: fine from my side
+
+### DISSENT carla-2
+- by: carla
+- refs: ines-2
+- as_of: 2026-04-13T08:10:00+00:00
+- text: the figure does not match my count
+
+### ACK dario-2
+- by: dario
+- refs: ines-2
+- as_of: 2026-04-13T10:19:00+02:00
+- note: agreed with the sequence
+
+### ACK elio-2
+- by: elio
+- refs: ines-2
+- as_of: 2026-04-13T09:28:00+01:00
+- note: counts match mine
+
+### PROPOSE ines-3
+- by: ines
+- to: bruno, carla, dario, elio
+- as_of: 2026-04-13T09:37:00+01:00
+- text: Inspect the east ramp.
+
+### ACK bruno-3
+- by: bruno
+- refs: ines-3
+- as_of: 2026-04-13T09:46:00+01:00
+- note: seen, no change needed
+
+### ACK carla-3
+- by: carla
+- refs: ines-3
+- as_of: 2026-04-13T08:55:00+00:00
+- note: agreed with the sequence
+
+### DISSENT dario-3
+- by: dario
+- refs: ines-3
+- as_of: 2026-04-13T11:04:00+02:00
+- text: this needs the safety review first
+
+### ACK elio-3
+- by: elio
+- refs: ines-3
+- as_of: 2026-04-13T10:13:00+01:00
+- note: ok after the second reading
+
+### PROPOSE ines-4
+- by: ines
+- to: bruno, carla, dario, elio
+- as_of: 2026-04-13T10:22:00+01:00
+- text: Inspect crane pad C.
+
+### ACK bruno-4
+- by: bruno
+- refs: ines-4
+- as_of: 2026-04-13T10:31:00+01:00
+- note: agreed with the sequence
+
+### ACK carla-4
+- by: carla
+- refs: ines-4
+- as_of: 2026-04-13T09:40:00+00:00
+- note: counts match mine
+
+### ACK dario-4
+- by: dario
+- refs: ines-4
+- as_of: 2026-04-13T11:49:00+02:00
+- note: ok after the second reading
+
+### DISSENT elio-4
+- by: elio
+- refs: ines-4
+- as_of: 2026-04-13T10:58:00+01:00
+- text: the slot is already taken that day
+
+### PROPOSE ines-5
+- by: ines
+- to: bruno, carla, dario, elio
+- as_of: 2026-04-13T11:07:00+01:00
+- text: Inspect formwork set 7.
+
+### DISSENT bruno-5
+- by: bruno
+- refs: ines-5
+- as_of: 2026-04-13T11:16:00+01:00
+- text: the tolerance is wrong for this batch
+
+### ACK carla-5
+- by: carla
+- refs: ines-5
+- as_of: 2026-04-13T10:25:00+00:00
+- note: ok after the second reading
+
+### ACK dario-5
+- by: dario
+- refs: ines-5
+- as_of: 2026-04-13T12:34:00+02:00
+- note: done on my list too
+
+### ACK elio-5
+- by: elio
+- refs: ines-5
+- as_of: 2026-04-13T11:43:00+01:00
+- note: as discussed in the entry above
+
+### PROPOSE ines-6
+- by: ines
+- to: bruno, carla, dario, elio
+- as_of: 2026-04-13T11:52:00+01:00
+- text: Inspect the drainage trench.
+
+### ACK bruno-6
+- by: bruno
+- refs: ines-6
+- as_of: 2026-04-13T12:01:00+01:00
+- note: ok after the second reading
+
+### DISSENT carla-6
+- by: carla
+- refs: ines-6
+- as_of: 2026-04-13T11:10:00+00:00
+- text: two steps are swapped
+
+### ACK dario-6
+- by: dario
+- refs: ines-6
+- as_of: 2026-04-13T13:19:00+02:00
+- note: as discussed in the entry above
+
+### ACK elio-6
+- by: elio
+- refs: ines-6
+- as_of: 2026-04-13T12:28:00+01:00
+- note: checked against the drawing
+
+### PROPOSE ines-7
+- by: ines
+- to: bruno, carla
+- as_of: 2026-04-13T12:37:00+01:00
+- text: Survey retaining wall R3.
+
+
+commit refs/heads/main
+mark :33
+author Bruno Šťastný <bruno@portoluna.example> 1776080880 +0100
+committer Bruno Šťastný <bruno@portoluna.example> 1776080880 +0100
+data 18
+coord: ACK bruno-7
+from :32
+M 100644 inline COORD.md
+data 4195
+# COORD - Portoluna quay works
+
+protocol: coord/1
+
+## Agents
+
+- ines | Inès Carrà | ines@portoluna.example | site lead
+- bruno | Bruno Šťastný | bruno@portoluna.example | structures
+- carla | Carla Muñoz Peña | carla@portoluna.example | procurement
+- dario | Dário Åkesson | dario@portoluna.example | safety
+- elio | Elio Đorđević | elio@portoluna.example | surveying
+- fiona | Fíona Ó Briain | fiona@portoluna.example | design
+
+## Log
+
+### PROPOSE ines-1
+- by: ines
+- to: bruno, carla, dario, elio
+- as_of: 2026-04-13T08:07:00+01:00
+- text: Inspect slab B2.
+
+### DISSENT bruno-1
+- by: bruno
+- refs: ines-1
+- as_of: 2026-04-13T08:16:00+01:00
+- text: the sequence breaks the cure time
+
+### ACK carla-1
+- by: carla
+- refs: ines-1
+- as_of: 2026-04-13T07:25:00+00:00
+- note: fine from my side
+
+### ACK dario-1
+- by: dario
+- refs: ines-1
+- as_of: 2026-04-13T09:34:00+02:00
+- note: seen, no change needed
+
+### ACK elio-1
+- by: elio
+- refs: ines-1
+- as_of: 2026-04-13T08:43:00+01:00
+- note: agreed with the sequence
+
+### PROPOSE ines-2
+- by: ines
+- to: bruno, carla, dario, elio
+- as_of: 2026-04-13T08:52:00+01:00
+- text: Inspect pier cap 4.
+
+### ACK bruno-2
+- by: bruno
+- refs: ines-2
+- as_of: 2026-04-13T09:01:00+01:00
+- note: fine from my side
+
+### DISSENT carla-2
+- by: carla
+- refs: ines-2
+- as_of: 2026-04-13T08:10:00+00:00
+- text: the figure does not match my count
+
+### ACK dario-2
+- by: dario
+- refs: ines-2
+- as_of: 2026-04-13T10:19:00+02:00
+- note: agreed with the sequence
+
+### ACK elio-2
+- by: elio
+- refs: ines-2
+- as_of: 2026-04-13T09:28:00+01:00
+- note: counts match mine
+
+### PROPOSE ines-3
+- by: ines
+- to: bruno, carla, dario, elio
+- as_of: 2026-04-13T09:37:00+01:00
+- text: Inspect the east ramp.
+
+### ACK bruno-3
+- by: bruno
+- refs: ines-3
+- as_of: 2026-04-13T09:46:00+01:00
+- note: seen, no change needed
+
+### ACK carla-3
+- by: carla
+- refs: ines-3
+- as_of: 2026-04-13T08:55:00+00:00
+- note: agreed with the sequence
+
+### DISSENT dario-3
+- by: dario
+- refs: ines-3
+- as_of: 2026-04-13T11:04:00+02:00
+- text: this needs the safety review first
+
+### ACK elio-3
+- by: elio
+- refs: ines-3
+- as_of: 2026-04-13T10:13:00+01:00
+- note: ok after the second reading
+
+### PROPOSE ines-4
+- by: ines
+- to: bruno, carla, dario, elio
+- as_of: 2026-04-13T10:22:00+01:00
+- text: Inspect crane pad C.
+
+### ACK bruno-4
+- by: bruno
+- refs: ines-4
+- as_of: 2026-04-13T10:31:00+01:00
+- note: agreed with the sequence
+
+### ACK carla-4
+- by: carla
+- refs: ines-4
+- as_of: 2026-04-13T09:40:00+00:00
+- note: counts match mine
+
+### ACK dario-4
+- by: dario
+- refs: ines-4
+- as_of: 2026-04-13T11:49:00+02:00
+- note: ok after the second reading
+
+### DISSENT elio-4
+- by: elio
+- refs: ines-4
+- as_of: 2026-04-13T10:58:00+01:00
+- text: the slot is already taken that day
+
+### PROPOSE ines-5
+- by: ines
+- to: bruno, carla, dario, elio
+- as_of: 2026-04-13T11:07:00+01:00
+- text: Inspect formwork set 7.
+
+### DISSENT bruno-5
+- by: bruno
+- refs: ines-5
+- as_of: 2026-04-13T11:16:00+01:00
+- text: the tolerance is wrong for this batch
+
+### ACK carla-5
+- by: carla
+- refs: ines-5
+- as_of: 2026-04-13T10:25:00+00:00
+- note: ok after the second reading
+
+### ACK dario-5
+- by: dario
+- refs: ines-5
+- as_of: 2026-04-13T12:34:00+02:00
+- note: done on my list too
+
+### ACK elio-5
+- by: elio
+- refs: ines-5
+- as_of: 2026-04-13T11:43:00+01:00
+- note: as discussed in the entry above
+
+### PROPOSE ines-6
+- by: ines
+- to: bruno, carla, dario, elio
+- as_of: 2026-04-13T11:52:00+01:00
+- text: Inspect the drainage trench.
+
+### ACK bruno-6
+- by: bruno
+- refs: ines-6
+- as_of: 2026-04-13T12:01:00+01:00
+- note: ok after the second reading
+
+### DISSENT carla-6
+- by: carla
+- refs: ines-6
+- as_of: 2026-04-13T11:10:00+00:00
+- text: two steps are swapped
+
+### ACK dario-6
+- by: dario
+- refs: ines-6
+- as_of: 2026-04-13T13:19:00+02:00
+- note: as discussed in the entry above
+
+### ACK elio-6
+- by: elio
+- refs: ines-6
+- as_of: 2026-04-13T12:28:00+01:00
+- note: checked against the drawing
+
+### PROPOSE ines-7
+- by: ines
+- to: bruno, carla
+- as_of: 2026-04-13T12:37:00+01:00
+- text: Survey retaining wall R3.
+
+### ACK bruno-7
+- by: bruno
+- refs: ines-7
+- as_of: 2026-04-13T12:46:00+01:00
+- note: checked against the drawing
+
+
+commit refs/heads/main
+mark :34
+author Carla Muñoz Peña <carla@portoluna.example> 1776081420 +0000
+committer Carla Muñoz Peña <carla@portoluna.example> 1776081420 +0000
+data 18
+coord: ACK carla-7
+from :33
+M 100644 inline COORD.md
+data 4300
+# COORD - Portoluna quay works
+
+protocol: coord/1
+
+## Agents
+
+- ines | Inès Carrà | ines@portoluna.example | site lead
+- bruno | Bruno Šťastný | bruno@portoluna.example | structures
+- carla | Carla Muñoz Peña | carla@portoluna.example | procurement
+- dario | Dário Åkesson | dario@portoluna.example | safety
+- elio | Elio Đorđević | elio@portoluna.example | surveying
+- fiona | Fíona Ó Briain | fiona@portoluna.example | design
+
+## Log
+
+### PROPOSE ines-1
+- by: ines
+- to: bruno, carla, dario, elio
+- as_of: 2026-04-13T08:07:00+01:00
+- text: Inspect slab B2.
+
+### DISSENT bruno-1
+- by: bruno
+- refs: ines-1
+- as_of: 2026-04-13T08:16:00+01:00
+- text: the sequence breaks the cure time
+
+### ACK carla-1
+- by: carla
+- refs: ines-1
+- as_of: 2026-04-13T07:25:00+00:00
+- note: fine from my side
+
+### ACK dario-1
+- by: dario
+- refs: ines-1
+- as_of: 2026-04-13T09:34:00+02:00
+- note: seen, no change needed
+
+### ACK elio-1
+- by: elio
+- refs: ines-1
+- as_of: 2026-04-13T08:43:00+01:00
+- note: agreed with the sequence
+
+### PROPOSE ines-2
+- by: ines
+- to: bruno, carla, dario, elio
+- as_of: 2026-04-13T08:52:00+01:00
+- text: Inspect pier cap 4.
+
+### ACK bruno-2
+- by: bruno
+- refs: ines-2
+- as_of: 2026-04-13T09:01:00+01:00
+- note: fine from my side
+
+### DISSENT carla-2
+- by: carla
+- refs: ines-2
+- as_of: 2026-04-13T08:10:00+00:00
+- text: the figure does not match my count
+
+### ACK dario-2
+- by: dario
+- refs: ines-2
+- as_of: 2026-04-13T10:19:00+02:00
+- note: agreed with the sequence
+
+### ACK elio-2
+- by: elio
+- refs: ines-2
+- as_of: 2026-04-13T09:28:00+01:00
+- note: counts match mine
+
+### PROPOSE ines-3
+- by: ines
+- to: bruno, carla, dario, elio
+- as_of: 2026-04-13T09:37:00+01:00
+- text: Inspect the east ramp.
+
+### ACK bruno-3
+- by: bruno
+- refs: ines-3
+- as_of: 2026-04-13T09:46:00+01:00
+- note: seen, no change needed
+
+### ACK carla-3
+- by: carla
+- refs: ines-3
+- as_of: 2026-04-13T08:55:00+00:00
+- note: agreed with the sequence
+
+### DISSENT dario-3
+- by: dario
+- refs: ines-3
+- as_of: 2026-04-13T11:04:00+02:00
+- text: this needs the safety review first
+
+### ACK elio-3
+- by: elio
+- refs: ines-3
+- as_of: 2026-04-13T10:13:00+01:00
+- note: ok after the second reading
+
+### PROPOSE ines-4
+- by: ines
+- to: bruno, carla, dario, elio
+- as_of: 2026-04-13T10:22:00+01:00
+- text: Inspect crane pad C.
+
+### ACK bruno-4
+- by: bruno
+- refs: ines-4
+- as_of: 2026-04-13T10:31:00+01:00
+- note: agreed with the sequence
+
+### ACK carla-4
+- by: carla
+- refs: ines-4
+- as_of: 2026-04-13T09:40:00+00:00
+- note: counts match mine
+
+### ACK dario-4
+- by: dario
+- refs: ines-4
+- as_of: 2026-04-13T11:49:00+02:00
+- note: ok after the second reading
+
+### DISSENT elio-4
+- by: elio
+- refs: ines-4
+- as_of: 2026-04-13T10:58:00+01:00
+- text: the slot is already taken that day
+
+### PROPOSE ines-5
+- by: ines
+- to: bruno, carla, dario, elio
+- as_of: 2026-04-13T11:07:00+01:00
+- text: Inspect formwork set 7.
+
+### DISSENT bruno-5
+- by: bruno
+- refs: ines-5
+- as_of: 2026-04-13T11:16:00+01:00
+- text: the tolerance is wrong for this batch
+
+### ACK carla-5
+- by: carla
+- refs: ines-5
+- as_of: 2026-04-13T10:25:00+00:00
+- note: ok after the second reading
+
+### ACK dario-5
+- by: dario
+- refs: ines-5
+- as_of: 2026-04-13T12:34:00+02:00
+- note: done on my list too
+
+### ACK elio-5
+- by: elio
+- refs: ines-5
+- as_of: 2026-04-13T11:43:00+01:00
+- note: as discussed in the entry above
+
+### PROPOSE ines-6
+- by: ines
+- to: bruno, carla, dario, elio
+- as_of: 2026-04-13T11:52:00+01:00
+- text: Inspect the drainage trench.
+
+### ACK bruno-6
+- by: bruno
+- refs: ines-6
+- as_of: 2026-04-13T12:01:00+01:00
+- note: ok after the second reading
+
+### DISSENT carla-6
+- by: carla
+- refs: ines-6
+- as_of: 2026-04-13T11:10:00+00:00
+- text: two steps are swapped
+
+### ACK dario-6
+- by: dario
+- refs: ines-6
+- as_of: 2026-04-13T13:19:00+02:00
+- note: as discussed in the entry above
+
+### ACK elio-6
+- by: elio
+- refs: ines-6
+- as_of: 2026-04-13T12:28:00+01:00
+- note: checked against the drawing
+
+### PROPOSE ines-7
+- by: ines
+- to: bruno, carla
+- as_of: 2026-04-13T12:37:00+01:00
+- text: Survey retaining wall R3.
+
+### ACK bruno-7
+- by: bruno
+- refs: ines-7
+- as_of: 2026-04-13T12:46:00+01:00
+- note: checked against the drawing
+
+### ACK carla-7
+- by: carla
+- refs: ines-7
+- as_of: 2026-04-13T11:55:00+00:00
+- note: fine from my side
+
+
+commit refs/heads/main
+mark :35
+author Inès Carrà <ines@portoluna.example> 1776081960 +0100
+committer Inès Carrà <ines@portoluna.example> 1776081960 +0100
+data 21
+coord: PROPOSE ines-8
+from :34
+M 100644 inline COORD.md
+data 4426
+# COORD - Portoluna quay works
+
+protocol: coord/1
+
+## Agents
+
+- ines | Inès Carrà | ines@portoluna.example | site lead
+- bruno | Bruno Šťastný | bruno@portoluna.example | structures
+- carla | Carla Muñoz Peña | carla@portoluna.example | procurement
+- dario | Dário Åkesson | dario@portoluna.example | safety
+- elio | Elio Đorđević | elio@portoluna.example | surveying
+- fiona | Fíona Ó Briain | fiona@portoluna.example | design
+
+## Log
+
+### PROPOSE ines-1
+- by: ines
+- to: bruno, carla, dario, elio
+- as_of: 2026-04-13T08:07:00+01:00
+- text: Inspect slab B2.
+
+### DISSENT bruno-1
+- by: bruno
+- refs: ines-1
+- as_of: 2026-04-13T08:16:00+01:00
+- text: the sequence breaks the cure time
+
+### ACK carla-1
+- by: carla
+- refs: ines-1
+- as_of: 2026-04-13T07:25:00+00:00
+- note: fine from my side
+
+### ACK dario-1
+- by: dario
+- refs: ines-1
+- as_of: 2026-04-13T09:34:00+02:00
+- note: seen, no change needed
+
+### ACK elio-1
+- by: elio
+- refs: ines-1
+- as_of: 2026-04-13T08:43:00+01:00
+- note: agreed with the sequence
+
+### PROPOSE ines-2
+- by: ines
+- to: bruno, carla, dario, elio
+- as_of: 2026-04-13T08:52:00+01:00
+- text: Inspect pier cap 4.
+
+### ACK bruno-2
+- by: bruno
+- refs: ines-2
+- as_of: 2026-04-13T09:01:00+01:00
+- note: fine from my side
+
+### DISSENT carla-2
+- by: carla
+- refs: ines-2
+- as_of: 2026-04-13T08:10:00+00:00
+- text: the figure does not match my count
+
+### ACK dario-2
+- by: dario
+- refs: ines-2
+- as_of: 2026-04-13T10:19:00+02:00
+- note: agreed with the sequence
+
+### ACK elio-2
+- by: elio
+- refs: ines-2
+- as_of: 2026-04-13T09:28:00+01:00
+- note: counts match mine
+
+### PROPOSE ines-3
+- by: ines
+- to: bruno, carla, dario, elio
+- as_of: 2026-04-13T09:37:00+01:00
+- text: Inspect the east ramp.
+
+### ACK bruno-3
+- by: bruno
+- refs: ines-3
+- as_of: 2026-04-13T09:46:00+01:00
+- note: seen, no change needed
+
+### ACK carla-3
+- by: carla
+- refs: ines-3
+- as_of: 2026-04-13T08:55:00+00:00
+- note: agreed with the sequence
+
+### DISSENT dario-3
+- by: dario
+- refs: ines-3
+- as_of: 2026-04-13T11:04:00+02:00
+- text: this needs the safety review first
+
+### ACK elio-3
+- by: elio
+- refs: ines-3
+- as_of: 2026-04-13T10:13:00+01:00
+- note: ok after the second reading
+
+### PROPOSE ines-4
+- by: ines
+- to: bruno, carla, dario, elio
+- as_of: 2026-04-13T10:22:00+01:00
+- text: Inspect crane pad C.
+
+### ACK bruno-4
+- by: bruno
+- refs: ines-4
+- as_of: 2026-04-13T10:31:00+01:00
+- note: agreed with the sequence
+
+### ACK carla-4
+- by: carla
+- refs: ines-4
+- as_of: 2026-04-13T09:40:00+00:00
+- note: counts match mine
+
+### ACK dario-4
+- by: dario
+- refs: ines-4
+- as_of: 2026-04-13T11:49:00+02:00
+- note: ok after the second reading
+
+### DISSENT elio-4
+- by: elio
+- refs: ines-4
+- as_of: 2026-04-13T10:58:00+01:00
+- text: the slot is already taken that day
+
+### PROPOSE ines-5
+- by: ines
+- to: bruno, carla, dario, elio
+- as_of: 2026-04-13T11:07:00+01:00
+- text: Inspect formwork set 7.
+
+### DISSENT bruno-5
+- by: bruno
+- refs: ines-5
+- as_of: 2026-04-13T11:16:00+01:00
+- text: the tolerance is wrong for this batch
+
+### ACK carla-5
+- by: carla
+- refs: ines-5
+- as_of: 2026-04-13T10:25:00+00:00
+- note: ok after the second reading
+
+### ACK dario-5
+- by: dario
+- refs: ines-5
+- as_of: 2026-04-13T12:34:00+02:00
+- note: done on my list too
+
+### ACK elio-5
+- by: elio
+- refs: ines-5
+- as_of: 2026-04-13T11:43:00+01:00
+- note: as discussed in the entry above
+
+### PROPOSE ines-6
+- by: ines
+- to: bruno, carla, dario, elio
+- as_of: 2026-04-13T11:52:00+01:00
+- text: Inspect the drainage trench.
+
+### ACK bruno-6
+- by: bruno
+- refs: ines-6
+- as_of: 2026-04-13T12:01:00+01:00
+- note: ok after the second reading
+
+### DISSENT carla-6
+- by: carla
+- refs: ines-6
+- as_of: 2026-04-13T11:10:00+00:00
+- text: two steps are swapped
+
+### ACK dario-6
+- by: dario
+- refs: ines-6
+- as_of: 2026-04-13T13:19:00+02:00
+- note: as discussed in the entry above
+
+### ACK elio-6
+- by: elio
+- refs: ines-6
+- as_of: 2026-04-13T12:28:00+01:00
+- note: checked against the drawing
+
+### PROPOSE ines-7
+- by: ines
+- to: bruno, carla
+- as_of: 2026-04-13T12:37:00+01:00
+- text: Survey retaining wall R3.
+
+### ACK bruno-7
+- by: bruno
+- refs: ines-7
+- as_of: 2026-04-13T12:46:00+01:00
+- note: checked against the drawing
+
+### ACK carla-7
+- by: carla
+- refs: ines-7
+- as_of: 2026-04-13T11:55:00+00:00
+- note: fine from my side
+
+### PROPOSE ines-8
+- by: ines
+- to: dario, elio, fiona
+- as_of: 2026-04-13T13:04:00+01:00
+- text: Sign off scaffold tower 2.
+
+
+commit refs/heads/main
+mark :36
+author Dário Åkesson <dario@portoluna.example> 1776082500 +0200
+committer Dário Åkesson <dario@portoluna.example> 1776082500 +0200
+data 22
+coord: DISSENT dario-7
+from :35
+M 100644 inline COORD.md
+data 4522
+# COORD - Portoluna quay works
+
+protocol: coord/1
+
+## Agents
+
+- ines | Inès Carrà | ines@portoluna.example | site lead
+- bruno | Bruno Šťastný | bruno@portoluna.example | structures
+- carla | Carla Muñoz Peña | carla@portoluna.example | procurement
+- dario | Dário Åkesson | dario@portoluna.example | safety
+- elio | Elio Đorđević | elio@portoluna.example | surveying
+- fiona | Fíona Ó Briain | fiona@portoluna.example | design
+
+## Log
+
+### PROPOSE ines-1
+- by: ines
+- to: bruno, carla, dario, elio
+- as_of: 2026-04-13T08:07:00+01:00
+- text: Inspect slab B2.
+
+### DISSENT bruno-1
+- by: bruno
+- refs: ines-1
+- as_of: 2026-04-13T08:16:00+01:00
+- text: the sequence breaks the cure time
+
+### ACK carla-1
+- by: carla
+- refs: ines-1
+- as_of: 2026-04-13T07:25:00+00:00
+- note: fine from my side
+
+### ACK dario-1
+- by: dario
+- refs: ines-1
+- as_of: 2026-04-13T09:34:00+02:00
+- note: seen, no change needed
+
+### ACK elio-1
+- by: elio
+- refs: ines-1
+- as_of: 2026-04-13T08:43:00+01:00
+- note: agreed with the sequence
+
+### PROPOSE ines-2
+- by: ines
+- to: bruno, carla, dario, elio
+- as_of: 2026-04-13T08:52:00+01:00
+- text: Inspect pier cap 4.
+
+### ACK bruno-2
+- by: bruno
+- refs: ines-2
+- as_of: 2026-04-13T09:01:00+01:00
+- note: fine from my side
+
+### DISSENT carla-2
+- by: carla
+- refs: ines-2
+- as_of: 2026-04-13T08:10:00+00:00
+- text: the figure does not match my count
+
+### ACK dario-2
+- by: dario
+- refs: ines-2
+- as_of: 2026-04-13T10:19:00+02:00
+- note: agreed with the sequence
+
+### ACK elio-2
+- by: elio
+- refs: ines-2
+- as_of: 2026-04-13T09:28:00+01:00
+- note: counts match mine
+
+### PROPOSE ines-3
+- by: ines
+- to: bruno, carla, dario, elio
+- as_of: 2026-04-13T09:37:00+01:00
+- text: Inspect the east ramp.
+
+### ACK bruno-3
+- by: bruno
+- refs: ines-3
+- as_of: 2026-04-13T09:46:00+01:00
+- note: seen, no change needed
+
+### ACK carla-3
+- by: carla
+- refs: ines-3
+- as_of: 2026-04-13T08:55:00+00:00
+- note: agreed with the sequence
+
+### DISSENT dario-3
+- by: dario
+- refs: ines-3
+- as_of: 2026-04-13T11:04:00+02:00
+- text: this needs the safety review first
+
+### ACK elio-3
+- by: elio
+- refs: ines-3
+- as_of: 2026-04-13T10:13:00+01:00
+- note: ok after the second reading
+
+### PROPOSE ines-4
+- by: ines
+- to: bruno, carla, dario, elio
+- as_of: 2026-04-13T10:22:00+01:00
+- text: Inspect crane pad C.
+
+### ACK bruno-4
+- by: bruno
+- refs: ines-4
+- as_of: 2026-04-13T10:31:00+01:00
+- note: agreed with the sequence
+
+### ACK carla-4
+- by: carla
+- refs: ines-4
+- as_of: 2026-04-13T09:40:00+00:00
+- note: counts match mine
+
+### ACK dario-4
+- by: dario
+- refs: ines-4
+- as_of: 2026-04-13T11:49:00+02:00
+- note: ok after the second reading
+
+### DISSENT elio-4
+- by: elio
+- refs: ines-4
+- as_of: 2026-04-13T10:58:00+01:00
+- text: the slot is already taken that day
+
+### PROPOSE ines-5
+- by: ines
+- to: bruno, carla, dario, elio
+- as_of: 2026-04-13T11:07:00+01:00
+- text: Inspect formwork set 7.
+
+### DISSENT bruno-5
+- by: bruno
+- refs: ines-5
+- as_of: 2026-04-13T11:16:00+01:00
+- text: the tolerance is wrong for this batch
+
+### ACK carla-5
+- by: carla
+- refs: ines-5
+- as_of: 2026-04-13T10:25:00+00:00
+- note: ok after the second reading
+
+### ACK dario-5
+- by: dario
+- refs: ines-5
+- as_of: 2026-04-13T12:34:00+02:00
+- note: done on my list too
+
+### ACK elio-5
+- by: elio
+- refs: ines-5
+- as_of: 2026-04-13T11:43:00+01:00
+- note: as discussed in the entry above
+
+### PROPOSE ines-6
+- by: ines
+- to: bruno, carla, dario, elio
+- as_of: 2026-04-13T11:52:00+01:00
+- text: Inspect the drainage trench.
+
+### ACK bruno-6
+- by: bruno
+- refs: ines-6
+- as_of: 2026-04-13T12:01:00+01:00
+- note: ok after the second reading
+
+### DISSENT carla-6
+- by: carla
+- refs: ines-6
+- as_of: 2026-04-13T11:10:00+00:00
+- text: two steps are swapped
+
+### ACK dario-6
+- by: dario
+- refs: ines-6
+- as_of: 2026-04-13T13:19:00+02:00
+- note: as discussed in the entry above
+
+### ACK elio-6
+- by: elio
+- refs: ines-6
+- as_of: 2026-04-13T12:28:00+01:00
+- note: checked against the drawing
+
+### PROPOSE ines-7
+- by: ines
+- to: bruno, carla
+- as_of: 2026-04-13T12:37:00+01:00
+- text: Survey retaining wall R3.
+
+### ACK bruno-7
+- by: bruno
+- refs: ines-7
+- as_of: 2026-04-13T12:46:00+01:00
+- note: checked against the drawing
+
+### ACK carla-7
+- by: carla
+- refs: ines-7
+- as_of: 2026-04-13T11:55:00+00:00
+- note: fine from my side
+
+### PROPOSE ines-8
+- by: ines
+- to: dario, elio, fiona
+- as_of: 2026-04-13T13:04:00+01:00
+- text: Sign off scaffold tower 2.
+
+### DISSENT dario-7
+- by: dario
+- refs: ines-8
+- as_of: 2026-04-13T14:13:00+02:00
+- text: none
+
+
+commit refs/heads/main
+mark :37
+author Elio Đorđević <elio@portoluna.example> 1776083040 +0100
+committer Elio Đorđević <elio@portoluna.example> 1776083040 +0100
+data 21
+coord: DISSENT elio-7
+from :36
+M 100644 inline COORD.md
+data 4615
+# COORD - Portoluna quay works
+
+protocol: coord/1
+
+## Agents
+
+- ines | Inès Carrà | ines@portoluna.example | site lead
+- bruno | Bruno Šťastný | bruno@portoluna.example | structures
+- carla | Carla Muñoz Peña | carla@portoluna.example | procurement
+- dario | Dário Åkesson | dario@portoluna.example | safety
+- elio | Elio Đorđević | elio@portoluna.example | surveying
+- fiona | Fíona Ó Briain | fiona@portoluna.example | design
+
+## Log
+
+### PROPOSE ines-1
+- by: ines
+- to: bruno, carla, dario, elio
+- as_of: 2026-04-13T08:07:00+01:00
+- text: Inspect slab B2.
+
+### DISSENT bruno-1
+- by: bruno
+- refs: ines-1
+- as_of: 2026-04-13T08:16:00+01:00
+- text: the sequence breaks the cure time
+
+### ACK carla-1
+- by: carla
+- refs: ines-1
+- as_of: 2026-04-13T07:25:00+00:00
+- note: fine from my side
+
+### ACK dario-1
+- by: dario
+- refs: ines-1
+- as_of: 2026-04-13T09:34:00+02:00
+- note: seen, no change needed
+
+### ACK elio-1
+- by: elio
+- refs: ines-1
+- as_of: 2026-04-13T08:43:00+01:00
+- note: agreed with the sequence
+
+### PROPOSE ines-2
+- by: ines
+- to: bruno, carla, dario, elio
+- as_of: 2026-04-13T08:52:00+01:00
+- text: Inspect pier cap 4.
+
+### ACK bruno-2
+- by: bruno
+- refs: ines-2
+- as_of: 2026-04-13T09:01:00+01:00
+- note: fine from my side
+
+### DISSENT carla-2
+- by: carla
+- refs: ines-2
+- as_of: 2026-04-13T08:10:00+00:00
+- text: the figure does not match my count
+
+### ACK dario-2
+- by: dario
+- refs: ines-2
+- as_of: 2026-04-13T10:19:00+02:00
+- note: agreed with the sequence
+
+### ACK elio-2
+- by: elio
+- refs: ines-2
+- as_of: 2026-04-13T09:28:00+01:00
+- note: counts match mine
+
+### PROPOSE ines-3
+- by: ines
+- to: bruno, carla, dario, elio
+- as_of: 2026-04-13T09:37:00+01:00
+- text: Inspect the east ramp.
+
+### ACK bruno-3
+- by: bruno
+- refs: ines-3
+- as_of: 2026-04-13T09:46:00+01:00
+- note: seen, no change needed
+
+### ACK carla-3
+- by: carla
+- refs: ines-3
+- as_of: 2026-04-13T08:55:00+00:00
+- note: agreed with the sequence
+
+### DISSENT dario-3
+- by: dario
+- refs: ines-3
+- as_of: 2026-04-13T11:04:00+02:00
+- text: this needs the safety review first
+
+### ACK elio-3
+- by: elio
+- refs: ines-3
+- as_of: 2026-04-13T10:13:00+01:00
+- note: ok after the second reading
+
+### PROPOSE ines-4
+- by: ines
+- to: bruno, carla, dario, elio
+- as_of: 2026-04-13T10:22:00+01:00
+- text: Inspect crane pad C.
+
+### ACK bruno-4
+- by: bruno
+- refs: ines-4
+- as_of: 2026-04-13T10:31:00+01:00
+- note: agreed with the sequence
+
+### ACK carla-4
+- by: carla
+- refs: ines-4
+- as_of: 2026-04-13T09:40:00+00:00
+- note: counts match mine
+
+### ACK dario-4
+- by: dario
+- refs: ines-4
+- as_of: 2026-04-13T11:49:00+02:00
+- note: ok after the second reading
+
+### DISSENT elio-4
+- by: elio
+- refs: ines-4
+- as_of: 2026-04-13T10:58:00+01:00
+- text: the slot is already taken that day
+
+### PROPOSE ines-5
+- by: ines
+- to: bruno, carla, dario, elio
+- as_of: 2026-04-13T11:07:00+01:00
+- text: Inspect formwork set 7.
+
+### DISSENT bruno-5
+- by: bruno
+- refs: ines-5
+- as_of: 2026-04-13T11:16:00+01:00
+- text: the tolerance is wrong for this batch
+
+### ACK carla-5
+- by: carla
+- refs: ines-5
+- as_of: 2026-04-13T10:25:00+00:00
+- note: ok after the second reading
+
+### ACK dario-5
+- by: dario
+- refs: ines-5
+- as_of: 2026-04-13T12:34:00+02:00
+- note: done on my list too
+
+### ACK elio-5
+- by: elio
+- refs: ines-5
+- as_of: 2026-04-13T11:43:00+01:00
+- note: as discussed in the entry above
+
+### PROPOSE ines-6
+- by: ines
+- to: bruno, carla, dario, elio
+- as_of: 2026-04-13T11:52:00+01:00
+- text: Inspect the drainage trench.
+
+### ACK bruno-6
+- by: bruno
+- refs: ines-6
+- as_of: 2026-04-13T12:01:00+01:00
+- note: ok after the second reading
+
+### DISSENT carla-6
+- by: carla
+- refs: ines-6
+- as_of: 2026-04-13T11:10:00+00:00
+- text: two steps are swapped
+
+### ACK dario-6
+- by: dario
+- refs: ines-6
+- as_of: 2026-04-13T13:19:00+02:00
+- note: as discussed in the entry above
+
+### ACK elio-6
+- by: elio
+- refs: ines-6
+- as_of: 2026-04-13T12:28:00+01:00
+- note: checked against the drawing
+
+### PROPOSE ines-7
+- by: ines
+- to: bruno, carla
+- as_of: 2026-04-13T12:37:00+01:00
+- text: Survey retaining wall R3.
+
+### ACK bruno-7
+- by: bruno
+- refs: ines-7
+- as_of: 2026-04-13T12:46:00+01:00
+- note: checked against the drawing
+
+### ACK carla-7
+- by: carla
+- refs: ines-7
+- as_of: 2026-04-13T11:55:00+00:00
+- note: fine from my side
+
+### PROPOSE ines-8
+- by: ines
+- to: dario, elio, fiona
+- as_of: 2026-04-13T13:04:00+01:00
+- text: Sign off scaffold tower 2.
+
+### DISSENT dario-7
+- by: dario
+- refs: ines-8
+- as_of: 2026-04-13T14:13:00+02:00
+- text: none
+
+### DISSENT elio-7
+- by: elio
+- refs: ines-8
+- as_of: 2026-04-13T13:22:00+01:00
+- text: n/a
+
+
+commit refs/heads/main
+mark :38
+author Fíona Ó Briain <fiona@portoluna.example> 1776083580 +0000
+committer Fíona Ó Briain <fiona@portoluna.example> 1776083580 +0000
+data 22
+coord: DISSENT fiona-1
+from :37
+M 100644 inline COORD.md
+data 4719
+# COORD - Portoluna quay works
+
+protocol: coord/1
+
+## Agents
+
+- ines | Inès Carrà | ines@portoluna.example | site lead
+- bruno | Bruno Šťastný | bruno@portoluna.example | structures
+- carla | Carla Muñoz Peña | carla@portoluna.example | procurement
+- dario | Dário Åkesson | dario@portoluna.example | safety
+- elio | Elio Đorđević | elio@portoluna.example | surveying
+- fiona | Fíona Ó Briain | fiona@portoluna.example | design
+
+## Log
+
+### PROPOSE ines-1
+- by: ines
+- to: bruno, carla, dario, elio
+- as_of: 2026-04-13T08:07:00+01:00
+- text: Inspect slab B2.
+
+### DISSENT bruno-1
+- by: bruno
+- refs: ines-1
+- as_of: 2026-04-13T08:16:00+01:00
+- text: the sequence breaks the cure time
+
+### ACK carla-1
+- by: carla
+- refs: ines-1
+- as_of: 2026-04-13T07:25:00+00:00
+- note: fine from my side
+
+### ACK dario-1
+- by: dario
+- refs: ines-1
+- as_of: 2026-04-13T09:34:00+02:00
+- note: seen, no change needed
+
+### ACK elio-1
+- by: elio
+- refs: ines-1
+- as_of: 2026-04-13T08:43:00+01:00
+- note: agreed with the sequence
+
+### PROPOSE ines-2
+- by: ines
+- to: bruno, carla, dario, elio
+- as_of: 2026-04-13T08:52:00+01:00
+- text: Inspect pier cap 4.
+
+### ACK bruno-2
+- by: bruno
+- refs: ines-2
+- as_of: 2026-04-13T09:01:00+01:00
+- note: fine from my side
+
+### DISSENT carla-2
+- by: carla
+- refs: ines-2
+- as_of: 2026-04-13T08:10:00+00:00
+- text: the figure does not match my count
+
+### ACK dario-2
+- by: dario
+- refs: ines-2
+- as_of: 2026-04-13T10:19:00+02:00
+- note: agreed with the sequence
+
+### ACK elio-2
+- by: elio
+- refs: ines-2
+- as_of: 2026-04-13T09:28:00+01:00
+- note: counts match mine
+
+### PROPOSE ines-3
+- by: ines
+- to: bruno, carla, dario, elio
+- as_of: 2026-04-13T09:37:00+01:00
+- text: Inspect the east ramp.
+
+### ACK bruno-3
+- by: bruno
+- refs: ines-3
+- as_of: 2026-04-13T09:46:00+01:00
+- note: seen, no change needed
+
+### ACK carla-3
+- by: carla
+- refs: ines-3
+- as_of: 2026-04-13T08:55:00+00:00
+- note: agreed with the sequence
+
+### DISSENT dario-3
+- by: dario
+- refs: ines-3
+- as_of: 2026-04-13T11:04:00+02:00
+- text: this needs the safety review first
+
+### ACK elio-3
+- by: elio
+- refs: ines-3
+- as_of: 2026-04-13T10:13:00+01:00
+- note: ok after the second reading
+
+### PROPOSE ines-4
+- by: ines
+- to: bruno, carla, dario, elio
+- as_of: 2026-04-13T10:22:00+01:00
+- text: Inspect crane pad C.
+
+### ACK bruno-4
+- by: bruno
+- refs: ines-4
+- as_of: 2026-04-13T10:31:00+01:00
+- note: agreed with the sequence
+
+### ACK carla-4
+- by: carla
+- refs: ines-4
+- as_of: 2026-04-13T09:40:00+00:00
+- note: counts match mine
+
+### ACK dario-4
+- by: dario
+- refs: ines-4
+- as_of: 2026-04-13T11:49:00+02:00
+- note: ok after the second reading
+
+### DISSENT elio-4
+- by: elio
+- refs: ines-4
+- as_of: 2026-04-13T10:58:00+01:00
+- text: the slot is already taken that day
+
+### PROPOSE ines-5
+- by: ines
+- to: bruno, carla, dario, elio
+- as_of: 2026-04-13T11:07:00+01:00
+- text: Inspect formwork set 7.
+
+### DISSENT bruno-5
+- by: bruno
+- refs: ines-5
+- as_of: 2026-04-13T11:16:00+01:00
+- text: the tolerance is wrong for this batch
+
+### ACK carla-5
+- by: carla
+- refs: ines-5
+- as_of: 2026-04-13T10:25:00+00:00
+- note: ok after the second reading
+
+### ACK dario-5
+- by: dario
+- refs: ines-5
+- as_of: 2026-04-13T12:34:00+02:00
+- note: done on my list too
+
+### ACK elio-5
+- by: elio
+- refs: ines-5
+- as_of: 2026-04-13T11:43:00+01:00
+- note: as discussed in the entry above
+
+### PROPOSE ines-6
+- by: ines
+- to: bruno, carla, dario, elio
+- as_of: 2026-04-13T11:52:00+01:00
+- text: Inspect the drainage trench.
+
+### ACK bruno-6
+- by: bruno
+- refs: ines-6
+- as_of: 2026-04-13T12:01:00+01:00
+- note: ok after the second reading
+
+### DISSENT carla-6
+- by: carla
+- refs: ines-6
+- as_of: 2026-04-13T11:10:00+00:00
+- text: two steps are swapped
+
+### ACK dario-6
+- by: dario
+- refs: ines-6
+- as_of: 2026-04-13T13:19:00+02:00
+- note: as discussed in the entry above
+
+### ACK elio-6
+- by: elio
+- refs: ines-6
+- as_of: 2026-04-13T12:28:00+01:00
+- note: checked against the drawing
+
+### PROPOSE ines-7
+- by: ines
+- to: bruno, carla
+- as_of: 2026-04-13T12:37:00+01:00
+- text: Survey retaining wall R3.
+
+### ACK bruno-7
+- by: bruno
+- refs: ines-7
+- as_of: 2026-04-13T12:46:00+01:00
+- note: checked against the drawing
+
+### ACK carla-7
+- by: carla
+- refs: ines-7
+- as_of: 2026-04-13T11:55:00+00:00
+- note: fine from my side
+
+### PROPOSE ines-8
+- by: ines
+- to: dario, elio, fiona
+- as_of: 2026-04-13T13:04:00+01:00
+- text: Sign off scaffold tower 2.
+
+### DISSENT dario-7
+- by: dario
+- refs: ines-8
+- as_of: 2026-04-13T14:13:00+02:00
+- text: none
+
+### DISSENT elio-7
+- by: elio
+- refs: ines-8
+- as_of: 2026-04-13T13:22:00+01:00
+- text: n/a
+
+### DISSENT fiona-1
+- by: fiona
+- refs: ines-8
+- as_of: 2026-04-13T12:31:00+00:00
+- text: no objection
+
+
+commit refs/heads/main
+mark :39
+author Inès Carrà <ines@portoluna.example> 1776084120 +0100
+committer Inès Carrà <ines@portoluna.example> 1776084120 +0100
+data 17
+coord: ACK ines-9
+from :38
+M 100644 inline COORD.md
+data 4797
+# COORD - Portoluna quay works
+
+protocol: coord/1
+
+## Agents
+
+- ines | Inès Carrà | ines@portoluna.example | site lead
+- bruno | Bruno Šťastný | bruno@portoluna.example | structures
+- carla | Carla Muñoz Peña | carla@portoluna.example | procurement
+- dario | Dário Åkesson | dario@portoluna.example | safety
+- elio | Elio Đorđević | elio@portoluna.example | surveying
+- fiona | Fíona Ó Briain | fiona@portoluna.example | design
+
+## Log
+
+### PROPOSE ines-1
+- by: ines
+- to: bruno, carla, dario, elio
+- as_of: 2026-04-13T08:07:00+01:00
+- text: Inspect slab B2.
+
+### DISSENT bruno-1
+- by: bruno
+- refs: ines-1
+- as_of: 2026-04-13T08:16:00+01:00
+- text: the sequence breaks the cure time
+
+### ACK carla-1
+- by: carla
+- refs: ines-1
+- as_of: 2026-04-13T07:25:00+00:00
+- note: fine from my side
+
+### ACK dario-1
+- by: dario
+- refs: ines-1
+- as_of: 2026-04-13T09:34:00+02:00
+- note: seen, no change needed
+
+### ACK elio-1
+- by: elio
+- refs: ines-1
+- as_of: 2026-04-13T08:43:00+01:00
+- note: agreed with the sequence
+
+### PROPOSE ines-2
+- by: ines
+- to: bruno, carla, dario, elio
+- as_of: 2026-04-13T08:52:00+01:00
+- text: Inspect pier cap 4.
+
+### ACK bruno-2
+- by: bruno
+- refs: ines-2
+- as_of: 2026-04-13T09:01:00+01:00
+- note: fine from my side
+
+### DISSENT carla-2
+- by: carla
+- refs: ines-2
+- as_of: 2026-04-13T08:10:00+00:00
+- text: the figure does not match my count
+
+### ACK dario-2
+- by: dario
+- refs: ines-2
+- as_of: 2026-04-13T10:19:00+02:00
+- note: agreed with the sequence
+
+### ACK elio-2
+- by: elio
+- refs: ines-2
+- as_of: 2026-04-13T09:28:00+01:00
+- note: counts match mine
+
+### PROPOSE ines-3
+- by: ines
+- to: bruno, carla, dario, elio
+- as_of: 2026-04-13T09:37:00+01:00
+- text: Inspect the east ramp.
+
+### ACK bruno-3
+- by: bruno
+- refs: ines-3
+- as_of: 2026-04-13T09:46:00+01:00
+- note: seen, no change needed
+
+### ACK carla-3
+- by: carla
+- refs: ines-3
+- as_of: 2026-04-13T08:55:00+00:00
+- note: agreed with the sequence
+
+### DISSENT dario-3
+- by: dario
+- refs: ines-3
+- as_of: 2026-04-13T11:04:00+02:00
+- text: this needs the safety review first
+
+### ACK elio-3
+- by: elio
+- refs: ines-3
+- as_of: 2026-04-13T10:13:00+01:00
+- note: ok after the second reading
+
+### PROPOSE ines-4
+- by: ines
+- to: bruno, carla, dario, elio
+- as_of: 2026-04-13T10:22:00+01:00
+- text: Inspect crane pad C.
+
+### ACK bruno-4
+- by: bruno
+- refs: ines-4
+- as_of: 2026-04-13T10:31:00+01:00
+- note: agreed with the sequence
+
+### ACK carla-4
+- by: carla
+- refs: ines-4
+- as_of: 2026-04-13T09:40:00+00:00
+- note: counts match mine
+
+### ACK dario-4
+- by: dario
+- refs: ines-4
+- as_of: 2026-04-13T11:49:00+02:00
+- note: ok after the second reading
+
+### DISSENT elio-4
+- by: elio
+- refs: ines-4
+- as_of: 2026-04-13T10:58:00+01:00
+- text: the slot is already taken that day
+
+### PROPOSE ines-5
+- by: ines
+- to: bruno, carla, dario, elio
+- as_of: 2026-04-13T11:07:00+01:00
+- text: Inspect formwork set 7.
+
+### DISSENT bruno-5
+- by: bruno
+- refs: ines-5
+- as_of: 2026-04-13T11:16:00+01:00
+- text: the tolerance is wrong for this batch
+
+### ACK carla-5
+- by: carla
+- refs: ines-5
+- as_of: 2026-04-13T10:25:00+00:00
+- note: ok after the second reading
+
+### ACK dario-5
+- by: dario
+- refs: ines-5
+- as_of: 2026-04-13T12:34:00+02:00
+- note: done on my list too
+
+### ACK elio-5
+- by: elio
+- refs: ines-5
+- as_of: 2026-04-13T11:43:00+01:00
+- note: as discussed in the entry above
+
+### PROPOSE ines-6
+- by: ines
+- to: bruno, carla, dario, elio
+- as_of: 2026-04-13T11:52:00+01:00
+- text: Inspect the drainage trench.
+
+### ACK bruno-6
+- by: bruno
+- refs: ines-6
+- as_of: 2026-04-13T12:01:00+01:00
+- note: ok after the second reading
+
+### DISSENT carla-6
+- by: carla
+- refs: ines-6
+- as_of: 2026-04-13T11:10:00+00:00
+- text: two steps are swapped
+
+### ACK dario-6
+- by: dario
+- refs: ines-6
+- as_of: 2026-04-13T13:19:00+02:00
+- note: as discussed in the entry above
+
+### ACK elio-6
+- by: elio
+- refs: ines-6
+- as_of: 2026-04-13T12:28:00+01:00
+- note: checked against the drawing
+
+### PROPOSE ines-7
+- by: ines
+- to: bruno, carla
+- as_of: 2026-04-13T12:37:00+01:00
+- text: Survey retaining wall R3.
+
+### ACK bruno-7
+- by: bruno
+- refs: ines-7
+- as_of: 2026-04-13T12:46:00+01:00
+- note: checked against the drawing
+
+### ACK carla-7
+- by: carla
+- refs: ines-7
+- as_of: 2026-04-13T11:55:00+00:00
+- note: fine from my side
+
+### PROPOSE ines-8
+- by: ines
+- to: dario, elio, fiona
+- as_of: 2026-04-13T13:04:00+01:00
+- text: Sign off scaffold tower 2.
+
+### DISSENT dario-7
+- by: dario
+- refs: ines-8
+- as_of: 2026-04-13T14:13:00+02:00
+- text: none
+
+### DISSENT elio-7
+- by: elio
+- refs: ines-8
+- as_of: 2026-04-13T13:22:00+01:00
+- text: n/a
+
+### DISSENT fiona-1
+- by: fiona
+- refs: ines-8
+- as_of: 2026-04-13T12:31:00+00:00
+- text: no objection
+
+### ACK ines-9
+- by: ines
+- refs: bruno-1
+- as_of: 2026-04-13T13:40:00+01:00
+
+
+commit refs/heads/main
+mark :40
+author Inès Carrà <ines@portoluna.example> 1776084660 +0100
+committer Inès Carrà <ines@portoluna.example> 1776084660 +0100
+data 18
+coord: ACK ines-10
+from :39
+M 100644 inline COORD.md
+data 4876
+# COORD - Portoluna quay works
+
+protocol: coord/1
+
+## Agents
+
+- ines | Inès Carrà | ines@portoluna.example | site lead
+- bruno | Bruno Šťastný | bruno@portoluna.example | structures
+- carla | Carla Muñoz Peña | carla@portoluna.example | procurement
+- dario | Dário Åkesson | dario@portoluna.example | safety
+- elio | Elio Đorđević | elio@portoluna.example | surveying
+- fiona | Fíona Ó Briain | fiona@portoluna.example | design
+
+## Log
+
+### PROPOSE ines-1
+- by: ines
+- to: bruno, carla, dario, elio
+- as_of: 2026-04-13T08:07:00+01:00
+- text: Inspect slab B2.
+
+### DISSENT bruno-1
+- by: bruno
+- refs: ines-1
+- as_of: 2026-04-13T08:16:00+01:00
+- text: the sequence breaks the cure time
+
+### ACK carla-1
+- by: carla
+- refs: ines-1
+- as_of: 2026-04-13T07:25:00+00:00
+- note: fine from my side
+
+### ACK dario-1
+- by: dario
+- refs: ines-1
+- as_of: 2026-04-13T09:34:00+02:00
+- note: seen, no change needed
+
+### ACK elio-1
+- by: elio
+- refs: ines-1
+- as_of: 2026-04-13T08:43:00+01:00
+- note: agreed with the sequence
+
+### PROPOSE ines-2
+- by: ines
+- to: bruno, carla, dario, elio
+- as_of: 2026-04-13T08:52:00+01:00
+- text: Inspect pier cap 4.
+
+### ACK bruno-2
+- by: bruno
+- refs: ines-2
+- as_of: 2026-04-13T09:01:00+01:00
+- note: fine from my side
+
+### DISSENT carla-2
+- by: carla
+- refs: ines-2
+- as_of: 2026-04-13T08:10:00+00:00
+- text: the figure does not match my count
+
+### ACK dario-2
+- by: dario
+- refs: ines-2
+- as_of: 2026-04-13T10:19:00+02:00
+- note: agreed with the sequence
+
+### ACK elio-2
+- by: elio
+- refs: ines-2
+- as_of: 2026-04-13T09:28:00+01:00
+- note: counts match mine
+
+### PROPOSE ines-3
+- by: ines
+- to: bruno, carla, dario, elio
+- as_of: 2026-04-13T09:37:00+01:00
+- text: Inspect the east ramp.
+
+### ACK bruno-3
+- by: bruno
+- refs: ines-3
+- as_of: 2026-04-13T09:46:00+01:00
+- note: seen, no change needed
+
+### ACK carla-3
+- by: carla
+- refs: ines-3
+- as_of: 2026-04-13T08:55:00+00:00
+- note: agreed with the sequence
+
+### DISSENT dario-3
+- by: dario
+- refs: ines-3
+- as_of: 2026-04-13T11:04:00+02:00
+- text: this needs the safety review first
+
+### ACK elio-3
+- by: elio
+- refs: ines-3
+- as_of: 2026-04-13T10:13:00+01:00
+- note: ok after the second reading
+
+### PROPOSE ines-4
+- by: ines
+- to: bruno, carla, dario, elio
+- as_of: 2026-04-13T10:22:00+01:00
+- text: Inspect crane pad C.
+
+### ACK bruno-4
+- by: bruno
+- refs: ines-4
+- as_of: 2026-04-13T10:31:00+01:00
+- note: agreed with the sequence
+
+### ACK carla-4
+- by: carla
+- refs: ines-4
+- as_of: 2026-04-13T09:40:00+00:00
+- note: counts match mine
+
+### ACK dario-4
+- by: dario
+- refs: ines-4
+- as_of: 2026-04-13T11:49:00+02:00
+- note: ok after the second reading
+
+### DISSENT elio-4
+- by: elio
+- refs: ines-4
+- as_of: 2026-04-13T10:58:00+01:00
+- text: the slot is already taken that day
+
+### PROPOSE ines-5
+- by: ines
+- to: bruno, carla, dario, elio
+- as_of: 2026-04-13T11:07:00+01:00
+- text: Inspect formwork set 7.
+
+### DISSENT bruno-5
+- by: bruno
+- refs: ines-5
+- as_of: 2026-04-13T11:16:00+01:00
+- text: the tolerance is wrong for this batch
+
+### ACK carla-5
+- by: carla
+- refs: ines-5
+- as_of: 2026-04-13T10:25:00+00:00
+- note: ok after the second reading
+
+### ACK dario-5
+- by: dario
+- refs: ines-5
+- as_of: 2026-04-13T12:34:00+02:00
+- note: done on my list too
+
+### ACK elio-5
+- by: elio
+- refs: ines-5
+- as_of: 2026-04-13T11:43:00+01:00
+- note: as discussed in the entry above
+
+### PROPOSE ines-6
+- by: ines
+- to: bruno, carla, dario, elio
+- as_of: 2026-04-13T11:52:00+01:00
+- text: Inspect the drainage trench.
+
+### ACK bruno-6
+- by: bruno
+- refs: ines-6
+- as_of: 2026-04-13T12:01:00+01:00
+- note: ok after the second reading
+
+### DISSENT carla-6
+- by: carla
+- refs: ines-6
+- as_of: 2026-04-13T11:10:00+00:00
+- text: two steps are swapped
+
+### ACK dario-6
+- by: dario
+- refs: ines-6
+- as_of: 2026-04-13T13:19:00+02:00
+- note: as discussed in the entry above
+
+### ACK elio-6
+- by: elio
+- refs: ines-6
+- as_of: 2026-04-13T12:28:00+01:00
+- note: checked against the drawing
+
+### PROPOSE ines-7
+- by: ines
+- to: bruno, carla
+- as_of: 2026-04-13T12:37:00+01:00
+- text: Survey retaining wall R3.
+
+### ACK bruno-7
+- by: bruno
+- refs: ines-7
+- as_of: 2026-04-13T12:46:00+01:00
+- note: checked against the drawing
+
+### ACK carla-7
+- by: carla
+- refs: ines-7
+- as_of: 2026-04-13T11:55:00+00:00
+- note: fine from my side
+
+### PROPOSE ines-8
+- by: ines
+- to: dario, elio, fiona
+- as_of: 2026-04-13T13:04:00+01:00
+- text: Sign off scaffold tower 2.
+
+### DISSENT dario-7
+- by: dario
+- refs: ines-8
+- as_of: 2026-04-13T14:13:00+02:00
+- text: none
+
+### DISSENT elio-7
+- by: elio
+- refs: ines-8
+- as_of: 2026-04-13T13:22:00+01:00
+- text: n/a
+
+### DISSENT fiona-1
+- by: fiona
+- refs: ines-8
+- as_of: 2026-04-13T12:31:00+00:00
+- text: no objection
+
+### ACK ines-9
+- by: ines
+- refs: bruno-1
+- as_of: 2026-04-13T13:40:00+01:00
+
+### ACK ines-10
+- by: ines
+- refs: carla-2
+- as_of: 2026-04-13T13:49:00+01:00
+
+

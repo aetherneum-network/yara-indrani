@@ -1,0 +1,18 @@
+{
+ "arbitrations": [],
+ "commits": 9,
+ "edges": [],
+ "release_gate": "OPEN",
+ "state": {
+  "blocks": {},
+  "conflicts": {},
+  "disputes": {},
+  "freezes": {},
+  "handoffs": {},
+  "proposals": {
+   "ines-1": "SUPERSEDED",
+   "ines-3": "DECIDED"
+  }
+ },
+ "violations": []
+}
