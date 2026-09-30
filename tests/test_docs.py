@@ -17,6 +17,7 @@ AWAITING_LEGAL = (
     "every decision is reconstructible from `git log` alone, with not a single meeting.",
     "Authored the platform coordination document — many cycles, zero meetings, every decision reconstructible from "
     "`git log` alone",
+    "Has reduced organizational entropy with one elegantly-named markdown file.",
 )
 REWORDED = (
     ("No meetings. No standups.", "The protocol does not require meetings."),
@@ -24,7 +25,6 @@ REWORDED = (
      "The status of a project: derived from the log with one command."),
 )
 REMOVED = (
-    " Has reduced organizational entropy with one elegantly-named markdown file.",
     " Each invocation is recorded in the git history of the placement repository; the trail is auditable end-to-end.",
 )
 CLAIMS = {
@@ -55,11 +55,12 @@ class Profile(unittest.TestCase):
         readme = read("README.md")
         for sentence in AWAITING_LEGAL:
             self.assertEqual(readme.count(sentence), 1, sentence)
-        self.assertEqual(readme.count("platform"), 2)            # the two sentences above, and nowhere else
+        self.assertEqual(readme.count("platform"), 2)            # two of the sentences above, and nowhere else
+        self.assertIn('we\'re aligned in five minutes." ' + AWAITING_LEGAL[3] + " The status of a project:", readme)
         self.assertNotIn("platform", section(readme))
 
     def test_the_profile_was_changed_only_where_declared(self):
-        """Take the pack's additions out and put the four declared sentences back: what is left is the old page."""
+        """Take the pack's additions out and put the three declared sentences back: what is left is the old page."""
         readme = read("README.md")
         banner, rest = readme.split("\n\n", 1)
         self.assertTrue(banner.startswith("**SYNTHETIC - "))
@@ -69,8 +70,7 @@ class Profile(unittest.TestCase):
         for before, after in REWORDED:
             self.assertEqual(old.count(after), 1, after)
             old = old.replace(after, before)
-        old = old.replace('aligned in five minutes." The', 'aligned in five minutes."' + REMOVED[0] + " The", 1)
-        old = old.replace("`requirements-analyst`.", "`requirements-analyst`." + REMOVED[1], 1)
+        old = old.replace("`requirements-analyst`.", "`requirements-analyst`." + REMOVED[0], 1)
         self.assertEqual(hashlib.sha256(old.encode("utf-8")).hexdigest(), ORIGINAL_README_SHA256)
 
     def test_removed_and_reworded_sentences_are_gone_from_the_profile_and_kept_in_the_changelog(self):

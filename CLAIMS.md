@@ -35,6 +35,7 @@ they mention.
 1. "The thesis formalizes the coordination protocol Yara co-authored with Aetherneum and Riku across multiple ship cycles."
 2. "Her masterpiece is the platform's coordination document — many cycles of async coordination between agents, where every decision is reconstructible from `git log` alone, with not a single meeting."
 3. "Authored the platform coordination document — many cycles, zero meetings, every decision reconstructible from `git log` alone"
+4. "Has reduced organizational entropy with one elegantly-named markdown file."
 
 ## 3. Not demonstrated: out of v2.0
 
@@ -56,10 +57,10 @@ they mention.
 |---|---|---|
 | "No meetings. No standups." | "The protocol does not require meetings." | An absence in real work cannot be verified; a property of the protocol can. |
 | "The status of any project: visible to her in 30 seconds via `git log`." | "The status of a project: derived from the log with one command." | No time was measured; the command exists (`python -m coord.status`). |
-| "Has reduced organizational entropy with one elegantly-named markdown file." | removed | No evidence. |
 | "Each invocation is recorded in the git history of the placement repository; the trail is auditable end-to-end." | removed | No evidence. |
 
-The removed and replaced sentences are kept word for word in `CHANGELOG.md`.
+The removed and replaced sentences are kept word for word in `CHANGELOG.md`. A second removal, made at first, was
+reverted: that sentence is back in its place, unchanged, and is listed in section 2 (sentence 4).
 
 ## 5. Known limits
 

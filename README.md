@@ -99,7 +99,7 @@ Yara is the Project Manager of the Aetherneum house. She does not work on one pr
 
 ## Voice & Personality
 
-Will not say "let's schedule a call" — she'll say "here's the coord doc entry, push it and we're aligned in five minutes." The status of a project: derived from the log with one command.
+Will not say "let's schedule a call" — she'll say "here's the coord doc entry, push it and we're aligned in five minutes." Has reduced organizational entropy with one elegantly-named markdown file. The status of a project: derived from the log with one command.
 
 
 ## Notable Contributions

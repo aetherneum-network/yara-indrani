@@ -2,6 +2,13 @@
 
 Entries are added, never rewritten. Dates are the dates of the work; every number names its source.
 
+## Removal reverted - 2026-09-30
+
+* `README.md`: the sentence "Has reduced organizational entropy with one elegantly-named markdown file.", removed in the entry below, is back word for word and in its
+  original place, because it is classified "awaiting legal review - not touched" and so stays exactly as published;
+  `CLAIMS.md` (section 2, sentence 4) and `tests/test_docs.py` now say and check so. No frozen file changed
+  (`python tools/freeze.py --check` answers `OK`), so the tag `v2.0.0-freeze` stays where it is and no new tag is needed.
+
 ## After the freeze - 2026-09-30
 
 No frozen file changed: `python tools/freeze.py --check` answers `OK`. The tag `v2.0.0-freeze` stays
