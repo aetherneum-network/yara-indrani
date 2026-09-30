@@ -25,6 +25,11 @@ modules, remote git commands, and the names of model providers, and fails if it 
 There is no optional model hook in v2.0. If one is ever added, it must be switched off by default, must
 never be needed by a test or a scenario, and may only name `claude-opus-5-5` or `claude-fable-5-1`.
 
+## Third-party components
+
+None is distributed with the pack: no library, no skill, no subagent. It uses the Python standard
+library (3.12) and calls `git` (2.32 or later) as an external program already present on the machine.
+
 ## What the author saw while writing
 
 * The dev corpus (seed `20260930`) and the stress-diagnosis corpus (seed `20261002`), and the results

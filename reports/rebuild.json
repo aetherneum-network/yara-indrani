@@ -1,0 +1,30 @@
+{
+ "what": "Two independent rebuilds of every output of the pack (dev corpus, one state, status and lint report per story, dev results, scenario outputs) in two different folders, compared byte by byte.",
+ "command": "python tools/rebuild.py --out FOLDER",
+ "date": "2026-09-30",
+ "environment": {
+  "os": "Windows 11",
+  "python": "3.12.10",
+  "git": "2.51.0"
+ },
+ "seed": 20260930,
+ "stories": 120,
+ "corpus_sha256": "872af1d2e5619acc14c5fe75df8ddee76b6baeaf33e5b3bc40c998a838479b33",
+ "runs": [
+  {
+   "folder": "A",
+   "bundle_sha256": "0df64b5aae8b786b1c653cdf566fecc1a58028921b9d78d104e781e29ee5cf40",
+   "files": 752,
+   "head_commits_sha256": "7e4234649cd0c2724185b262e6314607941440dddd54ce9781c3494a36936dcb"
+  },
+  {
+   "folder": "B (another folder, deeper, with spaces in its path)",
+   "bundle_sha256": "0df64b5aae8b786b1c653cdf566fecc1a58028921b9d78d104e781e29ee5cf40",
+   "files": 752,
+   "head_commits_sha256": "7e4234649cd0c2724185b262e6314607941440dddd54ce9781c3494a36936dcb"
+  }
+ ],
+ "identical": true,
+ "bundle_sha256_is": "the SHA-256 of BUNDLE.sha256, the list of the SHA-256 of every output file",
+ "commit_hashes_across_systems": "The outputs cite commits by position, not by hash. The hashes of the head commits of the test repositories are recorded apart (head_commits_sha256) and were equal in the two runs on this machine; whether they are equal on another system is [TO CONFIRM]."
+}
