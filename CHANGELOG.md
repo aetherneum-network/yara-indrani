@@ -2,6 +2,36 @@
 
 Entries are added, never rewritten. Dates are the dates of the work; every number names its source.
 
+## After the freeze - 2026-09-30
+
+No frozen file changed: `python tools/freeze.py --check` answers `OK`. The tag `v2.0.0-freeze` stays
+where it is; this entry is documents and one test module.
+
+### Added
+
+* `eval/BLIND_PROTOCOL.md`: the exact commands of the blind run, which has not been done.
+* `CLAIMS.md`: every claim of the profile, with its evidence or with the reason there is none.
+* `reports/rebuild.json`: the two full rebuilds of 2026-09-30 (same bundle, 752 files).
+* `tests/test_docs.py`: the numbers of the README are read again from the files they name; the profile
+  page is checked to differ from the earlier one only where this entry says.
+* `README.md`: a proof-pack section between the profile table and "Master Thesis".
+* `MODEL.md`: a line on third-party components (there are none).
+
+### Changed in `README.md` (wording of the profile)
+
+Two sentences replaced and two removed, because nothing in this repository can support them. The text
+before the change is kept here word for word.
+
+| Before | After |
+|---|---|
+| "No meetings. No standups." | "The protocol does not require meetings." |
+| "The status of any project: visible to her in 30 seconds via `git log`." | "The status of a project: derived from the log with one command." |
+| "Has reduced organizational entropy with one elegantly-named markdown file." | removed |
+| "Each invocation is recorded in the git history of the placement repository; the trail is auditable end-to-end." | removed |
+
+Left exactly as they were: the three sentences awaiting legal review (`CLAIMS.md`, section 2), and
+every other line of the profile.
+
 ## 2.0.0-freeze - 2026-09-30
 
 First version of the proof pack. Before it, this repository held the profile page only.
