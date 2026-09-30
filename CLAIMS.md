@@ -43,6 +43,9 @@ they mention.
 |---|---|
 | "Cross-team unblocker - the person to call for fuzzy dependencies, declared freezes, or scope arbitration"; "Yara is who you call when there is a cross-team block, a fuzzy dependency, or a freeze to declare" | Needs work across several teams or packs; the compositions between packs are outside v2.0. |
 | "She does not work on one project - she holds the thread of all of them"; "Primary Placement: Cross-portfolio" | A description of a role. No real project is part of this repository. |
+| "No meetings. No standups." | An absence in real work cannot be verified. What the pack shows is a protocol that does not require meetings, on synthetic stories. |
+| "The status of any project: visible to her in 30 seconds via `git log`." | No time was measured and no real project is part of this repository. What exists is a command that derives the status of a synthetic story from its log (`coord/status.py`, S03). |
+| "Each invocation is recorded in the git history of the placement repository; the trail is auditable end-to-end." | The pack calls no agent and no model (`MODEL.md`), so it holds no invocation and no trail of one. |
 | "*The coordination document IS the meeting.*"; "without standups" (title of the thesis); "push it and we are aligned in five minutes" | The pack shows a protocol that does not require meetings. It cannot show that no meeting took place anywhere, and it measures no time to alignment. |
 | "operates via specialist subagent invocations: `pm-agent`, `business-panel-experts`, `requirements-analyst`" | The pack calls no agent and no model (`MODEL.md`). |
 | Degree, thesis of record, diploma, faculty advisor, class | Fields of the profile; this repository offers no evidence for or against them. |
@@ -51,16 +54,16 @@ they mention.
 | The same commit hashes of the test repositories on another operating system | Verified on one machine only; see "Known limits". |
 | A scan report for secrets and personal data (`reports/scan.json`) | Not produced in v2.0. `tests/test_hygiene.py` checks paths, names, addresses and domains, which is less than a scan. |
 
-## 4. Changed in the profile by this pack
+## 4. Profile text: not changed by this pack
 
-| Before | After | Why |
-|---|---|---|
-| "No meetings. No standups." | "The protocol does not require meetings." | An absence in real work cannot be verified; a property of the protocol can. |
-| "The status of any project: visible to her in 30 seconds via `git log`." | "The status of a project: derived from the log with one command." | No time was measured; the command exists (`python -m coord.status`). |
-| "Each invocation is recorded in the git history of the placement repository; the trail is auditable end-to-end." | removed | No evidence. |
+The profile part of `README.md` - everything except the SYNTHETIC banner (its first line) and the section
+between the two `proof-pack` markers - is byte for byte the page as it was before the pack: sha256
+`158e4c9bf21b476becce1eb844cc75511c5b84eff1e313130d6d49a60df1cc59` with LF line endings, the page at commit `62065ee`,
+checked by `tests/test_docs.py`.
 
-The removed and replaced sentences are kept word for word in `CHANGELOG.md`. A second removal, made at first, was
-reverted: that sentence is back in its place, unchanged, and is listed in section 2 (sentence 4).
+An earlier commit of this branch (`5297a87`) had reworded two passages and removed two sentences. All four are
+back word for word and in their place; the record is in `CHANGELOG.md`. Rewording the public profile is not a
+decision of this pack: a sentence without evidence is listed in section 3 (or in section 2), and left as it is.
 
 ## 5. Known limits
 

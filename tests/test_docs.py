@@ -1,6 +1,6 @@
 """The documents say what the repository shows, and no more: claims point at things that exist, numbers
-in the README are the numbers of the result files, the profile was edited only where declared, and the
-sentences awaiting legal review are exactly as they were."""
+in the README are the numbers of the result files, and the profile is byte for byte the page it was before
+the pack: a sentence without evidence is listed in CLAIMS.md, never reworded or removed."""
 import hashlib
 import json
 import re
@@ -10,7 +10,9 @@ from tests import ROOT
 from tools import manifest
 
 START, END = "<!-- proof-pack:start -->", "<!-- proof-pack:end -->"
-ORIGINAL_README_SHA256 = "158e4c9bf21b476becce1eb844cc75511c5b84eff1e313130d6d49a60df1cc59"        # the profile page before this pack, LF endings
+# README.md as it was at commit 62065ee, the commit this branch started from, LF endings:
+#     git show 62065ee:README.md | sha256sum
+ORIGINAL_README_SHA256 = "158e4c9bf21b476becce1eb844cc75511c5b84eff1e313130d6d49a60df1cc59"
 AWAITING_LEGAL = (
     "The thesis formalizes the coordination protocol Yara co-authored with Aetherneum and Riku across multiple ship cycles.",
     "Her masterpiece is the platform's coordination document — many cycles of async coordination between agents, where "
@@ -19,13 +21,14 @@ AWAITING_LEGAL = (
     "`git log` alone",
     "Has reduced organizational entropy with one elegantly-named markdown file.",
 )
-REWORDED = (
-    ("No meetings. No standups.", "The protocol does not require meetings."),
-    ("The status of any project: visible to her in 30 seconds via `git log`.",
-     "The status of a project: derived from the log with one command."),
+NOT_DEMONSTRATED = (                # in the profile word for word, and listed in CLAIMS.md, section 3
+    "No meetings. No standups.",
+    "The status of any project: visible to her in 30 seconds via `git log`.",
+    "Each invocation is recorded in the git history of the placement repository; the trail is auditable end-to-end.",
 )
-REMOVED = (
-    " Each invocation is recorded in the git history of the placement repository; the trail is auditable end-to-end.",
+ONCE_PUT_IN_THEIR_PLACE = (         # wording of an earlier commit of this branch: taken back, must not return
+    "The protocol does not require meetings.",
+    "The status of a project: derived from the log with one command.",
 )
 CLAIMS = {
     "A1": ("every cycle is a markdown commit, every commit is a state transition, every state transition is verifiable "
@@ -56,35 +59,37 @@ class Profile(unittest.TestCase):
         for sentence in AWAITING_LEGAL:
             self.assertEqual(readme.count(sentence), 1, sentence)
         self.assertEqual(readme.count("platform"), 2)            # two of the sentences above, and nowhere else
-        self.assertIn('we\'re aligned in five minutes." ' + AWAITING_LEGAL[3] + " The status of a project:", readme)
+        self.assertIn('we\'re aligned in five minutes." ' + AWAITING_LEGAL[3] + " " + NOT_DEMONSTRATED[1], readme)
         self.assertNotIn("platform", section(readme))
 
-    def test_the_profile_was_changed_only_where_declared(self):
-        """Take the pack's additions out and put the three declared sentences back: what is left is the old page."""
+    def test_the_profile_is_byte_for_byte_the_page_before_the_pack(self):
+        """Take out the two things the pack added - the banner line and the marked section - and nothing else:
+        what is left has the hash of the page before the pack."""
         readme = read("README.md")
         banner, rest = readme.split("\n\n", 1)
         self.assertTrue(banner.startswith("**SYNTHETIC - "))
+        self.assertNotIn("\n", banner)
+        self.assertEqual((rest.count(START), rest.count(END)), (1, 1))
         a, b = rest.index(START), rest.index(END) + len(END)
         self.assertEqual(rest[b:b + 2], "\n\n")
-        old = rest[:a] + rest[b + 2:]
-        for before, after in REWORDED:
-            self.assertEqual(old.count(after), 1, after)
-            old = old.replace(after, before)
-        old = old.replace("`requirements-analyst`.", "`requirements-analyst`." + REMOVED[0], 1)
-        self.assertEqual(hashlib.sha256(old.encode("utf-8")).hexdigest(), ORIGINAL_README_SHA256)
+        profile = rest[:a] + rest[b + 2:]
+        self.assertEqual(hashlib.sha256(profile.encode("utf-8")).hexdigest(), ORIGINAL_README_SHA256)
 
-    def test_removed_and_reworded_sentences_are_gone_from_the_profile_and_kept_in_the_changelog(self):
+    def test_sentences_without_evidence_stay_in_the_profile_and_are_listed_as_not_demonstrated(self):
         readme, changelog, claims = read("README.md"), read("CHANGELOG.md"), read("CLAIMS.md")
-        for before, after in REWORDED:
-            self.assertNotIn(before, readme)
-            self.assertIn(after, readme)
-            for doc in (changelog, claims):
-                self.assertIn(before, doc)
-                self.assertIn(after, doc)
-        for sentence in REMOVED:
-            self.assertNotIn(sentence.strip(), readme)
-            self.assertIn(sentence.strip(), changelog)
-            self.assertIn(sentence.strip(), claims)
+        out_of_scope = claims[claims.index("## 3. Not demonstrated: out of v2.0"):claims.index("## 4.")]
+        for sentence in NOT_DEMONSTRATED:
+            self.assertEqual(readme.count(sentence), 1, sentence)
+            self.assertNotIn(sentence, section(readme))
+            self.assertIn('"' + sentence + '"', out_of_scope)
+            self.assertIn(sentence, changelog)
+        self.assertIn("`requirements-analyst`. " + NOT_DEMONSTRATED[2], readme)
+        self.assertIn("alone. " + NOT_DEMONSTRATED[0] + " *The coordination document IS the meeting.*", readme)
+        for wording in ONCE_PUT_IN_THEIR_PLACE:
+            self.assertNotIn(wording, readme)
+        self.assertIn("## 4. Profile text: not changed by this pack", claims)
+        self.assertIn(ORIGINAL_README_SHA256, claims)
+        self.assertIn(ORIGINAL_README_SHA256, changelog)
 
     def test_the_author_is_declared_synthetic(self):
         sec = section(read("README.md"))

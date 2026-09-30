@@ -2,6 +2,17 @@
 
 Entries are added, never rewritten. Dates are the dates of the work; every number names its source.
 
+## Profile text restored - 2026-09-30
+
+* `README.md`: the three passages changed in the entry "After the freeze" are back word for word and in their place -
+  "No meetings. No standups.", "The status of any project: visible to her in 30 seconds via `git log`." and
+  "Each invocation is recorded in the git history of the placement repository; the trail is auditable end-to-end." -
+  because the profile text stays byte for byte as it was before the pack: a sentence without evidence is listed in
+  `CLAIMS.md` (section 3, "Not demonstrated: out of v2.0"), not reworded or removed. `tests/test_docs.py` now checks
+  the profile by hash (sha256 `158e4c9bf21b476becce1eb844cc75511c5b84eff1e313130d6d49a60df1cc59`, LF endings, the page
+  at commit `62065ee`). Documents and one test module only: no frozen file changed (`python tools/freeze.py --check`
+  answers `OK`). The tag `v2.0.0-freeze` stays where it is; the commit of this entry is tagged `v2.0.1-freeze`.
+
 ## Removal reverted - 2026-09-30
 
 * `README.md`: the sentence "Has reduced organizational entropy with one elegantly-named markdown file.", removed in the entry below, is back word for word and in its
