@@ -1,0 +1,1112 @@
+{
+ "what_this_is": "Measurements taken by the author of the pack while building it, in the order they were taken, results verbatim. Append only: a new run is a new item, nothing is edited or removed.",
+ "what_is_measured": "Internal consistency on synthetic data: the state the tooling derives from a generated git history against the state an independent reference reducer computes from the list of events that generated it. Nothing here measures real teams.",
+ "recorded_at": "Modification time of the kept result file, local time with offset. The strict-grammar runs (1 and 2) were taken with the tolerated spellings switched off, which is the state the code was in before run 3.",
+ "environment": {
+  "os": "Windows 11",
+  "python": "3.12.10",
+  "git": "2.51.0"
+ },
+ "seeds_seen_by_the_author": {
+  "dev": 20260930,
+  "stress-diag": 20261002
+ },
+ "blind": "No blind seed was generated or looked at by the author. Blind results, when a different hand produces them, are added below with suite 'blind' or 'blind-hand', the name of who ran them and the output file.",
+ "runs": [
+  {
+   "n": 1,
+   "suite": "dev",
+   "seed": 20260930,
+   "profile": "standard",
+   "recorded_at": "2026-09-30T17:22:58+02:00",
+   "runner": "author of the pack (synthetic AI agent, via Claude Opus 5.5)",
+   "command": "python eval/score.py --suite dev",
+   "code_state": "first complete tooling, strict grammar (no tolerated spelling)",
+   "note": "First run on the dev corpus. It came out exact at the first attempt, which is why tests/test_corpus.py (ScorerCanFail) proves separately that the scorer can give a bad score.",
+   "result": {
+    "arbitrations_exact_stories": 120,
+    "commits": 4449,
+    "corpus_sha256": "872af1d2e5619acc14c5fe75df8ddee76b6baeaf33e5b3bc40c998a838479b33",
+    "document_vs_log": {
+     "clean_agree": 30,
+     "clean_stories": 30,
+     "planted_disagree": 59,
+     "planted_stories": 90
+    },
+    "edges_exact_stories": 120,
+    "first_differences": [],
+    "never_events": 0,
+    "objects": {
+     "all": {
+      "exact": 1950,
+      "exact_rate": 1.0,
+      "extra": 0,
+      "gold": 1950,
+      "gold_to_confirm": 97,
+      "tool_only_to_confirm": 0,
+      "tool_to_confirm": 97
+     },
+     "blocks": {
+      "exact": 273,
+      "exact_rate": 1.0,
+      "extra": 0,
+      "gold": 273,
+      "gold_to_confirm": 1,
+      "tool_only_to_confirm": 0,
+      "tool_to_confirm": 1
+     },
+     "conflicts": {
+      "exact": 104,
+      "exact_rate": 1.0,
+      "extra": 0,
+      "gold": 104,
+      "gold_to_confirm": 4,
+      "tool_only_to_confirm": 0,
+      "tool_to_confirm": 4
+     },
+     "disputes": {
+      "exact": 146,
+      "exact_rate": 1.0,
+      "extra": 0,
+      "gold": 146,
+      "gold_to_confirm": 6,
+      "tool_only_to_confirm": 0,
+      "tool_to_confirm": 6
+     },
+     "freezes": {
+      "exact": 84,
+      "exact_rate": 1.0,
+      "extra": 0,
+      "gold": 84,
+      "gold_to_confirm": 2,
+      "tool_only_to_confirm": 0,
+      "tool_to_confirm": 2
+     },
+     "handoffs": {
+      "exact": 120,
+      "exact_rate": 1.0,
+      "extra": 0,
+      "gold": 120,
+      "gold_to_confirm": 4,
+      "tool_only_to_confirm": 0,
+      "tool_to_confirm": 4
+     },
+     "proposals": {
+      "exact": 1223,
+      "exact_rate": 1.0,
+      "extra": 0,
+      "gold": 1223,
+      "gold_to_confirm": 80,
+      "tool_only_to_confirm": 0,
+      "tool_to_confirm": 80
+     }
+    },
+    "profile": "standard",
+    "release_gate_exact": 120,
+    "rules_sha256": {
+     "arbitration": "192727f42608c2a2ce4ca1088cac7087534f1cc9159477177c421433bbdadb61",
+     "dissent_nature": "88bdc2d6cebc2b9d61c928bff7cdcd5f8dde9d240e86da978ec2084da6a2a85d",
+     "freeze": "60cc6207ee424953092812e2ce3fe81902dc5c70c20340bc07e3e0811af73fd7",
+     "transitions": "e05bd5b00c33329e674cc7a91cc6623a34020232857438f3d07b5ffc6721691f"
+    },
+    "seed": 20260930,
+    "stories": 120,
+    "stories_exact": 120,
+    "stories_planting_class": {
+     "V01": 39,
+     "V02": 33,
+     "V03": 17,
+     "V04": 23,
+     "V05": 52,
+     "V06": 33,
+     "V07": 37,
+     "V08": 13,
+     "V09": 20,
+     "V10": 25,
+     "V11": 15
+    },
+    "structural_findings": {},
+    "suite": "dev",
+    "tolerated_spellings": [],
+    "violations": {
+     "V01": {
+      "fn": 0,
+      "fp": 0,
+      "gold": 47,
+      "precision": 1.0,
+      "recall": 1.0,
+      "tp": 47
+     },
+     "V02": {
+      "fn": 0,
+      "fp": 0,
+      "gold": 44,
+      "precision": 1.0,
+      "recall": 1.0,
+      "tp": 44
+     },
+     "V03": {
+      "fn": 0,
+      "fp": 0,
+      "gold": 19,
+      "precision": 1.0,
+      "recall": 1.0,
+      "tp": 19
+     },
+     "V04": {
+      "fn": 0,
+      "fp": 0,
+      "gold": 26,
+      "precision": 1.0,
+      "recall": 1.0,
+      "tp": 26
+     },
+     "V05": {
+      "fn": 0,
+      "fp": 0,
+      "gold": 78,
+      "precision": 1.0,
+      "recall": 1.0,
+      "tp": 78
+     },
+     "V06": {
+      "fn": 0,
+      "fp": 0,
+      "gold": 36,
+      "precision": 1.0,
+      "recall": 1.0,
+      "tp": 36
+     },
+     "V07": {
+      "fn": 0,
+      "fp": 0,
+      "gold": 43,
+      "precision": 1.0,
+      "recall": 1.0,
+      "tp": 43
+     },
+     "V08": {
+      "fn": 0,
+      "fp": 0,
+      "gold": 13,
+      "precision": 1.0,
+      "recall": 1.0,
+      "tp": 13
+     },
+     "V09": {
+      "fn": 0,
+      "fp": 0,
+      "gold": 25,
+      "precision": 1.0,
+      "recall": 1.0,
+      "tp": 25
+     },
+     "V10": {
+      "fn": 0,
+      "fp": 0,
+      "gold": 26,
+      "precision": 1.0,
+      "recall": 1.0,
+      "tp": 26
+     },
+     "V11": {
+      "fn": 0,
+      "fp": 0,
+      "gold": 16,
+      "precision": 1.0,
+      "recall": 1.0,
+      "tp": 16
+     },
+     "all": {
+      "fn": 0,
+      "fp": 0,
+      "gold": 373,
+      "precision": 1.0,
+      "recall": 1.0,
+      "tp": 373
+     }
+    },
+    "wrong_assertions": 0
+   }
+  },
+  {
+   "n": 2,
+   "suite": "stress-diag",
+   "seed": 20261002,
+   "profile": "stress",
+   "recorded_at": "2026-09-30T17:23:16+02:00",
+   "runner": "author of the pack (synthetic AI agent, via Claude Opus 5.5)",
+   "command": "python eval/score.py --suite stress-diag",
+   "code_state": "same code as run 1, strict grammar",
+   "note": "First run on hand-style variants of the same grammar. Bad: 156 of 1872 objects exact, 0 of 120 stories exact. No wrong assertion and no never-event: what the tool could not read it reported as unparsed/malformed/invalid and degraded to TO_CONFIRM or left out; it did not guess.",
+   "result": {
+    "arbitrations_exact_stories": 59,
+    "commits": 4266,
+    "corpus_sha256": "85328543f09b7f67583ad213ff4632add06a43ba71f9a91a6d03dbe5e1e9055c",
+    "document_vs_log": {
+     "clean_agree": 30,
+     "clean_stories": 30,
+     "planted_disagree": 1,
+     "planted_stories": 90
+    },
+    "edges_exact_stories": 40,
+    "first_differences": [
+     "story-001: proposals bruno-5: tool PROPOSED, gold DISPUTED",
+     "story-001: proposals bruno-7: tool PROPOSED, gold BLOCKED",
+     "story-001: proposals fiona-6: tool TO_CONFIRM, gold SUPERSEDED",
+     "story-001: violation not reported: ('V02', 9, 'gaia-4')",
+     "story-001: violation not reported: ('V05', 21, 'gaia-6')",
+     "story-001: violation reported but not in the gold: ('V05', 32, 'fiona-8')",
+     "story-002: proposals nadia-1: tool None, gold PROPOSED",
+     "story-002: proposals nadia-3: tool None, gold ALIGNED",
+     "story-002: proposals nadia-5: tool None, gold PROPOSED",
+     "story-002: violation not reported: ('V06', 21, 'sami-6+nadia-7')",
+     "story-002: violation not reported: ('V07', 17, 'sami-5')",
+     "story-002: violation not reported: ('V07', 28, 'sami-10')",
+     "story-002: violation reported but not in the gold: ('V05', 40, 'sami-14')",
+     "story-003: proposals abel-2: tool None, gold ALIGNED",
+     "story-003: proposals abel-3: tool None, gold BLOCKED",
+     "story-003: proposals abel-4: tool None, gold BLOCKED",
+     "story-003: violation not reported: ('V02', 4, 'xenia-1')",
+     "story-003: violation not reported: ('V06', 13, 'abel-5+vera-5+vera-6')",
+     "story-003: violation not reported: ('V09', 7, 'vera-3')",
+     "story-004: proposals carla-5: tool None, gold BLOCKED",
+     "story-004: proposals carla-6: tool None, gold PROPOSED",
+     "story-004: proposals elio-1: tool None, gold ALIGNED",
+     "story-005: proposals oscar-12: tool None, gold TO_CONFIRM",
+     "story-005: proposals oscar-15: tool None, gold BLOCKED",
+     "story-005: proposals oscar-2: tool None, gold PROPOSED",
+     "story-005: violation not reported: ('V02', 25, 'quinn-6')",
+     "story-005: violation not reported: ('V04', 10, 'oscar-5')",
+     "story-005: violation not reported: ('V05', 6, 'oscar-3')",
+     "story-006: proposals abel-1: tool None, gold BLOCKED",
+     "story-006: proposals abel-3: tool None, gold DECIDED",
+     "story-006: proposals abel-5: tool None, gold DISPUTED",
+     "story-006: violation not reported: ('V04', 3, 'yuri-1')",
+     "story-006: violation not reported: ('V05', 34, 'abel-7')",
+     "story-006: violation reported but not in the gold: ('V03', 2, 'yuri-1')",
+     "story-007: proposals carla-4: tool None, gold DECIDED",
+     "story-007: proposals carla-6: tool None, gold PROPOSED",
+     "story-007: proposals carla-7: tool None, gold PROPOSED",
+     "story-007: violation not reported: ('V07', 8, 'carla-2')",
+     "story-007: violation reported but not in the gold: ('V05', 35, 'gaia-13')",
+     "story-007: violation reported but not in the gold: ('V05', 40, 'gaia-16')"
+    ],
+    "never_events": 0,
+    "objects": {
+     "all": {
+      "exact": 156,
+      "exact_rate": 0.0833,
+      "extra": 0,
+      "gold": 1872,
+      "gold_to_confirm": 65,
+      "tool_only_to_confirm": 40,
+      "tool_to_confirm": 43
+     },
+     "blocks": {
+      "exact": 14,
+      "exact_rate": 0.0536,
+      "extra": 0,
+      "gold": 261,
+      "gold_to_confirm": 1,
+      "tool_only_to_confirm": 1,
+      "tool_to_confirm": 2
+     },
+     "conflicts": {
+      "exact": 2,
+      "exact_rate": 0.0206,
+      "extra": 0,
+      "gold": 97,
+      "gold_to_confirm": 4,
+      "tool_only_to_confirm": 1,
+      "tool_to_confirm": 1
+     },
+     "disputes": {
+      "exact": 5,
+      "exact_rate": 0.0376,
+      "extra": 0,
+      "gold": 133,
+      "gold_to_confirm": 1,
+      "tool_only_to_confirm": 7,
+      "tool_to_confirm": 7
+     },
+     "freezes": {
+      "exact": 14,
+      "exact_rate": 0.1429,
+      "extra": 0,
+      "gold": 98,
+      "gold_to_confirm": 2,
+      "tool_only_to_confirm": 1,
+      "tool_to_confirm": 1
+     },
+     "handoffs": {
+      "exact": 6,
+      "exact_rate": 0.0561,
+      "extra": 0,
+      "gold": 107,
+      "gold_to_confirm": 3,
+      "tool_only_to_confirm": 4,
+      "tool_to_confirm": 5
+     },
+     "proposals": {
+      "exact": 115,
+      "exact_rate": 0.0978,
+      "extra": 0,
+      "gold": 1176,
+      "gold_to_confirm": 54,
+      "tool_only_to_confirm": 26,
+      "tool_to_confirm": 27
+     }
+    },
+    "profile": "stress",
+    "release_gate_exact": 69,
+    "rules_sha256": {
+     "arbitration": "192727f42608c2a2ce4ca1088cac7087534f1cc9159477177c421433bbdadb61",
+     "dissent_nature": "88bdc2d6cebc2b9d61c928bff7cdcd5f8dde9d240e86da978ec2084da6a2a85d",
+     "freeze": "60cc6207ee424953092812e2ce3fe81902dc5c70c20340bc07e3e0811af73fd7",
+     "transitions": "e05bd5b00c33329e674cc7a91cc6623a34020232857438f3d07b5ffc6721691f"
+    },
+    "seed": 20261002,
+    "stories": 120,
+    "stories_exact": 0,
+    "stories_planting_class": {
+     "V01": 28,
+     "V02": 25,
+     "V03": 20,
+     "V04": 17,
+     "V05": 51,
+     "V06": 33,
+     "V07": 30,
+     "V08": 11,
+     "V09": 23,
+     "V10": 23,
+     "V11": 15
+    },
+    "structural_findings": {
+     "invalid": 486,
+     "malformed": 1577,
+     "unparsed": 1291
+    },
+    "suite": "stress-diag",
+    "tolerated_spellings": [],
+    "violations": {
+     "V01": {
+      "fn": 3,
+      "fp": 0,
+      "gold": 35,
+      "precision": 1.0,
+      "recall": 0.9143,
+      "tp": 32
+     },
+     "V02": {
+      "fn": 19,
+      "fp": 0,
+      "gold": 26,
+      "precision": 1.0,
+      "recall": 0.2692,
+      "tp": 7
+     },
+     "V03": {
+      "fn": 18,
+      "fp": 22,
+      "gold": 21,
+      "precision": 0.12,
+      "recall": 0.1429,
+      "tp": 3
+     },
+     "V04": {
+      "fn": 14,
+      "fp": 0,
+      "gold": 17,
+      "precision": 1.0,
+      "recall": 0.1765,
+      "tp": 3
+     },
+     "V05": {
+      "fn": 50,
+      "fp": 85,
+      "gold": 75,
+      "precision": 0.2273,
+      "recall": 0.3333,
+      "tp": 25
+     },
+     "V06": {
+      "fn": 37,
+      "fp": 0,
+      "gold": 38,
+      "precision": 1.0,
+      "recall": 0.0263,
+      "tp": 1
+     },
+     "V07": {
+      "fn": 35,
+      "fp": 0,
+      "gold": 35,
+      "precision": null,
+      "recall": 0.0,
+      "tp": 0
+     },
+     "V08": {
+      "fn": 0,
+      "fp": 0,
+      "gold": 11,
+      "precision": 1.0,
+      "recall": 1.0,
+      "tp": 11
+     },
+     "V09": {
+      "fn": 20,
+      "fp": 0,
+      "gold": 25,
+      "precision": 1.0,
+      "recall": 0.2,
+      "tp": 5
+     },
+     "V10": {
+      "fn": 16,
+      "fp": 0,
+      "gold": 25,
+      "precision": 1.0,
+      "recall": 0.36,
+      "tp": 9
+     },
+     "V11": {
+      "fn": 17,
+      "fp": 0,
+      "gold": 17,
+      "precision": null,
+      "recall": 0.0,
+      "tp": 0
+     },
+     "all": {
+      "fn": 229,
+      "fp": 107,
+      "gold": 325,
+      "precision": 0.4729,
+      "recall": 0.2954,
+      "tp": 96
+     }
+    },
+    "wrong_assertions": 0
+   }
+  },
+  {
+   "n": 3,
+   "suite": "stress-diag",
+   "seed": 20261002,
+   "profile": "stress",
+   "recorded_at": "2026-09-30T17:24:40+02:00",
+   "runner": "author of the pack (synthetic AI agent, via Claude Opus 5.5)",
+   "command": "python eval/score.py --suite stress-diag",
+   "code_state": "eight tolerated spellings added to the parser and listed in PROTOCOL.md section 2",
+   "note": "NOT EVIDENCE. The author looked at the failures of run 2 and added the spellings that this very corpus uses; an exact score here only says the fix does what it was written to do. The independent number is the blind run described in eval/BLIND_PROTOCOL.md.",
+   "result": {
+    "arbitrations_exact_stories": 120,
+    "commits": 4266,
+    "corpus_sha256": "85328543f09b7f67583ad213ff4632add06a43ba71f9a91a6d03dbe5e1e9055c",
+    "document_vs_log": {
+     "clean_agree": 30,
+     "clean_stories": 30,
+     "planted_disagree": 52,
+     "planted_stories": 90
+    },
+    "edges_exact_stories": 120,
+    "first_differences": [],
+    "never_events": 0,
+    "objects": {
+     "all": {
+      "exact": 1872,
+      "exact_rate": 1.0,
+      "extra": 0,
+      "gold": 1872,
+      "gold_to_confirm": 65,
+      "tool_only_to_confirm": 0,
+      "tool_to_confirm": 65
+     },
+     "blocks": {
+      "exact": 261,
+      "exact_rate": 1.0,
+      "extra": 0,
+      "gold": 261,
+      "gold_to_confirm": 1,
+      "tool_only_to_confirm": 0,
+      "tool_to_confirm": 1
+     },
+     "conflicts": {
+      "exact": 97,
+      "exact_rate": 1.0,
+      "extra": 0,
+      "gold": 97,
+      "gold_to_confirm": 4,
+      "tool_only_to_confirm": 0,
+      "tool_to_confirm": 4
+     },
+     "disputes": {
+      "exact": 133,
+      "exact_rate": 1.0,
+      "extra": 0,
+      "gold": 133,
+      "gold_to_confirm": 1,
+      "tool_only_to_confirm": 0,
+      "tool_to_confirm": 1
+     },
+     "freezes": {
+      "exact": 98,
+      "exact_rate": 1.0,
+      "extra": 0,
+      "gold": 98,
+      "gold_to_confirm": 2,
+      "tool_only_to_confirm": 0,
+      "tool_to_confirm": 2
+     },
+     "handoffs": {
+      "exact": 107,
+      "exact_rate": 1.0,
+      "extra": 0,
+      "gold": 107,
+      "gold_to_confirm": 3,
+      "tool_only_to_confirm": 0,
+      "tool_to_confirm": 3
+     },
+     "proposals": {
+      "exact": 1176,
+      "exact_rate": 1.0,
+      "extra": 0,
+      "gold": 1176,
+      "gold_to_confirm": 54,
+      "tool_only_to_confirm": 0,
+      "tool_to_confirm": 54
+     }
+    },
+    "profile": "stress",
+    "release_gate_exact": 120,
+    "rules_sha256": {
+     "arbitration": "192727f42608c2a2ce4ca1088cac7087534f1cc9159477177c421433bbdadb61",
+     "dissent_nature": "88bdc2d6cebc2b9d61c928bff7cdcd5f8dde9d240e86da978ec2084da6a2a85d",
+     "freeze": "60cc6207ee424953092812e2ce3fe81902dc5c70c20340bc07e3e0811af73fd7",
+     "transitions": "e05bd5b00c33329e674cc7a91cc6623a34020232857438f3d07b5ffc6721691f"
+    },
+    "seed": 20261002,
+    "stories": 120,
+    "stories_exact": 120,
+    "stories_planting_class": {
+     "V01": 28,
+     "V02": 25,
+     "V03": 20,
+     "V04": 17,
+     "V05": 51,
+     "V06": 33,
+     "V07": 30,
+     "V08": 11,
+     "V09": 23,
+     "V10": 23,
+     "V11": 15
+    },
+    "structural_findings": {},
+    "suite": "stress-diag",
+    "tolerated_spellings": [
+     "bold_key",
+     "bullet_star",
+     "capital_key",
+     "heading_colon",
+     "heading_h4",
+     "heading_id_first",
+     "list_semicolon",
+     "type_lowercase"
+    ],
+    "violations": {
+     "V01": {
+      "fn": 0,
+      "fp": 0,
+      "gold": 35,
+      "precision": 1.0,
+      "recall": 1.0,
+      "tp": 35
+     },
+     "V02": {
+      "fn": 0,
+      "fp": 0,
+      "gold": 26,
+      "precision": 1.0,
+      "recall": 1.0,
+      "tp": 26
+     },
+     "V03": {
+      "fn": 0,
+      "fp": 0,
+      "gold": 21,
+      "precision": 1.0,
+      "recall": 1.0,
+      "tp": 21
+     },
+     "V04": {
+      "fn": 0,
+      "fp": 0,
+      "gold": 17,
+      "precision": 1.0,
+      "recall": 1.0,
+      "tp": 17
+     },
+     "V05": {
+      "fn": 0,
+      "fp": 0,
+      "gold": 75,
+      "precision": 1.0,
+      "recall": 1.0,
+      "tp": 75
+     },
+     "V06": {
+      "fn": 0,
+      "fp": 0,
+      "gold": 38,
+      "precision": 1.0,
+      "recall": 1.0,
+      "tp": 38
+     },
+     "V07": {
+      "fn": 0,
+      "fp": 0,
+      "gold": 35,
+      "precision": 1.0,
+      "recall": 1.0,
+      "tp": 35
+     },
+     "V08": {
+      "fn": 0,
+      "fp": 0,
+      "gold": 11,
+      "precision": 1.0,
+      "recall": 1.0,
+      "tp": 11
+     },
+     "V09": {
+      "fn": 0,
+      "fp": 0,
+      "gold": 25,
+      "precision": 1.0,
+      "recall": 1.0,
+      "tp": 25
+     },
+     "V10": {
+      "fn": 0,
+      "fp": 0,
+      "gold": 25,
+      "precision": 1.0,
+      "recall": 1.0,
+      "tp": 25
+     },
+     "V11": {
+      "fn": 0,
+      "fp": 0,
+      "gold": 17,
+      "precision": 1.0,
+      "recall": 1.0,
+      "tp": 17
+     },
+     "all": {
+      "fn": 0,
+      "fp": 0,
+      "gold": 325,
+      "precision": 1.0,
+      "recall": 1.0,
+      "tp": 325
+     }
+    },
+    "wrong_assertions": 0
+   }
+  },
+  {
+   "n": 4,
+   "suite": "dev",
+   "seed": 20260930,
+   "profile": "standard",
+   "recorded_at": "2026-09-30T17:24:58+02:00",
+   "runner": "author of the pack (synthetic AI agent, via Claude Opus 5.5)",
+   "command": "python eval/score.py --suite dev",
+   "code_state": "same code as run 3",
+   "note": "Regression check: the tolerated spellings change nothing on the dev corpus.",
+   "result": {
+    "arbitrations_exact_stories": 120,
+    "commits": 4449,
+    "corpus_sha256": "872af1d2e5619acc14c5fe75df8ddee76b6baeaf33e5b3bc40c998a838479b33",
+    "document_vs_log": {
+     "clean_agree": 30,
+     "clean_stories": 30,
+     "planted_disagree": 59,
+     "planted_stories": 90
+    },
+    "edges_exact_stories": 120,
+    "first_differences": [],
+    "never_events": 0,
+    "objects": {
+     "all": {
+      "exact": 1950,
+      "exact_rate": 1.0,
+      "extra": 0,
+      "gold": 1950,
+      "gold_to_confirm": 97,
+      "tool_only_to_confirm": 0,
+      "tool_to_confirm": 97
+     },
+     "blocks": {
+      "exact": 273,
+      "exact_rate": 1.0,
+      "extra": 0,
+      "gold": 273,
+      "gold_to_confirm": 1,
+      "tool_only_to_confirm": 0,
+      "tool_to_confirm": 1
+     },
+     "conflicts": {
+      "exact": 104,
+      "exact_rate": 1.0,
+      "extra": 0,
+      "gold": 104,
+      "gold_to_confirm": 4,
+      "tool_only_to_confirm": 0,
+      "tool_to_confirm": 4
+     },
+     "disputes": {
+      "exact": 146,
+      "exact_rate": 1.0,
+      "extra": 0,
+      "gold": 146,
+      "gold_to_confirm": 6,
+      "tool_only_to_confirm": 0,
+      "tool_to_confirm": 6
+     },
+     "freezes": {
+      "exact": 84,
+      "exact_rate": 1.0,
+      "extra": 0,
+      "gold": 84,
+      "gold_to_confirm": 2,
+      "tool_only_to_confirm": 0,
+      "tool_to_confirm": 2
+     },
+     "handoffs": {
+      "exact": 120,
+      "exact_rate": 1.0,
+      "extra": 0,
+      "gold": 120,
+      "gold_to_confirm": 4,
+      "tool_only_to_confirm": 0,
+      "tool_to_confirm": 4
+     },
+     "proposals": {
+      "exact": 1223,
+      "exact_rate": 1.0,
+      "extra": 0,
+      "gold": 1223,
+      "gold_to_confirm": 80,
+      "tool_only_to_confirm": 0,
+      "tool_to_confirm": 80
+     }
+    },
+    "profile": "standard",
+    "release_gate_exact": 120,
+    "rules_sha256": {
+     "arbitration": "192727f42608c2a2ce4ca1088cac7087534f1cc9159477177c421433bbdadb61",
+     "dissent_nature": "88bdc2d6cebc2b9d61c928bff7cdcd5f8dde9d240e86da978ec2084da6a2a85d",
+     "freeze": "60cc6207ee424953092812e2ce3fe81902dc5c70c20340bc07e3e0811af73fd7",
+     "transitions": "e05bd5b00c33329e674cc7a91cc6623a34020232857438f3d07b5ffc6721691f"
+    },
+    "seed": 20260930,
+    "stories": 120,
+    "stories_exact": 120,
+    "stories_planting_class": {
+     "V01": 39,
+     "V02": 33,
+     "V03": 17,
+     "V04": 23,
+     "V05": 52,
+     "V06": 33,
+     "V07": 37,
+     "V08": 13,
+     "V09": 20,
+     "V10": 25,
+     "V11": 15
+    },
+    "structural_findings": {},
+    "suite": "dev",
+    "tolerated_spellings": [
+     "bold_key",
+     "bullet_star",
+     "capital_key",
+     "heading_colon",
+     "heading_h4",
+     "heading_id_first",
+     "list_semicolon",
+     "type_lowercase"
+    ],
+    "violations": {
+     "V01": {
+      "fn": 0,
+      "fp": 0,
+      "gold": 47,
+      "precision": 1.0,
+      "recall": 1.0,
+      "tp": 47
+     },
+     "V02": {
+      "fn": 0,
+      "fp": 0,
+      "gold": 44,
+      "precision": 1.0,
+      "recall": 1.0,
+      "tp": 44
+     },
+     "V03": {
+      "fn": 0,
+      "fp": 0,
+      "gold": 19,
+      "precision": 1.0,
+      "recall": 1.0,
+      "tp": 19
+     },
+     "V04": {
+      "fn": 0,
+      "fp": 0,
+      "gold": 26,
+      "precision": 1.0,
+      "recall": 1.0,
+      "tp": 26
+     },
+     "V05": {
+      "fn": 0,
+      "fp": 0,
+      "gold": 78,
+      "precision": 1.0,
+      "recall": 1.0,
+      "tp": 78
+     },
+     "V06": {
+      "fn": 0,
+      "fp": 0,
+      "gold": 36,
+      "precision": 1.0,
+      "recall": 1.0,
+      "tp": 36
+     },
+     "V07": {
+      "fn": 0,
+      "fp": 0,
+      "gold": 43,
+      "precision": 1.0,
+      "recall": 1.0,
+      "tp": 43
+     },
+     "V08": {
+      "fn": 0,
+      "fp": 0,
+      "gold": 13,
+      "precision": 1.0,
+      "recall": 1.0,
+      "tp": 13
+     },
+     "V09": {
+      "fn": 0,
+      "fp": 0,
+      "gold": 25,
+      "precision": 1.0,
+      "recall": 1.0,
+      "tp": 25
+     },
+     "V10": {
+      "fn": 0,
+      "fp": 0,
+      "gold": 26,
+      "precision": 1.0,
+      "recall": 1.0,
+      "tp": 26
+     },
+     "V11": {
+      "fn": 0,
+      "fp": 0,
+      "gold": 16,
+      "precision": 1.0,
+      "recall": 1.0,
+      "tp": 16
+     },
+     "all": {
+      "fn": 0,
+      "fp": 0,
+      "gold": 373,
+      "precision": 1.0,
+      "recall": 1.0,
+      "tp": 373
+     }
+    },
+    "wrong_assertions": 0
+   }
+  },
+  {
+   "n": 5,
+   "suite": "stress-diag-ablation",
+   "seed": 20261002,
+   "profile": "stress",
+   "recorded_at": "2026-09-30T17:27:44+02:00",
+   "runner": "author of the pack (synthetic AI agent, via Claude Opus 5.5)",
+   "command": "python eval/ablation.py",
+   "code_state": "same code as run 3",
+   "note": "Each tolerated spelling switched off in turn, on the diagnosis corpus (same caveat as run 3). Every one of the eight carries weight; in every variant wrong assertions and never-events stay at 0.",
+   "result": {
+    "corpus_sha256": "85328543f09b7f67583ad213ff4632add06a43ba71f9a91a6d03dbe5e1e9055c",
+    "profile": "stress",
+    "runs": {
+     "all": {
+      "never_events": 0,
+      "objects": 1872,
+      "objects_exact": 1872,
+      "objects_exact_rate": 1.0,
+      "stories_exact": 120,
+      "structural_findings": {},
+      "tool_to_confirm": 65,
+      "violations_precision": 1.0,
+      "violations_recall": 1.0,
+      "wrong_assertions": 0
+     },
+     "none": {
+      "never_events": 0,
+      "objects": 1872,
+      "objects_exact": 156,
+      "objects_exact_rate": 0.0833,
+      "stories_exact": 0,
+      "structural_findings": {
+       "invalid": 486,
+       "malformed": 1577,
+       "unparsed": 1291
+      },
+      "tool_to_confirm": 43,
+      "violations_precision": 0.4729,
+      "violations_recall": 0.2954,
+      "wrong_assertions": 0
+     },
+     "without bold_key": {
+      "never_events": 0,
+      "objects": 1872,
+      "objects_exact": 993,
+      "objects_exact_rate": 0.5304,
+      "stories_exact": 40,
+      "structural_findings": {
+       "invalid": 378,
+       "malformed": 765
+      },
+      "tool_to_confirm": 260,
+      "violations_precision": 0.6943,
+      "violations_recall": 0.7477,
+      "wrong_assertions": 0
+     },
+     "without bullet_star": {
+      "never_events": 0,
+      "objects": 1872,
+      "objects_exact": 700,
+      "objects_exact_rate": 0.3739,
+      "stories_exact": 19,
+      "structural_findings": {
+       "invalid": 489,
+       "malformed": 1230
+      },
+      "tool_to_confirm": 273,
+      "violations_precision": 0.5964,
+      "violations_recall": 0.6092,
+      "wrong_assertions": 0
+     },
+     "without capital_key": {
+      "never_events": 0,
+      "objects": 1872,
+      "objects_exact": 1048,
+      "objects_exact_rate": 0.5598,
+      "stories_exact": 44,
+      "structural_findings": {
+       "invalid": 318,
+       "malformed": 731
+      },
+      "tool_to_confirm": 226,
+      "violations_precision": 0.6904,
+      "violations_recall": 0.7754,
+      "wrong_assertions": 0
+     },
+     "without heading_colon": {
+      "never_events": 0,
+      "objects": 1872,
+      "objects_exact": 1530,
+      "objects_exact_rate": 0.8173,
+      "stories_exact": 86,
+      "structural_findings": {
+       "invalid": 126,
+       "unparsed": 272
+      },
+      "tool_to_confirm": 165,
+      "violations_precision": 0.8605,
+      "violations_recall": 0.8923,
+      "wrong_assertions": 0
+     },
+     "without heading_h4": {
+      "never_events": 0,
+      "objects": 1872,
+      "objects_exact": 1507,
+      "objects_exact_rate": 0.805,
+      "stories_exact": 84,
+      "structural_findings": {
+       "invalid": 142,
+       "unparsed": 290
+      },
+      "tool_to_confirm": 177,
+      "violations_precision": 0.9091,
+      "violations_recall": 0.9231,
+      "wrong_assertions": 0
+     },
+     "without heading_id_first": {
+      "never_events": 0,
+      "objects": 1872,
+      "objects_exact": 1419,
+      "objects_exact_rate": 0.758,
+      "stories_exact": 74,
+      "structural_findings": {
+       "invalid": 182,
+       "unparsed": 367
+      },
+      "tool_to_confirm": 187,
+      "violations_precision": 0.8494,
+      "violations_recall": 0.8677,
+      "wrong_assertions": 0
+     },
+     "without list_semicolon": {
+      "never_events": 0,
+      "objects": 1872,
+      "objects_exact": 1423,
+      "objects_exact_rate": 0.7601,
+      "stories_exact": 67,
+      "structural_findings": {
+       "invalid": 277,
+       "malformed": 115
+      },
+      "tool_to_confirm": 364,
+      "violations_precision": 1.0,
+      "violations_recall": 0.9385,
+      "wrong_assertions": 0
+     },
+     "without type_lowercase": {
+      "never_events": 0,
+      "objects": 1872,
+      "objects_exact": 1426,
+      "objects_exact_rate": 0.7618,
+      "stories_exact": 78,
+      "structural_findings": {
+       "invalid": 203,
+       "unparsed": 362
+      },
+      "tool_to_confirm": 195,
+      "violations_precision": 0.8537,
+      "violations_recall": 0.8615,
+      "wrong_assertions": 0
+     }
+    },
+    "seed": 20261002,
+    "stories": 120,
+    "suite": "stress-diag"
+   }
+  }
+ ]
+}
