@@ -219,8 +219,11 @@ class Blind(unittest.TestCase):
                      'python eval/score.py --suite blind --seed N --profile stress --runner "NAME"',
                      'python eval/blind_hand.py --repo blind-hand --declared declared.json --runner "NAME"',
                      "python tools/freeze.py --check", "git init --initial-branch=main blind-hand",
-                     "not done", "v2.0.0-freeze", "20260930", "20261002"):
+                     "not done", "v2.0.0-freeze", "v2.0.1-freeze", "20260930", "20261002"):
             self.assertIn(must, text)
+        self.assertIn("* Where: the repository at the tag `v2.0.1-freeze`", text)
+        self.assertIn("git diff --quiet v2.0.0-freeze v2.0.1-freeze -- coord corpus rules schemas templates scenarios tools "
+                      "eval/score.py eval/blind_hand.py eval/ablation.py PROTOCOL.md", text)
 
     def test_the_history_holds_no_blind_result(self):
         history = json.loads(read("eval/history.json"))

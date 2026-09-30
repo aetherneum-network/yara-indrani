@@ -5,12 +5,22 @@ froze the code at the tag `v2.0.0-freeze`, never generated a blind seed and neve
 file says exactly what a **different hand** runs, once. Until that is done, the pack has no independent
 number and must not be tagged `v2.0.0`.
 
+**Which tag.** Run it at `v2.0.1-freeze`. That tag holds the code of `v2.0.0-freeze`, unchanged, with
+corrected documents and one documentation test module. Between the two tags
+
+```
+git diff --quiet v2.0.0-freeze v2.0.1-freeze -- coord corpus rules schemas templates scenarios tools eval/score.py eval/blind_hand.py eval/ablation.py PROTOCOL.md
+```
+
+exits 0: no protocol, state-derivation, sentinel, corpus or scoring file differs. A blind run made at
+`v2.0.0-freeze` is a run on the same code and stays valid; its result names the commit it was run at.
+
 Everything measured here is internal consistency on synthetic data (see `SYNTHETIC.md`).
 
 ## 0. Before starting
 
 * Who runs it: anyone who is not the author of the pack. The name goes into every result (`--runner`).
-* Where: the repository at the tag `v2.0.0-freeze`, or any later commit for which the command below
+* Where: the repository at the tag `v2.0.1-freeze` (same code as `v2.0.0-freeze`), or any later commit for which the command below
   answers `OK` (later commits may add documents; they may not change the frozen files).
 * With: Python 3.12 and git 2.32 or later. Nothing to install. No network is needed.
 

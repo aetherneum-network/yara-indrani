@@ -2,6 +2,13 @@
 
 Entries are added, never rewritten. Dates are the dates of the work; every number names its source.
 
+## Blind protocol names the new tag - 2026-09-30
+
+* `eval/BLIND_PROTOCOL.md` now points to the tag `v2.0.1-freeze` (placed on the commit of the entry below) and says
+  why a run at `v2.0.0-freeze` stays valid: between the two tags no protocol, state-derivation, sentinel, corpus or
+  scoring file differs (`git diff --quiet` on the listed paths exits 0). This commit comes after the tag and changes
+  that document, its check in `tests/test_docs.py`, this file and the manifest - no frozen file.
+
 ## Profile text restored - 2026-09-30
 
 * `README.md`: the three passages changed in the entry "After the freeze" are back word for word and in their place -
