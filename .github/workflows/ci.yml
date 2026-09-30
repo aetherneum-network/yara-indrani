@@ -1,0 +1,45 @@
+# Offline checks of the proof pack. After the checkout nothing touches the network: nothing is
+# installed (standard library only), no secret is read, no model or API is called.
+#
+# This workflow has never been executed: at the time of writing the pack exists only as a local branch.
+# Its first run on a hosted runner is [TO CONFIRM]. The actions are referenced by tag; pinning them to a
+# commit digest, and pinning the runner image, is [TO CONFIRM].
+name: ci
+on:
+  push:
+  pull_request:
+permissions:
+  contents: read
+jobs:
+  test:
+    strategy:
+      fail-fast: false
+      matrix:
+        os: [ubuntu-latest, windows-latest]
+    runs-on: ${{ matrix.os }}
+    env:
+      PYTHONIOENCODING: utf-8
+      PYTHONDONTWRITEBYTECODE: "1"
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Files on disk are the files of the manifest and of the freeze list
+        run: |
+          python tools/manifest.py --check
+          python tools/freeze.py --check
+      - name: Tests (standard library unittest, sockets blocked)
+        run: python -m unittest discover -s tests -t .
+      - name: Scenarios S01-S10 (one line each)
+        run: python scenarios/run_all.py
+      - name: Dev corpus score (seed 20260930; synthetic data, internal consistency)
+        run: python eval/score.py --suite dev
+      - name: Two independent rebuilds in two folders must give the same bundle hash
+        shell: bash
+        run: |
+          mkdir -p build
+          python tools/rebuild.py --out build/ci-rebuild-a | tee build/ci-a.txt
+          python tools/rebuild.py --out "build/ci rebuild b/deeper" | tee build/ci-b.txt
+          test "$(grep '^bundle sha256=' build/ci-a.txt)" = "$(grep '^bundle sha256=' build/ci-b.txt)"
+          grep '^bundle sha256=' build/ci-a.txt
