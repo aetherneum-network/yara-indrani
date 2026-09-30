@@ -2,6 +2,19 @@
 
 Entries are added, never rewritten. Dates are the dates of the work; every number names its source.
 
+## Blind runs recorded - 2026-09-30
+
+* `eval/history.json`: runs 6, 7 and 8 are the blind runs of 2026-09-30 made by an evaluator who is not the builder
+  (seed 20261011, profiles standard and stress, then the hand-written repository of part B), copied verbatim from the
+  evaluator's own files, with their three result files in `eval/blind/`. They were run at `v2.0.0-freeze`; the protocol
+  explains why that run stays valid at `v2.0.1-freeze`. Part B found 13 of 15 objects exact and two handoffs derived
+  as MISMATCH: the evaluator's handoff and receipt files lacked fields that the protocol names but does not describe
+  [TO CONFIRM whether this is a gap of the protocol or of the hand-written files].
+* `tests/test_docs.py`: `test_the_history_holds_no_blind_result` is replaced by
+  `test_the_author_runs_stay_and_every_blind_run_names_its_runner` - the author's five runs and seeds are still
+  checked as before; every later run must be blind, name a runner who is not the builder and use a seed the author
+  never saw. Recorded by the D25 coordinator session (Claude Opus 5.5) - not the builder and not the evaluator. No frozen file changed; the manifest is regenerated.
+
 ## Blind protocol names the new tag - 2026-09-30
 
 * `eval/BLIND_PROTOCOL.md` now points to the tag `v2.0.1-freeze` (placed on the commit of the entry below) and says

@@ -225,11 +225,19 @@ class Blind(unittest.TestCase):
         self.assertIn("git diff --quiet v2.0.0-freeze v2.0.1-freeze -- coord corpus rules schemas templates scenarios tools "
                       "eval/score.py eval/blind_hand.py eval/ablation.py PROTOCOL.md", text)
 
-    def test_the_history_holds_no_blind_result(self):
+    def test_the_author_runs_stay_and_every_blind_run_names_its_runner(self):
+        # Replaces test_the_history_holds_no_blind_result (D25, 2026-09-30): the blind runs of 2026-09-30 are now
+        # recorded after the tag; the author's five runs and seeds stay exactly as they were.
         history = json.loads(read("eval/history.json"))
-        self.assertEqual([r["suite"] for r in history["runs"]],
+        runs = history["runs"]
+        self.assertEqual([r["suite"] for r in runs[:5]],
                          ["dev", "stress-diag", "stress-diag", "dev", "stress-diag-ablation"])
         self.assertEqual(history["seeds_seen_by_the_author"], {"dev": 20260930, "stress-diag": 20261002})
+        self.assertEqual([r["n"] for r in runs], list(range(1, len(runs) + 1)))
+        for r in runs[5:]:
+            self.assertTrue(r["suite"].startswith("blind"), r["n"])
+            self.assertIn("not the builder", r["runner"])
+            self.assertNotIn(r.get("seed"), history["seeds_seen_by_the_author"].values())
 
     def test_documents_added_after_the_freeze_are_in_the_manifest(self):
         rels = {p.relative_to(ROOT).as_posix() for p in manifest.listed()}

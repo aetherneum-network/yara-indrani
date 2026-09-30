@@ -1107,6 +1107,796 @@
     "stories": 120,
     "suite": "stress-diag"
    }
+  },
+  {
+   "n": 6,
+   "suite": "blind",
+   "seed": 20261011,
+   "profile": "standard",
+   "recorded_at": "2026-09-30T18:29:35+02:00",
+   "runner": "evaluator (Claude Opus 5.5), not the builder",
+   "command": "python eval/score.py --suite blind --seed 20261011 --profile standard --runner \"evaluator (Claude Opus 5.5), not the builder\"",
+   "output": "eval/blind/blind-20261011-standard.json",
+   "code_state": "tag v2.0.0-freeze (commit e354029db082b54ed04ae28a8d7d7c1524e10378), fresh clone, python tools/freeze.py --check answered OK before the runs",
+   "note": "Seed 20261011 was given to the evaluator by the coordinator; before the run it was searched in every commit, commit message and tag message of the pack and in the builder's working tree: not found. Run once. The gold is computed by the pack's own reference reducer from the pack's own generator: internal consistency on synthetic data.",
+   "result": {
+    "arbitrations_exact_stories": 120,
+    "commits": 4480,
+    "corpus_sha256": "85ab22b25a91250d2e94863b6406dec422be52786deb4d48f475e4d32a16669f",
+    "document_vs_log": {
+     "clean_agree": 30,
+     "clean_stories": 30,
+     "planted_disagree": 49,
+     "planted_stories": 90
+    },
+    "edges_exact_stories": 120,
+    "first_differences": [],
+    "git": "2.51.0",
+    "never_events": 0,
+    "objects": {
+     "all": {
+      "exact": 1998,
+      "exact_rate": 1.0,
+      "extra": 0,
+      "gold": 1998,
+      "gold_to_confirm": 73,
+      "tool_only_to_confirm": 0,
+      "tool_to_confirm": 73
+     },
+     "blocks": {
+      "exact": 264,
+      "exact_rate": 1.0,
+      "extra": 0,
+      "gold": 264,
+      "gold_to_confirm": 0,
+      "tool_only_to_confirm": 0,
+      "tool_to_confirm": 0
+     },
+     "conflicts": {
+      "exact": 120,
+      "exact_rate": 1.0,
+      "extra": 0,
+      "gold": 120,
+      "gold_to_confirm": 10,
+      "tool_only_to_confirm": 0,
+      "tool_to_confirm": 10
+     },
+     "disputes": {
+      "exact": 155,
+      "exact_rate": 1.0,
+      "extra": 0,
+      "gold": 155,
+      "gold_to_confirm": 4,
+      "tool_only_to_confirm": 0,
+      "tool_to_confirm": 4
+     },
+     "freezes": {
+      "exact": 92,
+      "exact_rate": 1.0,
+      "extra": 0,
+      "gold": 92,
+      "gold_to_confirm": 0,
+      "tool_only_to_confirm": 0,
+      "tool_to_confirm": 0
+     },
+     "handoffs": {
+      "exact": 107,
+      "exact_rate": 1.0,
+      "extra": 0,
+      "gold": 107,
+      "gold_to_confirm": 1,
+      "tool_only_to_confirm": 0,
+      "tool_to_confirm": 1
+     },
+     "proposals": {
+      "exact": 1260,
+      "exact_rate": 1.0,
+      "extra": 0,
+      "gold": 1260,
+      "gold_to_confirm": 58,
+      "tool_only_to_confirm": 0,
+      "tool_to_confirm": 58
+     }
+    },
+    "profile": "standard",
+    "python": "3.12.10",
+    "release_gate_exact": 120,
+    "rules_sha256": {
+     "arbitration": "192727f42608c2a2ce4ca1088cac7087534f1cc9159477177c421433bbdadb61",
+     "dissent_nature": "88bdc2d6cebc2b9d61c928bff7cdcd5f8dde9d240e86da978ec2084da6a2a85d",
+     "freeze": "60cc6207ee424953092812e2ce3fe81902dc5c70c20340bc07e3e0811af73fd7",
+     "transitions": "e05bd5b00c33329e674cc7a91cc6623a34020232857438f3d07b5ffc6721691f"
+    },
+    "run_at_utc": "2026-09-30T16:29:17Z",
+    "runner": "evaluator (Claude Opus 5.5), not the builder",
+    "seed": 20261011,
+    "stories": 120,
+    "stories_exact": 120,
+    "stories_planting_class": {
+     "V01": 38,
+     "V02": 23,
+     "V03": 13,
+     "V04": 19,
+     "V05": 54,
+     "V06": 31,
+     "V07": 33,
+     "V08": 10,
+     "V09": 22,
+     "V10": 26,
+     "V11": 21
+    },
+    "structural_findings": {},
+    "suite": "blind",
+    "tolerated_spellings": [
+     "bold_key",
+     "bullet_star",
+     "capital_key",
+     "heading_colon",
+     "heading_h4",
+     "heading_id_first",
+     "list_semicolon",
+     "type_lowercase"
+    ],
+    "violations": {
+     "V01": {
+      "fn": 0,
+      "fp": 0,
+      "gold": 48,
+      "precision": 1.0,
+      "recall": 1.0,
+      "tp": 48
+     },
+     "V02": {
+      "fn": 0,
+      "fp": 0,
+      "gold": 24,
+      "precision": 1.0,
+      "recall": 1.0,
+      "tp": 24
+     },
+     "V03": {
+      "fn": 0,
+      "fp": 0,
+      "gold": 13,
+      "precision": 1.0,
+      "recall": 1.0,
+      "tp": 13
+     },
+     "V04": {
+      "fn": 0,
+      "fp": 0,
+      "gold": 23,
+      "precision": 1.0,
+      "recall": 1.0,
+      "tp": 23
+     },
+     "V05": {
+      "fn": 0,
+      "fp": 0,
+      "gold": 85,
+      "precision": 1.0,
+      "recall": 1.0,
+      "tp": 85
+     },
+     "V06": {
+      "fn": 0,
+      "fp": 0,
+      "gold": 39,
+      "precision": 1.0,
+      "recall": 1.0,
+      "tp": 39
+     },
+     "V07": {
+      "fn": 0,
+      "fp": 0,
+      "gold": 37,
+      "precision": 1.0,
+      "recall": 1.0,
+      "tp": 37
+     },
+     "V08": {
+      "fn": 0,
+      "fp": 0,
+      "gold": 10,
+      "precision": 1.0,
+      "recall": 1.0,
+      "tp": 10
+     },
+     "V09": {
+      "fn": 0,
+      "fp": 0,
+      "gold": 28,
+      "precision": 1.0,
+      "recall": 1.0,
+      "tp": 28
+     },
+     "V10": {
+      "fn": 0,
+      "fp": 0,
+      "gold": 32,
+      "precision": 1.0,
+      "recall": 1.0,
+      "tp": 32
+     },
+     "V11": {
+      "fn": 0,
+      "fp": 0,
+      "gold": 24,
+      "precision": 1.0,
+      "recall": 1.0,
+      "tp": 24
+     },
+     "all": {
+      "fn": 0,
+      "fp": 0,
+      "gold": 363,
+      "precision": 1.0,
+      "recall": 1.0,
+      "tp": 363
+     }
+    },
+    "wrong_assertions": 0
+   }
+  },
+  {
+   "n": 7,
+   "suite": "blind",
+   "seed": 20261011,
+   "profile": "stress",
+   "recorded_at": "2026-09-30T18:30:15+02:00",
+   "runner": "evaluator (Claude Opus 5.5), not the builder",
+   "command": "python eval/score.py --suite blind --seed 20261011 --profile stress --runner \"evaluator (Claude Opus 5.5), not the builder\"",
+   "output": "eval/blind/blind-20261011-stress.json",
+   "code_state": "tag v2.0.0-freeze (commit e354029db082b54ed04ae28a8d7d7c1524e10378), fresh clone, python tools/freeze.py --check answered OK before the runs",
+   "note": "Seed 20261011 was given to the evaluator by the coordinator; before the run it was searched in every commit, commit message and tag message of the pack and in the builder's working tree: not found. Run once. The gold is computed by the pack's own reference reducer from the pack's own generator: internal consistency on synthetic data. Same seed as run 6: same stories, written with the eight tolerated spellings (corpus_sha256 differs, every count is equal).",
+   "result": {
+    "arbitrations_exact_stories": 120,
+    "commits": 4480,
+    "corpus_sha256": "f85451e967ff43b5ae97229c169a44b7ced55eedfee82565e9ebf0e69400fc52",
+    "document_vs_log": {
+     "clean_agree": 30,
+     "clean_stories": 30,
+     "planted_disagree": 49,
+     "planted_stories": 90
+    },
+    "edges_exact_stories": 120,
+    "first_differences": [],
+    "git": "2.51.0",
+    "never_events": 0,
+    "objects": {
+     "all": {
+      "exact": 1998,
+      "exact_rate": 1.0,
+      "extra": 0,
+      "gold": 1998,
+      "gold_to_confirm": 73,
+      "tool_only_to_confirm": 0,
+      "tool_to_confirm": 73
+     },
+     "blocks": {
+      "exact": 264,
+      "exact_rate": 1.0,
+      "extra": 0,
+      "gold": 264,
+      "gold_to_confirm": 0,
+      "tool_only_to_confirm": 0,
+      "tool_to_confirm": 0
+     },
+     "conflicts": {
+      "exact": 120,
+      "exact_rate": 1.0,
+      "extra": 0,
+      "gold": 120,
+      "gold_to_confirm": 10,
+      "tool_only_to_confirm": 0,
+      "tool_to_confirm": 10
+     },
+     "disputes": {
+      "exact": 155,
+      "exact_rate": 1.0,
+      "extra": 0,
+      "gold": 155,
+      "gold_to_confirm": 4,
+      "tool_only_to_confirm": 0,
+      "tool_to_confirm": 4
+     },
+     "freezes": {
+      "exact": 92,
+      "exact_rate": 1.0,
+      "extra": 0,
+      "gold": 92,
+      "gold_to_confirm": 0,
+      "tool_only_to_confirm": 0,
+      "tool_to_confirm": 0
+     },
+     "handoffs": {
+      "exact": 107,
+      "exact_rate": 1.0,
+      "extra": 0,
+      "gold": 107,
+      "gold_to_confirm": 1,
+      "tool_only_to_confirm": 0,
+      "tool_to_confirm": 1
+     },
+     "proposals": {
+      "exact": 1260,
+      "exact_rate": 1.0,
+      "extra": 0,
+      "gold": 1260,
+      "gold_to_confirm": 58,
+      "tool_only_to_confirm": 0,
+      "tool_to_confirm": 58
+     }
+    },
+    "profile": "stress",
+    "python": "3.12.10",
+    "release_gate_exact": 120,
+    "rules_sha256": {
+     "arbitration": "192727f42608c2a2ce4ca1088cac7087534f1cc9159477177c421433bbdadb61",
+     "dissent_nature": "88bdc2d6cebc2b9d61c928bff7cdcd5f8dde9d240e86da978ec2084da6a2a85d",
+     "freeze": "60cc6207ee424953092812e2ce3fe81902dc5c70c20340bc07e3e0811af73fd7",
+     "transitions": "e05bd5b00c33329e674cc7a91cc6623a34020232857438f3d07b5ffc6721691f"
+    },
+    "run_at_utc": "2026-09-30T16:29:54Z",
+    "runner": "evaluator (Claude Opus 5.5), not the builder",
+    "seed": 20261011,
+    "stories": 120,
+    "stories_exact": 120,
+    "stories_planting_class": {
+     "V01": 38,
+     "V02": 23,
+     "V03": 13,
+     "V04": 19,
+     "V05": 54,
+     "V06": 31,
+     "V07": 33,
+     "V08": 10,
+     "V09": 22,
+     "V10": 26,
+     "V11": 21
+    },
+    "structural_findings": {},
+    "suite": "blind",
+    "tolerated_spellings": [
+     "bold_key",
+     "bullet_star",
+     "capital_key",
+     "heading_colon",
+     "heading_h4",
+     "heading_id_first",
+     "list_semicolon",
+     "type_lowercase"
+    ],
+    "violations": {
+     "V01": {
+      "fn": 0,
+      "fp": 0,
+      "gold": 48,
+      "precision": 1.0,
+      "recall": 1.0,
+      "tp": 48
+     },
+     "V02": {
+      "fn": 0,
+      "fp": 0,
+      "gold": 24,
+      "precision": 1.0,
+      "recall": 1.0,
+      "tp": 24
+     },
+     "V03": {
+      "fn": 0,
+      "fp": 0,
+      "gold": 13,
+      "precision": 1.0,
+      "recall": 1.0,
+      "tp": 13
+     },
+     "V04": {
+      "fn": 0,
+      "fp": 0,
+      "gold": 23,
+      "precision": 1.0,
+      "recall": 1.0,
+      "tp": 23
+     },
+     "V05": {
+      "fn": 0,
+      "fp": 0,
+      "gold": 85,
+      "precision": 1.0,
+      "recall": 1.0,
+      "tp": 85
+     },
+     "V06": {
+      "fn": 0,
+      "fp": 0,
+      "gold": 39,
+      "precision": 1.0,
+      "recall": 1.0,
+      "tp": 39
+     },
+     "V07": {
+      "fn": 0,
+      "fp": 0,
+      "gold": 37,
+      "precision": 1.0,
+      "recall": 1.0,
+      "tp": 37
+     },
+     "V08": {
+      "fn": 0,
+      "fp": 0,
+      "gold": 10,
+      "precision": 1.0,
+      "recall": 1.0,
+      "tp": 10
+     },
+     "V09": {
+      "fn": 0,
+      "fp": 0,
+      "gold": 28,
+      "precision": 1.0,
+      "recall": 1.0,
+      "tp": 28
+     },
+     "V10": {
+      "fn": 0,
+      "fp": 0,
+      "gold": 32,
+      "precision": 1.0,
+      "recall": 1.0,
+      "tp": 32
+     },
+     "V11": {
+      "fn": 0,
+      "fp": 0,
+      "gold": 24,
+      "precision": 1.0,
+      "recall": 1.0,
+      "tp": 24
+     },
+     "all": {
+      "fn": 0,
+      "fp": 0,
+      "gold": 363,
+      "precision": 1.0,
+      "recall": 1.0,
+      "tp": 363
+     }
+    },
+    "wrong_assertions": 0
+   }
+  },
+  {
+   "n": 8,
+   "suite": "blind-hand",
+   "recorded_at": "2026-09-30T18:31:33+02:00",
+   "runner": "evaluator (Claude Opus 5.5), not the builder",
+   "command": "python eval/blind_hand.py --repo blind-hand --declared declared.json --runner \"evaluator (Claude Opus 5.5), not the builder\"",
+   "output": "eval/blind/hand-evaluator-claude-opus-5-5-not-the-builder.json",
+   "code_state": "tag v2.0.0-freeze (commit e354029db082b54ed04ae28a8d7d7c1524e10378), fresh clone, python tools/freeze.py --check answered OK before the runs",
+   "note": "Part B. One repository, 44 commits, 42 entries in ten cycles on an invented team, written by the evaluator with only PROTOCOL.md and templates/COORD.md in front of it; declared.json written before the command (sha256 492b11e4bb90fa083f5199d757fb788122a0c7519373ebb2baf30f0ca9768310; head of blind-hand 17e57c34a0ce3f83adbebfb1a7866e7a7da4fcaf). Run once. Result: objects exact 13/15, release gate exact, violations DIFFERENT, structural findings 0. The two differences are the two handoffs (declared RECEIVED, derived MISMATCH): the files handoffs/*.json and receipts/*.json written by the evaluator lack 'schema' (and 'handoff' in the receipts) and carry 'refs'; PROTOCOL.md names the schema files but does not give the shape of those files, and the schemas were not among the two documents allowed. Violations: declared the classes [V04, V05] as BLIND_PROTOCOL.md asks; the result lists one item per (class, commit, target) [V04 x5, V05 x2] and compares the lists, so it reads DIFFERENT although no class outside the declared ones was derived; four of the five V04 come only from the shape of the files, one is the mistyped anchor planted on purpose (mira-9). No asserting status differs from the declared one. The template carries a placeholder PROPOSE entry: the evaluator removed it in the first commit (BLIND_PROTOCOL.md does not say what to do with it). Not exercised by hand: arbitration and conflicts (the rule names are not in PROTOCOL.md), V01, V02, V03, V06-V11, spellings outside the eight tolerated ones.",
+   "result": {
+    "as_of": {
+     "commit_index": 44,
+     "committed_utc": "2026-09-30T16:31:26Z"
+    },
+    "commits": 44,
+    "git": "2.51.0",
+    "lint": [
+     {
+      "cites": [
+       "COORD.md:82"
+      ],
+      "class": "V05",
+      "commit_index": 14,
+      "detail": "DECIDE without the required consents: lupe-2 is PROPOSED: missing consent of ozan",
+      "name": "gate_without_consents",
+      "severity": "error",
+      "target": "lupe-3"
+     },
+     {
+      "class": "empty_dissent",
+      "commit_index": 17,
+      "detail": "a DISSENT with no substance is not a dispute, and not a consent either (rules N-EMPTY-DISSENT, T-DISSENT-PROPOSAL-EMPTY-REQUIRED)",
+      "name": "empty_dissent",
+      "severity": "warn",
+      "target": "lupe-4"
+     },
+     {
+      "cites": [
+       "handoffs/ozan-10.json",
+       "handoffs/ozan-10.json"
+      ],
+      "class": "V04",
+      "commit_index": 35,
+      "detail": "handoffs/ozan-10.json: $: missing 'schema'",
+      "name": "anchor_mismatch",
+      "severity": "error",
+      "target": "ozan-10"
+     },
+     {
+      "cites": [
+       "handoffs/ozan-10.json",
+       "receipts/lupe-8.json"
+      ],
+      "class": "V04",
+      "commit_index": 36,
+      "detail": "receipts/lupe-8.json: $: missing 'handoff'",
+      "name": "anchor_mismatch",
+      "severity": "error",
+      "target": "ozan-10"
+     },
+     {
+      "cites": [
+       "handoffs/ozan-10.json",
+       "receipts/lupe-8.json"
+      ],
+      "class": "V04",
+      "commit_index": 36,
+      "detail": "receipts/lupe-8.json: $: missing 'schema'",
+      "name": "anchor_mismatch",
+      "severity": "error",
+      "target": "ozan-10"
+     },
+     {
+      "cites": [
+       "handoffs/ozan-10.json",
+       "receipts/lupe-8.json"
+      ],
+      "class": "V04",
+      "commit_index": 36,
+      "detail": "receipts/lupe-8.json: $: unexpected member 'refs'",
+      "name": "anchor_mismatch",
+      "severity": "error",
+      "target": "ozan-10"
+     },
+     {
+      "cites": [
+       "handoffs/teun-10.json",
+       "handoffs/teun-10.json"
+      ],
+      "class": "V04",
+      "commit_index": 37,
+      "detail": "handoffs/teun-10.json: $: missing 'schema'",
+      "name": "anchor_mismatch",
+      "severity": "error",
+      "target": "teun-10"
+     },
+     {
+      "cites": [
+       "handoffs/teun-10.json",
+       "receipts/mira-9.json"
+      ],
+      "class": "V04",
+      "commit_index": 38,
+      "detail": "receipt mira-9 does not match: rows: handoff '41872', receipt '41827'",
+      "name": "anchor_mismatch",
+      "severity": "error",
+      "target": "teun-10"
+     },
+     {
+      "cites": [
+       "handoffs/teun-10.json",
+       "receipts/mira-9.json"
+      ],
+      "class": "V04",
+      "commit_index": 38,
+      "detail": "receipts/mira-9.json: $: missing 'handoff'",
+      "name": "anchor_mismatch",
+      "severity": "error",
+      "target": "teun-10"
+     },
+     {
+      "cites": [
+       "handoffs/teun-10.json",
+       "receipts/mira-9.json"
+      ],
+      "class": "V04",
+      "commit_index": 38,
+      "detail": "receipts/mira-9.json: $: missing 'schema'",
+      "name": "anchor_mismatch",
+      "severity": "error",
+      "target": "teun-10"
+     },
+     {
+      "cites": [
+       "handoffs/teun-10.json",
+       "receipts/mira-9.json"
+      ],
+      "class": "V04",
+      "commit_index": 38,
+      "detail": "receipts/mira-9.json: $: unexpected member 'refs'",
+      "name": "anchor_mismatch",
+      "severity": "error",
+      "target": "teun-10"
+     },
+     {
+      "cites": [
+       "handoffs/teun-10.json",
+       "receipts/mira-10.json"
+      ],
+      "class": "V04",
+      "commit_index": 39,
+      "detail": "receipts/mira-10.json: $: missing 'handoff'",
+      "name": "anchor_mismatch",
+      "severity": "error",
+      "target": "teun-10"
+     },
+     {
+      "cites": [
+       "handoffs/teun-10.json",
+       "receipts/mira-10.json"
+      ],
+      "class": "V04",
+      "commit_index": 39,
+      "detail": "receipts/mira-10.json: $: missing 'schema'",
+      "name": "anchor_mismatch",
+      "severity": "error",
+      "target": "teun-10"
+     },
+     {
+      "cites": [
+       "handoffs/teun-10.json",
+       "receipts/mira-10.json"
+      ],
+      "class": "V04",
+      "commit_index": 39,
+      "detail": "receipts/mira-10.json: $: unexpected member 'refs'",
+      "name": "anchor_mismatch",
+      "severity": "error",
+      "target": "teun-10"
+     },
+     {
+      "cites": [
+       "COORD.md:250"
+      ],
+      "class": "V05",
+      "commit_index": 42,
+      "detail": "DECIDE without the required consents: mira-11 is PROPOSED: missing consent of teun",
+      "name": "gate_without_consents",
+      "severity": "error",
+      "target": "mira-12"
+     }
+    ],
+    "objects": [
+     {
+      "declared": "ALIGNED",
+      "derived": "ALIGNED",
+      "exact": true,
+      "id": "lupe-2",
+      "kind": "proposals"
+     },
+     {
+      "declared": "DECIDED",
+      "derived": "DECIDED",
+      "exact": true,
+      "id": "mira-1",
+      "kind": "proposals"
+     },
+     {
+      "declared": "ALIGNED",
+      "derived": "ALIGNED",
+      "exact": true,
+      "id": "mira-11",
+      "kind": "proposals"
+     },
+     {
+      "declared": "DECIDED",
+      "derived": "DECIDED",
+      "exact": true,
+      "id": "ozan-2",
+      "kind": "proposals"
+     },
+     {
+      "declared": "ALIGNED",
+      "derived": "ALIGNED",
+      "exact": true,
+      "id": "ozan-7",
+      "kind": "proposals"
+     },
+     {
+      "declared": "SUPERSEDED",
+      "derived": "SUPERSEDED",
+      "exact": true,
+      "id": "teun-3",
+      "kind": "proposals"
+     },
+     {
+      "declared": "DISPUTED",
+      "derived": "DISPUTED",
+      "exact": true,
+      "id": "teun-4",
+      "kind": "proposals"
+     },
+     {
+      "declared": "DECIDED",
+      "derived": "DECIDED",
+      "exact": true,
+      "id": "teun-5",
+      "kind": "proposals"
+     },
+     {
+      "declared": "REMOVED",
+      "derived": "REMOVED",
+      "exact": true,
+      "id": "teun-6",
+      "kind": "blocks"
+     },
+     {
+      "declared": "FROZEN",
+      "derived": "FROZEN",
+      "exact": true,
+      "id": "lupe-7",
+      "kind": "freezes"
+     },
+     {
+      "declared": "LIFTED",
+      "derived": "LIFTED",
+      "exact": true,
+      "id": "mira-7",
+      "kind": "freezes"
+     },
+     {
+      "declared": "RECEIVED",
+      "derived": "MISMATCH",
+      "exact": false,
+      "id": "ozan-10",
+      "kind": "handoffs"
+     },
+     {
+      "declared": "RECEIVED",
+      "derived": "MISMATCH",
+      "exact": false,
+      "id": "teun-10",
+      "kind": "handoffs"
+     },
+     {
+      "declared": "OPEN",
+      "derived": "OPEN",
+      "exact": true,
+      "id": "ozan-6",
+      "kind": "disputes"
+     },
+     {
+      "declared": "CLOSED",
+      "derived": "CLOSED",
+      "exact": true,
+      "id": "teun-1",
+      "kind": "disputes"
+     }
+    ],
+    "objects_declared": 15,
+    "objects_exact": 13,
+    "python": "3.12.10",
+    "release_gate": {
+     "declared": "BLOCKED",
+     "derived": "BLOCKED",
+     "exact": true
+    },
+    "run_at_utc": "2026-09-30T16:31:33Z",
+    "runner": "evaluator (Claude Opus 5.5), not the builder",
+    "structural_findings": [],
+    "suite": "blind-hand",
+    "undeclared_objects": [],
+    "violations": {
+     "declared": [
+      "V04",
+      "V05"
+     ],
+     "derived": [
+      "V04",
+      "V04",
+      "V04",
+      "V04",
+      "V04",
+      "V05",
+      "V05"
+     ],
+     "exact": false
+    }
+   }
   }
  ]
 }
