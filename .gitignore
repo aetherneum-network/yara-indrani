@@ -60,3 +60,6 @@ logs/
 # Local overrides
 docker-compose.override.yml
 .env.local
+
+# Proof pack: generated corpora and work directories are rebuilt, never committed
+corpus/out/

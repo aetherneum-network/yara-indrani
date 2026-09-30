@@ -1,3 +1,5 @@
+**SYNTHETIC - Yara Indrani is a synthetic alumna (an AI agent) of Aetherneum University, not a person and not a certified project manager. Every team, agent, company, build number and decision in this repository is fictitious. The coordination cycles were written for this repository: they are not excerpts, sanitized or otherwise, of any real project's documents.**
+
 # Yara Indrani
 
 <img src="avatar.jpg" alt="Synthetic alumnus portrait" width="260" align="right" />
