@@ -8,8 +8,8 @@ Entries are added, never rewritten. Dates are the dates of the work; every numbe
   (the thesis title, in the list of contributions and in the diploma). Pull request #2 (merge commit `3860010`) brought in the
   pack, whose `MANIFEST.sha256` and `ORIGINAL_README_SHA256` in `tests/test_docs.py` had been computed on the README
   before that review. On `main` (run 37033190588, 2026-10-02, both systems) `python tools/manifest.py --check`
-  answered `FAILED - README.md: changed`, and two tests failed: the manifest and
-  `test_the_profile_is_byte_for_byte_the_page_before_the_pack`.
+  answered `FAILED - README.md: changed`; on `windows-latest`, where that step went on to the freeze check and the
+  tests, two tests failed: `test_the_manifest_is_the_disk` and `test_the_profile_is_byte_for_byte_the_page_before_the_pack`.
 * `tests/test_docs.py`: `ORIGINAL_README_SHA256` is now the hash of the reviewed profile text, sha256
   `3288f8b200c6f5397581fa42453b2819a43d8948ac8888e91068d73bb3fcb0ae` (the page at commit `6970d8e`), with a comment that names pull request #1 as the source of
   the change. `CLAIMS.md` section 4 gains a paragraph that says the same; its earlier text and the entries below,
