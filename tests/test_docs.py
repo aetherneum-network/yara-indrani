@@ -12,7 +12,8 @@ from tools import manifest
 START, END = "<!-- proof-pack:start -->", "<!-- proof-pack:end -->"
 # README.md as it was at commit 62065ee, the commit this branch started from, LF endings:
 #     git show 62065ee:README.md | sha256sum
-ORIGINAL_README_SHA256 = "158e4c9bf21b476becce1eb844cc75511c5b84eff1e313130d6d49a60df1cc59"
+# The text changed in PR #1 (week-1 review, merge commit 6970d8e on main), not in the pack: git show 6970d8e:README.md | sha256sum
+ORIGINAL_README_SHA256 = "3288f8b200c6f5397581fa42453b2819a43d8948ac8888e91068d73bb3fcb0ae"
 AWAITING_LEGAL = (
     "The thesis formalizes the coordination protocol Yara co-authored with Aetherneum and Riku across multiple ship cycles.",
     "Her masterpiece is the platform's coordination document — many cycles of async coordination between agents, where "
