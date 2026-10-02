@@ -1,0 +1,320 @@
+{
+ "as_of": {
+  "commit_index": 44,
+  "committed_utc": "2026-09-30T16:31:26Z"
+ },
+ "commits": 44,
+ "git": "2.51.0",
+ "lint": [
+  {
+   "cites": [
+    "COORD.md:82"
+   ],
+   "class": "V05",
+   "commit_index": 14,
+   "detail": "DECIDE without the required consents: lupe-2 is PROPOSED: missing consent of ozan",
+   "name": "gate_without_consents",
+   "severity": "error",
+   "target": "lupe-3"
+  },
+  {
+   "class": "empty_dissent",
+   "commit_index": 17,
+   "detail": "a DISSENT with no substance is not a dispute, and not a consent either (rules N-EMPTY-DISSENT, T-DISSENT-PROPOSAL-EMPTY-REQUIRED)",
+   "name": "empty_dissent",
+   "severity": "warn",
+   "target": "lupe-4"
+  },
+  {
+   "cites": [
+    "handoffs/ozan-10.json",
+    "handoffs/ozan-10.json"
+   ],
+   "class": "V04",
+   "commit_index": 35,
+   "detail": "handoffs/ozan-10.json: $: missing 'schema'",
+   "name": "anchor_mismatch",
+   "severity": "error",
+   "target": "ozan-10"
+  },
+  {
+   "cites": [
+    "handoffs/ozan-10.json",
+    "receipts/lupe-8.json"
+   ],
+   "class": "V04",
+   "commit_index": 36,
+   "detail": "receipts/lupe-8.json: $: missing 'handoff'",
+   "name": "anchor_mismatch",
+   "severity": "error",
+   "target": "ozan-10"
+  },
+  {
+   "cites": [
+    "handoffs/ozan-10.json",
+    "receipts/lupe-8.json"
+   ],
+   "class": "V04",
+   "commit_index": 36,
+   "detail": "receipts/lupe-8.json: $: missing 'schema'",
+   "name": "anchor_mismatch",
+   "severity": "error",
+   "target": "ozan-10"
+  },
+  {
+   "cites": [
+    "handoffs/ozan-10.json",
+    "receipts/lupe-8.json"
+   ],
+   "class": "V04",
+   "commit_index": 36,
+   "detail": "receipts/lupe-8.json: $: unexpected member 'refs'",
+   "name": "anchor_mismatch",
+   "severity": "error",
+   "target": "ozan-10"
+  },
+  {
+   "cites": [
+    "handoffs/teun-10.json",
+    "handoffs/teun-10.json"
+   ],
+   "class": "V04",
+   "commit_index": 37,
+   "detail": "handoffs/teun-10.json: $: missing 'schema'",
+   "name": "anchor_mismatch",
+   "severity": "error",
+   "target": "teun-10"
+  },
+  {
+   "cites": [
+    "handoffs/teun-10.json",
+    "receipts/mira-9.json"
+   ],
+   "class": "V04",
+   "commit_index": 38,
+   "detail": "receipt mira-9 does not match: rows: handoff '41872', receipt '41827'",
+   "name": "anchor_mismatch",
+   "severity": "error",
+   "target": "teun-10"
+  },
+  {
+   "cites": [
+    "handoffs/teun-10.json",
+    "receipts/mira-9.json"
+   ],
+   "class": "V04",
+   "commit_index": 38,
+   "detail": "receipts/mira-9.json: $: missing 'handoff'",
+   "name": "anchor_mismatch",
+   "severity": "error",
+   "target": "teun-10"
+  },
+  {
+   "cites": [
+    "handoffs/teun-10.json",
+    "receipts/mira-9.json"
+   ],
+   "class": "V04",
+   "commit_index": 38,
+   "detail": "receipts/mira-9.json: $: missing 'schema'",
+   "name": "anchor_mismatch",
+   "severity": "error",
+   "target": "teun-10"
+  },
+  {
+   "cites": [
+    "handoffs/teun-10.json",
+    "receipts/mira-9.json"
+   ],
+   "class": "V04",
+   "commit_index": 38,
+   "detail": "receipts/mira-9.json: $: unexpected member 'refs'",
+   "name": "anchor_mismatch",
+   "severity": "error",
+   "target": "teun-10"
+  },
+  {
+   "cites": [
+    "handoffs/teun-10.json",
+    "receipts/mira-10.json"
+   ],
+   "class": "V04",
+   "commit_index": 39,
+   "detail": "receipts/mira-10.json: $: missing 'handoff'",
+   "name": "anchor_mismatch",
+   "severity": "error",
+   "target": "teun-10"
+  },
+  {
+   "cites": [
+    "handoffs/teun-10.json",
+    "receipts/mira-10.json"
+   ],
+   "class": "V04",
+   "commit_index": 39,
+   "detail": "receipts/mira-10.json: $: missing 'schema'",
+   "name": "anchor_mismatch",
+   "severity": "error",
+   "target": "teun-10"
+  },
+  {
+   "cites": [
+    "handoffs/teun-10.json",
+    "receipts/mira-10.json"
+   ],
+   "class": "V04",
+   "commit_index": 39,
+   "detail": "receipts/mira-10.json: $: unexpected member 'refs'",
+   "name": "anchor_mismatch",
+   "severity": "error",
+   "target": "teun-10"
+  },
+  {
+   "cites": [
+    "COORD.md:250"
+   ],
+   "class": "V05",
+   "commit_index": 42,
+   "detail": "DECIDE without the required consents: mira-11 is PROPOSED: missing consent of teun",
+   "name": "gate_without_consents",
+   "severity": "error",
+   "target": "mira-12"
+  }
+ ],
+ "objects": [
+  {
+   "declared": "ALIGNED",
+   "derived": "ALIGNED",
+   "exact": true,
+   "id": "lupe-2",
+   "kind": "proposals"
+  },
+  {
+   "declared": "DECIDED",
+   "derived": "DECIDED",
+   "exact": true,
+   "id": "mira-1",
+   "kind": "proposals"
+  },
+  {
+   "declared": "ALIGNED",
+   "derived": "ALIGNED",
+   "exact": true,
+   "id": "mira-11",
+   "kind": "proposals"
+  },
+  {
+   "declared": "DECIDED",
+   "derived": "DECIDED",
+   "exact": true,
+   "id": "ozan-2",
+   "kind": "proposals"
+  },
+  {
+   "declared": "ALIGNED",
+   "derived": "ALIGNED",
+   "exact": true,
+   "id": "ozan-7",
+   "kind": "proposals"
+  },
+  {
+   "declared": "SUPERSEDED",
+   "derived": "SUPERSEDED",
+   "exact": true,
+   "id": "teun-3",
+   "kind": "proposals"
+  },
+  {
+   "declared": "DISPUTED",
+   "derived": "DISPUTED",
+   "exact": true,
+   "id": "teun-4",
+   "kind": "proposals"
+  },
+  {
+   "declared": "DECIDED",
+   "derived": "DECIDED",
+   "exact": true,
+   "id": "teun-5",
+   "kind": "proposals"
+  },
+  {
+   "declared": "REMOVED",
+   "derived": "REMOVED",
+   "exact": true,
+   "id": "teun-6",
+   "kind": "blocks"
+  },
+  {
+   "declared": "FROZEN",
+   "derived": "FROZEN",
+   "exact": true,
+   "id": "lupe-7",
+   "kind": "freezes"
+  },
+  {
+   "declared": "LIFTED",
+   "derived": "LIFTED",
+   "exact": true,
+   "id": "mira-7",
+   "kind": "freezes"
+  },
+  {
+   "declared": "RECEIVED",
+   "derived": "MISMATCH",
+   "exact": false,
+   "id": "ozan-10",
+   "kind": "handoffs"
+  },
+  {
+   "declared": "RECEIVED",
+   "derived": "MISMATCH",
+   "exact": false,
+   "id": "teun-10",
+   "kind": "handoffs"
+  },
+  {
+   "declared": "OPEN",
+   "derived": "OPEN",
+   "exact": true,
+   "id": "ozan-6",
+   "kind": "disputes"
+  },
+  {
+   "declared": "CLOSED",
+   "derived": "CLOSED",
+   "exact": true,
+   "id": "teun-1",
+   "kind": "disputes"
+  }
+ ],
+ "objects_declared": 15,
+ "objects_exact": 13,
+ "python": "3.12.10",
+ "release_gate": {
+  "declared": "BLOCKED",
+  "derived": "BLOCKED",
+  "exact": true
+ },
+ "run_at_utc": "2026-09-30T16:31:33Z",
+ "runner": "evaluator (Claude Opus 5.5), not the builder",
+ "structural_findings": [],
+ "suite": "blind-hand",
+ "undeclared_objects": [],
+ "violations": {
+  "declared": [
+   "V04",
+   "V05"
+  ],
+  "derived": [
+   "V04",
+   "V04",
+   "V04",
+   "V04",
+   "V04",
+   "V05",
+   "V05"
+  ],
+  "exact": false
+ }
+}

@@ -1,0 +1,87 @@
+{
+  "passed": 10,
+  "result": "scenarios: 10/10 PASS",
+  "scenarios": [
+    {
+      "checks": 16,
+      "exit_code": 0,
+      "failed_checks": [],
+      "line": "S01_state_from_log PASS (16/16 checks)",
+      "passed": true,
+      "scenario": "S01_state_from_log"
+    },
+    {
+      "checks": 18,
+      "exit_code": 0,
+      "failed_checks": [],
+      "line": "S02_transposed_anchor PASS (18/18 checks)",
+      "passed": true,
+      "scenario": "S02_transposed_anchor"
+    },
+    {
+      "checks": 18,
+      "exit_code": 0,
+      "failed_checks": [],
+      "line": "S03_as_of_moves PASS (18/18 checks)",
+      "passed": true,
+      "scenario": "S03_as_of_moves"
+    },
+    {
+      "checks": 18,
+      "exit_code": 0,
+      "failed_checks": [],
+      "line": "S04_rewrite_in_place PASS (18/18 checks)",
+      "passed": true,
+      "scenario": "S04_rewrite_in_place"
+    },
+    {
+      "checks": 13,
+      "exit_code": 0,
+      "failed_checks": [],
+      "line": "S05_author_mismatch PASS (13/13 checks)",
+      "passed": true,
+      "scenario": "S05_author_mismatch"
+    },
+    {
+      "checks": 17,
+      "exit_code": 0,
+      "failed_checks": [],
+      "line": "S06_lift_two_of_three PASS (17/17 checks)",
+      "passed": true,
+      "scenario": "S06_lift_two_of_three"
+    },
+    {
+      "checks": 16,
+      "exit_code": 0,
+      "failed_checks": [],
+      "line": "S07_notes_are_not_dissents PASS (16/16 checks)",
+      "passed": true,
+      "scenario": "S07_notes_are_not_dissents"
+    },
+    {
+      "checks": 13,
+      "exit_code": 0,
+      "failed_checks": [],
+      "line": "S08_dependency_cycle PASS (13/13 checks)",
+      "passed": true,
+      "scenario": "S08_dependency_cycle"
+    },
+    {
+      "checks": 18,
+      "exit_code": 0,
+      "failed_checks": [],
+      "line": "S09_arbitration_rules PASS (18/18 checks)",
+      "passed": true,
+      "scenario": "S09_arbitration_rules"
+    },
+    {
+      "checks": 18,
+      "exit_code": 0,
+      "failed_checks": [],
+      "line": "S10_concurrent_entries PASS (18/18 checks)",
+      "passed": true,
+      "scenario": "S10_concurrent_entries"
+    }
+  ],
+  "total": 10
+}

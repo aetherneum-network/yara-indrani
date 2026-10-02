@@ -1,0 +1,17 @@
+{
+ "arbitrations": [],
+ "commits": 3,
+ "edges": [],
+ "release_gate": "OPEN",
+ "state": {
+  "blocks": {},
+  "conflicts": {},
+  "disputes": {},
+  "freezes": {},
+  "handoffs": {},
+  "proposals": {
+   "teo-1": "PROPOSED"
+  }
+ },
+ "violations": []
+}

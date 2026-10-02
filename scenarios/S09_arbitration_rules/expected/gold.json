@@ -1,0 +1,42 @@
+{
+ "arbitrations": [
+  {
+   "conflict": "teo-1~uma-1",
+   "outcome": "teo-1",
+   "rule": "R-DUE"
+  },
+  {
+   "conflict": "vera-1~walt-1",
+   "outcome": "ESCALATE_TO_HUMAN",
+   "rule": "none"
+  },
+  {
+   "conflict": "xenia-1~yuri-1",
+   "outcome": "ESCALATE_TO_HUMAN",
+   "rule": "none"
+  }
+ ],
+ "commits": 9,
+ "edges": [],
+ "release_gate": "OPEN",
+ "state": {
+  "blocks": {},
+  "conflicts": {
+   "teo-1~uma-1": "ARBITRATED",
+   "vera-1~walt-1": "OPEN",
+   "xenia-1~yuri-1": "OPEN"
+  },
+  "disputes": {},
+  "freezes": {},
+  "handoffs": {},
+  "proposals": {
+   "teo-1": "PROPOSED",
+   "uma-1": "PROPOSED",
+   "vera-1": "PROPOSED",
+   "walt-1": "PROPOSED",
+   "xenia-1": "PROPOSED",
+   "yuri-1": "PROPOSED"
+  }
+ },
+ "violations": []
+}

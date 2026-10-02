@@ -1,0 +1,115 @@
+[
+ {
+  "agents": [
+   {
+    "email": "teo@fiordaliso.example",
+    "id": "teo",
+    "name": "Teó Bălănescu",
+    "role": "lab lead",
+    "tz": "+02:00"
+   },
+   {
+    "email": "uma@fiordaliso.example",
+    "id": "uma",
+    "name": "Uma Kjærsgård",
+    "role": "optics",
+    "tz": "+01:00"
+   },
+   {
+    "email": "vera@fiordaliso.example",
+    "id": "vera",
+    "name": "Vera Ångström-Ruiz",
+    "role": "calibration",
+    "tz": "+01:00"
+   }
+  ],
+  "commit_by": "teo",
+  "n": 1,
+  "op": "init",
+  "parents": [],
+  "team": {
+   "company": "Laboratorio Ottico Fiordaliso",
+   "domain": "fiordaliso.example",
+   "key": "fiordaliso",
+   "title": "Fiordaliso lens line"
+  },
+  "utc": "2026-04-06T08:00:00Z"
+ },
+ {
+  "commit_by": "teo",
+  "entry": {
+   "as_of": "2026-04-06T10:15:00+02:00",
+   "by": "teo",
+   "id": "teo-1",
+   "scope": "lens-release",
+   "text": "coating batch 27 is out of tolerance",
+   "to": [
+    "uma",
+    "vera"
+   ],
+   "type": "FREEZE"
+  },
+  "n": 2,
+  "op": "entry",
+  "parents": [
+   1
+  ],
+  "utc": "2026-04-06T08:17:00Z"
+ },
+ {
+  "commit_by": "teo",
+  "entry": {
+   "as_of": "2026-04-06T10:32:00+02:00",
+   "by": "teo",
+   "id": "teo-2",
+   "refs": [
+    "teo-1"
+   ],
+   "text": "batch re-measured",
+   "type": "LIFT"
+  },
+  "n": 3,
+  "op": "entry",
+  "parents": [
+   2
+  ],
+  "utc": "2026-04-06T08:34:00Z"
+ },
+ {
+  "commit_by": "uma",
+  "entry": {
+   "as_of": "2026-04-06T09:49:00+01:00",
+   "by": "uma",
+   "id": "uma-1",
+   "refs": [
+    "teo-2"
+   ],
+   "type": "ACK"
+  },
+  "n": 4,
+  "op": "entry",
+  "parents": [
+   3
+  ],
+  "utc": "2026-04-06T08:51:00Z"
+ },
+ {
+  "commit_by": "vera",
+  "entry": {
+   "as_of": "2026-04-06T10:06:00+01:00",
+   "by": "vera",
+   "id": "vera-1",
+   "note": "re-measured on my bench too",
+   "refs": [
+    "teo-2"
+   ],
+   "type": "ACK"
+  },
+  "n": 5,
+  "op": "entry",
+  "parents": [
+   4
+  ],
+  "utc": "2026-04-06T09:08:00Z"
+ }
+]

@@ -1,0 +1,278 @@
+[
+ {
+  "agents": [
+   {
+    "email": "ines@portoluna.example",
+    "id": "ines",
+    "name": "Inès Carrà",
+    "role": "site lead",
+    "tz": "+01:00"
+   },
+   {
+    "email": "bruno@portoluna.example",
+    "id": "bruno",
+    "name": "Bruno Šťastný",
+    "role": "structures",
+    "tz": "+01:00"
+   },
+   {
+    "email": "carla@portoluna.example",
+    "id": "carla",
+    "name": "Carla Muñoz Peña",
+    "role": "procurement",
+    "tz": "+00:00"
+   },
+   {
+    "email": "dario@portoluna.example",
+    "id": "dario",
+    "name": "Dário Åkesson",
+    "role": "safety",
+    "tz": "+02:00"
+   }
+  ],
+  "commit_by": "ines",
+  "n": 1,
+  "op": "init",
+  "parents": [],
+  "team": {
+   "company": "Cantiere Portoluna S.r.l.",
+   "domain": "portoluna.example",
+   "key": "portoluna",
+   "title": "Portoluna quay works"
+  },
+  "utc": "2026-03-02T08:00:00Z"
+ },
+ {
+  "commit_by": "ines",
+  "entry": {
+   "as_of": "2026-03-02T09:15:00+01:00",
+   "by": "ines",
+   "id": "ines-1",
+   "text": "Pour slab B2 on Thursday.",
+   "to": [
+    "bruno",
+    "carla"
+   ],
+   "type": "PROPOSE"
+  },
+  "n": 2,
+  "op": "entry",
+  "parents": [
+   1
+  ],
+  "utc": "2026-03-02T08:17:00Z"
+ },
+ {
+  "commit_by": "bruno",
+  "entry": {
+   "as_of": "2026-03-02T09:32:00+01:00",
+   "by": "bruno",
+   "id": "bruno-1",
+   "note": "formwork inspected",
+   "refs": [
+    "ines-1"
+   ],
+   "type": "ACK"
+  },
+  "n": 3,
+  "op": "entry",
+  "parents": [
+   2
+  ],
+  "utc": "2026-03-02T08:34:00Z"
+ },
+ {
+  "commit_by": "carla",
+  "entry": {
+   "as_of": "2026-03-02T08:49:00+00:00",
+   "by": "carla",
+   "id": "carla-1",
+   "refs": [
+    "ines-1"
+   ],
+   "type": "ACK"
+  },
+  "n": 4,
+  "op": "entry",
+  "parents": [
+   3
+  ],
+  "utc": "2026-03-02T08:51:00Z"
+ },
+ {
+  "commit_by": "ines",
+  "entry": {
+   "as_of": "2026-03-02T10:06:00+01:00",
+   "by": "ines",
+   "id": "ines-2",
+   "refs": [
+    "ines-1"
+   ],
+   "type": "DECIDE"
+  },
+  "n": 5,
+  "op": "entry",
+  "parents": [
+   4
+  ],
+  "utc": "2026-03-02T09:08:00Z"
+ },
+ {
+  "commit_by": "bruno",
+  "entry": {
+   "as_of": "2026-03-02T10:23:00+01:00",
+   "by": "bruno",
+   "id": "bruno-2",
+   "text": "Load-test crane pad C before the pour.",
+   "to": [
+    "ines",
+    "dario"
+   ],
+   "type": "PROPOSE"
+  },
+  "n": 6,
+  "op": "entry",
+  "parents": [
+   5
+  ],
+  "utc": "2026-03-02T09:25:00Z"
+ },
+ {
+  "commit_by": "ines",
+  "entry": {
+   "as_of": "2026-03-02T10:40:00+01:00",
+   "by": "ines",
+   "id": "ines-3",
+   "refs": [
+    "bruno-2"
+   ],
+   "type": "ACK"
+  },
+  "n": 7,
+  "op": "entry",
+  "parents": [
+   6
+  ],
+  "utc": "2026-03-02T09:42:00Z"
+ },
+ {
+  "commit_by": "dario",
+  "entry": {
+   "as_of": "2026-03-02T11:57:00+02:00",
+   "by": "dario",
+   "id": "dario-1",
+   "refs": [
+    "bruno-2"
+   ],
+   "text": "the test needs the safety review first",
+   "type": "DISSENT"
+  },
+  "n": 8,
+  "op": "entry",
+  "parents": [
+   7
+  ],
+  "utc": "2026-03-02T09:59:00Z"
+ },
+ {
+  "commit_by": "bruno",
+  "entry": {
+   "as_of": "2026-03-02T11:14:00+01:00",
+   "by": "bruno",
+   "id": "bruno-3",
+   "note": "review booked before the test",
+   "refs": [
+    "dario-1"
+   ],
+   "type": "ACK"
+  },
+  "n": 9,
+  "op": "entry",
+  "parents": [
+   8
+  ],
+  "utc": "2026-03-02T10:16:00Z"
+ },
+ {
+  "commit_by": "dario",
+  "entry": {
+   "as_of": "2026-03-02T12:31:00+02:00",
+   "by": "dario",
+   "id": "dario-2",
+   "note": "fine with the review in place",
+   "refs": [
+    "bruno-2"
+   ],
+   "type": "ACK"
+  },
+  "n": 10,
+  "op": "entry",
+  "parents": [
+   9
+  ],
+  "utc": "2026-03-02T10:33:00Z"
+ },
+ {
+  "commit_by": "bruno",
+  "entry": {
+   "as_of": "2026-03-02T11:48:00+01:00",
+   "by": "bruno",
+   "id": "bruno-4",
+   "refs": [
+    "bruno-2"
+   ],
+   "type": "DECIDE"
+  },
+  "n": 11,
+  "op": "entry",
+  "parents": [
+   10
+  ],
+  "utc": "2026-03-02T10:50:00Z"
+ },
+ {
+  "commit_by": "ines",
+  "entry": {
+   "anchors": {
+    "build": "412",
+    "tag": "v1.4.0"
+   },
+   "as_of": "2026-03-02T12:05:00+01:00",
+   "by": "ines",
+   "id": "ines-4",
+   "text": "pour sequence, revision 4",
+   "to": [
+    "bruno"
+   ],
+   "type": "HANDOFF"
+  },
+  "n": 12,
+  "op": "entry",
+  "parents": [
+   11
+  ],
+  "utc": "2026-03-02T11:07:00Z"
+ },
+ {
+  "commit_by": "bruno",
+  "entry": {
+   "anchors": {
+    "build": "412",
+    "tag": "v1.4.0"
+   },
+   "as_of": "2026-03-02T12:22:00+01:00",
+   "by": "bruno",
+   "id": "bruno-5",
+   "refs": [
+    "ines-4"
+   ],
+   "type": "RECEIPT"
+  },
+  "n": 13,
+  "op": "entry",
+  "parents": [
+   12
+  ],
+  "utc": "2026-03-02T11:24:00Z"
+ }
+]

@@ -1,0 +1,155 @@
+[
+ {
+  "agents": [
+   {
+    "email": "livia@meridiana.example",
+    "id": "livia",
+    "name": "Lívia Sàez-Brontë",
+    "role": "managing editor",
+    "tz": "+02:00"
+   },
+   {
+    "email": "marco@meridiana.example",
+    "id": "marco",
+    "name": "Marco D'Anjò",
+    "role": "copy desk",
+    "tz": "+01:00"
+   },
+   {
+    "email": "nadia@meridiana.example",
+    "id": "nadia",
+    "name": "Nadia Øvrebø",
+    "role": "design",
+    "tz": "+01:00"
+   }
+  ],
+  "commit_by": "livia",
+  "n": 1,
+  "op": "init",
+  "parents": [],
+  "team": {
+   "company": "Editrice Meridiana S.r.l.",
+   "domain": "meridiana.example",
+   "key": "meridiana",
+   "title": "Meridiana autumn list"
+  },
+  "utc": "2026-04-20T08:20:00Z"
+ },
+ {
+  "commit_by": "livia",
+  "entry": {
+   "as_of": "2026-04-20T10:35:00+02:00",
+   "by": "livia",
+   "id": "livia-1",
+   "text": "Approve the spring catalogue.",
+   "to": [
+    "marco"
+   ],
+   "type": "PROPOSE"
+  },
+  "n": 2,
+  "op": "entry",
+  "parents": [
+   1
+  ],
+  "utc": "2026-04-20T08:37:00Z"
+ },
+ {
+  "commit_by": "marco",
+  "entry": {
+   "as_of": "2026-04-20T09:52:00+01:00",
+   "by": "marco",
+   "id": "marco-1",
+   "text": "Re-set chapter 4.",
+   "to": [
+    "nadia"
+   ],
+   "type": "PROPOSE"
+  },
+  "n": 3,
+  "op": "entry",
+  "parents": [
+   2
+  ],
+  "utc": "2026-04-20T08:54:00Z"
+ },
+ {
+  "commit_by": "nadia",
+  "entry": {
+   "as_of": "2026-04-20T10:09:00+01:00",
+   "by": "nadia",
+   "id": "nadia-1",
+   "text": "Release the back-cover copy.",
+   "to": [
+    "livia"
+   ],
+   "type": "PROPOSE"
+  },
+  "n": 4,
+  "op": "entry",
+  "parents": [
+   3
+  ],
+  "utc": "2026-04-20T09:11:00Z"
+ },
+ {
+  "commit_by": "livia",
+  "entry": {
+   "as_of": "2026-04-20T11:26:00+02:00",
+   "by": "livia",
+   "id": "livia-2",
+   "on": "livia-1",
+   "refs": [
+    "marco-1"
+   ],
+   "text": "chapter 4 must wait for the catalogue",
+   "type": "BLOCK"
+  },
+  "n": 5,
+  "op": "entry",
+  "parents": [
+   4
+  ],
+  "utc": "2026-04-20T09:28:00Z"
+ },
+ {
+  "commit_by": "marco",
+  "entry": {
+   "as_of": "2026-04-20T10:43:00+01:00",
+   "by": "marco",
+   "id": "marco-2",
+   "on": "marco-1",
+   "refs": [
+    "nadia-1"
+   ],
+   "text": "the copy quotes chapter 4",
+   "type": "BLOCK"
+  },
+  "n": 6,
+  "op": "entry",
+  "parents": [
+   5
+  ],
+  "utc": "2026-04-20T09:45:00Z"
+ },
+ {
+  "commit_by": "nadia",
+  "entry": {
+   "as_of": "2026-04-20T11:00:00+01:00",
+   "by": "nadia",
+   "id": "nadia-2",
+   "on": "nadia-1",
+   "refs": [
+    "livia-1"
+   ],
+   "text": "the catalogue prints the copy",
+   "type": "BLOCK"
+  },
+  "n": 7,
+  "op": "entry",
+  "parents": [
+   6
+  ],
+  "utc": "2026-04-20T10:02:00Z"
+ }
+]

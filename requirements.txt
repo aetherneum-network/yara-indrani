@@ -1,0 +1,2 @@
+# Standard library only. Nothing to install.
+# Python 3.12; the only external program is git (>= 2.32).

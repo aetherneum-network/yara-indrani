@@ -1,0 +1,26 @@
+{
+ "answered": 2,
+ "disputes": {
+  "bruno-1": "ANSWERED",
+  "bruno-5": "OPEN",
+  "carla-2": "ANSWERED",
+  "carla-6": "OPEN",
+  "dario-3": "OPEN",
+  "elio-4": "OPEN"
+ },
+ "empty_dissents": 3,
+ "notes": 20,
+ "open_disputes": 4,
+ "proposals": {
+  "ines-1": "DISPUTED",
+  "ines-2": "DISPUTED",
+  "ines-3": "DISPUTED",
+  "ines-4": "DISPUTED",
+  "ines-5": "DISPUTED",
+  "ines-6": "DISPUTED",
+  "ines-7": "ALIGNED",
+  "ines-8": "PROPOSED"
+ },
+ "true_dissents": 6,
+ "violations": []
+}

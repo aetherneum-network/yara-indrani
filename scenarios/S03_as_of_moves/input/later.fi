@@ -1,0 +1,39 @@
+commit refs/heads/main
+mark :4
+author Vera Ångström-Ruiz <vera@fiordaliso.example> 1773654660 +0100
+committer Vera Ångström-Ruiz <vera@fiordaliso.example> 1773654660 +0100
+data 17
+coord: ACK vera-1
+from refs/heads/main^0
+M 100644 inline COORD.md
+data 549
+# COORD - Fiordaliso lens line
+
+protocol: coord/1
+
+## Agents
+
+- teo | Teó Bălănescu | teo@fiordaliso.example | lab lead
+- uma | Uma Kjærsgård | uma@fiordaliso.example | optics
+- vera | Vera Ångström-Ruiz | vera@fiordaliso.example | calibration
+
+## Log
+
+### PROPOSE teo-1
+- by: teo
+- to: uma, vera
+- as_of: 2026-03-16T11:15:00+02:00
+- text: Recalibrate lens bench 3.
+
+### ACK uma-1
+- by: uma
+- refs: teo-1
+- as_of: 2026-03-16T10:32:00+01:00
+- note: counts match mine
+
+### ACK vera-1
+- by: vera
+- refs: teo-1
+- as_of: 2026-03-16T10:49:00+01:00
+
+

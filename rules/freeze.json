@@ -1,0 +1,17 @@
+{
+  "version": 1,
+  "about": "Who must consent before a gated transition takes effect, and when the release gate is closed. Ordered: first match wins.",
+  "consents": [
+    {"id": "G-DECIDE", "when": {"gate": "decide"}, "then": {"required": ["to"]}},
+    {"id": "G-UNBLOCK", "when": {"gate": "unblock"}, "then": {"required": ["by", "to"]}},
+    {"id": "G-LIFT", "when": {"gate": "lift"}, "then": {"required": ["by", "to"]}}
+  ],
+  "release": [
+    {"id": "REL-DEGRADED", "when": {"kind": "state", "degraded": true}, "then": "BLOCKED"},
+    {"id": "REL-FREEZE-LIFTED", "when": {"kind": "freeze", "status": "LIFTED"}, "then": "OPEN"},
+    {"id": "REL-FREEZE", "when": {"kind": "freeze"}, "then": "BLOCKED"},
+    {"id": "REL-HANDOFF-RECEIVED", "when": {"kind": "handoff", "status": "RECEIVED"}, "then": "OPEN"},
+    {"id": "REL-HANDOFF", "when": {"kind": "handoff"}, "then": "BLOCKED"},
+    {"id": "REL-DEFAULT", "when": {}, "then": "OPEN"}
+  ]
+}

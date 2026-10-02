@@ -1,0 +1,209 @@
+commit refs/heads/main
+mark :1
+author Inès Carrà <ines@portoluna.example> 1774251900 +0100
+committer Inès Carrà <ines@portoluna.example> 1774251900 +0100
+data 37
+coord: open the coordination document
+M 100644 inline COORD.md
+data 264
+# COORD - Portoluna quay works
+
+protocol: coord/1
+
+## Agents
+
+- ines | Inès Carrà | ines@portoluna.example | site lead
+- bruno | Bruno Šťastný | bruno@portoluna.example | structures
+- carla | Carla Muñoz Peña | carla@portoluna.example | procurement
+
+## Log
+
+
+commit refs/heads/main
+mark :2
+author Inès Carrà <ines@portoluna.example> 1774252920 +0100
+committer Inès Carrà <ines@portoluna.example> 1774252920 +0100
+data 21
+coord: PROPOSE ines-1
+from :1
+M 100644 inline COORD.md
+data 400
+# COORD - Portoluna quay works
+
+protocol: coord/1
+
+## Agents
+
+- ines | Inès Carrà | ines@portoluna.example | site lead
+- bruno | Bruno Šťastný | bruno@portoluna.example | structures
+- carla | Carla Muñoz Peña | carla@portoluna.example | procurement
+
+## Log
+
+### PROPOSE ines-1
+- by: ines
+- to: bruno, carla
+- as_of: 2026-03-23T09:00:00+01:00
+- text: Close access to the east ramp on Thursday.
+
+
+commit refs/heads/main
+mark :3
+author Bruno Šťastný <bruno@portoluna.example> 1774253940 +0100
+committer Bruno Šťastný <bruno@portoluna.example> 1774253940 +0100
+data 18
+coord: ACK bruno-1
+from :2
+M 100644 inline COORD.md
+data 479
+# COORD - Portoluna quay works
+
+protocol: coord/1
+
+## Agents
+
+- ines | Inès Carrà | ines@portoluna.example | site lead
+- bruno | Bruno Šťastný | bruno@portoluna.example | structures
+- carla | Carla Muñoz Peña | carla@portoluna.example | procurement
+
+## Log
+
+### PROPOSE ines-1
+- by: ines
+- to: bruno, carla
+- as_of: 2026-03-23T09:00:00+01:00
+- text: Close access to the east ramp on Thursday.
+
+### ACK bruno-1
+- by: bruno
+- refs: ines-1
+- as_of: 2026-03-23T09:17:00+01:00
+
+
+commit refs/heads/main
+mark :4
+author Carla Muñoz Peña <carla@portoluna.example> 1774254960 +0000
+committer Carla Muñoz Peña <carla@portoluna.example> 1774254960 +0000
+data 18
+coord: ACK carla-1
+from :3
+M 100644 inline COORD.md
+data 600
+# COORD - Portoluna quay works
+
+protocol: coord/1
+
+## Agents
+
+- ines | Inès Carrà | ines@portoluna.example | site lead
+- bruno | Bruno Šťastný | bruno@portoluna.example | structures
+- carla | Carla Muñoz Peña | carla@portoluna.example | procurement
+
+## Log
+
+### PROPOSE ines-1
+- by: ines
+- to: bruno, carla
+- as_of: 2026-03-23T09:00:00+01:00
+- text: Close access to the east ramp on Thursday.
+
+### ACK bruno-1
+- by: bruno
+- refs: ines-1
+- as_of: 2026-03-23T09:17:00+01:00
+
+### ACK carla-1
+- by: carla
+- refs: ines-1
+- as_of: 2026-03-23T08:34:00+00:00
+- note: deliveries moved to the site gate
+
+
+commit refs/heads/main
+mark :5
+author Inès Carrà <ines@portoluna.example> 1774255980 +0100
+committer Inès Carrà <ines@portoluna.example> 1774255980 +0100
+data 20
+coord: DECIDE ines-2
+from :4
+M 100644 inline COORD.md
+data 680
+# COORD - Portoluna quay works
+
+protocol: coord/1
+
+## Agents
+
+- ines | Inès Carrà | ines@portoluna.example | site lead
+- bruno | Bruno Šťastný | bruno@portoluna.example | structures
+- carla | Carla Muñoz Peña | carla@portoluna.example | procurement
+
+## Log
+
+### PROPOSE ines-1
+- by: ines
+- to: bruno, carla
+- as_of: 2026-03-23T09:00:00+01:00
+- text: Close access to the east ramp on Thursday.
+
+### ACK bruno-1
+- by: bruno
+- refs: ines-1
+- as_of: 2026-03-23T09:17:00+01:00
+
+### ACK carla-1
+- by: carla
+- refs: ines-1
+- as_of: 2026-03-23T08:34:00+00:00
+- note: deliveries moved to the site gate
+
+### DECIDE ines-2
+- by: ines
+- refs: ines-1
+- as_of: 2026-03-23T09:51:00+01:00
+
+
+commit refs/heads/main
+mark :6
+author Inès Carrà <ines@portoluna.example> 1774257000 +0100
+committer Inès Carrà <ines@portoluna.example> 1774257000 +0100
+data 14
+coord: tidy up
+from :5
+M 100644 inline COORD.md
+data 678
+# COORD - Portoluna quay works
+
+protocol: coord/1
+
+## Agents
+
+- ines | Inès Carrà | ines@portoluna.example | site lead
+- bruno | Bruno Šťastný | bruno@portoluna.example | structures
+- carla | Carla Muñoz Peña | carla@portoluna.example | procurement
+
+## Log
+
+### PROPOSE ines-1
+- by: ines
+- to: bruno, carla
+- as_of: 2026-03-23T09:00:00+01:00
+- text: Close access to the east ramp on Friday.
+
+### ACK bruno-1
+- by: bruno
+- refs: ines-1
+- as_of: 2026-03-23T09:17:00+01:00
+
+### ACK carla-1
+- by: carla
+- refs: ines-1
+- as_of: 2026-03-23T08:34:00+00:00
+- note: deliveries moved to the site gate
+
+### DECIDE ines-2
+- by: ines
+- refs: ines-1
+- as_of: 2026-03-23T09:51:00+01:00
+
+

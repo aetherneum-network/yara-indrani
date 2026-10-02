@@ -1,0 +1,21 @@
+{
+ "commit_author": "livia@meridiana.example",
+ "document_alone_says": {
+  "livia-1": "DECIDED"
+ },
+ "doubtful": [
+  "nadia-1"
+ ],
+ "lint_ok": false,
+ "named_in_by": "nadia",
+ "proposals": {
+  "livia-1": "TO_CONFIRM"
+ },
+ "violations": [
+  {
+   "class": "V02",
+   "commit_index": 4,
+   "target": "nadia-1"
+  }
+ ]
+}

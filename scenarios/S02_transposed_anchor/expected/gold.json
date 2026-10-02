@@ -1,0 +1,25 @@
+{
+ "arbitrations": [],
+ "commits": 7,
+ "edges": [],
+ "release_gate": "BLOCKED",
+ "state": {
+  "blocks": {},
+  "conflicts": {},
+  "disputes": {},
+  "freezes": {},
+  "handoffs": {
+   "livia-3": "MISMATCH"
+  },
+  "proposals": {
+   "livia-1": "DECIDED"
+  }
+ },
+ "violations": [
+  {
+   "class": "V04",
+   "commit_index": 7,
+   "target": "livia-3"
+  }
+ ]
+}

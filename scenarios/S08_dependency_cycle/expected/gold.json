@@ -1,0 +1,48 @@
+{
+ "arbitrations": [],
+ "commits": 7,
+ "edges": [
+  {
+   "active": true,
+   "block": "livia-2",
+   "on": "livia-1",
+   "refs": "marco-1"
+  },
+  {
+   "active": true,
+   "block": "marco-2",
+   "on": "marco-1",
+   "refs": "nadia-1"
+  },
+  {
+   "active": true,
+   "block": "nadia-2",
+   "on": "nadia-1",
+   "refs": "livia-1"
+  }
+ ],
+ "release_gate": "OPEN",
+ "state": {
+  "blocks": {
+   "livia-2": "ACTIVE",
+   "marco-2": "ACTIVE",
+   "nadia-2": "ACTIVE"
+  },
+  "conflicts": {},
+  "disputes": {},
+  "freezes": {},
+  "handoffs": {},
+  "proposals": {
+   "livia-1": "BLOCKED",
+   "marco-1": "BLOCKED",
+   "nadia-1": "BLOCKED"
+  }
+ },
+ "violations": [
+  {
+   "class": "V06",
+   "commit_index": 7,
+   "target": "livia-2+marco-2+nadia-2"
+  }
+ ]
+}

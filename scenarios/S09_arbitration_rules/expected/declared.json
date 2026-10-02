@@ -1,0 +1,38 @@
+{
+ "conflicts": {
+  "teo-1~uma-1": "ARBITRATED",
+  "vera-1~walt-1": "OPEN",
+  "xenia-1~yuri-1": "OPEN"
+ },
+ "only_change": "vera-1~walt-1",
+ "recorded_dissent": "uma-2",
+ "rules_v1": {
+  "teo-1~uma-1": [
+   "R-DUE",
+   "teo-1"
+  ],
+  "vera-1~walt-1": [
+   "none",
+   "ESCALATE_TO_HUMAN"
+  ],
+  "xenia-1~yuri-1": [
+   "none",
+   "ESCALATE_TO_HUMAN"
+  ]
+ },
+ "rules_v2": {
+  "teo-1~uma-1": [
+   "R-DUE",
+   "teo-1"
+  ],
+  "vera-1~walt-1": [
+   "R-TIE-FIRST",
+   "vera-1"
+  ],
+  "xenia-1~yuri-1": [
+   "none",
+   "ESCALATE_TO_HUMAN"
+  ]
+ },
+ "violations": []
+}

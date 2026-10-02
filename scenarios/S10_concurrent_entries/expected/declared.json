@@ -1,0 +1,40 @@
+{
+ "after_bruno": {
+  "entries": [
+   "ines-1",
+   "bruno-1"
+  ],
+  "proposals": {
+   "ines-1": "PROPOSED"
+  }
+ },
+ "after_merge": {
+  "document_order": [
+   "ines-1",
+   "carla-1",
+   "bruno-1"
+  ],
+  "entries": [
+   "ines-1",
+   "bruno-1",
+   "carla-1"
+  ],
+  "proposals": {
+   "ines-1": "ALIGNED"
+  }
+ },
+ "after_rejection": {
+  "entries": [
+   "ines-1",
+   "bruno-1"
+  ],
+  "not_in_log": "carla-1",
+  "proposals": {
+   "ines-1": "PROPOSED"
+  }
+ },
+ "base": 2,
+ "bruno": 3,
+ "carla": 4,
+ "merge": 5
+}

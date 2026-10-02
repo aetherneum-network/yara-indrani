@@ -1,0 +1,230 @@
+[
+ {
+  "agents": [
+   {
+    "email": "teo@fiordaliso.example",
+    "id": "teo",
+    "name": "Teó Bălănescu",
+    "role": "lab lead",
+    "tz": "+02:00"
+   },
+   {
+    "email": "uma@fiordaliso.example",
+    "id": "uma",
+    "name": "Uma Kjærsgård",
+    "role": "optics",
+    "tz": "+01:00"
+   },
+   {
+    "email": "vera@fiordaliso.example",
+    "id": "vera",
+    "name": "Vera Ångström-Ruiz",
+    "role": "calibration",
+    "tz": "+01:00"
+   },
+   {
+    "email": "walt@fiordaliso.example",
+    "id": "walt",
+    "name": "Walt Grzybowski",
+    "role": "data",
+    "tz": "-05:00"
+   },
+   {
+    "email": "xenia@fiordaliso.example",
+    "id": "xenia",
+    "name": "Xénia Pașca",
+    "role": "quality",
+    "tz": "+02:00"
+   },
+   {
+    "email": "yuri@fiordaliso.example",
+    "id": "yuri",
+    "name": "Yuri Håland",
+    "role": "security",
+    "tz": "+01:00"
+   }
+  ],
+  "commit_by": "teo",
+  "n": 1,
+  "op": "init",
+  "parents": [],
+  "team": {
+   "company": "Laboratorio Ottico Fiordaliso",
+   "domain": "fiordaliso.example",
+   "key": "fiordaliso",
+   "title": "Fiordaliso lens line"
+  },
+  "utc": "2026-04-27T08:00:00Z"
+ },
+ {
+  "commit_by": "teo",
+  "entry": {
+   "as_of": "2026-04-27T10:15:00+02:00",
+   "by": "teo",
+   "class": "deadline",
+   "due": "2026-05-05",
+   "id": "teo-1",
+   "resource": "calibration-rig/2026-W18",
+   "text": "Calibrate the interferometer.",
+   "to": [
+    "vera"
+   ],
+   "type": "PROPOSE"
+  },
+  "n": 2,
+  "op": "entry",
+  "parents": [
+   1
+  ],
+  "utc": "2026-04-27T08:17:00Z"
+ },
+ {
+  "commit_by": "uma",
+  "entry": {
+   "as_of": "2026-04-27T09:32:00+01:00",
+   "by": "uma",
+   "class": "deadline",
+   "due": "2026-05-12",
+   "id": "uma-1",
+   "resource": "calibration-rig/2026-W18",
+   "text": "Re-measure filter lot F2.",
+   "to": [
+    "vera"
+   ],
+   "type": "PROPOSE"
+  },
+  "n": 3,
+  "op": "entry",
+  "parents": [
+   2
+  ],
+  "utc": "2026-04-27T08:34:00Z"
+ },
+ {
+  "commit_by": "vera",
+  "entry": {
+   "as_of": "2026-04-27T09:49:00+01:00",
+   "by": "vera",
+   "class": "deadline",
+   "due": "2026-05-08",
+   "id": "vera-1",
+   "resource": "data-analyst/2026-W18",
+   "text": "Re-measure prism order 88.",
+   "to": [
+    "teo"
+   ],
+   "type": "PROPOSE"
+  },
+  "n": 4,
+  "op": "entry",
+  "parents": [
+   3
+  ],
+  "utc": "2026-04-27T08:51:00Z"
+ },
+ {
+  "commit_by": "walt",
+  "entry": {
+   "as_of": "2026-04-27T04:06:00-05:00",
+   "by": "walt",
+   "class": "deadline",
+   "due": "2026-05-08",
+   "id": "walt-1",
+   "resource": "data-analyst/2026-W18",
+   "text": "Accept mould set M5.",
+   "to": [
+    "teo"
+   ],
+   "type": "PROPOSE"
+  },
+  "n": 5,
+  "op": "entry",
+  "parents": [
+   4
+  ],
+  "utc": "2026-04-27T09:08:00Z"
+ },
+ {
+  "commit_by": "xenia",
+  "entry": {
+   "as_of": "2026-04-27T11:23:00+02:00",
+   "by": "xenia",
+   "class": "safety",
+   "id": "xenia-1",
+   "resource": "security-review/2026-W18",
+   "text": "Quarantine coating batch 27.",
+   "to": [
+    "teo"
+   ],
+   "type": "PROPOSE"
+  },
+  "n": 6,
+  "op": "entry",
+  "parents": [
+   5
+  ],
+  "utc": "2026-04-27T09:25:00Z"
+ },
+ {
+  "commit_by": "yuri",
+  "entry": {
+   "as_of": "2026-04-27T10:40:00+01:00",
+   "by": "yuri",
+   "class": "safety",
+   "id": "yuri-1",
+   "resource": "security-review/2026-W18",
+   "text": "Quarantine polisher 4.",
+   "to": [
+    "teo"
+   ],
+   "type": "PROPOSE"
+  },
+  "n": 7,
+  "op": "entry",
+  "parents": [
+   6
+  ],
+  "utc": "2026-04-27T09:42:00Z"
+ },
+ {
+  "commit_by": "vera",
+  "entry": {
+   "as_of": "2026-04-27T10:57:00+01:00",
+   "by": "vera",
+   "id": "vera-2",
+   "outcome": "teo-1",
+   "refs": [
+    "teo-1",
+    "uma-1"
+   ],
+   "rule": "R-DUE",
+   "text": "earlier due date",
+   "type": "ARBITRATE"
+  },
+  "n": 8,
+  "op": "entry",
+  "parents": [
+   7
+  ],
+  "utc": "2026-04-27T09:59:00Z"
+ },
+ {
+  "commit_by": "uma",
+  "entry": {
+   "as_of": "2026-04-27T11:14:00+01:00",
+   "by": "uma",
+   "id": "uma-2",
+   "refs": [
+    "vera-2"
+   ],
+   "text": "the lot expires before the 12th",
+   "type": "DISSENT"
+  },
+  "n": 9,
+  "op": "entry",
+  "parents": [
+   8
+  ],
+  "utc": "2026-04-27T10:16:00Z"
+ }
+]

@@ -1,0 +1,22 @@
+{
+ "arbitrations": [],
+ "commits": 13,
+ "edges": [],
+ "release_gate": "OPEN",
+ "state": {
+  "blocks": {},
+  "conflicts": {},
+  "disputes": {
+   "dario-1": "CLOSED"
+  },
+  "freezes": {},
+  "handoffs": {
+   "ines-4": "RECEIVED"
+  },
+  "proposals": {
+   "bruno-2": "DECIDED",
+   "ines-1": "DECIDED"
+  }
+ },
+ "violations": []
+}
