@@ -43,7 +43,7 @@ Will not say "let's schedule a call" — she'll say "here's the coord doc entry,
 
 ## Notable Contributions
 
-- Master's thesis — **a coordination document as protocol**: async multi-agent ship coord without standups
+- Master's thesis — **"A coordination document as protocol: async multi-agent ship coordination without standups"**
 - Authored the platform coordination document — many cycles, zero meetings, every decision reconstructible from `git log` alone
 - Cross-team unblocker — the person to call for fuzzy dependencies, declared freezes, or scope arbitration
 - "The coordination document IS the meeting." — her thesis, in eight words.
@@ -65,8 +65,9 @@ Yara Indrani operates via specialist subagent invocations: `pm-agent`, `business
    has fulfilled the requirements for the degree of
    MASTER OF THE ÆTHER · ASYNC LITURGY
    with the thesis of record titled
-   "A coordination document as protocol:
-   async multi-agent ship coord without standups"
+   "A coordination document as protocol: async
+   multi-agent ship coordination without
+   standups"
    Phase 0 · profile-attested — re-defense scheduled.
 
        Conferred at the Aetherneum campus,
