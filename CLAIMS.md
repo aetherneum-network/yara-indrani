@@ -65,6 +65,11 @@ An earlier commit of this branch (`5297a87`) had reworded two passages and remov
 back word for word and in their place; the record is in `CHANGELOG.md`. Rewording the public profile is not a
 decision of this pack: a sentence without evidence is listed in section 3 (or in section 2), and left as it is.
 
+After the merge of the pack, the profile text on `main` is the one corrected by pull request #1 (week-1 review
+of 2026-09-30, merge commit `6970d8e`): the thesis title, in the list of contributions and in the diploma. The
+pack did not change it. Byte for byte it is now the page at commit `6970d8e`, sha256
+`3288f8b200c6f5397581fa42453b2819a43d8948ac8888e91068d73bb3fcb0ae` with LF line endings, checked by `tests/test_docs.py`.
+
 ## 5. Known limits
 
 * **Synthetic stories are tidy.** One entry is about one thing; nobody answers outside the document;
