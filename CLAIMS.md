@@ -49,8 +49,8 @@ they mention.
 | "*The coordination document IS the meeting.*"; "without standups" (title of the thesis); "push it and we are aligned in five minutes" | The pack shows a protocol that does not require meetings. It cannot show that no meeting took place anywhere, and it measures no time to alignment. |
 | "operates via specialist subagent invocations: `pm-agent`, `business-panel-experts`, `requirements-analyst`" | The pack calls no agent and no model (`MODEL.md`). |
 | Degree, thesis of record, diploma, faculty advisor, class | Fields of the profile; this repository offers no evidence for or against them. |
-| An independent number | The blind run has not been done (`eval/BLIND_PROTOCOL.md`). |
-| A green CI run | `.github/workflows/ci.yml` has never been executed. |
+| An independent number | The blind run was made once by a different hand on 2026-09-30 (`eval/BLIND_PROTOCOL.md`; `eval/history.json`, runs 6 to 8), but the gold of part A comes from the pack's own generator and reference: internal consistency on synthetic data. Part B, written by hand, exercised V04, V05 and the release gate only. |
+| A green CI run | Published on 2026-10-02 as pull request #2; `.github/workflows/ci.yml` runs on GitHub-hosted runners and its results are on the pull request, not copied here. |
 | The same commit hashes of the test repositories on another operating system | Verified on one machine only; see "Known limits". |
 | A scan report for secrets and personal data (`reports/scan.json`) | Not produced in v2.0. `tests/test_hygiene.py` checks paths, names, addresses and domains, which is less than a scan. |
 
@@ -83,7 +83,7 @@ decision of this pack: a sentence without evidence is listed in section 3 (or in
   tool reads the history it is given.
 * **What is said outside the document leaves no trace.** The pack shows the discipline of the document,
   not the absence of other channels.
-* **One machine.** Everything was run on Windows 11, Python 3.12.10, git 2.51.0. Two rebuilds in two
+* **One machine.** Every run recorded here was on Windows 11, Python 3.12.10, git 2.51.0. Two rebuilds in two
   folders give the same bytes there. The outputs that are compared cite commits by position, not by
   hash, so that they do not depend on git's hashing; whether the commit hashes of the test repositories
   are the same on another system is `[TO CONFIRM]`, and the word "deterministic" is not used for them.
@@ -94,10 +94,10 @@ decision of this pack: a sentence without evidence is listed in section 3 (or in
 
 | Req. | Where | Open points |
 |---|---|---|
-| E1 | this repository: `coord/`, `PROTOCOL.md`, MIT licence, tag `v2.0.0-freeze` | the tag `v2.0.0` is not placed: it waits for the blind run |
+| E1 | this repository: `coord/`, `PROTOCOL.md`, MIT licence, tag `v2.0.0-freeze` | the tag `v2.0.0` is not placed: the blind run was made (`eval/history.json`, runs 6 to 8); the decision to place it is [TO CONFIRM] |
 | E2 | ten scenario folders, S01 to S10, run by `scenarios/run_all.py`; negative: S04, S05, S06 | - |
 | E3 | `python scenarios/run_all.py --json reports/scenarios.json`; `python -m unittest discover -s tests -t .` | - |
-| E4 | `.github/workflows/ci.yml`; minimum git version 2.32 declared | never executed; runner image digest and action pins `[TO CONFIRM]` |
+| E4 | `.github/workflows/ci.yml`; minimum git version 2.32 declared | runs on GitHub-hosted runners since the publication of 2026-10-02 (pull request #2), results on the pull request; runner image digest and action pins `[TO CONFIRM]` |
 | E5 | `tools/rebuild.py`, `reports/rebuild.json`, `tests/test_determinism.py` | one machine; commit hashes across systems `[TO CONFIRM]` |
 | E6 | `MANIFEST.sha256` (`python tools/manifest.py --check`) | a manifest cannot hold the hash of the commit that contains it: the message of the tag records the hash of the manifest at the freeze |
 | E7 | `tests/test_hygiene.py` | scan report not produced; customer statement not applicable (no customer data exists here) |

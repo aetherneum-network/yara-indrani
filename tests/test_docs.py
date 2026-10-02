@@ -207,7 +207,9 @@ class Numbers(unittest.TestCase):
 
     def test_what_is_not_demonstrated_is_said(self):
         self.assertIn("### What is NOT demonstrated", self.sec)
-        for must in ("real team", "blind run", "never been executed", "awaiting legal review", "one machine"):
+        # Up to v2.0.1-freeze the section said the workflow had "never been executed"; since the publication of
+        # 2026-10-02 (pull request #2) it names the pull request where the results are.
+        for must in ("real team", "blind run", "pull request #2", "awaiting legal review", "one machine"):
             self.assertIn(must, self.sec)
         self.assertIn("Standard library only", self.sec)
 

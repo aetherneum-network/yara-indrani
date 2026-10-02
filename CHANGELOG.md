@@ -2,6 +2,27 @@
 
 Entries are added, never rewritten. Dates are the dates of the work; every number names its source.
 
+## README states the recorded blind runs and the publication - 2026-10-02
+
+* `README.md`, proof-pack section only: the italic line, the "Blind run" row of the numbers table (now three rows,
+  one per run) and the line "An independent number" of "What is NOT demonstrated" said that the blind run had not
+  been done. They now state what `eval/history.json` records for runs 6, 7 and 8: the evaluator (Claude Opus 5.5),
+  not the builder; the tag `v2.0.0-freeze`; seed 20261011; the times in UTC; stories, commits and objects; the
+  `TO_CONFIRM` answers; wrong assertions and never-events; and what part B did not exercise. The profile below the
+  section is unchanged (sha256 `158e4c9bf21b476becce1eb844cc75511c5b84eff1e313130d6d49a60df1cc59`).
+* `CLAIMS.md`: the row "An independent number" and requirement E1 say the same. The tag `v2.0.0` is still not
+  placed; whether to place it is [TO CONFIRM].
+* Published on 2026-10-02 as pull request #2 of this repository; the workflow runs on GitHub-hosted runners and
+  its results are on the pull request. The statements written before that, that the workflow had never been
+  executed (`README.md`, `CLAIMS.md` row "A green CI run" and requirement E4, the comment of
+  `.github/workflows/ci.yml`), now say so; no result is copied here. `tests/test_docs.py` checked the section for
+  the words "never been executed" and now checks for "pull request #2". `CLAIMS.md` "One machine": every run
+  recorded here was on Windows 11. Older entries of this file that say "never executed" described their version
+  and stay as written.
+* Documents and one test module only: no frozen file changed (`python tools/freeze.py --check` answers `OK`),
+  `eval/history.json` and `eval/blind/` are unchanged, `eval/BLIND_PROTOCOL.md` still points to `v2.0.1-freeze`.
+  The manifest is regenerated. The commit of this entry is tagged `v2.0.2-freeze`.
+
 ## Blind runs recorded - 2026-09-30
 
 * `eval/history.json`: runs 6, 7 and 8 are the blind runs of 2026-09-30 made by an evaluator who is not the builder

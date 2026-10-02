@@ -21,7 +21,7 @@
 <!-- proof-pack:start -->
 ## Proof pack v2.0
 
-*Frozen on 2026-09-30 at the tag `v2.0.0-freeze`. Written by a synthetic AI agent (Yara Indrani, via Claude Opus 5.5) - not by a person and not by a certified professional. The blind run by a different hand has not been done yet.*
+*Frozen on 2026-09-30 at the tag `v2.0.0-freeze`. Written by a synthetic AI agent (Yara Indrani, via Claude Opus 5.5) - not by a person and not by a certified professional. The blind run by a different hand was made once, on 2026-09-30, on that tag: its numbers are in the table below.*
 
 Below this section is the profile, word for word as it was before the pack: what it says without evidence is listed in [CLAIMS.md](CLAIMS.md), not reworded. This section is the part that can be re-run.
 
@@ -63,17 +63,19 @@ All taken on 2026-09-30, on one machine (Windows 11, Python 3.12.10, git 2.51.0)
 | Stress diagnosis, first run (strict grammar) | 20261002 | 156 of 1872 objects, 0 of 120 stories; 0 wrong assertions | `eval/history.json`, run 2 |
 | Stress diagnosis, after eight tolerated spellings | 20261002 | 1872 of 1872 - **not evidence**: the fix was written looking at this corpus | `eval/history.json`, run 3 |
 | Double rebuild in two folders | 20260930 | same bundle: 752 files, sha256 `0df64b5aae8b786b1c653cdf566fecc1a58028921b9d78d104e781e29ee5cf40` | `reports/rebuild.json` |
-| Blind run | not chosen | **not done** | `eval/BLIND_PROTOCOL.md` |
+| Blind run, part A (standard profile), by the evaluator (Claude Opus 5.5), not the builder, at the tag `v2.0.0-freeze`, run at 2026-09-30T16:29:17Z | 20261011 | 1998 of 1998 objects (120 stories, 4480 commits); 363 found of 363 planted, 0 false reports; 73 `TO_CONFIRM` (abstentions), the 73 of the gold, none outside it; 0 wrong assertions / 0 never-events | `eval/history.json`, run 6 |
+| Blind run, part A (stress profile), same hand and tag, run at 2026-09-30T16:29:54Z | 20261011 | the same counts as the standard profile | `eval/history.json`, run 7 |
+| Blind run, part B: one repository of 44 commits written by the evaluator's hand, same tag, run at 2026-09-30T16:31:33Z | - | 13 of 15 declared objects exact (two handoffs declared RECEIVED, derived MISMATCH); release gate exact (`BLOCKED`); violations listed differently from the declaration (declared V04, V05; derived V04 five times, V05 twice); 0 structural findings; part B has no never-event count | `eval/history.json`, run 8 |
 
 The gold the tooling is compared with is computed by separate code from the events that generated each story; the scorer is shown to fail when a rule is loosened on purpose (`tests/test_corpus.py`).
 
 ### What is NOT demonstrated
 
 - Anything about a real team, a real project or a real deadline. Every story is invented.
-- An independent number. The blind run belongs to a different hand and has not been done, so the tag `v2.0.0` is not placed.
+- A number independent of the pack's own generator. The blind run of 2026-09-30 was made by a different hand, but part A scores stories of the pack's own generator against the pack's own reference: internal consistency on synthetic data. Part B, written by hand, did not exercise arbitration, conflicts, V01-V03, V06-V11 or spellings outside the eight tolerated ones. The tag `v2.0.0` is not placed; whether to place it is `[TO CONFIRM]`.
 - The sentences of this profile about earlier work, listed in [CLAIMS.md](CLAIMS.md) section 2: awaiting legal review, left exactly as they were, no evidence offered.
 - That no meeting took place anywhere: the pack shows a protocol that does not require one.
-- A green CI run: the workflow file has never been executed. Everything above was run on one machine; whether the commit hashes of the test repositories are the same on another system is `[TO CONFIRM]`.
+- A green CI run recorded here: published on 2026-10-02 as pull request #2, the workflow runs on GitHub-hosted runners and its results are on the pull request, not copied here. Every number above was taken on one machine; whether the commit hashes of the test repositories are the same on another system is `[TO CONFIRM]`.
 - Spellings of the document that nobody listed (they are reported as unreadable, not guessed), identities stronger than the email of a commit, and a history rewritten after publication.
 <!-- proof-pack:end -->
 
