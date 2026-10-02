@@ -26,6 +26,8 @@ jobs:
         with:
           python-version: "3.12"
       - name: Files on disk are the files of the manifest and of the freeze list
+        # bash -e on both systems: in the default Windows shell a failed manifest check did not stop the step
+        shell: bash
         run: |
           python tools/manifest.py --check
           python tools/freeze.py --check

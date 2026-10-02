@@ -2,6 +2,15 @@
 
 Entries are added, never rewritten. Dates are the dates of the work; every number names its source.
 
+## The manifest step stops at its first failure on Windows too - 2026-10-02
+
+* `.github/workflows/ci.yml`, step "Files on disk are the files of the manifest and of the freeze list": it now runs
+  in `bash` on both systems. In run 37033190588 (2026-10-02) the manifest check failed on both systems, but on
+  `windows-latest` the default shell (PowerShell) took only the exit code of the last command, the freeze check,
+  so the step passed and the job went on to the tests. With `shell: bash` the runner adds `-e`, and the step fails
+  at the first command that fails, as it already did on `ubuntu-latest`. The manifest is regenerated; no frozen file
+  and no tag changes.
+
 ## Profile hash and manifest follow the README reviewed in pull request #1 - 2026-10-02
 
 * Pull request #1 (week-1 review of 2026-09-30, merge commit `6970d8e`) corrected the profile text of `README.md`
